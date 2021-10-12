@@ -1,0 +1,7 @@
+{% include "_components/header.njk" %}
+  <main>
+    <h1>Critère {{ title }}</h1>
+    <p><strong>{{ theme }}</strong></p>
+    {{ content | safe }}
+  </main>
+{% include "_components/footer.njk" %}

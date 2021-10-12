@@ -1,7 +1,13 @@
 {% include "_components/header.njk" %}
-  <main>
+<main role="main">
+  <div class="fr-container fr-mt-4w">
+    <div class="fr-grid-row">
+      <div class="fr-col">
     <h1>Critère {{ title }}</h1>
     <p><strong>{{ theme }}</strong></p>
     {{ content | safe }}
-  </main>
+      </div>
+    </div>
+  </div>  
+</main>
 {% include "_components/footer.njk" %}

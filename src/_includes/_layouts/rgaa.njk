@@ -1,0 +1,39 @@
+{% include "_components/header.njk" %}
+<main role="main">
+  <div class="fr-container fr-mt-4w">
+    <div class="fr-grid-row">
+      <div class="fr-col">
+    <h1>{{ title }}</h1>
+    {{ content | safe }}
+
+
+
+<ol reversed>
+{% set currentTheme = "" %}
+{% for criterion in criterionlist | reverse %}
+{% if showTheme %}
+      {% if currentTheme != criterion.data.theme %}
+      <h2>{{ criterion.data.theme }}</h3>
+      {% endif %}
+{% endif %}
+  <li class=" mb-10 list-none">
+    <h2><a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a></h2>
+  </li>
+{% endfor %}
+</ol>
+
+
+
+ 
+    <ul>
+    {% for criterion in collections.rgaa %}
+    
+    {{ criterion.data.theme }}
+    <li><a href="{{ criterion.url }}">{{ criterion.data.title }}</a></li>
+    {% endfor %}
+    </ul>
+      </div>
+    </div>
+  </div>  
+</main>
+{% include "_components/footer.njk" %}

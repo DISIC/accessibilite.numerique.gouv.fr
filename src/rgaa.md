@@ -1,12 +1,7 @@
 ---
 title: Les critères du RGAA
-layout: _layouts/base.njk
+layout: _layouts/rgaa.njk
 ---
 
+Les 106 (ouais ouais 106 !) critères du RGAA sont tous là bien rangés dans les 13 thématiques ;)
 
-<h2>{{ criterion.data.theme }}</h2>
-<ul>
-{% for criterion in collections.rgaa %}
-<li><a href="{{ criterion.url }}">{{ criterion.data.title }}</a></li>
-{% endfor %}
-</ul>

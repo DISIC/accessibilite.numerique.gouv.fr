@@ -1,0 +1,12 @@
+{% include "components/header.njk" %}
+<main role="main">
+  <div class="fr-container fr-mt-4w">
+    <div class="fr-grid-row">
+      <div class="fr-col">
+    <h1>Test {{ title }}</h1>
+    {{ content | safe }}
+      </div>
+    </div>
+  </div>
+</main>
+{% include "components/footer.njk" %}

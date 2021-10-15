@@ -1,0 +1,54 @@
+{% include "components/header.njk" %}
+<main role="main">
+  <div class="fr-container fr-mt-4w fr-mb-4w">
+    <div class="fr-grid-row">
+      <div class="fr-col">
+        <h1>{{ title }}</h1>
+        {{ content | safe }}
+
+				<ul>
+				{% set curThemeNum = 0 %}
+        {% for c in collections.criteriaAndTests %}
+					{% set crit = c.criterion %}
+					{% set critNum = c.critNum %}
+					{% set themeNum = c.themeNum %}
+					{% set tests = c.tests %}
+
+					{% if themeNum > 1 and themeNum !== curThemeNum %}
+						</details>
+					{% endif %}
+
+					{% if themeNum !== curThemeNum %}
+					{% set curThemeNum = themeNum %}
+					<details open>
+    				<summary>
+							<h2>{{ themeNum }}.&nbsp;{{ themes[themeNum].title }}</h2>
+						</summary>
+					{% endif %}
+
+					<li>
+						<details open>
+							<summary>
+								<strong>Critère {{ critNum }}</strong>
+								{{ crit.templateContent | safe }}
+							</summary>
+							<ul>
+							{% for t in tests %}
+								<li id="{{ t.testSlug }}"><strong>Test {{ t.testFullNum }}</strong>
+								<a class="direct-link" href="#{{ t.testSlug }}">#</a>
+								{{ t.test.templateContent | safe }}
+							{% endfor %}
+							</ul>
+						</details>
+					</li>
+        {% endfor %}
+				</ul>
+      </div>
+    </div>
+  </div>
+</main>
+{% include "components/footer.njk" %}
+
+
+
+

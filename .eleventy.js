@@ -14,7 +14,7 @@ module.exports = function (eleventyConfig) {
 
         const testsRaw = collection
           .getFilteredByGlob('./src/rgaa/criteres/' + critNum + '/tests/*.md')
-          .sort((a, b) => a.fileSlug - b.fileSlug); // TODO: FIX sort (init)
+          .sort((a, b) => parseInt(a.fileSlug) - parseInt(b.fileSlug));
 
         /* Build an array of test objects with extra info */
         const tests = testsRaw.map(function (test) {

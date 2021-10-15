@@ -1,6 +1,6 @@
 {% include "components/header.njk" %}
 <style>
-li {list-style-type: none}
+li {list-style-type: none;}
 </style>
 <main role="main">
 	<div class="fr-container fr-mt-4w fr-mb-4w">
@@ -28,7 +28,7 @@ li {list-style-type: none}
 
 					<li><a class="direct-link" href="#{{ critNum }}">#</a>
 						<h3 class="fr-accordion__title" id="{{ critNum }}"><button aria-expanded="false" aria-controls="fr-{{ critNum }}" class=" fr-accordion__btn">{{ critNum }}. {{ crit.templateContent | escape }}</button></h3>
-						<div id="fr-{{ critNum }}"class="fr-collapse">
+						<div id="fr-{{ critNum }}" class="fr-collapse">
 						<div class="fr-accordion__inner">
 						<ul>
 						{% for t in tests %}

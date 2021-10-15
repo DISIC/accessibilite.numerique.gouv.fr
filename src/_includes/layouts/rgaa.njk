@@ -1,10 +1,14 @@
 {% include "components/header.njk" %}
+<style>
+li {list-style-type: none}
+</style>
 <main role="main">
 	<div class="fr-container fr-mt-4w fr-mb-4w">
     	<div class="fr-grid-row fr-grid-row--gutters fr-grid-row--center">
     		<div class="fr-col-8">
 				<h1>{{ title }}</h1>
 				{{ content | safe }}
+
 				{% set curThemeNum = 0 %}
 				{% for c in collections.criteriaAndTests %}
 					{% set crit = c.criterion %}
@@ -22,9 +26,10 @@
 						<ul>
 					{% endif %}
 
-					<li>
-						<h3 id="{{ critNum }}">Critère {{ critNum }} <a class="direct-link" href="#{{ critNum }}">#</a></h3>
-						{{ crit.templateContent | safe }}
+					<li><a class="direct-link" href="#{{ critNum }}">#</a>
+						<h3 class="fr-accordion__title" id="{{ critNum }}"><button aria-expanded="false" aria-controls="fr-{{ critNum }}" class=" fr-accordion__btn">{{ critNum }}. {{ crit.templateContent | escape }}</button></h3>
+						<div id="fr-{{ critNum }}"class="fr-collapse">
+						<div class="fr-accordion__inner">
 						<ul>
 						{% for t in tests %}
 							<li id="{{ t.testSlug }}">
@@ -33,6 +38,8 @@
 							</li>
 						{% endfor %}
 						</ul>
+						</div>
+						</div>
 					</li>
 				{% endfor %}
 				</ul>

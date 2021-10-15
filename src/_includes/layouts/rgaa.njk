@@ -1,51 +1,44 @@
 {% include "components/header.njk" %}
 <main role="main">
-  <div class="fr-container fr-mt-4w fr-mb-4w">
-    <div class="fr-grid-row">
-      <div class="fr-col">
-        <h1>{{ title }}</h1>
-        {{ content | safe }}
-
-				<ul>
+	<div class="fr-container fr-mt-4w fr-mb-4w">
+    	<div class="fr-grid-row">
+    		<div class="fr-col">
+				<h1>{{ title }}</h1>
+				{{ content | safe }}
 				{% set curThemeNum = 0 %}
-        {% for c in collections.criteriaAndTests %}
+				{% for c in collections.criteriaAndTests %}
 					{% set crit = c.criterion %}
 					{% set critNum = c.critNum %}
 					{% set themeNum = c.themeNum %}
 					{% set tests = c.tests %}
 
 					{% if themeNum > 1 and themeNum !== curThemeNum %}
-						</details>
+						</ul>
 					{% endif %}
 
 					{% if themeNum !== curThemeNum %}
-					{% set curThemeNum = themeNum %}
-					<details open>
-    				<summary>
-							<h2>{{ themeNum }}.&nbsp;{{ themes[themeNum].title }}</h2>
-						</summary>
+						{% set curThemeNum = themeNum %}
+						<h2>{{ themeNum }}.&nbsp;{{ themes[themeNum].title }}</h2>
+						<ul>
 					{% endif %}
 
 					<li>
-						<details open>
-							<summary>
-								<strong>Critère {{ critNum }}</strong>
-								{{ crit.templateContent | safe }}
-							</summary>
-							<ul>
-							{% for t in tests %}
-								<li id="{{ t.testSlug }}"><strong>Test {{ t.testFullNum }}</strong>
-								<a class="direct-link" href="#{{ t.testSlug }}">#</a>
+						<h3>Critère {{ critNum }}</h3>
+						{{ crit.templateContent | safe }}
+						<ul>
+						{% for t in tests %}
+							<li id="{{ t.testSlug }}">
+								<h4>Test {{ t.testFullNum }} <a class="direct-link" href="#{{ t.testSlug }}">#</a></h4>
 								{{ t.test.templateContent | safe }}
-							{% endfor %}
-							</ul>
-						</details>
+							</li>
+						{% endfor %}
+						</ul>
 					</li>
-        {% endfor %}
+				{% endfor %}
 				</ul>
-      </div>
-    </div>
-  </div>
+			</div>
+		</div>
+	</div>
 </main>
 {% include "components/footer.njk" %}
 

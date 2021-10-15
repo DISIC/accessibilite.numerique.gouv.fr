@@ -18,12 +18,12 @@
 
 					{% if themeNum !== curThemeNum %}
 						{% set curThemeNum = themeNum %}
-						<h2>{{ themeNum }}.&nbsp;{{ themes[themeNum].title }}</h2>
+						<h2 id="{{ themeNum }}">{{ themeNum }}.&nbsp;{{ themes[themeNum].title }} <a class="direct-link" href="#{{ themeNum }}">#</a></h2>
 						<ul>
 					{% endif %}
 
 					<li>
-						<h3>Critère {{ critNum }}</h3>
+						<h3 id="{{ critNum }}">Critère {{ critNum }} <a class="direct-link" href="#{{ critNum }}">#</a></h3>
 						{{ crit.templateContent | safe }}
 						<ul>
 						{% for t in tests %}

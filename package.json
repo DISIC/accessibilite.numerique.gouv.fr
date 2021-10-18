@@ -10,7 +10,8 @@
   "author": "DesignGouv",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "markdown-it": "^12.2.0"
   },
   "description": ""
 }

@@ -1,4 +1,20 @@
 module.exports = function (eleventyConfig) {
+  /*
+   * Markdown-It 'markdownify' filter
+   * source: https://github.com/BradCoffield/kidlitconnection/commit/e42a6dee1021be4b1869e4b62582230aed5db84e)
+   */
+  const md = require('markdown-it')({
+    html: true,
+    linkify: true,
+    typographer: true,
+  });
+  eleventyConfig.addFilter('markdownInline', function (markdownString) {
+    if (!markdownString) {
+      return markdownString;
+    }
+    return md.renderInline(markdownString);
+  });
+
   // Custom collection: criteriaAndTests
   eleventyConfig.addCollection('criteriaAndTests', function (collection) {
     const criteria = collection.getFilteredByGlob(

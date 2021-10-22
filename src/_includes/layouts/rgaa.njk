@@ -1,7 +1,8 @@
 {% include "components/header.njk" %}
 <style>
 li {list-style-type: none;}
-.info { padding: 1rem 2rem; background-color: aliceblue;}
+.annexes li { list-style-type: inherit; }
+.annexes { padding: 1rem 2rem; background-color: aliceblue;}
 .fr-collapse--expanded { background-color: lemonchiffon; }
 .fr-accordion__btn {
     background-color: transparent;
@@ -21,7 +22,7 @@ li {list-style-type: none;}
 					{% set critNum = c.critNum %}
 					{% set themeNum = c.themeNum %}
 					{% set tests = c.tests %}
-					{% set refCriterion = c.refCriterion %}
+					{% set annexeCrit = c.annexeCrit %}
 					{% if themeNum > 1 and themeNum !== curThemeNum %}
 						</ul>
 					{% endif %}
@@ -44,12 +45,17 @@ li {list-style-type: none;}
 							</li>
 						{% endfor %}
 						</ul>
-						<div class="info">
-						<h4 class="fr-h5">Références</h4>
-							<h5 class="fr-h6">WCAG</h5>
-							{{ refCriterion.data.WCAG  | safe}}
-							<h5 class="fr-h6">Techniques</h5>
-							{{ refCriterion.data.Techniques  | safe}}
+						<div class="annexes">
+							{{ annexeCrit.templateContent  | safe}}
+							<h4>Références</h4>
+							{% if annexeCrit.data.WCAG != null %}
+								<h5>WCAG</h5>
+								<p>{{ annexeCrit.data.WCAG}}</p>
+							{% endif %}
+							{% if annexeCrit.data.Techniques != null %}
+								<h5>Techniques</h5>
+								<p>{{ annexeCrit.data.Techniques}}</p>
+							{% endif %}
 						</div>
 						</div>
 						</div>

@@ -62,8 +62,7 @@ module.exports = function (eleventyConfig) {
     return all;
   });
 
-  eleventyConfig.addLayoutAlias('criterion', 'layouts/criterion.njk');
-
+//  eleventyConfig.addLayoutAlias('criterion', 'layouts/criterion.njk');
   eleventyConfig.addPassthroughCopy('./src/css');
   eleventyConfig.addPassthroughCopy('./src/js');
   eleventyConfig.addPassthroughCopy('./src/fonts');

@@ -32,6 +32,8 @@ module.exports = function (eleventyConfig) {
           .getFilteredByGlob('./src/rgaa/criteres/' + critNum + '/tests/*.md')
           .sort((a, b) => parseInt(a.fileSlug) - parseInt(b.fileSlug));
 
+        const refCriterion = collection.getFilteredByGlob('./src/rgaa/criteres/' + critNum + '/references.md')[0];
+      
         /* Build an array of test objects with extra info */
         const tests = testsRaw.map(function (test) {
           const slug = test.fileSlug;
@@ -52,6 +54,7 @@ module.exports = function (eleventyConfig) {
           critNum,
           criterion,
           tests,
+          refCriterion,
         };
       })
       .sort((a, b) => parseInt(a.themeNum) - parseInt(b.themeNum));

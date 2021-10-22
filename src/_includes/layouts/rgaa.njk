@@ -21,7 +21,7 @@ li {list-style-type: none;}
 					{% set critNum = c.critNum %}
 					{% set themeNum = c.themeNum %}
 					{% set tests = c.tests %}
-
+					{% set refCriterion = c.refCriterion %}
 					{% if themeNum > 1 and themeNum !== curThemeNum %}
 						</ul>
 					{% endif %}
@@ -45,7 +45,11 @@ li {list-style-type: none;}
 						{% endfor %}
 						</ul>
 						<div class="info">
-							{{ crit.data.content | safe }}
+						<h4 class="fr-h5">Références</h4>
+							<h5 class="fr-h6">WCAG</h5>
+							{{ refCriterion.data.WCAG  | safe}}
+							<h5 class="fr-h6">Techniques</h5>
+							{{ refCriterion.data.Techniques  | safe}}
 						</div>
 						</div>
 						</div>

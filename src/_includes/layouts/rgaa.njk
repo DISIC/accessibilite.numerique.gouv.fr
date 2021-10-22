@@ -28,18 +28,18 @@ li {list-style-type: none;}
 
 					{% if themeNum !== curThemeNum %}
 						{% set curThemeNum = themeNum %}
-						<h2 id="{{ themeNum }}">{{ themeNum }}.&nbsp;{{ themes[themeNum].title }} <a class="direct-link" href="#{{ themeNum }}">#</a></h2>
+						<h2 id="{{ themeNum }}">{{ themeNum }}.&nbsp;{{ themes[themeNum].title }} <!--a class="direct-link" href="#{{ themeNum }}">#</a--></h2>
 						<ul>
 					{% endif %}
 
-					<li><a class="direct-link" href="#{{ critNum }}">#</a>
+					<li><!--a class="direct-link" href="#{{ critNum }}">#</a-->
 						<h3 class="fr-accordion__title" id="{{ critNum }}"><button aria-expanded="false" aria-controls="fr-{{ critNum }}" class=" fr-accordion__btn"><div>{{ critNum }}. {{ crit.data.title | markdownInline | safe }}</div></button></h3>
 						<div id="fr-{{ critNum }}" class="fr-collapse">
 						<div class="fr-accordion__inner">
 						<ul>
 						{% for t in tests %}
 							<li id="{{ t.testSlug }}">
-								<h4 class="fr-h6">Test {{ t.testFullNum }} <a class="direct-link" href="#{{ t.testSlug }}">#</a></h4>
+								<h4 class="fr-h6">Test {{ t.testFullNum }} <!--a class="direct-link" href="#{{ t.testSlug }}">#</a--></h4>
 								{{ t.test.templateContent | safe }}
 							</li>
 						{% endfor %}

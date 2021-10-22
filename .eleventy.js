@@ -39,14 +39,6 @@ module.exports = function (eleventyConfig) {
           const testFullNum = critNum + '.' + testNum;
           const testSlug = critNum + '.' + slug;
 
-          /*
-						Ex: {
-							"testNum": "1"
-							"testFullNum": "2.1.1"
-							"testSlug": "2.1.1.frame-title"
-							"test": {...}
-						}
-					*/
           return {
             testNum,
             testFullNum,

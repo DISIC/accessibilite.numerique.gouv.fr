@@ -23,41 +23,40 @@ module.exports = function (eleventyConfig) {
 
     /* Build an array of criterion objects with */
     /* their corresponding tests and extra info */
-    const all = criteria
-      .map(function (criterion) {
-        const critNum = criterion.fileSlug; // ex: 2.1
-        const themeNum = critNum.substr(0, critNum.indexOf('.'));
+    const all = criteria.map(function (criterion) {
+      const critNum = criterion.fileSlug; // ex: 2.1
+      const themeNum = critNum.substr(0, critNum.indexOf('.'));
 
-        const testsRaw = collection
-          .getFilteredByGlob('./src/rgaa/criteres/' + critNum + '/tests/*.md')
-          .sort((a, b) => parseInt(a.fileSlug) - parseInt(b.fileSlug));
+      const testsRaw = collection
+        .getFilteredByGlob('./src/rgaa/criteres/' + critNum + '/tests/*.md')
+        .sort((a, b) => parseInt(a.fileSlug) - parseInt(b.fileSlug));
 
-        const refCriterion = collection.getFilteredByGlob('./src/rgaa/criteres/' + critNum + '/references.md')[0];
-      
-        /* Build an array of test objects with extra info */
-        const tests = testsRaw.map(function (test) {
-          const slug = test.fileSlug;
-          const testNum = slug.substr(0, slug.indexOf('.'));
-          const testFullNum = critNum + '.' + testNum;
-          const testSlug = critNum + '.' + slug;
-
-          return {
-            testNum,
-            testFullNum,
-            testSlug,
-            test,
-          };
-        });
+      const refCriterion = collection.getFilteredByGlob('./src/rgaa/criteres/' + critNum + '/references.md')[0];
+    
+      /* Build an array of test objects with extra info */
+      const tests = testsRaw.map(function (test) {
+        const slug = test.fileSlug;
+        const testNum = slug.substr(0, slug.indexOf('.'));
+        const testFullNum = critNum + '.' + testNum;
+        const testSlug = critNum + '.' + slug;
 
         return {
-          themeNum,
-          critNum,
-          criterion,
-          tests,
-          refCriterion,
+          testNum,
+          testFullNum,
+          testSlug,
+          test,
         };
-      })
-      .sort((a, b) => parseInt(a.themeNum) - parseInt(b.themeNum));
+      });
+
+      return {
+        themeNum,
+        critNum,
+        criterion,
+        tests,
+        refCriterion,
+      };
+    })
+    .sort((a, b) => parseInt(a.themeNum) - parseInt(b.themeNum));
 
     console.log('*****');
     console.dir(all, { depth: 4 });
@@ -65,7 +64,6 @@ module.exports = function (eleventyConfig) {
     return all;
   });
 
-//  eleventyConfig.addLayoutAlias('criterion', 'layouts/criterion.njk');
   eleventyConfig.addPassthroughCopy('./src/css');
   eleventyConfig.addPassthroughCopy('./src/js');
   eleventyConfig.addPassthroughCopy('./src/fonts');

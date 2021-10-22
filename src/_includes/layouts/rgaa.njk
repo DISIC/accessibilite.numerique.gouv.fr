@@ -34,7 +34,7 @@ li {list-style-type: none;}
 					{% endif %}
 
 					<li><!--a class="direct-link" href="#{{ critNum }}">#</a-->
-						<h3 class="fr-accordion__title" id="{{ critNum }}"><button aria-expanded="false" aria-controls="fr-{{ critNum }}" class=" fr-accordion__btn"><div>{{ critNum }}. {{ crit.data.title | markdownInline | safe }}</div></button></h3>
+						<h3 class="fr-accordion__title" id="{{ critNum }}"><button aria-expanded="false" aria-controls="fr-{{ critNum }}" class=" fr-accordion__btn">{{ critNum }}. {{ crit.data.title | markdownInline | safe }}</button></h3>
 						<div id="fr-{{ critNum }}" class="fr-collapse">
 						<div class="fr-accordion__inner">
 						<ul>

@@ -1,6 +1,12 @@
 {% include "components/header.njk" %}
 <style>
 li {list-style-type: none;}
+.info { padding: 1rem 2rem; background-color: aliceblue;}
+.fr-collapse--expanded { background-color: lemonchiffon; }
+.fr-accordion__btn {
+    background-color: transparent;
+    border-bottom: 0.3em solid aliceblue;
+}
 </style>
 <main role="main">
 	<div class="fr-container fr-mt-4w fr-mb-4w">
@@ -33,11 +39,14 @@ li {list-style-type: none;}
 						<ul>
 						{% for t in tests %}
 							<li id="{{ t.testSlug }}">
-								<h4>Test {{ t.testFullNum }} <a class="direct-link" href="#{{ t.testSlug }}">#</a></h4>
+								<h4 class="fr-h6">Test {{ t.testFullNum }} <a class="direct-link" href="#{{ t.testSlug }}">#</a></h4>
 								{{ t.test.templateContent | safe }}
 							</li>
 						{% endfor %}
 						</ul>
+						<div class="info">
+							{{ crit.data.content | safe }}
+						</div>
 						</div>
 						</div>
 					</li>

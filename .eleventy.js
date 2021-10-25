@@ -36,13 +36,9 @@ module.exports = function (eleventyConfig) {
       /* Build an array of test objects with extra info */
       const tests = testsRaw.map(function (test) {
         const slug = test.fileSlug;
-        const testNum = slug.substr(0, slug.indexOf('.'));
-        const testFullNum = critNum + '.' + testNum;
         const testSlug = critNum + '.' + slug;
 
         return {
-          testNum,
-          testFullNum,
           testSlug,
           test,
         };
@@ -59,7 +55,7 @@ module.exports = function (eleventyConfig) {
     .sort((a, b) => parseInt(a.themeNum) - parseInt(b.themeNum));
 
     console.log('*****');
-    console.dir(all, { depth: 4 });
+    console.dir(all, { depth: 3 });
 
     return all;
   });

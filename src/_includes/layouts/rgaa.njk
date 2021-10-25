@@ -41,7 +41,11 @@ li {list-style-type: none;}
 						{% for t in tests %}
 							<li id="{{ t.testSlug }}">
 								<h4 class="fr-h6">Test {{ t.testFullNum }} <!--a class="direct-link" href="#{{ t.testSlug }}">#</a--></h4>
-								{{ t.test.templateContent | safe }}
+								<p>{{ t.test.data.title | markdownInline | safe }}</p>
+								{% if t.test.templateContent != "" %}
+									<h5>Méthodologie de test</h5>
+									{{ t.test.templateContent | safe }}
+								{% endif %}
 							</li>
 						{% endfor %}
 						</ul>

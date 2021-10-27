@@ -1,0 +1,22 @@
+---
+WCAG: 
+- 2.2.1 Timing Adjustable (A)
+- 2.2.2 Pause, Stop, Hide (A)
+Techniques:
+- F4
+- F7
+- F16
+- F47
+- F50
+- G4
+- G11
+- G152
+- G186
+- G187
+- G191
+- SCR22
+- SCR33
+- SCR36
+- SM11
+- SM12
+---

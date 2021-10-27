@@ -37,31 +37,58 @@ li {list-style-type: none;}
 						<h3 class="fr-accordion__title" id="{{ critNum }}"><button aria-expanded="false" aria-controls="fr-{{ critNum }}" class=" fr-accordion__btn">{{ critNum }}. {{ crit.data.title | markdownInline | safe }}</button></h3>
 						<div id="fr-{{ critNum }}" class="fr-collapse">
 						<div class="fr-accordion__inner">
-						<ul>
-						{% for t in tests %}
-							<li id="{{ t.testSlug }}">
-								<h4 class="fr-h6">Test {{ t.testSlug }} <!--a class="direct-link" href="#{{ t.testSlug }}">#</a--></h4>
-								<p>{{ t.test.data.title | markdownInline | safe }}</p>
-								{% if t.test.templateContent != "" %}
-									<h5>Méthodologie de test</h5>
-									{{ t.test.templateContent | safe }}
+							<ul>
+							{% for t in tests %}
+								<li id="{{ t.testSlug }}">
+									<h4 class="fr-h5">Test {{ t.testSlug }} <!--a class="direct-link" href="#{{ t.testSlug }}">#</a--></h4>
+									<p>{{ t.test.data.title | markdownInline | safe }}</p>
+									{% if t.test.templateContent != "" %}
+										<h5 class="fr-h6">Méthodologie de test</h5>
+										{{ t.test.templateContent | safe }}
+									{% endif %}
+								</li>
+							{% endfor %}
+							</ul>
+							<div class="annexes">
+								{{ annexeCrit.templateContent  | safe}}
+								<h4>Références</h4>
+								{% if annexeCrit.data.WCAG != null %}
+									<h5>WCAG</h5>
+									<ul>
+									{% for wcag in annexeCrit.data.WCAG %}
+									<li lang="en">{{ wcag }}</li>
+									{% endfor %}
+									</ul>
 								{% endif %}
-							</li>
-						{% endfor %}
-						</ul>
-						<div class="annexes">
-							{{ annexeCrit.templateContent  | safe}}
-							<h4>Références</h4>
-							{% if annexeCrit.data.WCAG != null %}
-								<h5>WCAG</h5>
-								<p>{{ annexeCrit.data.WCAG}}</p>
-							{% endif %}
-							{% if annexeCrit.data.Techniques != null %}
-								<h5>Techniques</h5>
-								<p>{{ annexeCrit.data.Techniques}}</p>
-							{% endif %}
-						</div>
-						</div>
+								{% if annexeCrit.data.Techniques != null %}
+									<h5>Techniques</h5>
+									<ul>
+										{% for technique in annexeCrit.data.Techniques %}
+										{% set firstLetter = technique | first %}
+										{% if firstLetter == "A" %}
+											{% set path = "aria" %}
+										{% elif firstLetter ==  "C" %}
+											{% set path = "css" %}
+										{% elif firstLetter ==  "F" %}
+											{% set path = "failures" %}
+										{% elif firstLetter ==  "G" %}
+											{% set path = "general" %}
+										{% elif firstLetter ==  "H" %}
+											{% set path = "html" %}
+										{% elif firstLetter ==  "S" %}
+											{% set secondLetter = technique | slice(1) %}
+											{% if "C" == secondLetter %}
+												{% set path = "client-side-script" %}
+											{% else %}
+												{% set path = "smil" %}
+											{% endif %}                                   
+										{% endif %}
+										<li><a target="_blank" title="{{ technique }} - nouvelle fenêtre" href="https://www.w3.org/WAI/WCAG21/Techniques/{{ path }}/{{ technique }}">{{ technique }}</a></li>
+										{% endfor %}
+									</ul>
+								{% endif %}
+							</div>
+							</div>
 						</div>
 					</li>
 				{% endfor %}

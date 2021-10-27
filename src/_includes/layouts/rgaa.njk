@@ -2,6 +2,7 @@
 <style>
 li {list-style-type: none;}
 .annexes li { list-style-type: inherit; }
+.technique li { list-style-type: none; display: inline; margin-right: 1rem;}
 .annexes { padding: 1rem 2rem; background-color: aliceblue;}
 .fr-collapse--expanded { background-color: lemonchiffon; }
 .fr-accordion__btn {
@@ -54,15 +55,30 @@ li {list-style-type: none;}
 								<h4>Références</h4>
 								{% if annexeCrit.data.WCAG != null %}
 									<h5>WCAG</h5>
-									<ul>
+<!--
+
+"9.1.1.1 / 1.1.1 Non-text Content (A)"
+
+
+9.1.1.1
+/
+
+1.1.1
+Non-text Content
+(A)
+
+https://www.w3.org/TR/WCAG21/#non-text-content
+
+
+-->								<ul class="wcag">
 									{% for wcag in annexeCrit.data.WCAG %}
 									<li lang="en">{{ wcag }}</li>
 									{% endfor %}
-									</ul>
+								</ul>
 								{% endif %}
 								{% if annexeCrit.data.Techniques != null %}
 									<h5>Techniques</h5>
-									<ul>
+									<ul class="technique">
 										{% for technique in annexeCrit.data.Techniques %}
 										{% set firstLetter = technique | first %}
 										{% if firstLetter == "A" %}

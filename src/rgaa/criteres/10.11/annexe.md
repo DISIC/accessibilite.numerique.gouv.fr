@@ -1,5 +1,6 @@
 ---
-WCAG: 9.1.4.10 / 1.4.10 Reflow (AA)
+WCAG: 
+- 1.4.10 Reflow (AA)
 ---
 #### Note technique
 

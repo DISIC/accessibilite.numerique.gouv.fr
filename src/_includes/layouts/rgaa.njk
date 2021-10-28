@@ -43,6 +43,13 @@ li {list-style-type: none;}
 								<li id="{{ t.testSlug }}">
 									<h4 class="fr-h5">Test {{ t.testSlug }} <!--a class="direct-link" href="#{{ t.testSlug }}">#</a--></h4>
 									<p>{{ t.test.data.title | markdownInline | safe }}</p>
+									<ul>
+									{% for step in t.test.data.steps %}
+										<li>{{ step | markdownInline | safe }}</li>
+									{% endfor %}
+									</ul>
+
+
 									{% if t.test.templateContent != "" %}
 										<h5 class="fr-h6">Méthodologie de test</h5>
 										{{ t.test.templateContent | safe }}

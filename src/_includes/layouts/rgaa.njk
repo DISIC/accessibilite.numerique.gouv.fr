@@ -62,24 +62,9 @@ li {list-style-type: none;}
 								<h4>Références</h4>
 								{% if annexeCrit.data.WCAG != null %}
 									<h5>WCAG</h5>
-<!--
-
-"9.1.1.1 / 1.1.1 Non-text Content (A)"
-
-
-9.1.1.1
-/
-
-1.1.1
-Non-text Content
-(A)
-
-https://www.w3.org/TR/WCAG21/#non-text-content
-
-
--->								<ul class="wcag">
+								<ul class="wcag">
 									{% for wcag in annexeCrit.data.WCAG %}
-									<li lang="en">{{ wcag }}</li>
+									<li><a href="https://www.w3.org/TR/WCAG21/#{{ wcag.title  | lower | replace(" ", "-") | replace(",", "")}}" target="_blank" title="critère {{ wcag.successCriterion }} - nouvelle fenêtre">{{ wcag.successCriterion }}</a> <span lang="en">{{ wcag.title }}</span> ({{ wcag.level }})</li>
 									{% endfor %}
 								</ul>
 								{% endif %}

@@ -1,6 +1,8 @@
 ---
 WCAG: 
-- 1.4.10 Reflow (AA)
+- successCriterion: 1.4.10
+  title: Reflow
+  level: AA
 ---
 #### Note technique
 

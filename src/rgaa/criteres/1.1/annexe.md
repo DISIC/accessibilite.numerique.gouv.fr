@@ -1,6 +1,8 @@
 ---
 WCAG: 
-- 9.1.1.1 / 1.1.1 Non-text Content (A)
+- successCriterion: 1.1.1
+  title: Non-text Content
+  level: A
 Techniques: 
 - H36
 - H37

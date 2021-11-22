@@ -1,5 +1,9 @@
 ---
 WCAG: 
-- 3.3.1 Error Identification (A), https://www.w3.org/TR/WCAG21/#error-identification
-- 3.3.2 Labels or Instructions (A), https://www.w3.org/TR/WCAG21/#labels-or-instructions
+- successCriterion: 3.3.1
+  title: Error Identification
+  level: A
+- successCriterion: 3.3.2
+  title: Labels or Instructions
+  level: A
 ---

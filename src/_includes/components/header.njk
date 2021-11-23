@@ -9,7 +9,7 @@
   <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon"><!-- 32×32 -->
   <link rel="manifest" href="/favicon/manifest.webmanifest" crossorigin="use-credentials">
 
-  <title>{{ title }} - RGAA</title>
+  <title>{{ title }} - Accessibilité numérique</title>
 </head>
 <body>
 <header role="banner" class="fr-header">
@@ -19,16 +19,28 @@
                 <div class="fr-header__brand fr-enlarge-link">
                     <div class="fr-header__brand-top">
                         <div class="fr-header__logo">
-                            <a href="/" title="Accueil - [À MODIFIER | nom de l’entité (ministère , secrétariat d‘état, gouvernement)]">
+                            <a href="/" title="Accueil - accessibilité numérique">
                                 <p class="fr-logo">
                                     Accessibilité<br/>numérique
                                 </p>
                             </a>
                         </div>
-                    </div>
+              <div class="fr-header__navbar">
+                <button class="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="modal-menu-mobile" aria-haspopup="menu" title="Menu" id="fr-btn-menu-mobile">
+                  Menu
+                </button>
+              </div>
+            </div>
+            <div class="fr-header__service">
+              <a href="/" title="Retour à l’accueil DesignGouv"  class="fr-header__service-title  text-highlight">RGAA</a>
+              <p class="fr-header__service-tagline">Référentiel général d’amélioration de l’accessibilité</p>
+            </div>
+
                 </div>
             </div>
         </div>
     </div>
+    {% include "components/navigation.njk" %}
+
 </header>
 

@@ -13,10 +13,26 @@ li {list-style-type: none;}
 <main role="main">
 	<div class="fr-container fr-mt-4w fr-mb-4w">
     	<div class="fr-grid-row fr-grid-row--gutters fr-grid-row--center">
-    		<div class="fr-col-8">
+    		<div class="fr-col-12 fr-col-sm-12 fr-col-md-10 fr-col-lg-8">
 				<h1>{{ title }}</h1>
 				{{ content | safe }}
-
+				<div style="background-color: gold; padding: 0.25em;">
+					<ul class="technique">
+						<li><a class="" href="#1">Images</a></li>
+						<li><a class="" href="#2">Cadres</a></li>
+						<li><a class="" href="#3">Couleurs</a></li>
+						<li><a class="" href="#4">Multimédia</a></li>
+						<li><a class="" href="#5">Tableaux</a></li>
+						<li><a class="" href="#6">Liens</a></li>
+						<li><a class="" href="#7">Scripts</a></li>
+						<li><a class="" href="#8">Éléments obligatoires</a></li>
+						<li><a class="" href="#9">Structuration de l’information</a></li>
+						<li><a class="" href="#10">Présentation de l’information</a></li>
+						<li><a class="" href="#11">Formulaires</a></li>
+						<li><a class="" href="#12">Navigation</a></li>
+						<li><a class="" href="#13">Consultation</a></li>
+					</ul>
+				</div>
 				{% set curThemeNum = 0 %}
 				{% for c in collections.criteriaAndTests %}
 					{% set crit = c.criterion %}
@@ -60,6 +76,7 @@ li {list-style-type: none;}
 							<div class="annexes">
 								{{ annexeCrit.templateContent  | safe}}
 								<h4>Références</h4>
+								<p>Toutes les ressources suivantes sont en anglais.</p>
 								{% if annexeCrit.data.WCAG != null %}
 									<h5>WCAG</h5>
 								<ul class="wcag">

@@ -1,6 +1,6 @@
 ---
-title: Les critères du RGAA
+title: Critères et tests
 layout: layouts/rgaa.njk
 ---
 
-Les 106 (ouais ouais 106 !) critères du RGAA sont tous là bien rangés dans les 13 thématiques ;)
+Les 106 critères et 250 tests du RGAA sont tous là bien rangés dans les 13 thématiques ;)

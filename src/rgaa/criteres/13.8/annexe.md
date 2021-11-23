@@ -1,7 +1,11 @@
 ---
 WCAG: 
-- 2.2.1 Timing Adjustable (A)
-- 2.2.2 Pause, Stop, Hide (A)
+- successCriterion: 2.2.1
+  title: Timing Adjustable
+  level: A
+- successCriterion: 2.2.2
+  title: Pause, Stop, Hide
+  level: A
 Techniques:
 - F4
 - F7

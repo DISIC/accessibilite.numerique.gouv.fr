@@ -1,130 +1,109 @@
-{% include "components/header.njk" %}
-<style>
-li {list-style-type: none;}
-.annexes li { list-style-type: inherit; }
-.technique li { list-style-type: none; display: inline; margin-right: 1rem;}
-.annexes { padding: 1rem 2rem; background-color: aliceblue;}
-.fr-collapse--expanded { background-color: lemonchiffon; }
-.fr-accordion__btn {
-    background-color: transparent;
-    border-bottom: 0.3em solid aliceblue;
-}
-.summary {background-color: aliceblue; padding: 0.25em; }
-</style>
-<main role="main">
-	<div class="fr-container fr-mt-4w fr-mb-4w">
-    	<div class="fr-grid-row fr-grid-row--gutters fr-grid-row--center">
-    		<div class="fr-col-12 fr-col-sm-12 fr-col-md-10 fr-col-lg-8">
-				<h1>{{ title }}</h1>
-				{{ content | safe }}
-				<div class="summary">
-					<ul class="technique">
-						<li><a class="" href="#1">Images</a></li>
-						<li><a class="" href="#2">Cadres</a></li>
-						<li><a class="" href="#3">Couleurs</a></li>
-						<li><a class="" href="#4">Multimédia</a></li>
-						<li><a class="" href="#5">Tableaux</a></li>
-						<li><a class="" href="#6">Liens</a></li>
-						<li><a class="" href="#7">Scripts</a></li>
-						<li><a class="" href="#8">Éléments obligatoires</a></li>
-						<li><a class="" href="#9">Structuration de l’information</a></li>
-						<li><a class="" href="#10">Présentation de l’information</a></li>
-						<li><a class="" href="#11">Formulaires</a></li>
-						<li><a class="" href="#12">Navigation</a></li>
-						<li><a class="" href="#13">Consultation</a></li>
-					</ul>
-				</div>
-				{% set curThemeNum = 0 %}
-				{% for c in collections.criteriaAndTests %}
-					{% set crit = c.criterion %}
-					{% set critNum = c.critNum %}
-					{% set themeNum = c.themeNum %}
-					{% set tests = c.tests %}
-					{% set annexeCrit = c.annexeCrit %}
-					{% if themeNum > 1 and themeNum !== curThemeNum %}
-						</ul>
-					{% endif %}
+{% extends './base.njk' %}
+{% block contenu %}
+	<h1>{{ title }}</h1>
+    {{ content | safe }}
+	<div class="summary">
+		<ul class="technique">
+			<li><a class="" href="#1">Images</a></li>
+			<li><a class="" href="#2">Cadres</a></li>
+			<li><a class="" href="#3">Couleurs</a></li>
+			<li><a class="" href="#4">Multimédia</a></li>
+			<li><a class="" href="#5">Tableaux</a></li>
+			<li><a class="" href="#6">Liens</a></li>
+			<li><a class="" href="#7">Scripts</a></li>
+			<li><a class="" href="#8">Éléments obligatoires</a></li>
+			<li><a class="" href="#9">Structuration de l’information</a></li>
+			<li><a class="" href="#10">Présentation de l’information</a></li>
+			<li><a class="" href="#11">Formulaires</a></li>
+			<li><a class="" href="#12">Navigation</a></li>
+			<li><a class="" href="#13">Consultation</a></li>
+		</ul>
+	</div>
+	{% set curThemeNum = 0 %}
+	{% for c in collections.criteriaAndTests %}
+		{% set crit = c.criterion %}
+		{% set critNum = c.critNum %}
+		{% set themeNum = c.themeNum %}
+		{% set tests = c.tests %}
+		{% set annexeCrit = c.annexeCrit %}
+		{% if themeNum > 1 and themeNum !== curThemeNum %}
+			</ul>
+		{% endif %}
 
-					{% if themeNum !== curThemeNum %}
-						{% set curThemeNum = themeNum %}
-						<h2 id="{{ themeNum }}">{{ themeNum }}.&nbsp;{{ themes[themeNum].title }} <!--a class="direct-link" href="#{{ themeNum }}">#</a--></h2>
+		{% if themeNum !== curThemeNum %}
+			{% set curThemeNum = themeNum %}
+			<h2 id="{{ themeNum }}">{{ themeNum }}.&nbsp;{{ themes[themeNum].title }} <!--a class="direct-link" href="#{{ themeNum }}">#</a--></h2>
+			<ul>
+		{% endif %}
+
+		<li><!--a class="direct-link" href="#{{ critNum }}">#</a-->
+			<h3 class="fr-accordion__title" id="{{ critNum }}"><button aria-expanded="false" aria-controls="fr-{{ critNum }}" class=" fr-accordion__btn">{{ critNum }}. {{ crit.data.title | markdownInline | safe }}</button></h3>
+			<div id="fr-{{ critNum }}" class="fr-collapse">
+			<div class="fr-accordion__inner">
+				<ul>
+				{% for t in tests %}
+					<li id="{{ t.testSlug }}">
+						<h4 class="fr-h5">Test {{ t.testSlug }} <!--a class="direct-link" href="#{{ t.testSlug }}">#</a--></h4>
+						<p>{{ t.test.data.title | markdownInline | safe }}</p>
 						<ul>
-					{% endif %}
-
-					<li><!--a class="direct-link" href="#{{ critNum }}">#</a-->
-						<h3 class="fr-accordion__title" id="{{ critNum }}"><button aria-expanded="false" aria-controls="fr-{{ critNum }}" class=" fr-accordion__btn">{{ critNum }}. {{ crit.data.title | markdownInline | safe }}</button></h3>
-						<div id="fr-{{ critNum }}" class="fr-collapse">
-						<div class="fr-accordion__inner">
-							<ul>
-							{% for t in tests %}
-								<li id="{{ t.testSlug }}">
-									<h4 class="fr-h5">Test {{ t.testSlug }} <!--a class="direct-link" href="#{{ t.testSlug }}">#</a--></h4>
-									<p>{{ t.test.data.title | markdownInline | safe }}</p>
-									<ul>
-									{% for step in t.test.data.steps %}
-										<li>{{ step | markdownInline | safe }}</li>
-									{% endfor %}
-									</ul>
+						{% for step in t.test.data.steps %}
+							<li>{{ step | markdownInline | safe }}</li>
+						{% endfor %}
+						</ul>
 
 
-									{% if t.test.templateContent != "" %}
-										<h5 class="fr-h6">Méthodologie de test</h5>
-										{{ t.test.templateContent | safe }}
-									{% endif %}
-								</li>
-							{% endfor %}
-							</ul>
-							<div class="annexes">
-								{{ annexeCrit.templateContent  | safe}}
-								<h4>Références</h4>
-								<p>Toutes les ressources suivantes sont en anglais.</p>
-								{% if annexeCrit.data.WCAG != null %}
-									<h5>WCAG</h5>
-								<ul class="wcag">
-									{% for wcag in annexeCrit.data.WCAG %}
-									<li><a href="https://www.w3.org/TR/WCAG21/#{{ wcag.title  | lower | replace(" ", "-") | replace(",", "")}}" target="_blank" title="critère {{ wcag.successCriterion }} - nouvelle fenêtre">{{ wcag.successCriterion }}</a> <span lang="en">{{ wcag.title }}</span> ({{ wcag.level }})</li>
-									{% endfor %}
-								</ul>
-								{% endif %}
-								{% if annexeCrit.data.Techniques != null %}
-									<h5>Techniques</h5>
-									<ul class="technique">
-										{% for technique in annexeCrit.data.Techniques %}
-										{% set firstLetter = technique | first %}
-										{% if firstLetter == "A" %}
-											{% set path = "aria" %}
-										{% elif firstLetter ==  "C" %}
-											{% set path = "css" %}
-										{% elif firstLetter ==  "F" %}
-											{% set path = "failures" %}
-										{% elif firstLetter ==  "G" %}
-											{% set path = "general" %}
-										{% elif firstLetter ==  "H" %}
-											{% set path = "html" %}
-										{% elif firstLetter ==  "S" %}
-											{% set secondLetter = technique | slice(1) %}
-											{% if "C" == secondLetter %}
-												{% set path = "client-side-script" %}
-											{% else %}
-												{% set path = "smil" %}
-											{% endif %}                                   
-										{% endif %}
-										<li><a target="_blank" title="{{ technique }} - nouvelle fenêtre" href="https://www.w3.org/WAI/WCAG21/Techniques/{{ path }}/{{ technique }}">{{ technique }}</a></li>
-										{% endfor %}
-									</ul>
-								{% endif %}
-							</div>
-							</div>
-						</div>
+						{% if t.test.templateContent != "" %}
+							<h5 class="fr-h6">Méthodologie de test</h5>
+							{{ t.test.templateContent | safe }}
+						{% endif %}
 					</li>
 				{% endfor %}
 				</ul>
+				<div class="annexes">
+					{{ annexeCrit.templateContent  | safe}}
+					<h4>Références</h4>
+					<p>Toutes les ressources suivantes sont en anglais.</p>
+					{% if annexeCrit.data.WCAG != null %}
+						<h5>WCAG</h5>
+					<ul class="wcag">
+						{% for wcag in annexeCrit.data.WCAG %}
+						<li><a href="https://www.w3.org/TR/WCAG21/#{{ wcag.title  | lower | replace(" ", "-") | replace(",", "")}}" target="_blank" title="critère {{ wcag.successCriterion }} - nouvelle fenêtre">{{ wcag.successCriterion }}</a> <span lang="en">{{ wcag.title }}</span> ({{ wcag.level }})</li>
+						{% endfor %}
+					</ul>
+					{% endif %}
+					{% if annexeCrit.data.Techniques != null %}
+						<h5>Techniques</h5>
+						<ul class="technique">
+							{% for technique in annexeCrit.data.Techniques %}
+							{% set firstLetter = technique | first %}
+							{% if firstLetter == "A" %}
+								{% set path = "aria" %}
+							{% elif firstLetter ==  "C" %}
+								{% set path = "css" %}
+							{% elif firstLetter ==  "F" %}
+								{% set path = "failures" %}
+							{% elif firstLetter ==  "G" %}
+								{% set path = "general" %}
+							{% elif firstLetter ==  "H" %}
+								{% set path = "html" %}
+							{% elif firstLetter ==  "S" %}
+								{% set secondLetter = technique | slice(1) %}
+								{% if "C" == secondLetter %}
+									{% set path = "client-side-script" %}
+								{% else %}
+									{% set path = "smil" %}
+								{% endif %}                                   
+							{% endif %}
+							<li><a target="_blank" title="{{ technique }} - nouvelle fenêtre" href="https://www.w3.org/WAI/WCAG21/Techniques/{{ path }}/{{ technique }}">{{ technique }}</a></li>
+							{% endfor %}
+						</ul>
+					{% endif %}
+				</div>
+				</div>
 			</div>
-		</div>
-	</div>
-</main>
-{% include "components/footer.njk" %}
-
-
+		</li>
+	{% endfor %}
+	</ul>
+{% endblock %}
 
 

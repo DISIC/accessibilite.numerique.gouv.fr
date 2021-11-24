@@ -1,0 +1,36 @@
+{% extends './base.njk' %}
+{% block contenu %}
+	<h1>{{ title }}</h1>
+    {{ content | safe }}
+	<div class="fr-grid-row fr-grid-row--gutters fr-grid-row--center">
+		<div class="fr-col-sm-4 fr-col">
+		<div class="fr-tile fr-enlarge-link fr-tile--horizontal">
+			<div class="fr-tile__body">
+				<h4 class="fr-tile__title">
+					<a class="fr-tile__link" href="obligations">Les obligations légales</a>
+				</h4>
+			</div>
+		</div>
+		</div>
+		<div class="fr-col-sm-4 fr-col">  
+		<div class="fr-tile fr-enlarge-link fr-tile--horizontal">
+			<div class="fr-tile__body">
+				<h4 class="fr-tile__title">
+					<a class="fr-tile__link" href="criteres-et-tests">Les critères et les tests</a>
+				</h4>
+			</div>
+		</div>
+		</div>
+		<div class="fr-col-sm-4 fr-col">
+		<div class="fr-tile fr-enlarge-link fr-tile--horizontal">
+			<div class="fr-tile__body">
+				<h4 class="fr-tile__title">
+					<a class="fr-tile__link" href="ressources">Les ressources</a>
+				</h4>
+			</div>
+		</div>
+		</div>
+	</div>
+{% endblock %}
+
+

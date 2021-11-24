@@ -1,10 +1,24 @@
 {% include "components/header.njk" %}
+<style>
+li {list-style-type: none;}
+.annexes li { list-style-type: inherit; }
+.technique li { list-style-type: none; display: inline; margin-right: 1rem;}
+.annexes { padding: 1rem 2rem; background-color: aliceblue;}
+.fr-collapse--expanded { background-color: lemonchiffon; }
+.fr-accordion__btn {
+    background-color: transparent;
+    border-bottom: 0.3em solid aliceblue;
+}
+.summary {background-color: aliceblue; padding: 0.25em; }
+</style>
 <main role="main">
 	<div class="fr-container fr-mt-4w fr-mb-4w">
     	<div class="fr-grid-row fr-grid-row--gutters fr-grid-row--center">
     		<div class="fr-col-12 fr-col-sm-12 fr-col-md-10 fr-col-lg-8">
-        <h1>{{ title }}</h1>
-        {{ content | safe }}
+          {% block contenu %}
+            <h1>{{ title }}</h1>
+            {{ content | safe }}
+          {% endblock %}
       </div>
     </div>
   </div>

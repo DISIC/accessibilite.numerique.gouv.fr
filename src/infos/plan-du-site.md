@@ -4,7 +4,7 @@ layout: layouts/base.njk
 ---
 
 * Les [obligations légales](/obligations/)
-* Les [critères et les tests](/rgaa/)
+* Les [critères et les tests](/criteres-et-tests/)
 * Les [ressources](/ressources/)
 
 

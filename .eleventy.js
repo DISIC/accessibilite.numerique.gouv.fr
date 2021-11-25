@@ -15,17 +15,27 @@ module.exports = function (eleventyConfig) {
     return md.renderInline(markdownString);
   });
 
-  // Custom collection: criteriaAndTests
-  eleventyConfig.addCollection('criteriaAndTests', function (collection) {
+
+
+
+  // Custom collection: LeRgaa
+  eleventyConfig.addCollection('LeRgaa', function (collection) {
+    const term = collection.getFilteredByGlob(
+      './src/rgaa/glossaire/*.md'
+    );
+
+
     const criteria = collection.getFilteredByGlob(
       './src/rgaa/criteres/*/index.md'
     );
+
 
     /* Build an array of criterion objects with */
     /* their corresponding tests and extra info */
     const all = criteria.map(function (criterion) {
       const critNum = criterion.fileSlug; // ex: 2.1
       const themeNum = critNum.substr(0, critNum.indexOf('.'));
+    
 
       const testsRaw = collection
         .getFilteredByGlob('./src/rgaa/criteres/' + critNum + '/tests/*.md')
@@ -55,7 +65,7 @@ module.exports = function (eleventyConfig) {
     .sort((a, b) => parseInt(a.themeNum) - parseInt(b.themeNum));
 
     console.log('*****');
-    console.dir(all, { depth: 3 });
+    console.dir(all, { depth: 1 });
 
     return all;
   });

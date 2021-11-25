@@ -15,27 +15,36 @@ module.exports = function (eleventyConfig) {
     return md.renderInline(markdownString);
   });
 
-
-
-
-  // Custom collection: LeRgaa
-  eleventyConfig.addCollection('LeRgaa', function (collection) {
-    const term = collection.getFilteredByGlob(
+  // Custom collection: glossary
+  eleventyConfig.addCollection('glossary', function (collection) {
+    const glossaryItem = collection.getFilteredByGlob(
       './src/rgaa/glossaire/*.md'
     );
 
+    const glossary = glossaryItem.map(function (term) {
+      const anchor = term.fileSlug;
+      return {
+        term,
+        anchor,
+      };
+    })
+    console.log('*****');
+    console.dir(glossary, { depth: 4 });
+    return glossary;
+  });
+  
 
+  // Custom collection: criteriaAndTests
+  eleventyConfig.addCollection('criteriaAndTests', function (collection) {
     const criteria = collection.getFilteredByGlob(
       './src/rgaa/criteres/*/index.md'
     );
-
 
     /* Build an array of criterion objects with */
     /* their corresponding tests and extra info */
     const all = criteria.map(function (criterion) {
       const critNum = criterion.fileSlug; // ex: 2.1
       const themeNum = critNum.substr(0, critNum.indexOf('.'));
-    
 
       const testsRaw = collection
         .getFilteredByGlob('./src/rgaa/criteres/' + critNum + '/tests/*.md')
@@ -64,8 +73,8 @@ module.exports = function (eleventyConfig) {
     })
     .sort((a, b) => parseInt(a.themeNum) - parseInt(b.themeNum));
 
-    console.log('*****');
-    console.dir(all, { depth: 1 });
+    //console.log('*****');
+    //console.dir(all, { depth: 3 });
 
     return all;
   });

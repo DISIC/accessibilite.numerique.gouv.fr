@@ -5,6 +5,7 @@ layout: layouts/base.njk
 
 ## Glossaire
 
+[Tous les termes du glossaire](/glossaire/)
 
 ## Environnement de test
 

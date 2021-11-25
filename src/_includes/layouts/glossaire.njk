@@ -1,0 +1,41 @@
+{% extends './base.njk' %}
+{% block contenu %}
+	<h1>{{ title }}</h1>
+    {{ content | safe }}
+	<div class="summary">
+		<ul class="technique">
+			<li><a class="" href="#a">A</a></li>
+			<li><a class="" href="#b">B</a></li>
+			<li><a class="" href="#c">C</a></li>
+			<li><a class="" href="#d">D</a></li>
+			<li><a class="" href="#e">E</a></li>
+			<li><a class="" href="#f">F</a></li>
+			<li><a class="" href="#g">G</a></li>
+			<li><a class="" href="#h">H</a></li>
+			<li><a class="" href="#i">I</a></li>
+			<li><a class="" href="#j">J</a></li>
+			<li><a class="" href="#k">K</a></li>
+			<li><a class="" href="#l">L</a></li>
+			<li><a class="" href="#m">M</a></li>
+		</ul>
+	</div>
+	{% set curThemeNum = 0 %}
+	<dl>
+	{% for c in collections.LeRgaa %}
+		{% set crit = c.criterion %}
+		{% set critNum = c.critNum %}
+		{% set themeNum = c.themeNum %}
+		{% set tests = c.tests %}
+		{% set annexeCrit = c.annexeCrit %}
+		{% if themeNum > 1 and themeNum !== curThemeNum %}
+			</ul>
+		{% endif %}
+
+
+			<h2 id="{{ themeNum }}">{{ themeNum }}.&nbsp;{{ themes[themeNum].title }} <!--a class="direct-link" href="#{{ themeNum }}">#</a--></h2>
+
+	{% endfor %}
+	</dl>
+{% endblock %}
+
+

@@ -1,8 +1,5 @@
 ---
-title: Le glossaire officiel du RGAA
-layout: layouts/base.njk
+title: Le glossaire du RGAA
+layout: layouts/glossaire.njk
 ---
 
-{% for word in glossaire %}
-{{ word }}
-{% endfor %}

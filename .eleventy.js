@@ -79,6 +79,10 @@ module.exports = function (eleventyConfig) {
     return all;
   });
 
+  eleventyConfig.addLiquidShortcode("criterion", function(id) { 
+    return "<a href=\"/criteres-et-tests/#" + id + "\">" + id + "</a>"; 
+  });
+
   eleventyConfig.addPassthroughCopy('./src/css');
   eleventyConfig.addPassthroughCopy('./src/js');
   eleventyConfig.addPassthroughCopy('./src/fonts');

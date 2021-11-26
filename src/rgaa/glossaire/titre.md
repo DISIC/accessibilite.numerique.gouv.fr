@@ -6,4 +6,5 @@ title : Titre
 
 Assurer une stricte hiérarchie entre les titres d’une page web est une bonne pratique, mais la présence de sauts hiérarchiques n’invalide pas le critère tant que cette hiérarchie plus lâche reste cohérente (un titre `<h3>` peut ainsi venir directement après un titre `<h1>`, par exemple). La hiérarchie de titres ne doit pas obligatoirement contenir un titre `<h1>`. Même si ces pratiques ne sont pas encouragées, elles n’invalident pas le critère.
 
-Note : les titres visuellement cachés via CSS sont considérés comme présents et valident le [critère 9.1](#9-1).
+
+Note : les titres visuellement cachés via CSS sont considérés comme présents et valident le  {% criterion "9.1" %}.

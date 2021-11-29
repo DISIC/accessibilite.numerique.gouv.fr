@@ -37,7 +37,8 @@
 		{% endif %}
 
 		<li><!--a class="direct-link" href="#{{ critNum }}">#</a-->
-			<h3 class="fr-accordion__title" id="{{ critNum }}"><button aria-expanded="false" aria-controls="fr-{{ critNum }}" class=" fr-accordion__btn">{{ critNum }}. {{ crit.data.title | markdownInline | safe }}</button></h3>
+			<h3 class="fr-accordion__title" id="{{ critNum }}">{{ critNum }} {{ crit.data.title | markdownInline | safe | replace("#","/glossaire/#") }}</h3>
+			<button aria-expanded="false" aria-controls="fr-{{ critNum }}" class=" fr-accordion__btn">Afficher les tests</button>
 			<div id="fr-{{ critNum }}" class="fr-collapse">
 			<div class="fr-accordion__inner">
 				<ul>
@@ -50,8 +51,6 @@
 							<li>{{ step | markdownInline | safe }}</li>
 						{% endfor %}
 						</ul>
-
-
 						{% if t.test.templateContent != "" %}
 							<h5 class="fr-h6">Méthodologie de test</h5>
 							{{ t.test.templateContent | safe }}

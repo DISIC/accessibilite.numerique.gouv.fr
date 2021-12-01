@@ -1,0 +1,17 @@
+li.criterion {
+    margin: 2em 0;
+    padding: 0.25em 0.5em ;
+    border: 1px solid #e5e5e5;
+}
+li.criterion button {
+   font-size: smaller;
+   flex-flow: row;
+ 
+}
+li.criterion button:hover, li.criterion button:focus {
+    background-color: white;
+}
+.crit {
+    background-color: plum;
+    padding: 0.15em 0.25em;
+}

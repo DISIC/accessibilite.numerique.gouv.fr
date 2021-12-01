@@ -36,11 +36,11 @@
 			<ul>
 		{% endif %}
 
-		<li><!--a class="direct-link" href="#{{ critNum }}">#</a-->
-			<h3 class="fr-accordion__title" id="{{ critNum }}">{{ critNum }} {{ crit.data.title | markdownInline | safe | replace("#","/glossaire/#") }}</h3>
-			<button aria-expanded="false" aria-controls="fr-{{ critNum }}" class=" fr-accordion__btn">Afficher les tests</button>
+		<li class="criterion"><!--a class="direct-link" href="#{{ critNum }}">#</a-->
+			<h3 class="fr-accordion__title" id="{{ critNum }}"><span class="crit">{{ critNum }}</span> {{ crit.data.title | markdownInline | safe | replace("#","/glossaire/#") }}</h3>
+			<button aria-expanded="false" aria-controls="fr-{{ critNum }}" class=" fr-accordion__btn">Voir le détail du critère {{ critNum }}</button>
 			<div id="fr-{{ critNum }}" class="fr-collapse">
-			<div class="fr-accordion__inner">
+			<div class="fr-accordion__inner ">
 				<ul>
 				{% for t in tests %}
 					<li id="{{ t.testSlug }}">

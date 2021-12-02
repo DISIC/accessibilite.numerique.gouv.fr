@@ -48,7 +48,7 @@ module.exports = function (eleventyConfig) {
 
       const testsRaw = collection
         .getFilteredByGlob('./src/rgaa/criteres/' + critNum + '/tests/*.md')
-        .sort((a, b) => parseInt(a.fileSlug) - parseInt(b.fileSlug));
+        .sort((a, b) => Number(a.fileSlug) - Number(b.fileSlug));
 
       const annexeCrit = collection.getFilteredByGlob('./src/rgaa/criteres/' + critNum + '/annexe.md')[0];
     

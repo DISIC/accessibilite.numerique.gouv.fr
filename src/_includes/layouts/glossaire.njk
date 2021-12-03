@@ -6,7 +6,7 @@
 		{% set term = g.term %}
 		{% set letter = term.data.title | truncate(1, true, "") %}
 
-		<dt class="fr-h4" id="{{ g.anchor }}">{{ term.data.title }}</dt>
+		<dt id="{{ g.anchor }}"><h2 class="fr-h4">{{ term.data.title }}</h2></dt>
 		<dd class="annexes fr-mb-4w">{{ term.templateContent  | safe }}</dd>
 	{% endfor %}
 	</dl>

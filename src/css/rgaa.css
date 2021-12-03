@@ -7,7 +7,6 @@ li {list-style-type: none;}
 .annexes li { list-style-type: inherit; }
 .technique li { list-style-type: none; display: inline; margin-right: 1rem;}
 .annexes { padding: 1rem 2rem; background-color: #f3f6fe;}
-.annexes p { margin-bottom:0; }
 .fr-collapse--expanded { background-color: #e5fbfd; }
 .fr-accordion__btn {
     background-color: transparent;

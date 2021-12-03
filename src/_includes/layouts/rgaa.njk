@@ -1,8 +1,6 @@
 {% extends './base.njk' %}
 {% block contenu %}
-	<h1>{{ title }}</h1>
-    {{ content | safe }}
-	<div class="summary">
+	<div id="summary" class="summary">
 		<ul class="technique">
 			<li><a class="" href="#1">Images</a></li>
 			<li><a class="" href="#2">Cadres</a></li>
@@ -103,6 +101,7 @@
 		</li>
 	{% endfor %}
 	</ul>
+
 {% endblock %}
 
 

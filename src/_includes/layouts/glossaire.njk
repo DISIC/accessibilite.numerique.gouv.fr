@@ -1,9 +1,6 @@
 {% extends './base.njk' %}
 
 {% block contenu %}
-	<h1>{{ title }}</h1>
-    {{ content | safe }}
-
 	<dl>
 	{% for g in collections.glossary %}
 		{% set term = g.term %}

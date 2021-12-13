@@ -36,26 +36,26 @@
 
 		<li class="criterion"><!--a class="direct-link" href="#{{ critNum }}">#</a-->
 			<h3 class="fr-accordion__title" id="{{ critNum }}"><span class="crit">{{ critNum }}</span> {{ crit.data.title | markdownInline | safe | replace("#","/glossaire/#") }}</h3>
-			<button aria-expanded="false" aria-controls="fr-{{ critNum }}" class=" fr-accordion__btn">Voir les tests et références du critère {{ critNum }}</button>
+			<button aria-expanded="false" aria-controls="fr-{{ critNum }}" class=" fr-accordion__btn">Tests et références du critère {{ critNum }}</button>
 			<div id="fr-{{ critNum }}" class="fr-collapse">
 			<div class="fr-accordion__inner ">
-				<ul>
+				<div class="tests">
 				{% for t in tests %}
-					<li id="{{ t.testSlug }}">
+					<div class="fr-mb-4w test" id="{{ t.testSlug }}">
 						<h4 class="fr-h5">Test {{ t.testSlug }} <!--a class="direct-link" href="#{{ t.testSlug }}">#</a--></h4>
 						<p>{{ t.test.data.title | markdownInline | safe }}</p>
 						<ul>
 						{% for step in t.test.data.steps %}
 							<li>{{ step | markdownInline | safe }}</li>
 						{% endfor %}
-						</ul>
+						</ul> 
 						{% if t.test.templateContent != "" %}
 							<h5 class="fr-h6">Méthodologie de test</h5>
 							{{ t.test.templateContent | markdownInline | safe }}
 						{% endif %}
-					</li>
+					</div>
 				{% endfor %}
-				</ul>
+				</div>
 				<div class="annexes">
 					{{ annexeCrit.templateContent  | safe}}
 					<h4>Références</h4>

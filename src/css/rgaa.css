@@ -15,19 +15,21 @@ p.beta {
     margin: 1em 1em 1em 1em;
     right: -4em;
     top: 0;
+    z-index: 1;
 }
 
 li {list-style-type: none;}
 .annexes li { list-style-type: inherit; }
 .technique li { list-style-type: none; display: inline; margin-right: 1rem;}
-.annexes { padding: 1rem 2rem; background-color: #f3f6fe;}
+.annexes { background-color: #f3f6fe;}
 .fr-collapse--expanded { background-color: #e5fbfd; }
 .fr-accordion__btn {
     background-color: transparent;
 }
 .summary { padding: 0.25em; }
 code { background-color: #273962; border-radius: 0.15em; color: white; padding: 0.125rem 0.3125rem 0.0625rem;}
-
+.tests, .annexes { padding: 1rem 2rem; }
+.test { margin-bottom: 2em;}
 li.criterion {
     margin: 2em 0;
     padding: 0.25em;

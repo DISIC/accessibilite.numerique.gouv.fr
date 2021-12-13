@@ -36,7 +36,7 @@
 
 		<li class="criterion"><!--a class="direct-link" href="#{{ critNum }}">#</a-->
 			<h3 class="fr-accordion__title" id="{{ critNum }}"><span class="crit">{{ critNum }}</span> {{ crit.data.title | markdownInline | safe | replace("#","/glossaire/#") }}</h3>
-			<button aria-expanded="false" aria-controls="fr-{{ critNum }}" class=" fr-accordion__btn">Voir le détail du critère {{ critNum }}</button>
+			<button aria-expanded="false" aria-controls="fr-{{ critNum }}" class=" fr-accordion__btn">Voir les tests et références du critère {{ critNum }}</button>
 			<div id="fr-{{ critNum }}" class="fr-collapse">
 			<div class="fr-accordion__inner ">
 				<ul>
@@ -51,7 +51,7 @@
 						</ul>
 						{% if t.test.templateContent != "" %}
 							<h5 class="fr-h6">Méthodologie de test</h5>
-							{{ t.test.templateContent | safe }}
+							{{ t.test.templateContent | markdownInline | safe }}
 						{% endif %}
 					</li>
 				{% endfor %}
@@ -61,7 +61,7 @@
 					<h4>Références</h4>
 					<p>Toutes les ressources suivantes sont en anglais.</p>
 					{% if annexeCrit.data.WCAG != null %}
-						<h5>WCAG</h5>
+						<h5><abbr lang="en" title="Web content accessibility guidelines">WCAG</abbr></h5>
 					<ul class="wcag">
 						{% for wcag in annexeCrit.data.WCAG %}
 						<li><a href="https://www.w3.org/TR/WCAG21/#{{ wcag.title  | lower | replace(" ", "-") | replace(",", "")}}" target="_blank" title="critère {{ wcag.successCriterion }} - nouvelle fenêtre">{{ wcag.successCriterion }}</a> <span lang="en">{{ wcag.title }}</span> ({{ wcag.level }})</li>

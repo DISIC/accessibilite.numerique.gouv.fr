@@ -3,6 +3,21 @@ green-archipel-975  #e5fbfd
 blue-cumulus-975    #f3f6fe
 blue-ecume-200      #273962
 */
+p.beta {
+    position: absolute;
+    background-color: var(--background-action-high-red-marianne);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    transform: rotate(45deg);
+    padding: 0.15em 4em;
+    margin: 1em 1em 1em 1em;
+    right: -4em;
+    top: 11em;
+    z-index: -1;
+}
+
 li {list-style-type: none;}
 .annexes li { list-style-type: inherit; }
 .technique li { list-style-type: none; display: inline; margin-right: 1rem;}

@@ -27,9 +27,10 @@ li {list-style-type: none;}
     background-color: transparent;
 }
 .summary { padding: 0.25em; }
-code { background-color: #273962; border-radius: 0.15em; color: white; padding: 0.125rem 0.3125rem 0.0625rem;}
+code { background-color: #273962; border-radius: 0.15em; color: white; padding: 0.125rem;}
 .tests, .annexes { padding: 1rem 2rem; }
 .test { margin-bottom: 2em;}
+.test ul li { list-style-type: disc;}
 li.criterion {
     margin: 2em 0;
     padding: 0.25em;

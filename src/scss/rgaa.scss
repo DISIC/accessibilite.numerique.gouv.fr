@@ -17,9 +17,6 @@ p.beta {
     top: 0;
     z-index: 1;
 }
-li {
-    list-style-type: none;
-}
 code { 
     background-color: #273962; 
     border-radius: 0.15em; 
@@ -56,6 +53,7 @@ code {
     }
 }
 li.criterion {
+    list-style-type: none;
     margin: 2em 0;
     padding: 0.25em;
     border: 1px solid #e5e5e5;

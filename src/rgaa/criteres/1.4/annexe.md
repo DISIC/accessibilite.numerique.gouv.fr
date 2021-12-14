@@ -18,7 +18,7 @@ Techniques:
 
 #### Note technique
 
-Lorsqu'une image est associée à une [légende](#legende-d-image), la note technique WCAG recommande de prévoir systématiquement une [alternative textuelle](#alternative-textuelle-image) (cf. [critère 1.9](#crit-1-9)). Dans ce cas le critère 1.2 est non applicable.
+Lorsqu'une image est associée à une [légende](#g-legende-d-image), la note technique WCAG recommande de prévoir systématiquement une [alternative textuelle](#g-alternative-textuelle-image) (cf. [critère 1.9](#crit-1-9)). Dans ce cas le critère 1.2 est non applicable.
 
 Dans le cas d'une image vectorielle (balise `<svg>`) de décoration qui serait affichée au travers d'un élément `<use href="...">` enfant de l'élément `<svg>`, le test 1.2.4 s'appliquera également à la balise `<svg>` associée par le biais de la balise `<use>`.
 

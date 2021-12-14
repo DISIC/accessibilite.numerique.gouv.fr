@@ -1,3 +1,3 @@
 ---
-title: Pour chaque [cadre](#cadre) ayant un [titre de cadre](#titre-de-cadre), ce titre de cadre est-il pertinent ?
+title: Pour chaque [cadre](#g-cadre) ayant un [titre de cadre](#g-titre-de-cadre), ce titre de cadre est-il pertinent ?
 ---

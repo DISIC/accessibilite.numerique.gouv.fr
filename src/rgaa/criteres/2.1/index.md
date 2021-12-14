@@ -1,3 +1,3 @@
 ---
-title: Chaque [cadre](#cadre) a-t-il un [titre de cadre](#titre-de-cadre) ?
+title: Chaque [cadre](#g-cadre) a-t-il un [titre de cadre](#g-titre-de-cadre) ?
 ---

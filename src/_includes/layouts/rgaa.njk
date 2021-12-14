@@ -35,7 +35,7 @@
 		{% endif %}
 
 		<li class="criterion"><!--a class="direct-link" href="#{{ critNum }}">#</a-->
-			<h3 class="fr-accordion__title" id="{{ critNum }}"><span class="crit">{{ critNum }}</span> {{ crit.data.title | markdownInline | safe | replace("#","/glossaire/#") }}</h3>
+			<h3 class="fr-accordion__title" id="{{ critNum }}"><span class="crit">{{ critNum }}</span> {{ crit.data.title | markdownInline | safe | replace("#g-","/glossaire/#") }}</h3>
 			<button aria-expanded="false" aria-controls="fr-{{ critNum }}" class=" fr-accordion__btn">Tests et références du critère {{ critNum }}</button>
 			<div id="fr-{{ critNum }}" class="fr-collapse">
 			<div class="fr-accordion__inner ">
@@ -43,21 +43,21 @@
 				{% for t in tests %}
 					<div class="fr-mb-4w test" id="{{ t.testSlug }}">
 						<h4 class="fr-h5">Test {{ t.testSlug }} <!--a class="direct-link" href="#{{ t.testSlug }}">#</a--></h4>
-						<p>{{ t.test.data.title | markdownInline | safe | replace("#","/glossaire/#") }}</p>
+						<p>{{ t.test.data.title | markdownInline | safe | replace("#g-","/glossaire/#") }}</p>
 						<ul>
 						{% for step in t.test.data.steps %}
-							<li>{{ step | markdownInline | safe | replace("#","/glossaire/#") }}</li>
+							<li>{{ step | markdownInline | safe | replace("#g-","/glossaire/#") }}</li>
 						{% endfor %}
 						</ul> 
 						{% if t.test.templateContent != "" %}
 							<h5 class="fr-h6">Méthodologie de test</h5>
-							{{ t.test.templateContent | markdownInline | safe | replace("#","/glossaire/#") }}
+							{{ t.test.templateContent | markdownInline | safe | replace("#g-","/glossaire/#") }}
 						{% endif %}
 					</div>
 				{% endfor %}
 				</div>
 				<div class="annexes">
-					{{ annexeCrit.templateContent  | safe}}
+					{{ annexeCrit.templateContent | safe | replace("#c-","/criteres-et-tests/#") | replace("#g-","/glossaire/#") }}
 					<h4>Références</h4>
 					<p>Toutes les ressources suivantes sont en anglais.</p>
 					{% if annexeCrit.data.WCAG != null %}

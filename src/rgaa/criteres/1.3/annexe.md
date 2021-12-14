@@ -7,19 +7,18 @@ WCAG:
   title: Name, Role, Value
   level: A
 Techniques: 
-- H67
+- G94
+- G95
+- F30
+- F71
 - G196
-- C9
-- F39
-- F38
-- ARIA4
+- ARIA6
+- ARIA9
 - ARIA10
 ---
 
-#### Note technique
+#### Cas particuliers
 
-Lorsqu'une image est associée à une [légende](#legende-d-image), la note technique WCAG recommande de prévoir systématiquement une [alternative textuelle](#alternative-textuelle-image) (cf. [critère 1.9](#crit-1-9)). Dans ce cas le critère 1.2 est non applicable.
+Il existe une gestion de cas particuliers lorsque l’image est utilisée comme [CAPTCHA](#g-g-captcha) ou comme [image-test](#g-g-image-test). Dans cette situation, où il n’est pas possible de donner une alternative pertinente sans détruire l’objet du CAPTCHA ou du test, le critère est non applicable.
 
-Dans le cas d'une image vectorielle (balise `<svg>`) de décoration qui serait affichée au travers d'un élément `<use href="...">` enfant de l'élément `<svg>`, le test 1.2.4 s'appliquera également à la balise `<svg>` associée par le biais de la balise `<use>`.
-
-Un attribut WAI-ARIA `role="presentation"` peut être utilisé sur les images de décoration et les zones non cliquables de décoration. Le rôle `"none"` introduit en ARIA 1.1 et synonyme du rôle `"presentation"` peut être aussi utilisé. Il reste préférable cependant d'utiliser le rôle `"presentation"` en attendant un support satisfaisant du rôle `"none"`.
+Note : le cas des CAPTCHA et des images-test est traité de manière spécifique par le [critère 1.4](#-1.4).

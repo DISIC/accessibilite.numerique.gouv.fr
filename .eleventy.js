@@ -68,12 +68,8 @@ module.exports = function (eleventyConfig) {
     })
     .sort((a, b) => Number(a.critNum) - Number(b.critNum));
     //console.log('*****');
-    //console.dir(all, { depth: 3 });
+    //console.dir(all, { depth: 1 });
     return all;
-  });
-
-  eleventyConfig.addLiquidShortcode("glossaryTerm", function(title,slug) { 
-    return "<a href=\"/glossaire/#" + slug + "\">" + title + "</a>"; 
   });
 
   eleventyConfig.addLiquidShortcode("criterion", function(id) { 

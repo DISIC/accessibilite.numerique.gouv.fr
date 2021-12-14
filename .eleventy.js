@@ -71,11 +71,12 @@ module.exports = function (eleventyConfig) {
     //console.dir(all, { depth: 1 });
     return all;
   });
-
+/*
+  unused shortcode :(
   eleventyConfig.addLiquidShortcode("criterion", function(id) { 
     return "<a href=\"/criteres-et-tests/#" + id + "\">critère " + id + "</a>"; 
   });
-
+*/
   eleventyConfig.addPassthroughCopy('./src/css');
   eleventyConfig.addPassthroughCopy('./src/js');
   eleventyConfig.addPassthroughCopy('./src/fonts');

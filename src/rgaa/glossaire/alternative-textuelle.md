@@ -1,9 +1,7 @@
 ---
 title : Alternative textuelle (image)
+slug : alternative-textuelle-image
 ---
-
-
-
 
 « Nom accessible » restitué par les technologies d’assistance pour les éléments graphiques de type :
 * Image (balise `<img>` ou balise possédant un attribut WAI-ARIA role="img") ;

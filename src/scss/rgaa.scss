@@ -17,35 +17,58 @@ p.beta {
     top: 0;
     z-index: 1;
 }
-
-li {list-style-type: none;}
-.annexes li { list-style-type: inherit; }
-.technique li { list-style-type: none; display: inline; margin-right: 1rem;}
-.annexes { background-color: #f3f6fe;}
-.fr-collapse--expanded { background-color: #e5fbfd; }
+li {
+    list-style-type: none;
+}
+code { 
+    background-color: #273962; 
+    border-radius: 0.15em; 
+    color: white; 
+    padding: 0.125rem;
+}
+.technique li { 
+    list-style-type: none; 
+    display: inline; 
+    margin-right: 1rem;
+}
+.annexes { 
+    background-color: #f3f6fe;
+    li { 
+        list-style-type: inherit;
+    }
+}
+.fr-collapse--expanded { 
+    background-color: #e5fbfd; 
+}
 .fr-accordion__btn {
     background-color: transparent;
 }
-.summary { padding: 0.25em; }
-code { background-color: #273962; border-radius: 0.15em; color: white; padding: 0.125rem;}
-.tests, .annexes { padding: 1rem 2rem; }
-.test { margin-bottom: 2em;}
-.test ul li { list-style-type: disc;}
+.summary { 
+    padding: 0.25em; 
+}
+.tests, .annexes { 
+    padding: 1rem 2rem; 
+}
+.test { 
+    margin-bottom: 2em;
+    ul li { 
+        list-style-type: disc;
+    }
+}
 li.criterion {
     margin: 2em 0;
     padding: 0.25em;
     border: 1px solid #e5e5e5;
-}
-li.criterion button {
+    button {
         font-size: smaller;
         flex-flow: row;
         width: fit-content;
         background: none;
     }
-    li.criterion button:hover, li.criterion button:focus {
+    button:hover, button:focus {
         background-image: none;
     }
-    li.criterion .crit {
+    .crit {
         line-height: 1.2em;
         border-radius: 0.15em; 
         background-color: #273962;
@@ -53,3 +76,4 @@ li.criterion button {
         padding: 0.2em 0.25em;
         display: inline-flex;
     }
+}

@@ -1,6 +1,5 @@
 ---
 title : Accessible et activable par le clavier et tout dispositif de pointage
-slug : accessible-et-activable-par-le-clavier-et-tout-dispositif-de-pointage
 ---
 
 * Un composant d’interface (lien, bouton, …) est accessible au clavier et par tout dispositif de pointage lorsque l’utilisateur peut prendre, indifféremment, le focus par un pointeur ou la touche tabulation ;
@@ -11,4 +10,4 @@ Dans le référentiel, l’expression « contrôlable par le clavier et tout dis
 
 Note importante : le recours à certaines technologies peut rendre la gestion du focus trop complexe ou trop instable pour ne reposer que sur la tabulation, les touches de direction et la touche entrée. Dans ce cas, la mise à disposition de raccourcis clavier peut être la seule solution pour rendre le composant utilisable.
 
-Le critère ne peut être considéré comme conforme qu’à la condition que les raccourcis clavier utilisés soient correctement documentés, qu’ils soient fonctionnels et qu’ils respectent le {% criterion "10.12" %}.
+Le critère ne peut être considéré comme conforme qu’à la condition que les raccourcis clavier utilisés soient correctement documentés, qu’ils soient fonctionnels et qu’ils respectent le {% crit 10.12 %}.

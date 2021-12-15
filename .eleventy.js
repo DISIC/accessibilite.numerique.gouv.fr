@@ -1,4 +1,5 @@
 const pluginSass = require("eleventy-plugin-sass");
+var slugify = require('slugify');
 /*
 const optionsProd = {};
 const optionsDev = {
@@ -71,12 +72,13 @@ module.exports = function (eleventyConfig) {
     //console.dir(all, { depth: 1 });
     return all;
   });
-/*
-  unused shortcode :(
-  eleventyConfig.addLiquidShortcode("criterion", function(id) { 
-    return "<a href=\"/criteres-et-tests/#" + id + "\">critère " + id + "</a>"; 
+  eleventyConfig.addLiquidShortcode("def", function(terme) { 
+    const ancre = terme.slugify(); 
+    return "<a class=\"glossaire\" href=\"/glossaire/#" + ancre + "\">" + terme + "</a>"; 
   });
-*/
+  eleventyConfig.addLiquidShortcode("crit", function(numero) { 
+    return "<a class=\"critere\" href=\"/criteres-et-tests/#" + numero + "\">critère " + numero + "</a>"; 
+  });
   eleventyConfig.addPassthroughCopy('./src/css');
   eleventyConfig.addPassthroughCopy('./src/js');
   eleventyConfig.addPassthroughCopy('./src/fonts');

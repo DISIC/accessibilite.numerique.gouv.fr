@@ -1,3 +1,3 @@
 ---
-title: Chaque image [porteuse d’information](#g-porteuse-information) a-t-elle une [alternative textuelle](#g-alternative-textuelle-image) ?
+title: Chaque [image porteuse d’information](#image-porteuse-d-information) a-t-elle une [alternative textuelle](#alternative-textuelle-image) ?
 ---

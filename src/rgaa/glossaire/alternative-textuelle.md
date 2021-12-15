@@ -1,6 +1,5 @@
 ---
 title : Alternative textuelle (image)
-slug : alternative-textuelle-image
 ---
 
 « Nom accessible » restitué par les technologies d’assistance pour les éléments graphiques de type :
@@ -54,7 +53,7 @@ Référence : Accessible name and description calculation.
 RGAA considère trois types d’alternatives textuelles liées à la nature de l’image :
 * Pour une image porteuse d’information, l’alternative textuelle apporte l’information nécessaire à la compréhension du contenu qu’elle véhicule ;
 * Pour une image de décoration, aucune alternative textuelle ne doit être restituée ;
-* Pour une image CAPTCHA ou une image-test, l’alternative textuelle décrit seulement la nature et la fonction de l’image. En effet, l’alternative textuelle ne peut apporter l’information véhiculée par l’image sans rendre la fonction associée inopérante.
+* Pour une image [CAPTCHA](#captcha) ou une [image-test](#image-test), l’alternative textuelle décrit seulement la nature et la fonction de l’image. En effet, l’alternative textuelle ne peut apporter l’information véhiculée par l’image sans rendre la fonction associée inopérante.
 
 Note 1 : pour une image CAPTCHA l’alternative peut être, par exemple : « Code de sécurité anti-spam » ou « code pour vérifier que vous êtes un humain » ou toute autre alternative permettant à l’utilisateur de comprendre la nature et la fonction de l’image.
 

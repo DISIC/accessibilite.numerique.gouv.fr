@@ -58,8 +58,8 @@
 				</div>
 				<div class="annexes">
 					{{ annexeCrit.templateContent | safe | replace("#","/glossaire/#") }}
-					<h4>Références</h4>
-					<p>Toutes les ressources suivantes sont en anglais.</p>
+					<h4>Références <small>(en anglais)</small></h4>
+					
 					{% if annexeCrit.data.WCAG != null %}
 						<h5><abbr lang="en" title="Web content accessibility guidelines">WCAG</abbr></h5>
 					<ul class="wcag">

@@ -18,10 +18,12 @@ p.beta {
     z-index: 1;
 }
 code { 
-    background-color: #273962; 
-    border-radius: 0.15em; 
-    color: white; 
+    border: 1px solid #273962;
+    border-radius: 0.15em;
+    color: #273962;
     padding: 0.125rem;
+    font-family: courier;
+    background-color: ghostwhite;
 }
 .technique li { 
     list-style-type: none; 
@@ -32,6 +34,10 @@ code {
     background-color: #f3f6fe;
     li { 
         list-style-type: inherit;
+    }
+    small {
+        font-size: 1rem;
+        font-weight: lighter;
     }
 }
 .fr-collapse--expanded { 

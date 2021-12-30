@@ -1,5 +1,6 @@
 ---
 title : Accessible et activable par le clavier et tout dispositif de pointage
+slug : accessible-et-activable-par-le-clavier-et-tout-dispositif-de-pointage
 ---
 
 * Un composant d’interface (lien, bouton, …) est accessible au clavier et par tout dispositif de pointage lorsque l’utilisateur peut prendre, indifféremment, le focus par un pointeur ou la touche tabulation ;

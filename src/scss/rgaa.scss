@@ -54,6 +54,9 @@ code {
 }
 .test { 
     margin-bottom: 2em;
+    h4, p, {
+        display: inline;
+    }
     ul li { 
         list-style-type: disc;
     }

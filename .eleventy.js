@@ -1,4 +1,4 @@
-const pluginSass = require('eleventy-plugin-sass');
+const { styles } = require('eleventy-plugin-styles');
 const slugify = require('slugify');
 
 /**
@@ -17,16 +17,13 @@ function getCriteriaNumToCompare(critNumTxt) {
   return Number(aInt + '.' + aDec.padStart(3, '0'));
 }
 
-/*
-const optionsProd = {};
-const optionsDev = {
-  "sourcemaps": true
-};
-const options = process.env.ELEVENTY_ENV === "production" ? optionsProd : optionsDev;
-*/
+const isProd = process.env.ELEVENTY_ENV === 'production';
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(pluginSass);
+  eleventyConfig.addPlugin(styles, {
+    inputDirectory: 'src/scss',
+    cssnanoOptions: isProd ? {} : 'off',
+  });
 
   const md = require('markdown-it')({
     html: true,

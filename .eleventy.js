@@ -4,11 +4,11 @@ const slugify = require('slugify');
 /**
  * Get the criteria number to be compared for sorting purpose
  *
- * It Pads the decimal part of the slug with zeros
+ * It pads the decimal part of the slug with zeros
  * so "4.1" makes 4.001 and "4.10" makes 4.010
  *
- * @param {String} critNumTxt The criteria number as a string. E.g. "4.12"
- * @returns
+ * @param {String} critNumTxt The criteria number as a string (e.g. "4.12")
+ * @returns {Number} the useful number for sorting purpose (e.g. 4.012)
  */
 function getCriteriaNumToCompare(critNumTxt) {
   const decPos = critNumTxt.lastIndexOf('.');

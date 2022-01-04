@@ -1,5 +1,5 @@
 const pluginSass = require('eleventy-plugin-sass');
-var slugify = require('slugify');
+const slugify = require('slugify');
 
 /*
 const optionsProd = {};

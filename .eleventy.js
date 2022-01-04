@@ -1,6 +1,22 @@
 const pluginSass = require('eleventy-plugin-sass');
 const slugify = require('slugify');
 
+/**
+ * Get the criteria number to be compared for sorting purpose
+ *
+ * It Pads the decimal part of the slug with zeros
+ * so "4.1" makes 4.001 and "4.10" makes 4.010
+ *
+ * @param {String} critNumTxt The criteria number as a string. E.g. "4.12"
+ * @returns
+ */
+function getCriteriaNumToCompare(critNumTxt) {
+  const decPos = critNumTxt.lastIndexOf('.');
+  const aInt = critNumTxt.substring(0, decPos);
+  const aDec = critNumTxt.substring(decPos + 1);
+  return Number(aInt + '.' + aDec.padStart(3, '0'));
+}
+
 /*
 const optionsProd = {};
 const optionsDev = {
@@ -73,7 +89,12 @@ module.exports = function (eleventyConfig) {
           annexeCrit,
         };
       })
-      .sort((a, b) => Number(a.critNum) - Number(b.critNum));
+      .sort(function (a, b) {
+        const aComp = getCriteriaNumToCompare(a.critNum);
+        const bComp = getCriteriaNumToCompare(b.critNum);
+        return Number(aComp) - Number(bComp);
+      });
+
     //console.log('*****');
     //console.dir(all, { depth: 1 });
     return all;

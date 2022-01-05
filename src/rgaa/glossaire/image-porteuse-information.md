@@ -1,6 +1,5 @@
 ---
 title : Image porteuse d’information
-slug : image-porteuse-d-information
 ---
 
 Image qui véhicule une information nécessaire à la compréhension du contenu auquel elle est associée.

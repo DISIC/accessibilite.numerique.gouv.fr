@@ -95,7 +95,7 @@ Afin d’évaluer la conformité du service de communication au public en ligne 
 
 L’audit (ou évaluation) répond aux critères suivants :
 * il est fiable : il revient à l’organisme concerné de veiller à la fiabilité de sa déclaration par tous moyens (recours à un prestataire externe, formation d’experts internes, audits croisés…) ;
-* il est représentatif : il porte sur un échantillon représentatif des pages du service de communication au public en ligne (cf. section « Echantillon » ci-dessous).
+* il est représentatif : il porte sur un échantillon représentatif des pages du service de communication au public en ligne (cf. section « Échantillon » ci-dessous).
 
 En application de l’article 5 du décret n° 2019-768 du 24 juillet 2019 susmentionné relatif à l’accessibilité des services de communication au public en ligne aux personnes handicapées, les personnes mentionnées aux 1° à 3° de l’article 47 précité vérifient l’accessibilité de leurs services de communication au public en ligne, conformément à la norme de référence, en appliquant la méthode technique du présent référentiel. Cependant, jusqu’au 31 décembre 2019, il reste possible d’effectuer un audit de conformité tel que définit dans le RGAA3.0 mis à jour en 2017.
 
@@ -143,7 +143,7 @@ Chaque page de l’échantillon doit être vérifiée au regard des critères qu
 Il existe 3 raisons pour qu’un critère ne soit pas applicable à une page :
 1. Le critère concerne un contenu ou une fonctionnalité qui n’existe pas, par exemple si la page ne comporte pas de vidéo, les critères liés aux vidéos ne seront pas applicables.
 2. Le critère concerne un contenu ou un service exempté qui n’est donc pas soumis à l’obligation d’accessibilité.
-3. Le critère concerne un contenu soumis à dérogation pour charge disproportionnée qui est accompagné d’une alternative numérique accessible. Par exemple, un tableau statistique avec des graphiques qui propose une alternative numérique en texte. Dans ce cas les critères applicables au contenu soumis à dérogation seront non applicables. A noter : si le contenu soumis à dérogation pour charge disproportionnée ne propose pas d’alternative numérique accessible, les critères concernant ce contenu sont considérés comme applicables.
+3. Le critère concerne un contenu soumis à dérogation pour charge disproportionnée qui est accompagné d’une alternative numérique accessible. Par exemple, un tableau statistique avec des graphiques qui propose une alternative numérique en texte. Dans ce cas les critères applicables au contenu soumis à dérogation seront non applicables. À noter : si le contenu soumis à dérogation pour charge disproportionnée ne propose pas d’alternative numérique accessible, les critères concernant ce contenu sont considérés comme applicables.
 
 Les pages sont ensuite testées au regard des critères applicables. Ces tests permettent d’obtenir :
 * le nombre de critères validés et non validés pour chaque page
@@ -292,7 +292,7 @@ Si les informations transmises par l’utilisateur dans sa réclamation sont inc
 
 ### Contenu du schéma
 
-En application du III de l’article 47 précité, le schéma pluriannuel, d’une durée maximum de trois ans, présente la politique de l’entité concernée en matière d’accessibilité numérique. A ce titre, il contient des informations sur :
+En application du III de l’article 47 précité, le schéma pluriannuel, d’une durée maximum de trois ans, présente la politique de l’entité concernée en matière d’accessibilité numérique. À ce titre, il contient des informations sur :
 * la prise en compte de l’accessibilité numérique dans la stratégie numérique de l’entité et dans sa politique en faveur de l’intégration des personnes en situation de handicap ;
 * la position fonctionnelle et les missions du référent accessibilité numérique de l’entité ;
 * les ressources humaines et financières affectées à l’accessibilité numérique ;

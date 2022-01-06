@@ -1,5 +1,4 @@
 const { styles } = require('eleventy-plugin-styles');
-const slugify = require('slugify');
 
 /**
  * Get the criteria number to be compared for sorting purpose
@@ -95,13 +94,6 @@ module.exports = function (eleventyConfig) {
     //console.log('*****');
     //console.dir(all, { depth: 1 });
     return all;
-  });
-
-  eleventyConfig.addLiquidShortcode('def', function (terme) {
-    const ancre = terme.slugify();
-    return (
-      '<a class="glossaire" href="/glossaire/#' + ancre + '">' + terme + '</a>'
-    );
   });
 
   eleventyConfig.addLiquidShortcode('crit', function (numero) {

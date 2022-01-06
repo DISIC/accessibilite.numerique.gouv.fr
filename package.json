@@ -14,12 +14,12 @@
   "license": "Licence Ouverte Etalab v2.0",
   "homepage": "https://accessibilite.numerique.gouv.fr",
   "dependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.0-beta.10",
     "@gouvfr/dsfr": "^1.2.1",
     "eleventy-plugin-styles": "^1.4.1",
     "markdown-it": "^12.3.0",
     "npm-run-all": "^4.1.5",
     "sass": "^1.45.2",
-    "slugify": "^1.6.3"
+    "slugify": "^1.6.5"
   }
 }

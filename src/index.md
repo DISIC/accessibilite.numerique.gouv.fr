@@ -1,6 +1,9 @@
 ---
 title: Le site officiel du RGAA
 layout: layouts/accueil.njk
+eleventyNavigation:
+  title: Accueil
+  order: 0
 ---
 
 L’**accessibilité numérique** consiste à rendre les services en ligne accessibles aux personnes en situation de handicap. 

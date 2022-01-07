@@ -1,4 +1,5 @@
 const { styles } = require('eleventy-plugin-styles');
+const pluginNavigation = require("@11ty/eleventy-navigation");
 
 /**
  * Get the criteria number to be compared for sorting purpose
@@ -90,20 +91,14 @@ module.exports = function (eleventyConfig) {
         const bComp = getCriteriaNumToCompare(b.critNum);
         return Number(aComp) - Number(bComp);
       });
-
     //console.log('*****');
     //console.dir(all, { depth: 1 });
     return all;
   });
 
+  eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addLiquidShortcode('crit', function (numero) {
-    return (
-      '<a class="critere" href="/criteres-et-tests/#' +
-      numero +
-      '">critère ' +
-      numero +
-      '</a>'
-    );
+    return ('<a class="critere" href="/criteres-et-tests/#'+numero+'">critère '+numero+'</a>');
   });
 
   eleventyConfig.addPassthroughCopy('./src/css');

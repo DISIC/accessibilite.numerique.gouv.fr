@@ -1,7 +1,6 @@
 /*  
-green-archipel-975  #e5fbfd
-blue-cumulus-975    #f3f6fe
-blue-ecume-200      #273962
+green-bourgeon-975          #e6feda
+green-bourgeon-sun-425  #447049
 */
 p.beta {
     position: fixed;
@@ -18,9 +17,9 @@ p.beta {
     z-index: 1;
 }
 code { 
-    border: 1px solid #273962;
+    border: 1px solid #447049;
     border-radius: 0.15em;
-    color: #273962;
+    color: #447049;
     padding: 0.125rem;
     font-family: courier;
     background-color: ghostwhite;
@@ -31,7 +30,7 @@ code {
     margin-right: 1rem;
 }
 .annexes { 
-    background-color: #f3f6fe;
+    background-color: #ffffff;
     li { 
         list-style-type: inherit;
     }
@@ -41,7 +40,7 @@ code {
     }
 }
 .fr-collapse--expanded { 
-    background-color: #e5fbfd; 
+    background-color: #e6feda; 
 }
 .fr-accordion__btn {
     background-color: transparent;
@@ -65,7 +64,7 @@ li.criterion {
     list-style-type: none;
     margin: 2em 0;
     padding: 0.25em;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #447049;
     button {
         font-size: smaller;
         flex-flow: row;
@@ -78,7 +77,7 @@ li.criterion {
     .crit {
         line-height: 1.2em;
         border-radius: 0.15em; 
-        background-color: #273962;
+        background-color: #447049;
         color: white;
         padding: 0.2em 0.25em;
         display: inline-flex;

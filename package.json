@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "description": "Le site officiel du Référentiel général d’amélioration de l’accessibilité (RGAA)",
   "scripts": {
-    "watch:eleventy": "eleventy --serve",
-    "build:eleventy": "eleventy",
-    "start": "npm-run-all --parallel watch:*",
-    "build": "npm-run-all build:*"
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
+    "start": "eleventy --serve",
+    "debug": "DEBUG=* eleventy"
   },
   "main": "index.js",
   "keywords": [],

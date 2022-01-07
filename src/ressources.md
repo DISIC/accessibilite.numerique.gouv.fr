@@ -1,6 +1,9 @@
 ---
 title: Les ressources
 layout: layouts/base.njk
+eleventyNavigation:
+  title: Ressources
+  order: 4
 ---
 
 ## Glossaire

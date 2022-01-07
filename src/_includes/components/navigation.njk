@@ -1,21 +1,15 @@
+{% set navPages = collections.all | eleventyNavigation %}
 <div class="fr-header__menu fr-modal" id="modal-menu-mobile" aria-labelledby="fr-btn-menu-mobile">
 <div class="fr-container">
     <button class="fr-link--close fr-link" aria-controls="modal-menu-mobile">Fermer</button>
     <div class="fr-header__menu-links"></div>
     <nav class="fr-nav" id="header-navigation" role="navigation" aria-label="Menu principal">
         <ul class="fr-nav__list">
-            <li class="fr-nav__item">
-                <a class="fr-nav__link" href="/">Accueil</a>
+            {%- for entry in navPages %}
+            <li class="fr-nav__item {% if entry.url == page.url %} fr-nav__item--active{% endif %}">
+                <a class="fr-nav__link" href="{{ entry.url | url }}" {% if entry.url == page.url %}aria-current="page"{% endif %}>{{ entry.title }}</a>
             </li>
-            <li class="fr-nav__item">
-                <a class="fr-nav__link" href="/obligations/">Obligations</a>
-            </li>
-            <li class="fr-nav__item">
-                <a class="fr-nav__link" href="/criteres-et-tests/">Critères et tests</a>
-            </li>
-            <li class="fr-nav__item">
-                <a class="fr-nav__link" href="/ressources/">Ressources</a>
-            </li>
+            {%- endfor %}
         </ul>
     </nav>
 </div>

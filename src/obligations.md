@@ -1,6 +1,9 @@
 ---
 title: Les obligations d’accessibilité
 layout: layouts/base.njk
+eleventyNavigation:
+  title: Obligations
+  order: 1
 ---
 
 ## Notion d’accessibilité numérique

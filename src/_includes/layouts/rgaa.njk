@@ -1,7 +1,8 @@
 {% extends './base.njk' %}
 {% block contenu %}
 	<div id="summary" class="summary">
-		<ul class="technique fr-tag-list">
+		<p>Accéder directement à la thématique de votre choix :</p>
+		<ul class="fr-tags-group">
 			<li><a class="fr-tag fr-tag--sm fr-tag--green-bourgeon" href="#1">Images</a></li>
 			<li><a class="fr-tag fr-tag--sm fr-tag--green-bourgeon" href="#2">Cadres</a></li>
 			<li><a class="fr-tag fr-tag--sm fr-tag--green-bourgeon" href="#3">Couleurs</a></li>
@@ -16,6 +17,11 @@
 			<li><a class="fr-tag fr-tag--sm fr-tag--green-bourgeon" href="#12">Navigation</a></li>
 			<li><a class="fr-tag fr-tag--sm fr-tag--green-bourgeon" href="#13">Consultation</a></li>
 		</ul>
+		<div class="fr-toggle">
+				<input disabled type="checkbox" class="fr-toggle__input" id="allCriterion">
+				<label class="fr-toggle__label" for="allCriterion" data-fr-checked-label="Activé" data-fr-unchecked-label="Désactivé">Affichage du détail de tous les critères</label>
+		</div>
+
 	</div>
 	{% set curThemeNum = 0 %}
 	{% for c in collections.criteriaAndTests %}

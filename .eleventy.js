@@ -22,6 +22,7 @@ const isProd = process.env.ELEVENTY_ENV === 'production';
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(styles, {
     inputDirectory: 'src/scss',
+    purgeCSSOptions: isProd ? {} : 'off',
     cssnanoOptions: isProd ? {} : 'off',
   });
 

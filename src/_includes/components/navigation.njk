@@ -1,13 +1,39 @@
-{% set navPages = collections.all | eleventyNavigation %}
 <div class="fr-header__menu fr-modal" id="modal-menu-mobile" aria-labelledby="fr-btn-menu-mobile">
 <div class="fr-container">
     <button class="fr-link--close fr-link" aria-controls="modal-menu-mobile">Fermer</button>
     <div class="fr-header__menu-links"></div>
     <nav class="fr-nav" id="header-navigation" role="navigation" aria-label="Menu principal">
         <ul class="fr-nav__list">
-            {%- for entry in navPages %}
+            {%- for entry in collections.all | eleventyNavigation %}
             <li class="fr-nav__item {% if entry.url == page.url %} fr-nav__item--active{% endif %}">
+            {% if entry.title == "Ressources" %}
+            <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-ressources">{{ entry.title }}</button>
+            <div class="fr-collapse fr-menu" id="menu-ressources">
+                <ul class="fr-menu__list">
+                    <li>
+                        <a class="fr-nav__link" href="/ressources/glossaire" target="_self">Glossaire</a>
+                    </li>
+                    <li>
+                        <a class="fr-nav__link" href="/ressources/environnement-de-test" target="_self">Environnement de test</a>
+                    </li>
+                    <li>
+                        <a class="fr-nav__link" href="/ressources/methodologie-de-test" target="_self">Méthodologie de test</a>
+                    </li>
+                    <li>
+                        <a class="fr-nav__link" href="/ressources/references" target="_self">Références</a>
+                    </li>
+                    <li>
+                        <a class="fr-nav__link" href="/ressources/kit-audit" target="_self">Kit d’audit</a>
+                    </li>
+                    <li>
+                        <a class="fr-nav__link" href="/ressources/documentation" target="_self">Documentation</a>
+                    </li>
+                </ul>
+            </div>
+                
+            {% else %}
                 <a class="fr-nav__link" href="{{ entry.url | url }}" {% if entry.url == page.url %}aria-current="page"{% endif %}>{{ entry.title }}</a>
+            {% endif %}
             </li>
             {%- endfor %}
         </ul>

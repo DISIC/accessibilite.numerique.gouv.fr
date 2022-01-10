@@ -2,7 +2,8 @@
 title: Le glossaire du RGAA
 layout: layouts/glossaire.njk
 eleventyNavigation:
-  title: Glossaire
-  order: 3
+  title: Ressources
+  parent: ressources
+  order: 0
 ---
 

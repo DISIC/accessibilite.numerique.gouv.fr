@@ -37,9 +37,6 @@ code {
 .ref {
     background-color: #ffffff;
 }
-.fr-collapse--expanded { 
-    background-color: #e6feda; 
-}
 .fr-accordion__btn {
     background-color: transparent;
 }
@@ -63,6 +60,9 @@ li.criterion {
     margin: 2em 0;
     padding: 0.25em;
     border: 1px solid #447049;
+    .fr-collapse--expanded { 
+        background-color: #e6feda; 
+    }
     button {
         font-size: smaller;
         flex-flow: row;

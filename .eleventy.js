@@ -23,7 +23,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginTOC, {
     tags: ['h2'],
     wrapper: 'nav',
-    wrapperClass: 'fr-summary',
+    wrapperClass: 'fr-summary  fr-mb-4w',
     wrapperLabel: 'Sommaire',
   });
   eleventyConfig.addPlugin(styles, {

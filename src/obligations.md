@@ -1,6 +1,6 @@
 ---
 title: Les obligations d’accessibilité
-layout: layouts/base.njk
+layout: layouts/base-toc.njk
 eleventyNavigation:
   title: Obligations
   order: 1

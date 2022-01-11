@@ -81,3 +81,18 @@ li.criterion {
         display: inline-flex;
     }
 }
+
+.fr-summary {
+    li {
+
+        a {
+        display: inline-block;
+        font-size: .75rem;
+        line-height: 1.25rem;
+        margin: 0 -0.5rem -0.25rem calc(var(--summary-offset)*var(--xl-size)*-1 - 0.5rem);
+        padding: 0.5rem 0.5rem 0.5rem calc(var(--summary-offset)*var(--xl-size) + 0.5rem);
+        position: relative;
+        }
+    }
+}    
+

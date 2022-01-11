@@ -1,6 +1,6 @@
 const { styles } = require('eleventy-plugin-styles');
 const pluginNavigation = require("@11ty/eleventy-navigation");
-
+const pluginTOC = require('eleventy-plugin-toc')
   /**
  * Get the criteria number to be compared for sorting purpose
  *
@@ -20,6 +20,12 @@ function getCriteriaNumToCompare(critNumTxt) {
 const isProd = process.env.ELEVENTY_ENV === 'production';
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(pluginTOC, {
+    tags: ['h2'],
+    wrapper: 'nav',
+    wrapperClass: 'fr-summary',
+    wrapperLabel: 'Sommaire',
+  });
   eleventyConfig.addPlugin(styles, {
     inputDirectory: 'src/scss',
     purgeCSSOptions: 'off',

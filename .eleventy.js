@@ -1,7 +1,7 @@
 const { styles } = require('eleventy-plugin-styles');
 const pluginNavigation = require("@11ty/eleventy-navigation");
 
-/**
+  /**
  * Get the criteria number to be compared for sorting purpose
  *
  * It pads the decimal part of the slug with zeros
@@ -31,13 +31,38 @@ module.exports = function (eleventyConfig) {
     linkify: true,
     typographer: true,
   });
-
+  const markdownIt = require("markdown-it");
+  const markdownItAnchor = require("markdown-it-anchor");
+  const slugify = require("slugify");
+ 
   eleventyConfig.addFilter('markdownInline', function (markdownString) {
     if (!markdownString) {
       return markdownString;
     }
     return md.renderInline(markdownString);
   });
+
+ 
+  const markdownItAnchorOptions = {
+    level: [2, 3],
+    slugify: (str) =>
+      slugify(str, {
+        lower: true,
+        strict: true,
+        remove: /["]/g,
+      }),
+    tabIndex: false
+  };
+  
+  /* Markdown Overrides */
+  let markdownLibrary = markdownIt({
+    html: true,
+  }).use(markdownItAnchor, markdownItAnchorOptions);
+  
+  // This is the part that tells 11ty to swap to our custom config
+  eleventyConfig.setLibrary("md", markdownLibrary);
+
+
 
   // Custom collection: Tout le glossaire du RGAA
   eleventyConfig.addCollection('glossary', function (collection) {

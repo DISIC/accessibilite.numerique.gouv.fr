@@ -7,12 +7,9 @@ eleventyNavigation:
   order: 3
 ---
 
-
-## Références
-
 Le RGAA a été établi en utilisant un certain nombre de références et de sources documentaires. Ce document liste les références qui ont été utilisées.
 
-### Documents de référence
+## Documents de référence
 
 * [Accessibility requirements for ICT products and services, EN 301 549 V2.1.2 (.pdf)]() (2018-08)
 * [Web Content Accessibility Guidelines (WCAG) 2.1]() - référence à la date de juin 2018 ;

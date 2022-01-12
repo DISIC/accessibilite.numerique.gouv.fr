@@ -59,7 +59,7 @@ li.criterion {
     list-style-type: none;
     margin: 2em 0;
     padding: 0.25em;
-    border: 1px solid #447049;
+    border: 1px solid var(--background-action-low-green-bourgeon);
     .fr-collapse--expanded { 
         background-color: #e6feda; 
     }
@@ -75,24 +75,11 @@ li.criterion {
     .crit {
         line-height: 1.2em;
         border-radius: 0.15em; 
-        background-color: #447049;
-        color: white;
+        background-color: var(--background-action-low-green-bourgeon);
+        color: #000;
         padding: 0.2em 0.25em;
         display: inline-flex;
     }
 }
 
-.fr-summary {
-    li {
-
-        a {
-        display: inline-block;
-        font-size: .75rem;
-        line-height: 1.25rem;
-        margin: 0 -0.5rem -0.25rem calc(var(--summary-offset)*var(--xl-size)*-1 - 0.5rem);
-        padding: 0.5rem 0.5rem 0.5rem calc(var(--summary-offset)*var(--xl-size) + 0.5rem);
-        position: relative;
-        }
-    }
-}    
 

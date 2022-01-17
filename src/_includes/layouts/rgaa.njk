@@ -50,14 +50,18 @@
 					<div class="fr-mb-4w test" id="{{ t.testSlug }}">
 						<h4 class="fr-h5">Test {{ t.testSlug }} <!--a class="direct-link" href="#{{ t.testSlug }}">#</a--></h4>
 						<p>{{ t.test.data.title | markdownInline | safe  | replace("#","/ressources/glossaire/#") }}</p>
+						{% if t.test.data.steps %}
 						<ul>
 						{% for step in t.test.data.steps %}
 							<li>{{ step | markdownInline | safe  | replace("#","/ressources/glossaire/#") }}</li>
 						{% endfor %}
 						</ul> 
+						{% endif %}
 						{% if t.test.templateContent != "" %}
-							<h5 class="fr-h6">Méthodologie de test</h5>
-							{{ t.test.templateContent | markdownInline | safe  | replace("#","/ressources/glossaire/#") }}
+							<div class="methodologie">
+								<p>Méthodologie de test :</p>
+								{{ t.test.templateContent | markdownInline | safe  | replace("#","/ressources/glossaire/#") }}
+							</div>
 						{% endif %}
 					</div>
 				{% endfor %}

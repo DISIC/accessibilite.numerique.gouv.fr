@@ -24,6 +24,15 @@ code {
     font-family: courier;
     background-color: ghostwhite;
 }
+.methodologie {
+    font-size: 0.9em;
+    padding-left: 2em;
+    margin-top: 2em;
+    border-left:0.2em solid white;
+    p {
+        font-weight: 800;
+    }
+}
 .annexes { 
     background-color: #e6feda;
     li { 

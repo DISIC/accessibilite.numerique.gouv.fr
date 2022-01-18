@@ -129,8 +129,12 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPlugin(pluginNavigation);
-  eleventyConfig.addLiquidShortcode('crit', function (numero) {
-    return ('<a class="critere" href="/criteres-et-tests/#'+numero+'">critère '+numero+'</a>');
+  eleventyConfig.addLiquidShortcode('crit', function (numCrit) {
+    return ('<a class="critere" href="/criteres-et-tests/#'+numCrit+'">critère '+numCrit+'</a>');
+  });
+
+  eleventyConfig.addLiquidShortcode('test', function (numTest) {
+    return ('<a class="critere" href="/criteres-et-tests/#'+numTest+'">test '+numTest+'</a>');
   });
 
   eleventyConfig.addPassthroughCopy('./src/css');

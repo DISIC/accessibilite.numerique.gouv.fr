@@ -40,9 +40,7 @@ accessible » du bouton. Par exemple, même dans le cas de la présence d’un
 bouton, c’est le passage de texte référencé par `aria-labelledby` qui doit
 être évalué.
 
-Référence : [Accessible name and description
-calculation](https://www.w3.org/TR/html-aam-1.0/#accessible-name-and-
-description-computation).
+Référence : [Accessible name and description calculation](https://www.w3.org/TR/html-aam-1.0/#accessible-name-and-description-computation).
 
 Par ailleurs, un « nom accessible » sera considéré comme non-pertinent s’il ne
 reprend pas le texte visible du bouton. Par exemple :

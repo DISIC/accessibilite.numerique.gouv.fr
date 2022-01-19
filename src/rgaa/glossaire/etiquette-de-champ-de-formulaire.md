@@ -31,9 +31,7 @@ Cet ordre doit être utilisé pour l’évaluation de la pertinence de l’étiq
 `<label>`, c’est le passage de texte référencé par `aria-labelledby` qui doit
 être pris en compte.
 
-Référence : [Accessible name and description
-calculation](https://www.w3.org/TR/html-aam-1.0/#accessible-name-and-
-description-computation).
+Référence : [Accessible name and description calculation](https://www.w3.org/TR/html-aam-1.0/#accessible-name-and-description-computation).
 
 Note importante au sujet de l’utilisation de `placeholder` : lorsque
 l’attribut `placeholder` est présent, il est susceptible d’être restitué à la

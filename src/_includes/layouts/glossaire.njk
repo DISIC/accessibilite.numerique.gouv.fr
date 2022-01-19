@@ -2,13 +2,16 @@
 
 {% block contenu %}
 	<dl>
-	{% for g in collections.glossary %}
-		{% set term = g.term %}
-		{% set letter = term.data.title | truncate(1, true, "") %}
-
-		<dt class="fr-h5" id="{{ term.data.title | slugify }}">{{ term.data.title }} <a class="direct-link" href="#{{ term.data.title | slugify }}">#</a></dt>
-		<dd class="annexes fr-mb-4w">{{ term.templateContent | safe }}</dd>
-	{% endfor %}
+		{% for g in collections.glossary %}
+			{% set term = g.term %}
+			{% set letter = term.data.title | truncate(1, true, "") %}
+			{% if letter != currentLetter %}
+				<span>{{ letter }}</span>
+			{% endif %}
+			<dt class="fr-h5" id="{{ term.data.title | slugify }}">{{ term.data.title }} <a class="direct-link" href="#{{ term.data.title | slugify }}">#</a></dt>
+			<dd class="annexes fr-mb-4w">{{ term.templateContent | safe }}</dd>
+				{% set currentLetter =  letter %}
+		{% endfor %}
 	</dl>
 {% endblock %}
 

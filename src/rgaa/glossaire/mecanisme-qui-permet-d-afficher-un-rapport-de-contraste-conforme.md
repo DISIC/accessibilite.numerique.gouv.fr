@@ -1,5 +1,5 @@
 ---
-title: Mécanisme qui permet d'afficher un rapport de contraste conforme 
+title: Mécanisme qui permet d’afficher un rapport de contraste conforme 
 ---
 
 Composant d’interface dont l’activation permet de modifier l’apparence du site

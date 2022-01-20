@@ -1,14 +1,28 @@
 {% extends './base.njk' %}
 
 {% block contenu %}
-	<dl>
-	{% for g in collections.glossary %}
-		{% set term = g.term %}
-		{% set letter = term.data.title | truncate(1, true, "") %}
+	<ul class="letters fr-tags-group fr-mt-8w fr-mb-4w">
+		{% for g in collections.glossary %}
+			{% set letter = g.term.data.title | truncate(1, true, "")  | slugify %}
+			{% if letter != currentLetter %}
+			<li><a class="fr-tag fr-tag fr-tag--ecume" href="#{{ letter}}">{{ letter | capitalize }}</a></li>
+			{% endif %}
+				{% set currentLetter =  letter %}
+		{% endfor %}
+	</ul>
 
-		<dt class="fr-h5" id="{{ term.data.title | slugify }}">{{ term.data.title }} <a class="direct-link" href="#{{ term.data.title | slugify }}">#</a></dt>
-		<dd class="annexes fr-mb-4w">{{ term.templateContent | safe }}</dd>
-	{% endfor %}
+	<dl>
+		{% for g in collections.glossary %}
+			{% set term = g.term %}
+			{% set letter = term.data.title | truncate(1, true, "")  | slugify %}
+			<dt class="fr-h5" id="{{ term.data.title | slugify }}">
+			{% if letter != currentLetter %}
+				<span id="{{ letter }}"></span>
+			{% endif %}
+			{{ term.data.title }} <a class="direct-link" href="#{{ term.data.title | slugify }}">#</a></dt>
+			<dd class="annexes fr-mb-4w">{{ term.templateContent | safe }}</dd>
+				{% set currentLetter =  letter %}
+		{% endfor %}
 	</dl>
 {% endblock %}
 

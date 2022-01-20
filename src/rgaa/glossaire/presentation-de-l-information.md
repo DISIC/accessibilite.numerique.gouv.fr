@@ -8,8 +8,8 @@ HTML et de leur contenu. La présentation de l’information doit être réalis�
 via CSS. Les éléments (`basefont`, `blink`, `center`, `font`, `marquee`,
 `s`, `strike`, `tt` et `big`) et les attributs (`align`, `alink`,
 `background`, `bgcolor`, `border`, `cellpadding`, `cellspacing`, `char`,
-`charoff`, `clear`, `compact`, `color`, `frameborder`, `hspace`, `link`
-, `marginheight`, `marginwidth`, `text`, `valign`, `vlink`, `vspace`,
+`charoff`, `clear`, `compact`, `color`, `frameborder`, `hspace`, `link`,
+`marginheight`, `marginwidth`, `text`, `valign`, `vlink`, `vspace`,
 `size`) sont interdits.
 
 Note : les attributs `width` et `height` utilisés sur d’autres éléments que

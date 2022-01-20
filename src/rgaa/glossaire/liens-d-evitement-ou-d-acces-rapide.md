@@ -1,5 +1,5 @@
 ---
-title: Liens d'évitement ou d'accès rapide 
+title: Liens d’évitement ou d’accès rapide 
 ---
 
 Liens dont la fonction est de permettre de naviguer à l’intérieur de la page

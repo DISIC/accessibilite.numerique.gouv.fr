@@ -1,5 +1,5 @@
 ---
-title: Lien dont la nature n'est pas évidente 
+title: Lien dont la nature n’est pas évidente 
 ---
 
 Lien qui peut être confondu avec un texte normal lorsqu’il est signalé

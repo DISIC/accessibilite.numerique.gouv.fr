@@ -1,5 +1,5 @@
 ---
-title: Règles d'écriture 
+title: Règles d’écriture 
 ---
 
 Le code source doit respecter les règles suivantes en accord avec la

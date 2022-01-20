@@ -1,5 +1,5 @@
 ---
-title: Items de même nature d'une liste de choix 
+title: Items de même nature d’une liste de choix 
 ---
 
 Dans une liste déroulante (balise `<select>`), ensemble d’items (balises

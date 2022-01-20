@@ -3,25 +3,20 @@
 	<div id="summary" class="summary">
 		<p>Accéder directement à la thématique de votre choix :</p>
 		<ul class="fr-tags-group">
-			<li><a class="fr-tag fr-tag fr-tag--ecume" href="#1">Images</a></li>
-			<li><a class="fr-tag fr-tag fr-tag--ecume" href="#2">Cadres</a></li>
-			<li><a class="fr-tag fr-tag fr-tag--ecume" href="#3">Couleurs</a></li>
-			<li><a class="fr-tag fr-tag fr-tag--ecume" href="#4">Multimédia</a></li>
-			<li><a class="fr-tag fr-tag fr-tag--ecume" href="#5">Tableaux</a></li>
-			<li><a class="fr-tag fr-tag fr-tag--ecume" href="#6">Liens</a></li>
-			<li><a class="fr-tag fr-tag fr-tag--ecume" href="#7">Scripts</a></li>
-			<li><a class="fr-tag fr-tag fr-tag--ecume" href="#8">Éléments obligatoires</a></li>
-			<li><a class="fr-tag fr-tag fr-tag--ecume" href="#9">Structuration de l’information</a></li>
-			<li><a class="fr-tag fr-tag fr-tag--ecume" href="#10">Présentation de l’information</a></li>
-			<li><a class="fr-tag fr-tag fr-tag--ecume" href="#11">Formulaires</a></li>
-			<li><a class="fr-tag fr-tag fr-tag--ecume" href="#12">Navigation</a></li>
-			<li><a class="fr-tag fr-tag fr-tag--ecume" href="#13">Consultation</a></li>
+			{% for c in collections.criteriaAndTests %}
+				{% set themeNum = c.themeNum %}
+				{% set tests = c.tests %}
+				{% set annexeCrit = c.annexeCrit %}
+				{% if themeNum != curThemeNum %}
+					<li><a class="fr-tag fr-tag fr-tag--ecume" href="#{{ themeNum }}">{{ themeNum }}.  {{ themes[themeNum].title }}</a></li>
+				{% endif %}
+				{% set curThemeNum = themeNum %}
+			{% endfor %}
 		</ul>
 		<div class="fr-toggle">
 				<input disabled type="checkbox" class="fr-toggle__input" id="allCriterion">
 				<label class="fr-toggle__label" for="allCriterion">Affichage du détail de tous les critères</label>
 		</div>
-
 	</div>
 	{% set curThemeNum = 0 %}
 	{% for c in collections.criteriaAndTests %}

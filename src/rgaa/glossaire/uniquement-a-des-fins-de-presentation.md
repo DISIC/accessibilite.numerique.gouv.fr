@@ -16,13 +16,13 @@ Exemple :
 
 `<div>`
 
-`paragraphes d'un bloc de texte simulés`
+`paragraphes d’un bloc de texte simulés`
 
 `<br>`
 
 `<br>`
 
-`à l'aide de plusieurs balises <br>`
+`à l’aide de plusieurs balises <br>`
 
 `</div>`
 

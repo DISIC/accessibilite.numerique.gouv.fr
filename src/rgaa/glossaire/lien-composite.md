@@ -17,5 +17,5 @@ devrait être évité. Une manière de traiter ce type de liens est d’inclure
 l’image dans le lien texte de façon à constituer un lien composite, ce qui
 évitera la redondance.
 
-Vous pouvez consulter à ce sujet la technique [H2 : Combining adjacent image and text links for the same resource](https://www.w3.org/WAI/WCAG21/Techniques/html/H2).
+Vous pouvez consulter à ce sujet la technique <span lang="en">[H2 : Combining adjacent image and text links for the same resource](https://www.w3.org/WAI/WCAG21/Techniques/html/H2)</span>.
 

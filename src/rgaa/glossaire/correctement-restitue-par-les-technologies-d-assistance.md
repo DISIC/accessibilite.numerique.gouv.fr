@@ -1,5 +1,5 @@
 ---
-title: Correctement restitué (par les technologies d'assistance) 
+title: Correctement restitué (par les technologies d’assistance) 
 ---
 
 Lorsqu’un critère, un test ou une condition de test demande de vérifier la

@@ -13,7 +13,7 @@ balise `<th>` peut être utilisée.
 
 Note : seule la balise `<th>` étant totalement supportée par l’ensemble des
 technologies d’assistance, il est fortement recommandé de privilégier cette
-solution lors de la mise en oeuvre afin d’éviter de nombreuses vérifications
+solution lors de la mise en œuvre afin d’éviter de nombreuses vérifications
 dans les différentes combinaisons prévues dans l’environnement de test (ou «
 base de référence »).
 

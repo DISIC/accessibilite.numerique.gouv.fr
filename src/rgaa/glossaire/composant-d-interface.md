@@ -9,7 +9,7 @@ un système d’onglets. Enfin un composant d’interface peut être basé sur d
 éléments natifs de HTML ou développés de toutes pièces en JavaScript et des
 attributs WAI-ARIA. En particulier pour les éléments ayant des attributs WAI-
 ARIA correspondant à un [motif de conception](#motif-de-conception) il est
-recommandé de considérer le document <span lang="fr">[WAI-ARIA 1.1 Authoring
+recommandé de considérer le document <span lang="en">[WAI-ARIA 1.1 Authoring
 Practices](http://www.w3.org/TR/wai-aria-practices/)</span> lors de leur
 implémentation.
 

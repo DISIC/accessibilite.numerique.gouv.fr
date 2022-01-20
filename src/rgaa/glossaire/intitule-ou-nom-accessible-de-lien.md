@@ -16,8 +16,8 @@ lien. Par exemple :
 * En cas de présence conjointe d’un attribut WAI-ARIA `aria-label` et d’un attribut WAI-ARIA `aria-labelledby`, c’est le passage de texte référencé par l’attribut WAI-ARIA `aria-labelledby` qui doit être considéré comme l’intitulé ; 
 * En cas de présence conjointe d’un attribut WAI-ARIA `aria-label` et d’un contenu dans le lien, c’est le contenu de l’attribut WAI-ARIA `aria-label` qui doit être considéré comme l’intitulé. 
 
-Référence : [Accessible name and description
-calculation](https://www.w3.org/TR/accname-1.1/).
+Référence : <span lang="en">[Accessible name and description
+calculation](https://www.w3.org/TR/accname-1.1/)</span>.
 
 Dans le cas où le « nom accessible » est obtenu à partir du contenu du lien,
 celui-ci sera variable en fonction des cas suivants :

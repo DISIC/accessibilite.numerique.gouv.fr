@@ -1,5 +1,5 @@
 ---
-title: Image porteuse d'information 
+title: Image porteuse d’information 
 ---
 
 Image qui véhicule une information nécessaire à la compréhension du contenu

@@ -25,8 +25,8 @@ focus sur l’élément qui lui est associé.
 
 Note 1 : la spécification WAI-ARIA étend le rôle attribué à l’attribut
 `tabindex` en définissant que tout élément HTML peut acquérir la possibilité
-de recevoir le focus en lui attribuant la valeur `tabindex="0"`.En revanche,
-aucun comportement n’est attribué via la seule présence de `tabindex`.De
+de recevoir le focus en lui attribuant la valeur `tabindex="0"`. En revanche,
+aucun comportement n’est attribué via la seule présence de `tabindex`. De
 même, la valeur `tabindex="-1"` lorsqu’elle est utilisée sur un élément
 recevant naturellement le focus retire l’élément qui en est affecté du plan de
 tabulation en inhibant sa capacité à signaler la « prise de focus ».

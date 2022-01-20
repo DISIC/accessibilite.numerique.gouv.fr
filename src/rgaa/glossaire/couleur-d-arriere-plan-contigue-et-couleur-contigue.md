@@ -1,5 +1,5 @@
 ---
-title: Couleur d'arrière-plan contiguë et couleur contiguë 
+title: Couleur d’arrière-plan contiguë et couleur contiguë 
 ---
 
 Couleur d’arrière-plan contiguë : couleur d’arrière-plan directement en

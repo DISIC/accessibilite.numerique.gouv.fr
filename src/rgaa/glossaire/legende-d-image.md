@@ -1,5 +1,5 @@
 ---
-title: Légende d'image 
+title: Légende d’image 
 ---
 
 Lorsqu’un texte, adjacent à une image, contient des informations sur l’image
@@ -24,5 +24,5 @@ remplacement, il n’est pas obligatoire de recourir à l’ensemble figure,
 figcaption, l’image pouvant être simplement traitée comme une image de
 décoration.
 
-Vous pouvez consulter, à ce sujet, la note [Requirements for providing text to act as an alternative for images](https://www.w3.org/TR/html51/semantics-embedded-content.html#alt-text) du W3C.
+Vous pouvez consulter, à ce sujet, la note <span lang="en">[Requirements for providing text to act as an alternative for images](https://www.w3.org/TR/html51/semantics-embedded-content.html#alt-text)</span> du W3C.
 

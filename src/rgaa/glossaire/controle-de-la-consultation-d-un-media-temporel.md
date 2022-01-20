@@ -1,5 +1,5 @@
 ---
-title: Contrôle de la consultation (d'un média temporel) 
+title: Contrôle de la consultation (d’un média temporel) 
 ---
 
 Possibilité pour l’utilisateur de contrôler la consultation d’un média

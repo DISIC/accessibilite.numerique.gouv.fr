@@ -1,5 +1,5 @@
 ---
-title: Compatible avec les technologies d'assistance 
+title: Compatible avec les technologies d’assistance 
 ---
 
 Un contenu ou une fonctionnalité doit être compatible avec les technologies

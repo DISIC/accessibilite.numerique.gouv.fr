@@ -9,9 +9,9 @@ luminance relative entre l’arrière-plan et le premier plan selon la règle :
 la luminance relative la plus sombre. La luminosité est calculée selon la
 formule suivante : L = 0,2126 * R + 0,7152 * G + 0,0722 * B. Où R, G et B sont
 définis par :
-* Si R sRGB <= 0,03928 alors R = R sRGB /12,92 sinon R = ((R sRGB +0,055)/1,055) ^ 2,4 ; 
-* Si G sRGB <= 0,03928 alors G = G sRGB /12,92 sinon G = ((G sRGB +0,055)/1,055) ^ 2,4 ; 
-* Si B sRGB <= 0,03928 alors B = B sRGB /12.92 sinon B = ((B sRGB +0,055)/1,055) ^ 2,4. 
+* Si R sRGB ⩽ 0,03928 alors R = R sRGB /12,92 sinon R = ((R sRGB +0,055)/1,055) ^ 2,4 ; 
+* Si G sRGB ⩽ 0,03928 alors G = G sRGB /12,92 sinon G = ((G sRGB +0,055)/1,055) ^ 2,4 ; 
+* Si B sRGB ⩽ 0,03928 alors B = B sRGB /12.92 sinon B = ((B sRGB +0,055)/1,055) ^ 2,4. 
 
 et R sRGB, G sRGB et B sRGB sont définis par :
 * R sRGB = R8bit/255 ; 
@@ -26,7 +26,7 @@ incrusté dans les vidéos. Pour le texte et le texte en image dans les
 animations, le texte de sous-titrage et le texte incrusté dans les vidéos, la
 taille de la police doit être mesurée par rapport à la taille d’affichage par
 défaut (telle qu’affichée). Les textes présents dans les éléments d’une image
-ou d’une vidéo (par exemple un écriteau, une affiche etc.) ne sont pas
+ou d’une vidéo (par exemple un écriteau, une affiche…) ne sont pas
 concernés.
 
 Source (en anglais) : [Procédure de calcul de contraste des WCAG](https://www.w3.org/WAI/WCAG21/Techniques/general/G18#procedure).

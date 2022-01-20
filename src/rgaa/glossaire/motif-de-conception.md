@@ -3,7 +3,7 @@ title: Motif de conception 
 ---
 
 Un motif de conception (Design Pattern) est un modèle défini dans le
-document [WAI-ARIA 1.1 Authoring Practices](http://www.w3.org/TR/wai-aria-practices/)
+document <span lang="en">[WAI-ARIA 1.1 Authoring Practices](http://www.w3.org/TR/wai-aria-practices/)</span>
  qui décrit la structure, les rôles et propriétés et le
 comportement clavier que doit respecter un composant JavaScript (widget).
 

@@ -10,7 +10,7 @@ rapide dans la [structure du document](#structure-du-document).
 
 Les rôles doivent être définis dans le document en fonction de la nature de la
 zone :
-* La zone d’ [en-tête](#zone-d-en-tete) doit avoir un attribut WAI-ARIA `role="banner"` ; 
+* La zone d’[en-tête](#zone-d-en-tete) doit avoir un attribut WAI-ARIA `role="banner"` ; 
 * Le [menu de navigation](#menu-et-barre-de-navigation) principal doit avoir un attribut WAI-ARIA `role="navigation"` ; 
 * La zone de [contenu principal](#zone-de-contenu-principal) doit avoir un attribut WAI-ARIA `role="main"` ; 
 * La zone de [pied de page](#zone-de-pied-de-page) doit avoir un attribut WAI-ARIA `role="contentinfo"` ; 

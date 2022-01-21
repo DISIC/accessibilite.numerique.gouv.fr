@@ -19,7 +19,7 @@
 			{% if letter != currentLetter %}
 				<span id="{{ letter }}"></span>
 			{% endif %}
-			{{ term.data.title }} <a class="direct-link" href="#{{ term.data.title | slugify }}">#</a></dt>
+			{{ term.data.title }} <a class="direct-link" title="{{ term.data.title }}" aria-label="{{ term.data.title }}" href="#{{ term.data.title | slugify }}">#</a></dt>
 			<dd class="annexes fr-mb-4w">{{ term.templateContent | safe }}</dd>
 				{% set currentLetter =  letter %}
 		{% endfor %}

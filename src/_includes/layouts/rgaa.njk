@@ -1,8 +1,5 @@
 {% extends './base-rgaaNav.njk' %}
 {% block contenu %}
-
-
- 
 <div id="summary" class="summary">
 	<div class="fr-form-group">
 		<fieldset class="fr-fieldset fr-fieldset--inline"  disabled="disabled">
@@ -38,13 +35,11 @@
 		{% if themeNum > 1 and themeNum !== curThemeNum %}
 			</ul>
 		{% endif %}
-
 		{% if themeNum !== curThemeNum %}
 			{% set curThemeNum = themeNum %}
 			<h2 id="{{ themeNum }}">{{ themeNum }}.&nbsp;{{ themes[themeNum].title }} <!--a class="direct-link" href="#{{ themeNum }}">#</a--></h2>
 			<ul>
 		{% endif %}
-
 		<li class="criterion"><!--a class="direct-link" href="#{{ critNum }}">#</a-->
 			<h3 class="fr-accordion__title" id="{{ critNum }}"><span class="crit">{{ critNum }}</span> {{ crit.data.title | markdownInline | safe | replace("#","/ressources/glossaire/#")}}</h3>
 			<button aria-expanded="false" aria-controls="fr-{{ critNum }}" class=" fr-accordion__btn">Tests et références du critère {{ critNum }}</button>
@@ -73,18 +68,18 @@
 				</div>
 				<div class="annexes ref">
 					{{ annexeCrit.templateContent | safe | replace("#","/ressources/glossaire/#") }}
-					<h4>Références <small>(en anglais)</small></h4>
+					<h4 class="fr-h5 fr-my-1w">Références <small>(en anglais)</small></h4>
 					
 					{% if annexeCrit.data.WCAG != null %}
-						<h5><abbr lang="en" title="Web content accessibility guidelines">WCAG</abbr></h5>
-					<ul class="wcag">
+						<h5 class="fr-h6 fr-mb-1w"><abbr lang="en" title="Web content accessibility guidelines">WCAG</abbr></h5>
+					<ul class="wcag ">
 						{% for wcag in annexeCrit.data.WCAG %}
-						<li><a href="https://www.w3.org/TR/WCAG21/#{{ wcag.title  | lower | replace(" ", "-") | replace(",", "") | replace("(", "") | replace(")", "")}}" target="_blank" title="critère {{ wcag.successCriterion }} - nouvelle fenêtre">{{ wcag.successCriterion }}</a> <span lang="en">{{ wcag.title }}</span> ({{ wcag.level }})</li>
+						<li class="fr-text--sm fr-mb-1w"><a href="https://www.w3.org/TR/WCAG21/#{{ wcag.title  | lower | replace(" ", "-") | replace(",", "") | replace("(", "") | replace(")", "")}}" target="_blank" title="critère {{ wcag.successCriterion }} - nouvelle fenêtre">{{ wcag.successCriterion }}</a> <span lang="en">{{ wcag.title }}</span> ({{ wcag.level }})</li>
 						{% endfor %}
 					</ul>
 					{% endif %}
 					{% if annexeCrit.data.Techniques != null %}
-						<h5>Techniques</h5>
+						<h5 class="fr-h6 fr-mb-1w">Techniques</h5>
 						<ul class="technique">
 							{% for technique in annexeCrit.data.Techniques %}
 							{% set firstLetter = technique | first %}
@@ -106,7 +101,7 @@
 									{% set path = "smil" %}
 								{% endif %}                                   
 							{% endif %}
-							<li><a target="_blank" title="{{ technique }} - nouvelle fenêtre" href="https://www.w3.org/WAI/WCAG21/Techniques/{{ path }}/{{ technique }}">{{ technique }}</a></li>
+							<li class="fr-text--sm"><a target="_blank" title="{{ technique }} - nouvelle fenêtre" href="https://www.w3.org/WAI/WCAG21/Techniques/{{ path }}/{{ technique }}">{{ technique }}</a></li>
 							{% endfor %}
 						</ul>
 					{% endif %}

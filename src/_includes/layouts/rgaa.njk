@@ -1,18 +1,9 @@
-{% extends './base.njk' %}
+{% extends './base-rgaaNav.njk' %}
 {% block contenu %}
+
+
+ 
 	<div id="summary" class="summary">
-		<p>Accéder directement à la thématique de votre choix :</p>
-		<ul class="fr-tags-group">
-			{% for c in collections.criteriaAndTests %}
-				{% set themeNum = c.themeNum %}
-				{% set tests = c.tests %}
-				{% set annexeCrit = c.annexeCrit %}
-				{% if themeNum != curThemeNum %}
-					<li><a class="fr-tag fr-tag fr-tag--ecume" href="#{{ themeNum }}">{{ themeNum }}.  {{ themes[themeNum].title }}</a></li>
-				{% endif %}
-				{% set curThemeNum = themeNum %}
-			{% endfor %}
-		</ul>
 		<div class="fr-toggle">
 				<input disabled type="checkbox" class="fr-toggle__input" id="allCriterion">
 				<label class="fr-toggle__label" for="allCriterion">Affichage du détail de tous les critères</label>

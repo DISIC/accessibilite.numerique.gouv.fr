@@ -1,0 +1,17 @@
+<div class="fr-mt-12w fr-sidemenu fr-sidemenu--sticky fr-sidemenu--sticky-full-height" >
+    <div class="fr-sidemenu__inner">
+        <button class="fr-sidemenu__btn" aria-controls="fr-sidemenu-wrapper" aria-expanded="false" data-fr-js-collapse-button="true" hidden="">Toutes les thématiques</button>
+        <div class="fr-collapse" id="fr-sidemenu-wrapper" data-fr-js-collapse="true">
+            <div class="fr-sidemenu__title">Thématiques</div>
+            <ul class="fr-sidemenu__list" data-fr-js-sidemenu-list="true">
+			{% for c in collections.criteriaAndTests %}
+				{% set themeNum = c.themeNum %}
+				{% if themeNum != curThemeNum %}
+					<li class="fr-sidemenu__item"><a class="fr-sidemenu__link" href="#{{ themeNum }}" target="_self">{{ themeNum }}.  {{ themes[themeNum].title }}</a></li>
+				{% endif %}
+				{% set curThemeNum = themeNum %}
+			{% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

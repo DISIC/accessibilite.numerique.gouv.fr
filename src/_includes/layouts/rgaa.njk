@@ -3,12 +3,31 @@
 
 
  
-	<div id="summary" class="summary">
-		<div class="fr-toggle">
+<div id="summary" class="summary">
+	<div class="fr-form-group">
+		<fieldset class="fr-fieldset fr-fieldset--inline"  disabled="disabled">
+			<legend class="fr-fieldset__legend fr-text--regular" id='checkboxes-inline-legend'>Filtres de consultation</legend>
+			<div class="fr-fieldset__content">
+				<div class="fr-checkbox-group">
+					<input type="checkbox" id="checkboxes-inline-1" name="checkboxes-inline-1">
+					<label class="fr-label" for="checkboxes-inline-1">Afficher les tests</label>
+				</div>
+				<div class="fr-checkbox-group">
+					<input type="checkbox" id="checkboxes-inline-2" name="checkboxes-inline-2">
+					<label class="fr-label" for="checkboxes-inline-2">Niveau WCAG A</label>
+				</div>
+				<div class="fr-checkbox-group">
+					<input type="checkbox" id="checkboxes-inline-3" name="checkboxes-inline-3">
+					<label class="fr-label" for="checkboxes-inline-3">Niveau WCAG AA</label>
+				</div>
+			</div>
+		</fieldset>
+	</div>
+	<!--div class="fr-toggle">
 				<input disabled type="checkbox" class="fr-toggle__input" id="allCriterion">
 				<label class="fr-toggle__label" for="allCriterion">Affichage du détail de tous les critères</label>
-		</div>
-	</div>
+	</div-->
+</div>
 	{% set curThemeNum = 0 %}
 	{% for c in collections.criteriaAndTests %}
 		{% set crit = c.criterion %}

@@ -80,8 +80,8 @@ Note 4 : lorsqu’un lien ne comporte aucun contenu, il sera non conforme au
 regard du {% crit 10.2 %} et du {% crit 6.2 %}.
 
 Note 5 : bien que le calcul du nom accessible d’un lien tienne compte de
-contenus texte générés en CSS via les pseudo-éléments `::before` et `::after`
-, cette pratique ne doit pas être utilisée, car elle constitue une non-
+contenus texte générés en CSS via les pseudo-éléments `::before` et `::after`,
+ cette pratique ne doit pas être utilisée, car elle constitue une non-
 conformité au critère 1.3.1 des WCAG 2.1 (cf.
 [F87](https://www.w3.org/WAI/WCAG21/Techniques/failures/F87)).
 

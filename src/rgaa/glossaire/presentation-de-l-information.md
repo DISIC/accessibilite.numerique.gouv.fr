@@ -1,5 +1,5 @@
 ---
-title: Présentation de l'information 
+title: Présentation de l’information 
 ---
 
 Restitution visuelle des contenus via un navigateur en mode graphique. La

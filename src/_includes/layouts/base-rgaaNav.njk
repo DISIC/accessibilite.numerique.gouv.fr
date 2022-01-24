@@ -2,15 +2,21 @@
 <main role="main" id="contenu">
 	<div class="fr-container fr-mt-4w fr-mb-4w">
     	<div class="fr-grid-row fr-grid-row--gutters fr-grid-row--center">
-            {% include "components/rgaaNav.njk" %}
-    	    <div class="fr-col-12 fr-col-sm-12 fr-col-md-10 fr-col-lg-8">
+    		<div class="fr-col-12 fr-col-sm-12 fr-col-md-10 fr-col-lg-8">
           {% include "components/breadcrumb.njk" %}
+        </div>
+      </div>
+    	<div class="fr-grid-row fr-grid-row--gutters">
+        <div class="fr-col-md-4 fr-col-12">
+          {% include "components/rgaaNav.njk" %}
+        </div>  
+    	  <div class="fr-col">
           <h1>{{ title }}</h1>
           
           {% block contenu %}
           {{ content | safe }}
           {% endblock %}
-      </div>
+        </div>
     </div>
   </div>
 </main>

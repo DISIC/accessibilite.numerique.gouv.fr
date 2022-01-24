@@ -74,8 +74,9 @@ li.criterion {
     margin: 2em 0;
     padding: 0.25em;
     border: 1px solid var(--background-action-low-blue-ecume);
+    border: 1px solid var(--artwork-minor-beige-gris-galet);
     .fr-collapse--expanded { 
-        background-color: var(--background-action-low-blue-ecume); 
+        /*background-color: var(--background-action-low-blue-ecume); */
     }
     button {
         font-size: smaller;
@@ -87,11 +88,9 @@ li.criterion {
         background-image: none;
     }
     .crit {
-        line-height: 1.2em;
-        border-radius: 0.15em; 
-        background-color: var(--background-action-low-blue-ecume);
-        padding: 0.2em 0.25em;
-        display: inline-flex;
+        font-weight: 200;
+        padding-right: 0.25em;
+        font-size: 1.25em;
     }
 }
 

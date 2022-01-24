@@ -1,7 +1,7 @@
 const { styles } = require('eleventy-plugin-styles');
-const slugify = require('slugify');
-
-/**
+const pluginNavigation = require("@11ty/eleventy-navigation");
+const pluginTOC = require('eleventy-plugin-toc')
+  /**
  * Get the criteria number to be compared for sorting purpose
  *
  * It pads the decimal part of the slug with zeros
@@ -20,9 +20,16 @@ function getCriteriaNumToCompare(critNumTxt) {
 const isProd = process.env.ELEVENTY_ENV === 'production';
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(pluginTOC, {
+    tags: ['h2'],
+    wrapper: 'nav',
+    wrapperClass: 'fr-summary  fr-mb-4w',
+    wrapperLabel: 'Sommaire',
+  });
   eleventyConfig.addPlugin(styles, {
     inputDirectory: 'src/scss',
-    cssnanoOptions: isProd ? {} : 'off',
+    purgeCSSOptions: 'off',
+    cssnanoOptions: 'off',
   });
 
   const md = require('markdown-it')({
@@ -30,13 +37,38 @@ module.exports = function (eleventyConfig) {
     linkify: true,
     typographer: true,
   });
-
+  const markdownIt = require("markdown-it");
+  const markdownItAnchor = require("markdown-it-anchor");
+  const slugify = require("slugify");
+ 
   eleventyConfig.addFilter('markdownInline', function (markdownString) {
     if (!markdownString) {
       return markdownString;
     }
     return md.renderInline(markdownString);
   });
+
+ 
+  const markdownItAnchorOptions = {
+    level: [2, 3],
+    slugify: (str) =>
+      slugify(str, {
+        lower: true,
+        strict: true,
+        remove: /["]/g,
+      }),
+    tabIndex: false
+  };
+  
+  /* Markdown Overrides */
+  let markdownLibrary = markdownIt({
+    html: true,
+  }).use(markdownItAnchor, markdownItAnchorOptions);
+  
+  // This is the part that tells 11ty to swap to our custom config
+  eleventyConfig.setLibrary("md", markdownLibrary);
+
+
 
   // Custom collection: Tout le glossaire du RGAA
   eleventyConfig.addCollection('glossary', function (collection) {
@@ -91,27 +123,18 @@ module.exports = function (eleventyConfig) {
         const bComp = getCriteriaNumToCompare(b.critNum);
         return Number(aComp) - Number(bComp);
       });
-
     //console.log('*****');
     //console.dir(all, { depth: 1 });
     return all;
   });
 
-  eleventyConfig.addLiquidShortcode('def', function (terme) {
-    const ancre = terme.slugify();
-    return (
-      '<a class="glossaire" href="/glossaire/#' + ancre + '">' + terme + '</a>'
-    );
+  eleventyConfig.addPlugin(pluginNavigation);
+  eleventyConfig.addLiquidShortcode('crit', function (numCrit) {
+    return ('<a class="critere" href="/criteres-et-tests/#'+numCrit+'">critère '+numCrit+'</a>');
   });
 
-  eleventyConfig.addLiquidShortcode('crit', function (numero) {
-    return (
-      '<a class="critere" href="/criteres-et-tests/#' +
-      numero +
-      '">critère ' +
-      numero +
-      '</a>'
-    );
+  eleventyConfig.addLiquidShortcode('test', function (numTest) {
+    return ('<a class="critere" href="/criteres-et-tests/#'+numTest+'">test '+numTest+'</a>');
   });
 
   eleventyConfig.addPassthroughCopy('./src/css');

@@ -1,6 +1,11 @@
 ---
 title: Critères et tests
 layout: layouts/rgaa.njk
+eleventyNavigation:
+  title: Critères et tests
+  order: 2
 ---
 
-Les 106 critères et 250 tests du RGAA sont tous là bien rangés dans les 13 thématiques ;)
+Le référentiel technique d’accessibilité numérique : **13 thématiques et 106 critères**.
+
+Pour chaque critère, le détail de chaque test, sa méthodologie et les références aux normes internationales sont disponibles.

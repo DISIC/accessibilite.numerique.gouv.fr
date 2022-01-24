@@ -1,6 +1,8 @@
 ---
-title : Structure du document
-slug : structure-du-document
+title: Structure du document 
 ---
 
-Ensemble d’éléments permettant de définir les grandes zones d’une page HTML telles que la zone d’en-tête de la page, les zones de navigation principales et secondaires, la zone de contenu principal et la zone de pied de page.
+Ensemble d’éléments permettant de définir les grandes zones d’une page HTML
+telles que la zone d’en-tête de la page, les zones de navigation principales
+et secondaires, la zone de contenu principal et la zone de pied de page.
+

@@ -1,5 +1,6 @@
 ---
-title : Taille des caractères
-slug : taille-des-caracteres
+title: Taille des caractères 
 ---
+
 Valeur attribuée aux polices de caractères présentes sur une page web.
+

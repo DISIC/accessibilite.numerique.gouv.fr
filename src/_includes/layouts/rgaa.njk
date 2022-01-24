@@ -1,22 +1,30 @@
-{% extends './base.njk' %}
+{% extends './base-rgaaNav.njk' %}
 {% block contenu %}
-	<div id="summary" class="summary">
-		<ul class="technique">
-			<li><a class="" href="#1">Images</a></li>
-			<li><a class="" href="#2">Cadres</a></li>
-			<li><a class="" href="#3">Couleurs</a></li>
-			<li><a class="" href="#4">Multimédia</a></li>
-			<li><a class="" href="#5">Tableaux</a></li>
-			<li><a class="" href="#6">Liens</a></li>
-			<li><a class="" href="#7">Scripts</a></li>
-			<li><a class="" href="#8">Éléments obligatoires</a></li>
-			<li><a class="" href="#9">Structuration de l’information</a></li>
-			<li><a class="" href="#10">Présentation de l’information</a></li>
-			<li><a class="" href="#11">Formulaires</a></li>
-			<li><a class="" href="#12">Navigation</a></li>
-			<li><a class="" href="#13">Consultation</a></li>
-		</ul>
+<div id="summary" class="summary">
+	<div class="fr-form-group">
+		<fieldset class="fr-fieldset fr-fieldset--inline"  disabled="disabled">
+			<legend class="fr-fieldset__legend fr-text--regular" id='checkboxes-inline-legend'>Filtres de consultation</legend>
+			<div class="fr-fieldset__content">
+				<div class="fr-checkbox-group">
+					<input type="checkbox" id="checkboxes-inline-1" name="checkboxes-inline-1">
+					<label class="fr-label" for="checkboxes-inline-1">Afficher les tests</label>
+				</div>
+				<div class="fr-checkbox-group">
+					<input type="checkbox" id="checkboxes-inline-2" name="checkboxes-inline-2">
+					<label class="fr-label" for="checkboxes-inline-2">Niveau WCAG A</label>
+				</div>
+				<div class="fr-checkbox-group">
+					<input type="checkbox" id="checkboxes-inline-3" name="checkboxes-inline-3">
+					<label class="fr-label" for="checkboxes-inline-3">Niveau WCAG AA</label>
+				</div>
+			</div>
+		</fieldset>
 	</div>
+	<!--div class="fr-toggle">
+				<input disabled type="checkbox" class="fr-toggle__input" id="allCriterion">
+				<label class="fr-toggle__label" for="allCriterion">Affichage du détail de tous les critères</label>
+	</div-->
+</div>
 	{% set curThemeNum = 0 %}
 	{% for c in collections.criteriaAndTests %}
 		{% set crit = c.criterion %}
@@ -27,15 +35,17 @@
 		{% if themeNum > 1 and themeNum !== curThemeNum %}
 			</ul>
 		{% endif %}
-
 		{% if themeNum !== curThemeNum %}
 			{% set curThemeNum = themeNum %}
 			<h2 id="{{ themeNum }}">{{ themeNum }}.&nbsp;{{ themes[themeNum].title }} <!--a class="direct-link" href="#{{ themeNum }}">#</a--></h2>
 			<ul>
 		{% endif %}
-
 		<li class="criterion"><!--a class="direct-link" href="#{{ critNum }}">#</a-->
-			<h3 class="fr-accordion__title" id="{{ critNum }}"><span class="crit">{{ critNum }}</span> {{ crit.data.title | markdownInline | safe | replace("#","/glossaire/#")}}</h3>
+			
+			<h3 class="fr-accordion__title" id="{{ critNum }}">
+			<span class="crit">{{ critNum }}</span>
+			{{ crit.data.title | markdownInline | safe | replace("#","/ressources/glossaire/#")}}
+			</h3>
 			<button aria-expanded="false" aria-controls="fr-{{ critNum }}" class=" fr-accordion__btn">Tests et références du critère {{ critNum }}</button>
 			<div id="fr-{{ critNum }}" class="fr-collapse">
 			<div class="fr-accordion__inner ">
@@ -43,33 +53,37 @@
 				{% for t in tests %}
 					<div class="fr-mb-4w test" id="{{ t.testSlug }}">
 						<h4 class="fr-h5">Test {{ t.testSlug }} <!--a class="direct-link" href="#{{ t.testSlug }}">#</a--></h4>
-						<p>{{ t.test.data.title | markdownInline | safe  | replace("#","/glossaire/#") }}</p>
+						<p>{{ t.test.data.title | markdownInline | safe  | replace("#","/ressources/glossaire/#") }}</p>
+						{% if t.test.data.steps %}
 						<ul>
 						{% for step in t.test.data.steps %}
-							<li>{{ step | markdownInline | safe  | replace("#","/glossaire/#") }}</li>
+							<li>{{ step | markdownInline | safe  | replace("#","/ressources/glossaire/#") }}</li>
 						{% endfor %}
 						</ul> 
+						{% endif %}
 						{% if t.test.templateContent != "" %}
-							<h5 class="fr-h6">Méthodologie de test</h5>
-							{{ t.test.templateContent | markdownInline | safe  | replace("#","/glossaire/#") }}
+							<div class="methodologie">
+								<p>Méthodologie de test :</p>
+								{{ t.test.templateContent | markdownInline | safe  | replace("#","/ressources/glossaire/#") }}
+							</div>
 						{% endif %}
 					</div>
 				{% endfor %}
 				</div>
-				<div class="annexes">
-					{{ annexeCrit.templateContent | safe | replace("#","/glossaire/#") }}
-					<h4>Références <small>(en anglais)</small></h4>
+				<div class="annexes ref">
+					{{ annexeCrit.templateContent | safe | replace("#","/ressources/glossaire/#") }}
+					<h4 class="fr-h5 fr-my-1w">Références <small>(en anglais)</small></h4>
 					
 					{% if annexeCrit.data.WCAG != null %}
-						<h5><abbr lang="en" title="Web content accessibility guidelines">WCAG</abbr></h5>
-					<ul class="wcag">
+						<h5 class="fr-h6 fr-mb-1w"><abbr lang="en" title="Web content accessibility guidelines">WCAG</abbr></h5>
+					<ul class="wcag ">
 						{% for wcag in annexeCrit.data.WCAG %}
-						<li><a href="https://www.w3.org/TR/WCAG21/#{{ wcag.title  | lower | replace(" ", "-") | replace(",", "") | replace("(", "") | replace(")", "")}}" target="_blank" title="critère {{ wcag.successCriterion }} - nouvelle fenêtre">{{ wcag.successCriterion }}</a> <span lang="en">{{ wcag.title }}</span> ({{ wcag.level }})</li>
+						<li class="fr-text--sm fr-mb-1w"><a href="https://www.w3.org/TR/WCAG21/#{{ wcag.title  | lower | replace(" ", "-") | replace(",", "") | replace("(", "") | replace(")", "")}}" target="_blank" title="critère {{ wcag.successCriterion }} - nouvelle fenêtre">{{ wcag.successCriterion }}</a> <span lang="en">{{ wcag.title }}</span> ({{ wcag.level }})</li>
 						{% endfor %}
 					</ul>
 					{% endif %}
 					{% if annexeCrit.data.Techniques != null %}
-						<h5>Techniques</h5>
+						<h5 class="fr-h6 fr-mb-1w">Techniques</h5>
 						<ul class="technique">
 							{% for technique in annexeCrit.data.Techniques %}
 							{% set firstLetter = technique | first %}
@@ -91,7 +105,7 @@
 									{% set path = "smil" %}
 								{% endif %}                                   
 							{% endif %}
-							<li><a target="_blank" title="{{ technique }} - nouvelle fenêtre" href="https://www.w3.org/WAI/WCAG21/Techniques/{{ path }}/{{ technique }}">{{ technique }}</a></li>
+							<li class="fr-text--sm"><a target="_blank" title="{{ technique }} - nouvelle fenêtre" href="https://www.w3.org/WAI/WCAG21/Techniques/{{ path }}/{{ technique }}">{{ technique }}</a></li>
 							{% endfor %}
 						</ul>
 					{% endif %}

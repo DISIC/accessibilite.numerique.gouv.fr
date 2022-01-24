@@ -1,8 +1,3 @@
-/*  
-green-archipel-975  #e5fbfd
-blue-cumulus-975    #f3f6fe
-blue-ecume-200      #273962
-*/
 p.beta {
     position: fixed;
     background-color: var(--background-action-high-red-marianne);
@@ -15,33 +10,40 @@ p.beta {
     margin: 1em 1em 1em 1em;
     right: -4em;
     top: 0;
-    z-index: 1;
+    z-index: 2001;
 }
 code { 
-    border: 1px solid #273962;
+    border: 1px solid var(--artwork-minor-beige-gris-galet);
     border-radius: 0.15em;
-    color: #273962;
     padding: 0.125rem;
     font-family: courier;
     background-color: ghostwhite;
 }
-.technique li { 
-    list-style-type: none; 
-    display: inline; 
-    margin-right: 1rem;
+.methodologie {
+    font-size: 0.9em;
+    padding-left: 2em;
+    margin-top: 2em;
+    border-left:0.2em solid white;
+    p {
+        font-weight: 800;
+    }
 }
 .annexes { 
-    background-color: #f3f6fe;
+    background-color: var(--background-action-low-blue-ecume);
     li { 
         list-style-type: inherit;
+
     }
     small {
         font-size: 1rem;
         font-weight: lighter;
     }
+    .technique li {
+        display: inline;
+    }
 }
-.fr-collapse--expanded { 
-    background-color: #e5fbfd; 
+.ref {
+    background-color: #ffffff;
 }
 .fr-accordion__btn {
     background-color: transparent;
@@ -50,22 +52,32 @@ code {
     padding: 0.25em; 
 }
 .tests, .annexes { 
-    padding: 1rem 2rem; 
+    padding: 1rem; 
+    margin: 0;
 }
 .test { 
     margin-bottom: 2em;
-    h4, p, {
+    h4, p {
         display: inline;
     }
     ul li { 
         list-style-type: disc;
     }
 }
+ul.letters {
+    li a {
+        font-size: 0.75rem;
+    }
+}
 li.criterion {
     list-style-type: none;
     margin: 2em 0;
     padding: 0.25em;
-    border: 1px solid #e5e5e5;
+    border: 1px solid var(--background-action-low-blue-ecume);
+    border: 1px solid var(--artwork-minor-beige-gris-galet);
+    .fr-collapse--expanded { 
+        background-color: var(--background-action-low-blue-ecume);
+    }
     button {
         font-size: smaller;
         flex-flow: row;
@@ -76,11 +88,10 @@ li.criterion {
         background-image: none;
     }
     .crit {
-        line-height: 1.2em;
-        border-radius: 0.15em; 
-        background-color: #273962;
-        color: white;
-        padding: 0.2em 0.25em;
-        display: inline-flex;
+        font-weight: 200;
+        padding-right: 0.25em;
+        font-size: 1.25em;
     }
 }
+
+

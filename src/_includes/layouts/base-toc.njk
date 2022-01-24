@@ -1,0 +1,7 @@
+{% extends './base.njk' %}
+
+{% block contenu %}
+{{ content | toc | safe }}
+{{ content | safe }}
+{% endblock %}
+

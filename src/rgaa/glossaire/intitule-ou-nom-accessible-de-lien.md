@@ -61,7 +61,7 @@ possible de se reposer pour fournir un intitulé au lien est l’élément `<tex
 .
 
 Note 1 : un intitulé de lien sera considéré comme non-explicite dans le cas où
-le « nom accessible » ne reprend pas l’ [intitulé visible](#intitule-visible)
+le « nom accessible » ne reprend pas l’[intitulé visible](#intitule-visible)
 du lien.
 
 Note 2 : en raison de la configuration possible des aides techniques

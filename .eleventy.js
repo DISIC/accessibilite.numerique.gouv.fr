@@ -69,6 +69,19 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownLibrary);
 
 
+  // Custom collection: La faq
+  eleventyConfig.addCollection('faq', function (collection) {
+    const question = collection.getFilteredByGlob(
+      './src/rgaa/faq/*.md'
+    );
+    const faq = question.map(function (question) {
+        return {
+          question
+        };
+      })
+    return faq;
+  });
+
 
   // Custom collection: Tout le glossaire du RGAA
   eleventyConfig.addCollection('glossary', function (collection) {

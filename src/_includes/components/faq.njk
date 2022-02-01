@@ -1,0 +1,32 @@
+{% block contenu %}
+<div class="fr-mt-2w fr-grid-row fr-grid-row--gutters fr-grid-row--center">
+    <div class="fr-col">
+        <ul class="fr-btns-group fr-btns-group--inline">
+    	{% for g in collections.faq %}
+			{% set question = g.question %}
+        	{% set slug = question.data.title | slugify %}
+            <li>
+                <button class="fr-btn fr-btn--secondary"  data-fr-opened="false" aria-controls="fr-modal-{{ slug }}">{{ question.data.title }}</button>
+            </li>
+            <dialog aria-labelledby="fr-modal-title-modal-{{ slug }}" role="dialog" id="fr-modal-{{ slug }}" class="fr-modal">
+                <div class="fr-container fr-container--fluid fr-container-md">
+                    <div class="fr-grid-row fr-grid-row--center">
+                        <div class="fr-col-12 fr-col-md-8 fr-col-lg-6">
+                            <div class="fr-modal__body">
+                                <div class="fr-modal__header">
+                                    <button class="fr-link--close fr-link" title="Fermer la fenêtre modale" aria-controls="fr-modal-{{ slug }}">Fermer</button>
+                                </div>
+                                <div class="fr-modal__content">
+                                    <h1 id="fr-modal-title-modal-{{ slug }}" class="fr-modal__title"><span class="fr-fi-arrow-right-line fr-fi--lg"></span>{{ question.data.title }}</h1>
+                                    {{ question.templateContent | safe }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </dialog>
+		{% endfor %}
+	    </ul>
+	</div>
+</div>
+{% endblock %}

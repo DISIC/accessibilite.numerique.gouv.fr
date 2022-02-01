@@ -1,5 +1,5 @@
 ---
-title: Quels supports ?
+title: Quels sites ?
 ---
 
 **Toutes les applications** utilisées au travers d’un navigateur web sont concernées :

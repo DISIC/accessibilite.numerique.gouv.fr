@@ -1,5 +1,5 @@
 ---
-title: Contenu de la déclaration
+title: La déclaration d’accessibilité
 ---
 
 La déclaration doit contenir les informations suivantes :

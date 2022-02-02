@@ -1,5 +1,6 @@
 ---
 title: Quelle mention ?
+cat: En pratique
 ---
 
 La page d’accueil de chaque service en ligne doit afficher une des mentions suivantes :

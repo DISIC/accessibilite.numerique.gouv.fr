@@ -1,5 +1,6 @@
 ---
 title: Le schéma pluriannuel
+cat: Loi
 ---
 
 Le [schéma pluriannuel de mise en accessibilité](/obligations/#schema-pluriannuel-de-mise-en-accessibilite) détaille la mise en oeuvre de l’accessiibilité dans une organisation, elle se fait généralement en quatres étapes :

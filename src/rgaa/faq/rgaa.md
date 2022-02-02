@@ -1,5 +1,6 @@
 ---
 title: Le RGAA
+cat: Périmètre
 ---
 
 La référentiel général d’amélioration de l'accessibilité, c’est 

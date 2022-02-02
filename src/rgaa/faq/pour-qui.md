@@ -1,5 +1,6 @@
 ---
 title: Qui est concerné ?
+cat: Périmètre
 ---
 
 * les services de l’État ;

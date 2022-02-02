@@ -1,5 +1,6 @@
 ---
 title: Quelles obligations ?
+cat: Loi
 ---
 
 Pour **chaque service en ligne** doivent figurer :

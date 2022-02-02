@@ -1,5 +1,6 @@
 ---
 title: La déclaration d’accessibilité
+cat: En pratique
 ---
 
 La déclaration doit contenir les informations suivantes :

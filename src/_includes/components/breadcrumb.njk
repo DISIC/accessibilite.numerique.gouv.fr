@@ -7,6 +7,8 @@
             </li>
             {% if eleventyNavigation.parent == "ressources" %}
             <li><a class="fr-breadcrumb__link" href="/ressources/">{{ eleventyNavigation.title }}</a></li>
+            {% elif eleventyNavigation.parent == "obligations" %}
+            <li><a class="fr-breadcrumb__link" href="/obligations/">{{ eleventyNavigation.title }}</a></li>
             {% endif %} 
             <li>
                 <a class="fr-breadcrumb__link"  aria-current="page">{{ title }}</a>

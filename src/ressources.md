@@ -13,9 +13,6 @@ eleventyNavigation:
 * [Les références](/ressources/references/)
 * [Le kit d’audit](/ressources/kit-audit/)
 * [La documentation](/ressources/documentation/)
+* [Questions](/ressources/questions/)
 
-## Questions
 
-Vous pouvez poser vos questions sur la liste de discussion du RGAA accessible sur inscription.
-
-[S’inscrire à la liste de discussion RGAA](https://framalistes.org/sympa/subscribe/rgaa)

@@ -13,11 +13,11 @@ Cette version bêta publique est ouverte aux contributions.
 
 ## version bêta
 
-* Intégration du système de design de l’État v1.3.1 ;
+* Refonte et intégration du système de design de l’État v1.3.1 ;
 * Nouvelle architecture technique : chaque critère, chaque test, chaque terme du glossaire est un dans un ficher markdown. La procédure de mise à jour de ces contenus est maintenant très simple et très rapide ;
-* Possibilité de contribuer pour tous les acteurs et toutes les actrices ;
+* La contribution est désormais possible au niveau d’un critère, d’un test, d’un terme du gloassire, etc. ;
 * Intégration de la méthologie de test dans chacun des tests ;
-* Ajout d’une FAQ pour faciliter la compréhension des enjeux d‘accessibilité nulmérique.
+* Ajout d’une « FAQ » simplifiée pour faciliter la compréhension des enjeux d‘accessibilité numérique.
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Média non temporel 
+title: Média non temporel
 ---
 
 Contenu qui ne se déroule pas dans le temps, consultable via un plugin (Flash,
@@ -13,4 +13,3 @@ Note : l’utilisation du paramètre `wmode` pour un objet Flash avec les valeu
 `"transparent"` et `"opaque"` invalide de fait le {% crit 4.13 %}. En
 effet, l’utilisation de ces valeurs a pour conséquence que l’animation Flash
 vue du côté des utilisateurs de lecteur d’écran est invisible.
-

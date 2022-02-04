@@ -1,5 +1,5 @@
 ---
-title: Propriété CSS déterminant une couleur 
+title: Propriété CSS déterminant une couleur
 ---
 
 Cela concerne les propriétés suivantes : `color`, `background-color`,
@@ -7,4 +7,3 @@ Cela concerne les propriétés suivantes : `color`, `background-color`,
 
 Note : l’utilisation d’une image de fond pour insérer une couleur (propriété
 `background:url…`) est également concernée.
-

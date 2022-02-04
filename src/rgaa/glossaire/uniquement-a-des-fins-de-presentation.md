@@ -1,5 +1,5 @@
 ---
-title: Uniquement à des fins de présentation 
+title: Uniquement à des fins de présentation
 ---
 
 Uniquement à des fins de présentation : utilisation de balises HTML pour une
@@ -45,4 +45,3 @@ sémantique) est essentielle à la compréhension du contenu est une violation
 des règles WCAG (particulièrement de l’échec
 [F92](https://www.w3.org/WAI/WCAG21/Techniques/failures/F92)) et invalide le
 critère.
-

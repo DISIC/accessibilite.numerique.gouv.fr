@@ -1,5 +1,5 @@
 ---
-title: Audiodescription synchronisée (média temporel) 
+title: Audiodescription synchronisée (média temporel)
 ---
 
 Narration ajoutée (via un fichier son) à une piste sonore pour décrire les
@@ -18,4 +18,3 @@ les pauses qui existent dans le dialogue. (Voir aussi audiodescription
 
 Note 3 : lorsque toute l’information de la vidéo est déjà donnée dans la piste
 audio, aucune audiodescription supplémentaire n’est requise.
-

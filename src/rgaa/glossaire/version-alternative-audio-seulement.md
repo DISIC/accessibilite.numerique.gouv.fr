@@ -1,5 +1,5 @@
 ---
-title: Version alternative « audio seulement » 
+title: Version alternative « audio seulement »
 ---
 
 Une version « audio seulement » est une version sonore, sous la forme d’un
@@ -18,4 +18,3 @@ nécessitant souvent un travail rédactionnel important). Il est rappelé,
 néanmoins, que seule la transcription textuelle assure un accès universel aux
 informations diffusées par la vidéo, dans le cas où un utilisateur ne serait
 pas en capacité de lancer la vidéo par exemple.
-

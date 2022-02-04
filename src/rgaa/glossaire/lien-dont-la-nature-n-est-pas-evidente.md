@@ -1,5 +1,5 @@
 ---
-title: Lien dont la nature n’est pas évidente 
+title: Lien dont la nature n’est pas évidente
 ---
 
 Lien qui peut être confondu avec un texte normal lorsqu’il est signalé
@@ -13,4 +13,3 @@ Note : “signalés uniquement par la couleur” signifie que le lien n’est
 accompagné d’aucun marqueur visuel (icône, soulignement, bordure…). En
 conséquence un lien de la même couleur que le texte environnant est concerné
 par ce critère.
-

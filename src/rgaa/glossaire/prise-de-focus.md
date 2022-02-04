@@ -1,16 +1,16 @@
 ---
-title: Prise de focus 
+title: Prise de focus
 ---
 
 La prise de focus est l’état renvoyé par un élément qui reçoit l’attention
 suite à une action de l’utilisateur. Il y a trois moyens en HTML de donner le
 focus à un élément :
 
-  * En activant l’élément par un dispositif de pointage (exemple : souris) ;
+- En activant l’élément par un dispositif de pointage (exemple : souris) ;
 
-  * En atteignant l’élément par la touche tabulation ou majuscule + tabulation ;
+- En atteignant l’élément par la touche tabulation ou majuscule + tabulation ;
 
-  * En activant l’élément par un raccourci clavier (`accesskey`). 
+- En activant l’élément par un raccourci clavier (`accesskey`).
 
 Certains éléments reçoivent naturellement le focus, par exemple : `<a href>`,
 `<area href>`, `<button>`, `<input>`, `<object>`, `<select>`, `<label>`,
@@ -37,4 +37,3 @@ notamment.
 Note 2 : l’indication visuelle du focus du navigateur ne doit pas être
 supprimée ou dégradée sauf si un style du focus défini par l’auteur est
 visible et suffisamment contrasté au regard du {% crit 3.3 %}.
-

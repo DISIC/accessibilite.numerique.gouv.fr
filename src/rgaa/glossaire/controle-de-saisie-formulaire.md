@@ -1,5 +1,5 @@
 ---
-title: Contrôle de saisie (formulaire) 
+title: Contrôle de saisie (formulaire)
 ---
 
 Ensemble des processus qui permettent de prévenir l’utilisateur des champs
@@ -9,4 +9,3 @@ par l’auteur des contenus ou s’appuyer sur des attributs (comme `required` o
 `pattern`), des attributs WAI-ARIA (comme `aria-required`) ou des types de
 champ qui produisent de manière automatique des indications de saisie ou
 d’erreurs (comme les types `url`, `email`, `date`, `time` par exemple).
-

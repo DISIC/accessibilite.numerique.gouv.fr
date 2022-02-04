@@ -1,24 +1,24 @@
 ---
-WCAG: 
-- successCriterion: 1.3.1
-  title: Info and Relationships
-  level: A
-- successCriterion: 2.4.1
-  title: Bypass Blocks
-  level: A
-- successCriterion: 2.4.6
-  title: Headings and Labels
-  level: AA
-- successCriterion: 4.1.2
-  title: Name, Role, Value
-  level: A
-Techniques: 
-- G115
-- G130
-- H42
-- G141
-- ARIA4
-- ARIA12
+WCAG:
+  - successCriterion: 1.3.1
+    title: Info and Relationships
+    level: A
+  - successCriterion: 2.4.1
+    title: Bypass Blocks
+    level: A
+  - successCriterion: 2.4.6
+    title: Headings and Labels
+    level: AA
+  - successCriterion: 4.1.2
+    title: Name, Role, Value
+    level: A
+Techniques:
+  - G115
+  - G130
+  - H42
+  - G141
+  - ARIA4
+  - ARIA12
 ---
 
 #### Notes techniques

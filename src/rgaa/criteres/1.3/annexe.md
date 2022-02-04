@@ -1,20 +1,20 @@
 ---
-WCAG: 
-- successCriterion: 1.1.1
-  title: Non-text Content
-  level: A
-- successCriterion: 4.1.2
-  title: Name, Role, Value
-  level: A
-Techniques: 
-- G94
-- G95
-- F30
-- F71
-- G196
-- ARIA6
-- ARIA9
-- ARIA10
+WCAG:
+  - successCriterion: 1.1.1
+    title: Non-text Content
+    level: A
+  - successCriterion: 4.1.2
+    title: Name, Role, Value
+    level: A
+Techniques:
+  - G94
+  - G95
+  - F30
+  - F71
+  - G196
+  - ARIA6
+  - ARIA9
+  - ARIA10
 ---
 
 #### Cas particuliers

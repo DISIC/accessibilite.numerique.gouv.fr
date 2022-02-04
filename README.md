@@ -2,15 +2,13 @@
 
 Ce dépôt est, pour l’instant, le bac à sable pour le nouveau site dédié au référentiel général d’amélioration de l’accessibilité (RGAA).
 
+## Infos
 
-## Infos 
+Ce site est créé avec _11ty_ et utilise la version 1.2.1 du DSFR.
 
-Ce site est créé avec *11ty* et utilise la version 1.2.1 du DSFR.
-
-Tous les contenus sont au format *md*
+Tous les contenus sont au format _md_
 
 Clone le dépot, `npm install`, `npm start`.
-
 
 ## Licence
 

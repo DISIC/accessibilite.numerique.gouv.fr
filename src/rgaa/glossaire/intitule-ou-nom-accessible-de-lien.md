@@ -1,20 +1,22 @@
 ---
-title: Intitulé (ou nom accessible) de lien 
+title: Intitulé (ou nom accessible) de lien
 ---
 
 « Nom accessible » restitué par les technologies d’assistance.
 
 Dans le cas d’un lien HTML, le « nom accessible » est obtenu selon l’ordre
 suivant :
-* Passage de texte associé par l’attribut WAI-ARIA `aria-labelledby` ; 
-* Sinon, contenu de l’attribut WAI-ARIA `aria-label` ; 
-* Sinon, contenu du lien ;
-* Sinon, contenu de l’attribut `title`.
+
+- Passage de texte associé par l’attribut WAI-ARIA `aria-labelledby` ;
+- Sinon, contenu de l’attribut WAI-ARIA `aria-label` ;
+- Sinon, contenu du lien ;
+- Sinon, contenu de l’attribut `title`.
 
 Cet ordre doit être utilisé pour déterminer ce qui constitue l’intitulé du
 lien. Par exemple :
-* En cas de présence conjointe d’un attribut WAI-ARIA `aria-label` et d’un attribut WAI-ARIA `aria-labelledby`, c’est le passage de texte référencé par l’attribut WAI-ARIA `aria-labelledby` qui doit être considéré comme l’intitulé ; 
-* En cas de présence conjointe d’un attribut WAI-ARIA `aria-label` et d’un contenu dans le lien, c’est le contenu de l’attribut WAI-ARIA `aria-label` qui doit être considéré comme l’intitulé. 
+
+- En cas de présence conjointe d’un attribut WAI-ARIA `aria-label` et d’un attribut WAI-ARIA `aria-labelledby`, c’est le passage de texte référencé par l’attribut WAI-ARIA `aria-labelledby` qui doit être considéré comme l’intitulé ;
+- En cas de présence conjointe d’un attribut WAI-ARIA `aria-label` et d’un contenu dans le lien, c’est le contenu de l’attribut WAI-ARIA `aria-label` qui doit être considéré comme l’intitulé.
 
 Référence : <span lang="en">[Accessible name and description
 calculation](https://www.w3.org/TR/accname-1.1/)</span>.
@@ -25,33 +27,37 @@ celui-ci sera variable en fonction des cas suivants :
 Lien texte :
 
 En HTML, le « nom accessible » correspond au texte constitué à partir :
-* Du texte contenu dans le lien ;
-* Du texte contenu dans les éléments enfants du lien.
+
+- Du texte contenu dans le lien ;
+- Du texte contenu dans les éléments enfants du lien.
 
 Lien image :
 
 En HTML, le « nom accessible » correspond au texte constitué à partir de
 l’alternative textuelle d’une ou plusieurs images dans le lien du type :
-* Image (balise `<img>` ou balise ayant l’attribut WAI-ARIA `role="img"`) ; 
-* Image objet (balise `<object>`) ; 
-* Image bitmap (balise `<canvas>`) ; 
-* Image vectorielle (balise `<svg>`). 
+
+- Image (balise `<img>` ou balise ayant l’attribut WAI-ARIA `role="img"`) ;
+- Image objet (balise `<object>`) ;
+- Image bitmap (balise `<canvas>`) ;
+- Image vectorielle (balise `<svg>`).
 
 Lien composite :
 
 En HTML, le « nom accessible » correspond au texte constitué à partir de
 l’ensemble :
-* Du texte contenu dans le lien ;
-* Du texte contenu dans les éléments enfant du lien ;
-* Du contenu de l’alternative textuelle de la ou des images comprises dans le lien.
+
+- Du texte contenu dans le lien ;
+- Du texte contenu dans les éléments enfant du lien ;
+- Du contenu de l’alternative textuelle de la ou des images comprises dans le lien.
 
 Dans le cas d’un lien SVG (version 1.1), le « nom accessible » est obtenu
 comme suit :
-* Passage de texte associé par l’attribut WAI-ARIA `aria-labelledby` ; 
-* Sinon, contenu de l’attribut WAI-ARIA `aria-label` ; 
-* Sinon, contenu de l’élément `<title>` enfant direct du lien ; 
-* Sinon, contenu de l’attribut `xlink:title` ; 
-* Sinon, contenu texte d’un ou plusieurs éléments `<text>`.
+
+- Passage de texte associé par l’attribut WAI-ARIA `aria-labelledby` ;
+- Sinon, contenu de l’attribut WAI-ARIA `aria-label` ;
+- Sinon, contenu de l’élément `<title>` enfant direct du lien ;
+- Sinon, contenu de l’attribut `xlink:title` ;
+- Sinon, contenu texte d’un ou plusieurs éléments `<text>`.
 
 Il faut cependant être vigilant car cet algorithme de calcul n’est pas encore
 pris en compte et effectif au sein des différents lecteurs d’écran. À ce jour,
@@ -81,7 +87,6 @@ regard du {% crit 10.2 %} et du {% crit 6.2 %}.
 
 Note 5 : bien que le calcul du nom accessible d’un lien tienne compte de
 contenus texte générés en CSS via les pseudo-éléments `::before` et `::after`,
- cette pratique ne doit pas être utilisée, car elle constitue une non-
+cette pratique ne doit pas être utilisée, car elle constitue une non-
 conformité au critère 1.3.1 des WCAG 2.1 (cf.
 [F87](https://www.w3.org/WAI/WCAG21/Techniques/failures/F87)).
-

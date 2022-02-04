@@ -1,5 +1,5 @@
 ---
-title: Moteur de recherche (interne à un site web) 
+title: Moteur de recherche (interne à un site web)
 ---
 
 Zone donnant accès directement (formulaire) ou indirectement (élément
@@ -13,4 +13,3 @@ une section marchés publics…
 
 Voir la définition technique de zone d’en-tête fournie par WAI-ARIA [ `search`
 (role) ](https://www.w3.org/TR/wai-aria-1.1/#search).
-

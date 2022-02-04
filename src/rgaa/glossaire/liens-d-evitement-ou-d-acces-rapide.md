@@ -1,5 +1,5 @@
 ---
-title: Liens d’évitement ou d’accès rapide 
+title: Liens d’évitement ou d’accès rapide
 ---
 
 Liens dont la fonction est de permettre de naviguer à l’intérieur de la page
@@ -16,4 +16,3 @@ l’audit.
 Note 2 : les liens d’évitements ou d’accès rapide doivent être situés à la
 même place dans la présentation et dans le même ordre relatif dans le code
 source afin de satisfaire au {% crit 12.2 %}.
-

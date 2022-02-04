@@ -1,5 +1,5 @@
 ---
-title: Alternative (à script) 
+title: Alternative (à script)
 ---
 
 Texte ou procédé associé au script via une technique appropriée et permettant
@@ -12,4 +12,3 @@ peut s’agir d’un lien ou d’un bouton permettant d’accéder à une page
 alternative fonctionnant sans JavaScript ou permettant de remplacer le(s)
 composant(s) par un composant alternatif fonctionnant sans JavaScript par
 exemple.
-

@@ -1,5 +1,5 @@
 ---
-title: Page « plan du site » 
+title: Page « plan du site »
 ---
 
 Page dédiée présentant l’arborescence d’un site web, généralement sous forme
@@ -12,4 +12,3 @@ de balises `<area>`.
 Note 2 : il n’est pas nécessaire que le plan du site contienne les liens vers
 toutes les pages du site, en revanche il est nécessaire qu’à partir du plan du
 site, l’utilisateur puisse atteindre l’ensemble des pages du site.
-

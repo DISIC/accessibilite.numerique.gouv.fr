@@ -1,9 +1,9 @@
 ---
-WCAG: 
-- successCriterion: 1.4.1
-  title: Use of Color
-  level: A
+WCAG:
+  - successCriterion: 1.4.1
+    title: Use of Color
+    level: A
 Techniques:
-- G183
-- F73
+  - G183
+  - F73
 ---

@@ -1,5 +1,5 @@
 ---
-title: Contenu alternatif 
+title: Contenu alternatif
 ---
 
 Contenu venant se substituer à un autre apportant la même information mais
@@ -10,4 +10,3 @@ sont applicables pour être considéré comme une alternative accessible à
 l’élément qu’il remplace. Exemple : un tableau de données peut être le contenu
 alternatif d’une image bitmap (balise `<canvas>`) affichant un graphique
 statistique.
-

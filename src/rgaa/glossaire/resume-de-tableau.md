@@ -1,5 +1,5 @@
 ---
-title: Résumé (de tableau) 
+title: Résumé (de tableau)
 ---
 
 Un résumé est un passage de texte associé à un tableau de données complexe. Il
@@ -17,4 +17,3 @@ attribut `summary` sur la balise `<table>`.
 Dans le cas d’une balise avec l’attribut WAI-ARIA `role="table"`, le résumé
 doit être fourni au moyen d’un attribut `aria-describedby` et être
 correctement restitué par les technologies d’assistance.
-

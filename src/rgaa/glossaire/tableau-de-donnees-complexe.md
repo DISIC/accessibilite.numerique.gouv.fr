@@ -1,5 +1,5 @@
 ---
-title: Tableau de données complexe 
+title: Tableau de données complexe
 ---
 
 Un tableau de données est une structure introduite par une balise `<table>` ou
@@ -13,4 +13,3 @@ on parle de tableau de données complexe. Il est alors nécessaire de fournir un
 « résumé » permettant d’en expliquer sa nature et sa structure afin d’en
 faciliter la consultation pour des utilisateurs de technologies d’assistance
 par exemple.
-

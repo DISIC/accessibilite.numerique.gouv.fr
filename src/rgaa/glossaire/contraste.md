@@ -1,5 +1,5 @@
 ---
-title: Contraste 
+title: Contraste
 ---
 
 Opposition marquée entre la luminosité d’une couleur de premier plan et d’une
@@ -7,16 +7,18 @@ couleur d’arrière-plan. Le rapport de contraste est basé sur la différence 
 luminance relative entre l’arrière-plan et le premier plan selon la règle :
 (L1 + 0,05) / (L2 + 0,05) où L1 est la luminance relative la plus claire et L2
 la luminance relative la plus sombre. La luminosité est calculée selon la
-formule suivante : L = 0,2126 * R + 0,7152 * G + 0,0722 * B. Où R, G et B sont
+formule suivante : L = 0,2126 _ R + 0,7152 _ G + 0,0722 \* B. Où R, G et B sont
 définis par :
-* Si R sRGB ⩽ 0,03928 alors R = R sRGB /12,92 sinon R = ((R sRGB +0,055)/1,055) ^ 2,4 ; 
-* Si G sRGB ⩽ 0,03928 alors G = G sRGB /12,92 sinon G = ((G sRGB +0,055)/1,055) ^ 2,4 ; 
-* Si B sRGB ⩽ 0,03928 alors B = B sRGB /12.92 sinon B = ((B sRGB +0,055)/1,055) ^ 2,4. 
+
+- Si R sRGB ⩽ 0,03928 alors R = R sRGB /12,92 sinon R = ((R sRGB +0,055)/1,055) ^ 2,4 ;
+- Si G sRGB ⩽ 0,03928 alors G = G sRGB /12,92 sinon G = ((G sRGB +0,055)/1,055) ^ 2,4 ;
+- Si B sRGB ⩽ 0,03928 alors B = B sRGB /12.92 sinon B = ((B sRGB +0,055)/1,055) ^ 2,4.
 
 et R sRGB, G sRGB et B sRGB sont définis par :
-* R sRGB = R8bit/255 ; 
-* G sRGB = G8bit/255 ; 
-* B sRGB = B8bit/255. 
+
+- R sRGB = R8bit/255 ;
+- G sRGB = G8bit/255 ;
+- B sRGB = B8bit/255.
 
 Le caractère « ^ » est l’opérateur de puissance.
 
@@ -30,4 +32,3 @@ ou d’une vidéo (par exemple un écriteau, une affiche…) ne sont pas
 concernés.
 
 Source (en anglais) : [Procédure de calcul de contraste des WCAG](https://www.w3.org/WAI/WCAG21/Techniques/general/G18#procedure).
-

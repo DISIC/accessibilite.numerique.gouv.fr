@@ -6,4 +6,3 @@ eleventyNavigation:
   parent: ressources
   order: 0
 ---
-

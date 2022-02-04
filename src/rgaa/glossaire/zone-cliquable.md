@@ -1,5 +1,5 @@
 ---
-title: Zone cliquable 
+title: Zone cliquable
 ---
 
 Région d’une image réactive à laquelle une action a été associée ; par
@@ -9,4 +9,3 @@ balises `<area>` sont contenues dans la balise `<map>`.
 
 Pour les images réactives côté serveur, les coordonnées sont détenues sur le
 serveur.
-

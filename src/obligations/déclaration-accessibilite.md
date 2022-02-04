@@ -7,20 +7,20 @@ eleventyNavigation:
   order: 4
 ---
 
-
 ## Contenu de la déclaration d’accessibilité
 
 La déclaration d’accessibilité est le résultat d’une évaluation effective de la conformité du service de communication au public en ligne à la norme de référence.
 
 La déclaration d’accessibilité comprend :
-* un état de conformité :
-    * Conformité totale : si tous les critères de contrôle du RGAA sont respectés
-    * Conformité partielle : si au moins 50 % des critères de contrôle du RGAA sont respectés ;
-    * Non-conformité : s’il n’existe aucun résultat d’audit en cours de validité permettant de mesurer le respect des critères ou si moins de 50 % des critères de contrôle du RGAA sont respectés ;
-* un signalement des contenus non accessibles, distingués selon qu’il s’agit de non-conformité avec le RGAA, de contenus exemptés ou de contenus soumis à dérogation pour charge disproportionnée. Dans ce dernier cas, les dérogations doivent être expliquées et motivées. Le signalement est assorti, le cas échéant, d’une présentation des alternatives accessibles prévues ;
-* des dispositifs d’assistance et de contact :
-    * un mécanisme accessible (adresse électronique ou formulaire) pour permettre à toute personne de signaler à l’organisme concerné tout défaut d’accessibilité et à une personne handicapée de demander les informations correspondantes ou une solution alternative accessible ;
-* la mention de la faculté pour la personne concernée de saisir le Défenseur des droits, en cas d’absence de réponse ou de solution, une fois les démarches effectuées via le mécanisme mentionné ci-dessus.
+
+- un état de conformité :
+  - Conformité totale : si tous les critères de contrôle du RGAA sont respectés
+  - Conformité partielle : si au moins 50 % des critères de contrôle du RGAA sont respectés ;
+  - Non-conformité : s’il n’existe aucun résultat d’audit en cours de validité permettant de mesurer le respect des critères ou si moins de 50 % des critères de contrôle du RGAA sont respectés ;
+- un signalement des contenus non accessibles, distingués selon qu’il s’agit de non-conformité avec le RGAA, de contenus exemptés ou de contenus soumis à dérogation pour charge disproportionnée. Dans ce dernier cas, les dérogations doivent être expliquées et motivées. Le signalement est assorti, le cas échéant, d’une présentation des alternatives accessibles prévues ;
+- des dispositifs d’assistance et de contact :
+  - un mécanisme accessible (adresse électronique ou formulaire) pour permettre à toute personne de signaler à l’organisme concerné tout défaut d’accessibilité et à une personne handicapée de demander les informations correspondantes ou une solution alternative accessible ;
+- la mention de la faculté pour la personne concernée de saisir le Défenseur des droits, en cas d’absence de réponse ou de solution, une fois les démarches effectuées via le mécanisme mentionné ci-dessus.
 
 **La déclaration d’accessibilité adopte obligatoirement ce format :**
 
@@ -123,6 +123,6 @@ L’organisme concerné fournit en ligne aux utilisateurs la possibilité de fai
 
 L’organisme concerné répond à toute réclamation dans un délai d’une semaine à compte de sa date d’envoi. Si la réclamation de l’utilisateur soulève une ou plusieurs questions complexes justifiant un délai d’examen plus long, la réponse indique un délai raisonnable pour la réponse définitive. Le caractère complexe des questions soulevées doit être dûment motivé.
 
-L’utilisateur  doit s’identifier dans sa réclamation en suivant les prescriptions de l’article R112-9-1 du même code.
+L’utilisateur doit s’identifier dans sa réclamation en suivant les prescriptions de l’article R112-9-1 du même code.
 
 Si les informations transmises par l’utilisateur dans sa réclamation sont incomplètes ou ne sont pas suffisamment claires, l’organisme concerné lui demande de les compléter ou de les clarifier et lui communique le délai raisonnable de traitement ou sa réponse définitive après réception des compléments demandés.

@@ -1,5 +1,5 @@
 ---
-title: Modifier ou annuler les données et les actions effectués 
+title: Modifier ou annuler les données et les actions effectués
 ---
 
 Procédés par lesquels un utilisateur peut modifier les données qu’il a
@@ -13,4 +13,3 @@ pendant laquelle l’utilisateur peut demander l’annulation de sa saisie. Elle
 devra également contenir la procédure à effectuer pour annuler cette saisie.
 Cette procédure n’a pas à être obligatoirement réalisable en ligne même si
 cela reste recommandé.
-

@@ -1,12 +1,12 @@
 ---
-WCAG: 
-- successCriterion: 1.3.1
-  title: Info and Relationships
-  level: A
-Techniques: 
-- H43
-- H63
-- F90
+WCAG:
+  - successCriterion: 1.3.1
+    title: Info and Relationships
+    level: A
+Techniques:
+  - H43
+  - H63
+  - F90
 ---
 
 #### Cas particuliers

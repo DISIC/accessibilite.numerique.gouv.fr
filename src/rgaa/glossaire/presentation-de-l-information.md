@@ -1,5 +1,5 @@
 ---
-title: Présentation de l’information 
+title: Présentation de l’information
 ---
 
 Restitution visuelle des contenus via un navigateur en mode graphique. La
@@ -15,4 +15,3 @@ via CSS. Les éléments (`basefont`, `blink`, `center`, `font`, `marquee`,
 Note : les attributs `width` et `height` utilisés sur d’autres éléments que
 les balises `<img>`, `<object>`, `<embed>`, `<canvas>` et `<svg>` sont
 également interdits.
-

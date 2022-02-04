@@ -1,5 +1,5 @@
 ---
-title: Légende 
+title: Légende
 ---
 
 HTML propose un dispositif permettant de titrer les groupes de champs de même
@@ -21,4 +21,3 @@ Note 2 : Lorsque le formulaire est constitué d’un seul bloc d’informations
 même nature (l’identité et l’adresse de l’utilisateur, par exemple) ou d’un
 champ unique (un moteur de recherche, par exemple), le regroupement des champs
 n’est pas obligatoire.
-

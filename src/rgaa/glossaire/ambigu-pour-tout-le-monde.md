@@ -1,5 +1,5 @@
 ---
-title: Ambigu pour tout le monde 
+title: Ambigu pour tout le monde
 ---
 
 L’intention ne peut être déterminée à partir du lien et de toute l’information
@@ -12,4 +12,3 @@ graphe présentant une liste des quantités de goyaves exportées ou à une phot
 de personnes récoltant la goyave. Jusqu’à ce que le lien soit activé, tout
 utilisateur est dans l’incertitude et une personne handicapée n’est donc pas
 désavantagée.
-

@@ -1,5 +1,5 @@
 ---
-title: Le nom, le rôle, la valeur, le paramétrage et les changements d’états 
+title: Le nom, le rôle, la valeur, le paramétrage et les changements d’états
 ---
 
 Un composant doit avoir un rôle et un nom appropriés. Ses valeurs, états et
@@ -48,4 +48,3 @@ Practices](http://www.w3.org/TR/wai-aria-practices/)</span>.
 
 Note : les rôles, propriétés et états WAI-ARIA s’implémentent via des
 attributs, par exemple `role="banner"`, `aria-hidden="true"`.
-

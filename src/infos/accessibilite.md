@@ -25,7 +25,8 @@ La DINUM invite les personnes qui rencontreraient des difficultés à la contact
 Si vous constatez un défaut d’accessibilité vous empêchant d’accéder à un contenu ou une fonctionnalité du site, que vous nous le signalez et que vous ne parvenez pas à obtenir une réponse rapide de notre part, vous êtes en droit de faire parvenir vos doléances ou une demande de saisine au Défenseur des droits.
 
 Plusieurs moyens sont à votre disposition :
-* un [formulaire de contact](https://www.defenseurdesdroits.fr/nous-contacter)
-* la [liste des délégués de votre région](https://www.defenseurdesdroits.fr/fr/saisir/delegues) avec leurs informations de contact directs
-* un numéro de téléphone : le 09 69 39 00 00 du lundi au vendredi de 8h00 à 20h00 (coût d’un appel local)
-* une adresse postale dans l’[annuaire de l’administration](https://lannuaire.service-public.fr/autorites-independantes/autorite-administrative-independante_195381)
+
+- un [formulaire de contact](https://www.defenseurdesdroits.fr/nous-contacter)
+- la [liste des délégués de votre région](https://www.defenseurdesdroits.fr/fr/saisir/delegues) avec leurs informations de contact directs
+- un numéro de téléphone : le 09 69 39 00 00 du lundi au vendredi de 8h00 à 20h00 (coût d’un appel local)
+- une adresse postale dans l’[annuaire de l’administration](https://lannuaire.service-public.fr/autorites-independantes/autorite-administrative-independante_195381)

@@ -27,6 +27,9 @@
 		"slugify": "^1.6.5"
 	},
 	"devDependencies": {
+		"@babel/preset-env": "^7.16.11",
+		"esbuild": "^0.14.19",
+		"esbuild-plugin-babel": "github:schloerke/esbuild-plugin-babel#patch-2",
 		"eslint": "^8.8.0",
 		"prettier": "^2.5.1"
 	}

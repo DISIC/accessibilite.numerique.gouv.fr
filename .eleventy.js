@@ -1,6 +1,9 @@
 const { styles } = require("eleventy-plugin-styles");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const pluginTOC = require("eleventy-plugin-toc");
+const esbuild = require("esbuild");
+const babel = require("esbuild-plugin-babel");
+
 /**
  * Get the criteria number to be compared for sorting purpose
  *
@@ -20,6 +23,67 @@ function getCriteriaNumToCompare(critNumTxt) {
 const isProd = process.env.ELEVENTY_ENV === "production";
 
 module.exports = function (eleventyConfig) {
+	eleventyConfig.on("eleventy.after", () => {
+		// main.js
+		const options = {
+			minify: isProd,
+			sourcemap: !isProd,
+		};
+
+		const mainOptions = {
+			...options,
+			entryPoints: ["src/js/main.js"],
+		};
+
+		const noModuleOptions = {
+			plugins: [babel()],
+			target: ["es5"],
+			bundle: true,
+		};
+
+		const mainPromiseNoModule = esbuild.build({
+			...mainOptions,
+			...noModuleOptions,
+			outfile: "public/js/main.nomodule.js",
+		});
+
+		const mainPromiseModule = esbuild.build({
+			...mainOptions,
+			outfile: "public/js/main.module.js",
+		});
+
+		/**
+		 * @todo Tree shake DSFR components
+		 * --> needs to import separate modules instead of
+		 */
+
+		// DSFR
+		// const dsfrOptions = {
+		// 	...options,
+		// 	treeShaking: true,
+		// };
+
+		// const dsfrPromiseNoModule = esbuild.build({
+		// 	...dsfrOptions,
+		// 	...noModuleOptions,
+		// 	entryPoints: ["src/js/dsfr.*.js"],
+		// 	outfile: "public/js/dsfr.nomodule.min.js",
+		// });
+
+		// const dsfrPromiseModule = esbuild.build({
+		// 	...mainOptions,
+		// 	outfile: "public/js/main.module.js",
+		// });
+
+		// return mainPromiseNoModule
+		// 	.then(mainPromiseModule)
+		// 	.then(dsfrPromiseNoModule)
+		// 	.then(dsfrPromiseModule);
+
+		return mainPromiseNoModule.then(mainPromiseModule);
+	});
+	eleventyConfig.addWatchTarget("./src/js/");
+
 	eleventyConfig.addPlugin(pluginTOC, {
 		tags: ["h2"],
 		wrapper: "nav",
@@ -158,8 +222,9 @@ module.exports = function (eleventyConfig) {
 	});
 
 	eleventyConfig.addPassthroughCopy("./src/css");
-	eleventyConfig.addPassthroughCopy("./src/js");
 	eleventyConfig.addPassthroughCopy("./src/fonts");
+	/** @todo : remove dsfr passthrough when bundle with esbuild **/
+	eleventyConfig.addPassthroughCopy("./src/js/dsfr*");
 	eleventyConfig.addPassthroughCopy("./src/favicon");
 
 	return {

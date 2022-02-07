@@ -1,20 +1,20 @@
 {% extends './base-rgaaNav.njk' %}
 {% block contenu %}
-<div id="summary" class="summary">
+<div id="filtres-criteres" class="summary">
 	<div class="fr-form-group">
-		<fieldset class="fr-fieldset fr-fieldset--inline"  disabled="disabled">
+		<fieldset class="fr-fieldset fr-fieldset--inline">
 			<legend class="fr-fieldset__legend fr-text--regular" id='checkboxes-inline-legend'>Filtres de consultation</legend>
 			<div class="fr-fieldset__content">
 				<div class="fr-checkbox-group">
-					<input type="checkbox" id="checkboxes-inline-1" name="checkboxes-inline-1">
+					<input type="checkbox" id="checkboxes-inline-1" name="checkboxes-inline-1" data-filter="all">
 					<label class="fr-label" for="checkboxes-inline-1">Afficher les tests</label>
 				</div>
 				<div class="fr-checkbox-group">
-					<input type="checkbox" id="checkboxes-inline-2" name="checkboxes-inline-2">
+					<input disabled type="checkbox" id="checkboxes-inline-2" name="checkboxes-inline-2" data-filter="A">
 					<label class="fr-label" for="checkboxes-inline-2">Niveau WCAG A</label>
 				</div>
 				<div class="fr-checkbox-group">
-					<input type="checkbox" id="checkboxes-inline-3" name="checkboxes-inline-3">
+					<input disabled type="checkbox" id="checkboxes-inline-3" name="checkboxes-inline-3" data-filter="AA">
 					<label class="fr-label" for="checkboxes-inline-3">Niveau WCAG AA</label>
 				</div>
 			</div>
@@ -41,7 +41,7 @@
 			<ul>
 		{% endif %}
 		<li class="criterion"><!--a class="direct-link" href="#{{ critNum }}">#</a-->
-			
+
 			<h3 class="fr-accordion__title" id="{{ critNum }}">
 			<span class="crit">{{ critNum }}</span>
 			{{ crit.data.title | markdownInline | safe | replace("#","/ressources/glossaire/#")}}
@@ -59,7 +59,7 @@
 						{% for step in t.test.data.steps %}
 							<li>{{ step | markdownInline | safe  | replace("#","/ressources/glossaire/#") }}</li>
 						{% endfor %}
-						</ul> 
+						</ul>
 						{% endif %}
 						{% if t.test.templateContent != "" %}
 							<div class="methodologie">
@@ -73,7 +73,7 @@
 				<div class="annexes ref">
 					{{ annexeCrit.templateContent | safe | replace("#","/ressources/glossaire/#") }}
 					<h4 class="fr-h5 fr-my-1w">Références <small>(en anglais)</small></h4>
-					
+
 					{% if annexeCrit.data.WCAG != null %}
 						<h5 class="fr-h6 fr-mb-1w"><abbr lang="en" title="Web content accessibility guidelines">WCAG</abbr></h5>
 					<ul class="wcag ">
@@ -103,7 +103,7 @@
 									{% set path = "client-side-script" %}
 								{% else %}
 									{% set path = "smil" %}
-								{% endif %}                                   
+								{% endif %}
 							{% endif %}
 							<li class="fr-text--sm"><a target="_blank" title="{{ technique }} - nouvelle fenêtre" href="https://www.w3.org/WAI/WCAG21/Techniques/{{ path }}/{{ technique }}">{{ technique }}</a></li>
 							{% endfor %}

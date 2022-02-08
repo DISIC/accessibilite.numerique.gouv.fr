@@ -10,11 +10,11 @@
 					<label class="fr-label" for="checkboxes-inline-1">Afficher les tests</label>
 				</div>
 				<div class="fr-checkbox-group">
-					<input disabled type="checkbox" id="checkboxes-inline-2" name="checkboxes-inline-2" data-filter="A">
+					<input type="checkbox" id="checkboxes-inline-2" checked name="checkboxes-inline-2" data-filter="A">
 					<label class="fr-label" for="checkboxes-inline-2">Niveau WCAG A</label>
 				</div>
 				<div class="fr-checkbox-group">
-					<input disabled type="checkbox" id="checkboxes-inline-3" name="checkboxes-inline-3" data-filter="AA">
+					<input type="checkbox" id="checkboxes-inline-3" checked name="checkboxes-inline-3" data-filter="AA">
 					<label class="fr-label" for="checkboxes-inline-3">Niveau WCAG AA</label>
 				</div>
 			</div>
@@ -32,6 +32,8 @@
 		{% set themeNum = c.themeNum %}
 		{% set tests = c.tests %}
 		{% set annexeCrit = c.annexeCrit %}
+		{% set wcagLevels = "" %}
+
 		{% if themeNum > 1 and themeNum !== curThemeNum %}
 			</ul>
 		{% endif %}
@@ -40,7 +42,12 @@
 			<h2 id="{{ themeNum }}">{{ themeNum }}.&nbsp;{{ themes[themeNum].title }} <!--a class="direct-link" href="#{{ themeNum }}">#</a--></h2>
 			<ul>
 		{% endif %}
-		<li class="criterion"><!--a class="direct-link" href="#{{ critNum }}">#</a-->
+
+		{% for wcag in annexeCrit.data.WCAG %}
+		  {% set wcagLevels = wcagLevels + wcag.level + "," %}
+		{% endfor %}
+
+		<li class="criterion" data-wcag-level="{{ wcagLevels }}"><!--a class="direct-link" href="#{{ critNum }}">#</a-->
 
 			<h3 class="fr-accordion__title" id="{{ critNum }}">
 			<span class="crit">{{ critNum }}</span>

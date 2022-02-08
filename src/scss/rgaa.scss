@@ -74,8 +74,17 @@ li.criterion {
 	list-style-type: none;
 	margin: 2em 0;
 	padding: 0.25em;
-	border: 1px solid var(--background-action-low-blue-ecume);
-	border: 1px solid var(--artwork-minor-beige-gris-galet);
+	/*border: 1px solid var(--background-action-low-blue-ecume);*/
+	border-top: 1px solid var(--artwork-minor-beige-gris-galet);
+	h3 {
+		font-weight: 400;
+		span.crit {
+			font-weight: 700;
+		}
+	}
+	a.ancre {
+		box-shadow: none;
+	}
 	.fr-collapse--expanded {
 		background-color: var(--background-action-low-blue-ecume);
 	}

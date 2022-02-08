@@ -23,7 +23,7 @@ code {
 	font-size: 0.9em;
 	padding-left: 2em;
 	margin-top: 2em;
-	border-left: 0.2em solid white;
+	background-color: #ffffff;
 	p {
 		font-weight: 800;
 	}
@@ -86,7 +86,15 @@ li.criterion {
 		box-shadow: none;
 	}
 	.fr-collapse--expanded {
-		background-color: var(--background-action-low-blue-ecume);
+/*		
+tests de couleurs :(
+background-color: var(--background-action-low-blue-ecume);
+background-color: var(--yellow-tournesol-975-75);
+background-color: var(--background-alt-beige-gris-galet);
+background-color: var(--yellow-moutarde-975-75);
+*/
+border-left: 3px solid var(--background-action-low-blue-ecume);
+margin-left: 1.25em;
 	}
 	button {
 		font-size: smaller;
@@ -105,7 +113,7 @@ li.criterion {
 	}
 }
 span.aModifier {
-	background-color: var(--background-action-low-blue-ecume);
+	background-color: var(--yellow-moutarde-975-75);
 	font-weight: 200;
 	padding: 0 0.2em;
 }

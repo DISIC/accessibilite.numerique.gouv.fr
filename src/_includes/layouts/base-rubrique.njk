@@ -1,0 +1,37 @@
+{% include "components/header.njk" %}
+<main role="main" id="contenu">
+	<div class="fr-container fr-mb-4w">
+    	<div class="fr-grid-row fr-grid-row--gutters fr-grid-row--center">
+    		<div class="fr-col-12 fr-col-sm-12 fr-col-md-10 fr-col-lg-8">
+          {% include "components/breadcrumb.njk" %}
+          <h1>{{ title }}</h1>
+          <div class="fr-mt-4w fr-grid-row fr-grid-row--gutters fr-grid-row--center">
+              {% if eleventyNavigation.key == "obligations" %}
+                {% for g in collections.obligations %}
+                  <div class="fr-col-12 fr-col-sm-6  fr-col-md-4 fr-col-xl-3">      
+                    <div class="fr-tile fr-enlarge-link fr-tile--horizontal">
+                      <div class="fr-tile__body">
+                        <h2 class="fr-tile__title"><a class="fr-tile__link" href="{{  g.slug }}">{{  g.obligation.data.title }}</a></h2>
+                      </div>
+                    </div>      
+                  </div>
+                {% endfor %}  
+              {% elif eleventyNavigation.key == "ressources"  %}
+                {% for g in collections.ressources %}
+                  <div class="fr-col-12 fr-col-sm-6  fr-col-md-4 fr-col-xl-3">      
+                    <div class="fr-tile fr-enlarge-link fr-tile--horizontal">
+                      <div class="fr-tile__body">
+                        <h2 class="fr-tile__title"><a class="fr-tile__link" href="{{  g.slug }}">{{  g.ressource.data.title }}</a></h2>
+                      </div>
+                    </div>      
+                  </div>
+                {% endfor %} 
+                {% else %}
+                Oups, cette rubrique n’a pas été trouvée :(
+              {% endif %}
+          </div>
+        </div>
+      </div>
+  </div>
+</main>
+{% include "components/footer.njk" %}

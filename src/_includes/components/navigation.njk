@@ -55,7 +55,8 @@
                         <a class="fr-nav__link" href="/obligations/mentions-et-pages-obligatoires/" target="_self">Mentions et pages obligatoires</a>
                     </li>
                 </ul>
-            </div>            {% else %}
+            </div>            
+            {% else %}
                 <a class="fr-nav__link" href="{{ entry.url | url }}" {% if entry.url == page.url %}aria-current="page"{% endif %}>{{ entry.title }}</a>
             {% endif %}
             </li>

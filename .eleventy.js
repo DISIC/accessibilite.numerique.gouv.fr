@@ -131,6 +131,30 @@ module.exports = function (eleventyConfig) {
 	// This is the part that tells 11ty to swap to our custom config
 	eleventyConfig.setLibrary("md", markdownLibrary);
 
+	// Custom collection: Les obligations légales		
+	eleventyConfig.addCollection("obligations", function (collection) {
+		const obligation = collection.getFilteredByGlob("./src/obligations/*.md");
+		const obligations = obligation.map(function (obligation) {
+			const slug = obligation.fileSlug;
+			return {
+				obligation,
+				slug,
+			};
+		});
+		return obligations;
+	});
+	// Custom collection: Les ressources		
+	eleventyConfig.addCollection("ressources", function (collection) {
+		const ressource = collection.getFilteredByGlob("./src/ressources/*.md");
+		const ressources = ressource.map(function (ressource) {
+			const slug = ressource.fileSlug;
+			return {
+				ressource,
+				slug,
+			};
+		});
+		return ressources;
+	});
 	// Custom collection: La faq
 	eleventyConfig.addCollection("faq", function (collection) {
 		const question = collection.getFilteredByGlob("./src/rgaa/faq/*.md");

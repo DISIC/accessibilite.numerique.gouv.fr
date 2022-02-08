@@ -4,5 +4,5 @@ layout: layouts/glossaire.njk
 eleventyNavigation:
   title: Ressources
   parent: ressources
-  order: 0
+  order: 1
 ---

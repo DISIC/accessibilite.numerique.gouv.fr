@@ -4,7 +4,7 @@ layout: layouts/base.njk
 eleventyNavigation:
   title: Ressources
   parent: ressources
-  order: 6
+  order: 8
 ---
 
 Vous pouvez poser vos questions sur la liste de discussion du RGAA accessible sur inscription.

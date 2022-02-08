@@ -22,4 +22,5 @@ Cette version bêta publique est ouverte aux contributions.
     - x est l’identifiant de la thématique (Ex. #5 pour accéder à la thématique _tableau_) ;
     - y est l’identifiant du critère (Ex. #7.1 pour accéder au critère _7.1_) ;
     - z est l’identifiant du test (Ex. #1.1.5 pour accéder au test _1.1.5_).
+- Ajout d’un exemple de déclaration d’accessibilité ;
 - Ajout d’une « FAQ » simplifiée pour faciliter la compréhension des enjeux d’accessibilité numérique.

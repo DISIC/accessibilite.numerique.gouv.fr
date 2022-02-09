@@ -131,30 +131,40 @@ module.exports = function (eleventyConfig) {
 	// This is the part that tells 11ty to swap to our custom config
 	eleventyConfig.setLibrary("md", markdownLibrary);
 
-	// Custom collection: Les obligations légales		
+	// Custom collection: Les obligations légales
 	eleventyConfig.addCollection("obligations", function (collection) {
-		const obligation = collection.getFilteredByGlob("./src/obligations/*.md");
-		const obligations = obligation.map(function (obligation) {
+		let obligations = collection.getFilteredByGlob("./src/obligations/*.md");
+		obligations = obligations.map(function (obligation) {
 			const slug = obligation.fileSlug;
 			return {
 				obligation,
 				slug,
 			};
 		});
-		return obligations;
+		return obligations.sort(
+			(a, b) =>
+				a.obligation.data.eleventyNavigation.order -
+				b.obligation.data.eleventyNavigation.order
+		);
 	});
-	// Custom collection: Les ressources		
+
+	// Custom collection: Les ressources
 	eleventyConfig.addCollection("ressources", function (collection) {
-		const ressource = collection.getFilteredByGlob("./src/ressources/*.md");
-		const ressources = ressource.map(function (ressource) {
+		let ressources = collection.getFilteredByGlob("./src/ressources/*.md");
+		ressources = ressources.map(function (ressource) {
 			const slug = ressource.fileSlug;
 			return {
 				ressource,
 				slug,
 			};
 		});
-		return ressources;
+		return ressources.sort(
+			(a, b) =>
+				a.ressource.data.eleventyNavigation.order -
+				b.ressource.data.eleventyNavigation.order
+		);
 	});
+
 	// Custom collection: La faq
 	eleventyConfig.addCollection("faq", function (collection) {
 		const question = collection.getFilteredByGlob("./src/rgaa/faq/*.md");

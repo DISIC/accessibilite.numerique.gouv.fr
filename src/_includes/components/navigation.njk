@@ -10,7 +10,7 @@
             <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-ressources">{{ entry.title }} </button>
             <div class="fr-collapse fr-menu" id="menu-ressources">
                 <ul class="fr-menu__list">
-                {% for g in collections.ressources | sort %}
+                {% for g in collections.ressources %}
                  <li><a class="fr-nav__link" href="/ressources/{{  g.slug }}" target="_self">{{  g.ressource.data.title }}</a></li>
                 {% endfor %}
                 </ul>

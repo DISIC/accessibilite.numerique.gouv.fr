@@ -24,21 +24,23 @@ const isProd = process.env.ELEVENTY_ENV === "production";
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.on("eleventy.after", () => {
-		// main.js
+		// Options for all scripts
 		const options = {
 			minify: isProd,
 			sourcemap: !isProd,
+			bundle: true,
 		};
 
+		// Options for main.js
 		const mainOptions = {
 			...options,
 			entryPoints: ["src/js/main.js"],
 		};
 
+		// Options for the "nomodule version" of main.js
 		const noModuleOptions = {
 			plugins: [babel()],
 			target: ["es5"],
-			bundle: true,
 		};
 
 		const mainPromiseNoModule = esbuild.build({

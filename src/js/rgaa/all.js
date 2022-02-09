@@ -7,13 +7,26 @@ export function init() {
 			return;
 		}
 
-		for (let i = 0, button, expanded; i < 10; i++) {
-			button = el.getElementsByTagName("button")[0];
-			if (button) {
-				expanded = button.getAttribute("aria-expanded");
-				if (expanded === "false") {
-					button.setAttribute("aria-expanded", "true");
-					return;
+		const anchoredEl = el;
+		// From the anchored element upwards, scan the DOM to spot the opening button
+		// (`aria-controls` is used to identify the right button)
+		for (let i = 0, button, controlledId, expanded; i < 10; i++) {
+			if (!controlledId && el.classList.contains("fr-collapse")) {
+				controlledId = el.getAttribute("id");
+			}
+			if (controlledId) {
+				button = document.querySelector(
+					"[aria-controls='" + controlledId + "']"
+				);
+				if (button) {
+					expanded = button.getAttribute("aria-expanded");
+					if (expanded === "false") {
+						button.setAttribute("aria-expanded", "true");
+						setTimeout(function () {
+							return anchoredEl.scrollIntoView();
+						}, 500);
+						return;
+					}
 				}
 			}
 			el = el.parentElement;

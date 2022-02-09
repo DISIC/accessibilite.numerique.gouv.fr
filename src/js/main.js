@@ -1,8 +1,8 @@
 // Handle the 3 filters in criteria page
 const filtresEl = document.querySelector("#filtres-criteres");
-const buttonElms = filtresEl.parentElement.getElementsByTagName("button");
-const liEls = filtresEl.parentElement.querySelectorAll("li.criterion");
 if (filtresEl) {
+	const buttonElms = filtresEl.parentElement.getElementsByTagName("button");
+	const liEls = filtresEl.parentElement.querySelectorAll("li.criterion");
 	// Everything happens under "filtres-criteres" element
 	filtresEl.addEventListener("change", function (e) {
 		const curEl = e.target;

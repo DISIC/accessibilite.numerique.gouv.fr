@@ -6,59 +6,24 @@
         <ul class="fr-nav__list">
             {%- for entry in collections.all | eleventyNavigation %}
             <li class="fr-nav__item {% if entry.url == page.url %} fr-nav__item--active{% endif %}">
-            {% if entry.title == "Ressources" %}
-            <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-ressources">{{ entry.title }}</button>
+            {% if entry.title ==  "Ressources" %}
+            <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-ressources">{{ entry.title }} </button>
             <div class="fr-collapse fr-menu" id="menu-ressources">
                 <ul class="fr-menu__list">
-                    <li>
-                        <a class="fr-nav__link" href="/ressources/glossaire" target="_self">Glossaire</a>
-                    </li>
-                    <li>
-                        <a class="fr-nav__link" href="/ressources/environnement-de-test" target="_self">Environnement de test</a>
-                    </li>
-                    <li>
-                        <a class="fr-nav__link" href="/ressources/methodologie-de-test" target="_self">Méthodologie de test</a>
-                    </li>
-                    <li>
-                        <a class="fr-nav__link" href="/ressources/references" target="_self">Références</a>
-                    </li>
-                    <li>
-                        <a class="fr-nav__link" href="/ressources/kit-audit" target="_self">Kit d’audit</a>
-                    </li>
-                    <li>
-                        <a class="fr-nav__link" href="/ressources/documentation" target="_self">Documentation</a>
-                    </li>
-                    <li>
-                        <a class="fr-nav__link" href="/ressources/modele-de-declaration/" target="_self">Exemple de déclaration d’accessibilité</a>
-                    </li>
-                    <li>
-                        <a class="fr-nav__link" href="/ressources/questions" target="_self">Questions</a>
-                    </li>
+                {% for g in collections.ressources | sort %}
+                 <li><a class="fr-nav__link" href="/ressources/{{  g.slug }}" target="_self">{{  g.ressource.data.title }}</a></li>
+                {% endfor %}
                 </ul>
             </div>
-            {% elif entry.title == "Obligations" %}
-            <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-obligations">{{ entry.title }}</button>
+            {% elif entry.title ==  "Obligations" %}
+            <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-obligations">{{ entry.title }} </button>
             <div class="fr-collapse fr-menu" id="menu-obligations">
                 <ul class="fr-menu__list">
-                    <li>
-                        <a class="fr-nav__link" href="/obligations/notions-accessibilite-numerique/" target="_self">Notions d’accessibilité numérique</a>
-                    </li>                    <li>
-                        <a class="fr-nav__link" href="/obligations/champ-application/" target="_self">Rappel du champ d’application</a>
-                    </li>
-                    <li>
-                        <a class="fr-nav__link" href="/obligations/evaluation-conformite/" target="_self">Évaluation de la conformité à la norme de référence</a>
-                    </li>
-                    <li>
-                        <a class="fr-nav__link" href="/obligations/déclaration-accessibilite/" target="_self">Déclaration d’accessibilité</a>
-                    </li>
-                    <li>
-                        <a class="fr-nav__link" href="/obligations/schema-pluriannuel/" target="_self">Schéma pluriannuel de mise en accessibilité</a>
-                    </li>
-                    <li>
-                        <a class="fr-nav__link" href="/obligations/mentions-et-pages-obligatoires/" target="_self">Mentions et pages obligatoires</a>
-                    </li>
+                {% for g in collections.obligations %}
+                 <li><a class="fr-nav__link" href="/obligations/{{  g.slug }}" target="_self">{{  g.obligation.data.title }}</a></li>
+                {% endfor %}
                 </ul>
-            </div>            
+            </div>
             {% else %}
                 <a class="fr-nav__link" href="{{ entry.url | url }}" {% if entry.url == page.url %}aria-current="page"{% endif %}>{{ entry.title }}</a>
             {% endif %}

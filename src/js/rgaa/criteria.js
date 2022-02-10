@@ -51,3 +51,5 @@ export function init() {
 		});
 	}
 }
+
+init();

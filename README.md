@@ -4,7 +4,7 @@ Ce dépôt est, pour l’instant, le bac à sable pour le nouveau site dédié a
 
 ## Infos
 
-Ce site est créé avec _11ty_ et utilise la version 1.2.1 du DSFR.
+Ce site est créé avec [11ty](https://www.11ty.dev/) et utilise la version 1.3.1 du [système de design de l’État](https://www.systeme-de-design.gouv.fr/).
 
 Tous les contenus sont au format _md_
 

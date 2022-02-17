@@ -17,4 +17,4 @@ Le RGAA est structuré en 2 parties :
 - La première présente les [obligations](obligations) à respecter : elle s’adresse aux juristes, aux référents et référentes accessibilité numérique, aux managers et à tous les métiers du web et de l’accessibilité numérique.
 - La deuxième contient une [liste de critères](criteres-et-tests) pour vérifier la conformité d’une page web : elle s’adresse aux auditeurs, auditrices, experts et expertes RGAA.
 
-Vous trouverez également un ensemble de [ressources](ressources) dédiées : le [glossaire](/ressources/glossaire/), un [kit d’audit](/ressources/kit-audit/), etc.
+

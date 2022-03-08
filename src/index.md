@@ -8,7 +8,7 @@ eleventyNavigation:
 
 <p class="fr-text--xs">16 septembre 2019 - Mis à jour le 18 février 2021</p>
 
-La direction interministérielle du numérique (DINUM) édite le référentiel général d’amélioration de l’accessibilité (RGAA), dont voici la quatrième version.
+La [direction interministérielle du numérique](https://www.numerique.gouv.fr) (DINUM) édite le référentiel général d’amélioration de l’accessibilité (RGAA), dont voici la quatrième version.
 
 <div class="fr-callout fr-my-6w" >
   <p class="fr-callout__text">L’<strong>accessibilité numérique</strong> consiste à rendre les contenus et services numériques compréhensibles et utilisables par les personnes en situation de handicap.</p>

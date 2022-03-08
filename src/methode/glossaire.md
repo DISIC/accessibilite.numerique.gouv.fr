@@ -1,5 +1,5 @@
 ---
-title: Le glossaire du RGAA
+title: Le glossaire
 layout: layouts/glossaire.njk
 eleventyNavigation:
   title: Méthode technique

@@ -1,9 +1,9 @@
 ---
-title: Les ressources
+title: Ressources
 layout: layouts/base-rubrique.njk
 eleventyNavigation:
   key: ressources
   title: Ressources
-  order: 4
+  order: 3
 ---
 

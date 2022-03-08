@@ -2,7 +2,7 @@
 title: Rappel du champ d’application
 layout: layouts/base.njk
 eleventyNavigation:
-  title: Obligations
+  title: Obligations légales
   parent: obligations
   order: 2
 ---

@@ -2,7 +2,8 @@
 title: Critères et tests
 layout: layouts/rgaa.njk
 eleventyNavigation:
-  title: Critères et tests
+  title: Méthode technique
+  parent: methode
   order: 2
 ---
 

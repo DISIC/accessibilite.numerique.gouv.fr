@@ -2,7 +2,7 @@
 title: Notion d’accessibilité numérique
 layout: layouts/base.njk
 eleventyNavigation:
-  title: Obligations
+  title: Obligations légales
   parent: obligations
   order: 1
 ---

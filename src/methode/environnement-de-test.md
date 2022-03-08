@@ -2,9 +2,9 @@
 title: Environnement de test
 layout: layouts/base.njk
 eleventyNavigation:
-  title: Ressources
-  parent: ressources
-  order: 2
+  title: Méthode technique
+  parent: methode
+  order: 4
 ---
 
 Quelques critères RGAA, notamment ceux de la thématique JavaScript, incluent des tests de restitution à effectuer sur des technologies d’assistance associées à des navigateurs et des systèmes d’exploitation.

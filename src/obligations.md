@@ -1,8 +1,8 @@
 ---
-title: Les obligations d’accessibilité
+title: Obligations légales
 layout: layouts/base-rubrique.njk
 eleventyNavigation:
   key: obligations
-  title: Obligations
-  order: 3
+  title: Obligations légales
+  order: 2
 ---

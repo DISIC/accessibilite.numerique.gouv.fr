@@ -2,7 +2,7 @@
 title: Mentions et pages obligatoires
 layout: layouts/base.njk
 eleventyNavigation:
-  title: Obligations
+  title: Obligations légales
   parent: obligations
   order: 6
 ---

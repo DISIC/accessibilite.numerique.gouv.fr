@@ -2,7 +2,7 @@
 title: Évaluation de la conformité à la norme de référence
 layout: layouts/base.njk
 eleventyNavigation:
-  title: Obligations
+  title: Obligations légales
   parent: obligations
   order: 3
 ---

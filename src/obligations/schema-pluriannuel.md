@@ -2,7 +2,7 @@
 title: Schéma pluriannuel de mise en accessibilité
 layout: layouts/base.njk
 eleventyNavigation:
-  title: Obligations
+  title: Obligations légales
   parent: obligations
   order: 5
 ---

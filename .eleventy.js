@@ -133,6 +133,23 @@ module.exports = function (eleventyConfig) {
 	// This is the part that tells 11ty to swap to our custom config
 	eleventyConfig.setLibrary("md", markdownLibrary);
 
+	// Custom collection: La méthode technique
+	eleventyConfig.addCollection("methodeTechnique", function (collection) {
+		let methodeTechnique = collection.getFilteredByGlob("./src/methode/*.md");
+		methodeTechnique = methodeTechnique.map(function (methode) {
+			const slug = methode.fileSlug;
+			return {
+				methode,
+				slug,
+			};
+		});
+		return methodeTechnique.sort(
+			(a, b) =>
+				a.methode.data.eleventyNavigation.order -
+				b.methode.data.eleventyNavigation.order
+		);
+	});
+
 	// Custom collection: Les obligations légales
 	eleventyConfig.addCollection("obligations", function (collection) {
 		let obligations = collection.getFilteredByGlob("./src/obligations/*.md");

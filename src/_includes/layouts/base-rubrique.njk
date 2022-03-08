@@ -5,8 +5,19 @@
     		<div class="fr-col-12 fr-col-sm-12 fr-col-md-10 fr-col-lg-8">
           {% include "components/breadcrumb.njk" %}
           <h1>{{ title }}</h1>
+          {{ content | safe }}
           <div class="fr-mt-4w fr-grid-row fr-grid-row--gutters fr-grid-row--center">
-              {% if eleventyNavigation.key == "obligations" %}
+              {% if eleventyNavigation.key == "methode" %}
+                {% for g in collections.methodeTechnique %}
+                  <div class="fr-col-12 fr-col-sm-6  fr-col-md-4 fr-col-xl-3">      
+                    <div class="fr-tile fr-enlarge-link fr-tile--horizontal">
+                      <div class="fr-tile__body">
+                        <h2 class="fr-tile__title"><a class="fr-tile__link" href="{{  g.slug }}">{{  g.methode.data.title }}</a></h2>
+                      </div>
+                    </div>      
+                  </div>
+                {% endfor %}  
+              {% elif eleventyNavigation.key == "obligations" %}
                 {% for g in collections.obligations %}
                   <div class="fr-col-12 fr-col-sm-6  fr-col-md-4 fr-col-xl-3">      
                     <div class="fr-tile fr-enlarge-link fr-tile--horizontal">
@@ -31,6 +42,7 @@
               {% endif %}
           </div>
         </div>
+
       </div>
   </div>
 </main>

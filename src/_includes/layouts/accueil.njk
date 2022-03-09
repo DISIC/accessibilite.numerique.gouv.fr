@@ -2,40 +2,29 @@
 {% block contenu %}
 {{ content | safe }}
 
-	<div class="fr-mt-6w">
-		<h2 class="fr-h3">Accéder aux critères et aux tests</h2>
-	</div>
-	<div class="fr-mt-4w fr-grid-row fr-grid-row--gutters fr-grid-row--center">
-		<div class="fr-col-12 fr-col-sm-4">  
-		<div class="fr-tile fr-enlarge-link fr-tile--horizontal">
-			<div class="fr-tile__body">
-				<h2 class="fr-tile__title">
-					<a class="fr-tile__link" href="methode/criteres-et-tests">Les critères et les tests</a>
-				</h2>
-			</div>
-		</div>
-		</div>
-		<!--div class="fr-col-12 fr-col-sm-4">
-		<div class="fr-tile fr-enlarge-link fr-tile--horizontal">
-			<div class="fr-tile__body">
-				<h2 class="fr-tile__title">
-					<a class="fr-tile__link" href="ressources">Les ressources</a>
-				</h2>
-			</div>
-		</div>
-		</div-->
-	</div>
-	<div class="fr-mt-6w">
-		<h2 class="fr-h3">Pour faire simple</h2>
-	</div>
-	{% include 'components/faq.njk' %}
-	<div class="fr-my-6w">
-		<h2 class="fr-h3">Vous pouvez contribuer</h2>
-		<p class="fr-text--lead">Vos contributions sont les bienvenues !</p>
-		<p>Vous pouvez contribuer en proposant des <a href="https://github.com/DISIC/accessibilite.numerique.gouv.fr/pulls" title="pull requests sur le dépôt - nouvelle fenêtre" target="_blank">pull requests sur le dépôt</a>. <br>Toutes les propositions d’évolutions seront étudiées.<p>
-	<p>Dans un premier temps, les contributions sur le site, ses fonctionnalités et ses ressources seront prioritaires. Les contributions concernant les contenus règlementaires (obligations légales, critères et tests) seront étudiées dans un second temps.</p>
-		<p>Le guide de contribution est disponible à la racine du dépôt : <a href="https://github.com/DISIC/accessibilite.numerique.gouv.fr/blob/main/CONTRIBUTING.md">github.com/DISIC/accessibilite.numerique.gouv.fr/blob/main/CONTRIBUTING.md</a></p>
-	</div>
 
-	</div>
+<div class="fr-mt-6w fr-grid-row fr-grid-row--gutters fr-grid-row--center">
+  <div class="fr-col fr-col-md-6">
+    <div class="fr-card fr-enlarge-link">
+      <div class="fr-card__body">
+        <h2 class="fr-card__title">
+          <a href="/methode/criteres-et-tests/" class="fr-card__link">Les critères et les tests</a>
+        </h2>
+        <p class="fr-card__desc">Les 106 critères de contrôle RGAA, les tests et la méthodologie associée.</p>
+        <p class="fr-card__detail">Méthode technique du RGAA.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fr-mt-6w">
+	<h2 class="fr-h3">Questions fréquentes</h2>
+</div>
+{% include 'components/faq.njk' %}
+<div class="fr-my-6w">
+	<h2 class="fr-h3">Vous pouvez contribuer</h2>
+	<p class="fr-text--lead">Vos contributions sont les bienvenues !</p>
+	<p>Vous pouvez contribuer en proposant des <a href="https://github.com/DISIC/accessibilite.numerique.gouv.fr/pulls" title="pull requests sur le dépôt - nouvelle fenêtre" target="_blank">pull requests sur le dépôt</a>. <br>Toutes les propositions d’évolutions seront étudiées.<p>
+	<p>Dans un premier temps, les contributions sur le site, ses fonctionnalités et ses ressources seront prioritaires. Les contributions concernant les contenus règlementaires (obligations légales, critères et tests) seront étudiées dans un second temps.</p>
+	<p>Le guide de contribution est disponible à la racine du dépôt : <a href="https://github.com/DISIC/accessibilite.numerique.gouv.fr/blob/main/CONTRIBUTING.md">github.com/DISIC/accessibilite.numerique.gouv.fr/blob/main/CONTRIBUTING.md</a></p>
+</div>
 {% endblock %}

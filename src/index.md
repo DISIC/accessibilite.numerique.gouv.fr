@@ -8,6 +8,11 @@ eleventyNavigation:
 
 <p class="fr-text--xs">16 septembre 2019 - Mis à jour le 18 février 2021</p>
 
+<div class="fr-alert fr-alert--info fr-mb-4w">
+		<p class="fr-alert__title">Version bêta</p>
+		<p>Donnez-nous votre avis sur ce site qui est amené à remplacer le site https://www.numerique.gouv.fr/publications/rgaa-accessibilite/.</p>
+</div>
+
 La [direction interministérielle du numérique](https://www.numerique.gouv.fr) (DINUM) édite le référentiel général d’amélioration de l’accessibilité (RGAA), dont voici la quatrième version.
 
 <div class="fr-callout fr-my-6w" >

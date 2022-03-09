@@ -1,5 +1,5 @@
 ---
-title: Quelle mention ?
+title: Quelle mention doit-on afficher ?
 cat: En pratique
 ---
 

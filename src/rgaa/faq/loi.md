@@ -1,5 +1,5 @@
 ---
-title: Loi et décret
+title: Quelles obligations légales ?
 cat: Loi
 ---
 

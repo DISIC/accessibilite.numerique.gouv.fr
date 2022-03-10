@@ -1,65 +1,52 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="robots" content="noindex, nofollow" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="stylesheet" href="/css/dsfr.min.css" />
-  <link rel="stylesheet" href="rgaa.scss" />
-  <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" /><!-- 180×180 -->
-  <link rel="icon" href="/favicon/favicon.svg" type="image/svg+xml" />
-  <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon" /><!-- 32×32 -->
-  <link rel="manifest" href="/favicon/manifest.webmanifest" crossorigin="use-credentials" />
-
-  <title>{{ title }} - Accessibilité numérique</title>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="/css/dsfr.min.css" />
+    <link rel="stylesheet" href="rgaa.scss" />
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" /><!-- 180×180 -->
+    <link rel="icon" href="/favicon/favicon.svg" type="image/svg+xml" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon" /><!-- 32×32 -->
+    <link rel="manifest" href="/favicon/manifest.webmanifest" crossorigin="use-credentials" />
+    <title>{{ title }} - Accessibilité numérique</title>
 </head>
 <body>
-<div class="fr-skiplinks">
-    <nav class="fr-container" role="navigation" aria-label="Accès rapide">
-        <ul class="fr-skiplinks__list">
-            <li>
-                <a class="fr-link" href="#contenu">Contenu</a>
-            </li>
-            <li>
-                <a class="fr-link" href="#header-navigation">Menu</a>
-            </li>
-            <li>
-                <a class="fr-link" href="#footer">Pied de page</a>
-            </li>
-        </ul>
-    </nav>
-</div>
-<header role="banner" class="fr-header">
-  <!--p class="beta">bêta</p-->
-    <div class="fr-header__body">
-        <div class="fr-container">
-            <div class="fr-header__body-row">
-                <div class="fr-header__brand fr-enlarge-link">
-                    <div class="fr-header__brand-top">
-                        <div class="fr-header__logo">
-                                <p class="fr-logo">
-                                    République<br/>Française
-                                </p>
+    <div id="top" class="fr-skiplinks">
+        <nav class="fr-container" role="navigation" aria-label="Accès rapide">
+            <ul class="fr-skiplinks__list">
+                <li><a class="fr-link" href="#contenu">Contenu</a></li>
+                <li><a class="fr-link" href="#header-navigation">Menu</a></li>
+                <li><a class="fr-link" href="#footer">Pied de page</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header role="banner" class="fr-header">
+        <div class="fr-header__body">
+            <div class="fr-container">
+                <div class="fr-header__body-row">
+                    <div class="fr-header__brand fr-enlarge-link">
+                        <div class="fr-header__brand-top">
+                            <div class="fr-header__logo">
+                                <p class="fr-logo">République<br/>Française</p>
+                            </div>
+                            <div class="fr-header__navbar">
+                                <button class="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="modal-menu-mobile" aria-haspopup="menu" title="Menu" id="fr-btn-menu-mobile">Menu</button>
+                            </div>
                         </div>
-              <div class="fr-header__navbar">
-                <button class="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="modal-menu-mobile" aria-haspopup="menu" title="Menu" id="fr-btn-menu-mobile">
-                  Menu
-                </button>
-              </div>
-            </div>
-            <div class="fr-header__service">
-              <a href="/" title="Accueil - accessibilité numérique"  class="fr-header__service-title  text-highlight">Accessibilité numérique</a>
-              <p class="fr-header__service-tagline">Le site du Référentiel général d’amélioration de l’accessibilité</p>
-            </div>
-
+                        <div class="fr-header__service">
+                            <a href="/" title="Accueil - accessibilité numérique"  class="fr-header__service-title  text-highlight">Accessibilité numérique</a>
+                            <p class="fr-header__service-tagline">Le site du Référentiel général d’amélioration de l’accessibilité</p>
+                        </div>
+                    </div>
+                    <div class="fr-header__tools">
+                        <div class="fr-header__tools-links">
+                            <p class="fr-badge fr-badge--info fr-badge--no-icon fr-badge--purple-glycine">Version bêta</p>
+                        </div>
+                    </div>
                 </div>
-            <div class="fr-header__tools"><div class="fr-header__tools-links">
-            <p class="fr-badge fr-badge--info fr-badge--no-icon fr-badge--purple-glycine">Version bêta</p>
-            <p class="fr-links-group"><a href="/infos/nouveautes/" class="fr-link fr-fi-eye-line">Quoi de neuf ?</a></p></div></div>
             </div>
         </div>
-    </div>
-    {% include "components/navigation.njk" %}
-
-</header>
-
+        {% include "components/navigation.njk" %}
+    </header>

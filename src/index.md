@@ -11,7 +11,9 @@ eleventyNavigation:
 <div class="fr-alert fr-alert--info fr-mb-4w">
 		<p class="fr-alert__title">Ce site est une version bêta.</p>
     <p>Elle permet de recueillir vos remarques et vos suggestions d’amélioration ; elle pourra donc évoluer pendant toute la durée du test et jusqu’à l’arrêt de la version actuelle du RGAA (<a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/">numerique.gouv.fr/publications/rgaa-accessibilite</a>).</p>
+    <p>Découvrez les <a href="/infos/nouveautes">nouveautés</a> qu’il propose.</p>
 </div>
+
 
 La [direction interministérielle du numérique](https://www.numerique.gouv.fr) (DINUM) édite le référentiel général d’amélioration de l’accessibilité (RGAA), dont voici la quatrième version.
 

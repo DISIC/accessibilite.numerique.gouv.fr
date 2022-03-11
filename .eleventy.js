@@ -256,7 +256,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addLiquidShortcode("crit", function (numCrit) {
 		return (
-			'<a class="critere" href="/criteres-et-tests/#' +
+			'<a class="critere" href="/methode/criteres-et-tests/#' +
 			numCrit +
 			'">critère ' +
 			numCrit +
@@ -266,7 +266,7 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addLiquidShortcode("test", function (numTest) {
 		return (
-			'<a class="critere" href="/criteres-et-tests/#' +
+			'<a class="critere" href="/methode/criteres-et-tests/#' +
 			numTest +
 			'">test ' +
 			numTest +

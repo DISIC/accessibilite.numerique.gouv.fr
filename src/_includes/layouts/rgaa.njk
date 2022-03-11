@@ -52,7 +52,7 @@
 
 			<h3 class="fr-accordion__title">
 			<a class="ancre  fr-fi-links-fill fr-fi--sm" href="#{{ critNum }}" id="{{ critNum }}">&nbsp;<span class="crit">{{ critNum }}</span></a>
-			{{ crit.data.title | markdownInline | safe | replace("#","/ressources/glossaire/#")}}
+			{{ crit.data.title | markdownInline | safe | replace("#","/methode/glossaire/#")}}
 			</h3>
 			<button aria-expanded="false" aria-controls="fr-{{ critNum }}" class=" fr-accordion__btn">Tests et références du critère {{ critNum }}</button>
 			<div id="fr-{{ critNum }}" class="fr-collapse">
@@ -62,25 +62,25 @@
 					<div class="fr-mb-4w test" id="{{ t.testSlug }}">
 						<h4 class="fr-h5">
 						<a class="ancre  fr-fi-links-fill fr-fi--sm" href="#{{ t.testSlug }}">&nbsp;{{ t.testSlug }}</a></h4>
-						<p>{{ t.test.data.title | markdownInline | safe  | replace("#","/ressources/glossaire/#") }}</p>
+						<p>{{ t.test.data.title | markdownInline | safe  | replace("#","/methode/glossaire/#") }}</p>
 						{% if t.test.data.steps %}
 						<ul>
 						{% for step in t.test.data.steps %}
-							<li>{{ step | markdownInline | safe  | replace("#","/ressources/glossaire/#") }}</li>
+							<li>{{ step | markdownInline | safe  | replace("#","/methode/glossaire/#") }}</li>
 						{% endfor %}
 						</ul>
 						{% endif %}
 						{% if t.test.templateContent != "" %}
 							<div class="methodologie">
 								<p>Méthodologie de test :</p>
-								{{ t.test.templateContent | markdownInline | safe  | replace("#","/ressources/glossaire/#") }}
+								{{ t.test.templateContent | markdownInline | safe  | replace("#","/methode/glossaire/#") }}
 							</div>
 						{% endif %}
 					</div>
 				{% endfor %}
 				</div>
 				<div class="annexes ref">
-					{{ annexeCrit.templateContent | safe | replace("#","/ressources/glossaire/#") }}
+					{{ annexeCrit.templateContent | safe | replace("#","/methode/glossaire/#") }}
 					<h4 class="fr-h5 fr-my-1w">Références <small>(en anglais)</small></h4>
 
 					{% if annexeCrit.data.WCAG != null %}

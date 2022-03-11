@@ -1,17 +1,3 @@
-/*p.beta {
-	position: fixed;
-	background-color: var(--background-action-high-red-marianne);
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: bold;
-	display: block;
-	transform: rotate(45deg);
-	padding: 0.15em 5em 0.15em 8em;
-	margin: 1em 1em 1em 1em;
-	right: -4em;
-	top: 0;
-	z-index: 2001;
-}*/
 code {
 	border: 1px solid var(--artwork-minor-beige-gris-galet);
 	border-radius: 0.15em;
@@ -21,11 +7,13 @@ code {
 }
 .methodologie {
 	font-size: 0.9em;
-	padding-left: 2em;
-	margin-top: 2em;
 	background-color: #ffffff;
+	text-align: right;
 	p {
 		font-weight: 800;
+	}
+	div.fr-collapse--expanded {
+		text-align: left;
 	}
 }
 .annexes {
@@ -52,7 +40,7 @@ code {
 }
 .tests,
 .annexes {
-	padding: 1rem;
+	/*padding: 1rem;*/
 	margin: 0;
 }
 .test {
@@ -60,9 +48,6 @@ code {
 	h4,
 	p {
 		display: inline;
-	}
-	ul li {
-		list-style-type: disc;
 	}
 }
 ul.letters {
@@ -90,9 +75,9 @@ background-color: var(--background-action-low-blue-ecume);
 background-color: var(--yellow-tournesol-975-75);
 background-color: var(--background-alt-beige-gris-galet);
 background-color: var(--yellow-moutarde-975-75);
-*/
 border-left: 3px solid var(--background-action-low-blue-ecume);
-margin-left: 1.25em;
+*/
+margin-left: 1em;
 	}
 	button {
 		font-size: smaller;
@@ -108,6 +93,9 @@ margin-left: 1.25em;
 		font-weight: 200;
 		padding-right: 0.25em;
 		font-size: 1.25em;
+	}
+	.methodologie button {
+			//flex-flow: row-reverse;	
 	}
 }
 span.aModifier {

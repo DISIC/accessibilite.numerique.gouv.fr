@@ -48,7 +48,7 @@
 		  {% set wcagLevels = wcagLevels + wcag.level + "," %}
 		{% endfor %}
 
-		<li class="criterion" data-wcag-level="{{ wcagLevels }}"><!--a class="direct-link" href="#{{ critNum }}">#</a-->
+		<li class="criterion" data-wcag-level="{{ wcagLevels }}">
 
 			<h3 class="fr-accordion__title">
 			<a class="ancre  fr-fi-links-fill fr-fi--sm" href="#{{ critNum }}" id="{{ critNum }}">&nbsp;<span class="crit">{{ critNum }}</span></a>
@@ -70,11 +70,16 @@
 						{% endfor %}
 						</ul>
 						{% endif %}
+
 						{% if t.test.templateContent != "" %}
-							<div class="methodologie">
-								<p>Méthodologie de test :</p>
+						<div class="methodologie">
+						<button aria-expanded="false" aria-controls="fr-{{ t.testSlug }}" class=" fr-accordion__btn">Méthodologie du test {{ t.testSlug }}</button>
+						<div id="fr-{{ t.testSlug }}" class="fr-collapse">
+							<div class="fr-accordion__inner ">
 								{{ t.test.templateContent | markdownInline | safe  | replace("#","/methode/glossaire/#") }}
 							</div>
+						</div>
+						</div>
 						{% endif %}
 					</div>
 				{% endfor %}

@@ -2,13 +2,20 @@ Changelog
 ====================================================================
 
 
+v0.2.1
+--------------------------------------------------------------------
+
+* L’architecture du site a été revue et respecte l’organisation du RGAA ;
+* Chaque thématique, critère et test dispose d’une ancre ;
+* La méthodologie de test est dans un élément collapse fermé par défaut ;
+* Ajout d’un bandeau d’information sur la version bêta ;
+* La mention bêta est dans un badge.
 
 v0.2.0
 --------------------------------------------------------------------
 
-* Ajout d'un numéro de version
-* Mise en place du changelog
-
+* Ajout d'un numéro de version ;
+* Mise en place du changelog.
 
 v0.1.0
 --------------------------------------------------------------------

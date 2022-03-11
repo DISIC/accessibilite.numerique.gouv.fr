@@ -1,5 +1,5 @@
 ---
-title: Le glossaire
+title: Glossaire
 layout: layouts/glossaire.njk
 eleventyNavigation:
   title: Méthode technique

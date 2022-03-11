@@ -10,8 +10,9 @@ eleventyNavigation:
 
 <div class="fr-alert fr-alert--info fr-mb-4w">
 		<p class="fr-alert__title">Ce site est une version bêta.</p>
-    <p>Elle permet de recueillir vos remarques et vos suggestions d’amélioration ; elle pourra donc évoluer pendant toute la durée du test et jusqu’à l’arrêt de la version actuelle du RGAA (<a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/">numerique.gouv.fr/publications/rgaa-accessibilite</a>).</p>
-    <p>Découvrez les <a href="/infos/nouveautes">nouveautés</a> qu’il propose.</p>
+    <p>Découvrez les <a href="/infos/nouveautes/"><strong>nouveautés</strong></a> qu’il propose.</p>
+    <p>Faîtes-nous part de vos remarques et suggestions d’amélioration en nous écrivant à <strong>contact@design.numerique.gouv.fr</strong>.<p>
+    <p>Cette version est suceptible d’évoluer pendant toute la durée du test et jusqu’à l’arrêt de la version actuelle du RGAA (<a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/">numerique.gouv.fr/publications/rgaa-accessibilite</a>).</p>
 </div>
 
 

@@ -3,8 +3,9 @@
 
 {% block contenu %}
 	{{ content | safe }}
+<div class="fr-container">	
 	<div class="fr-mt-6w fr-grid-row fr-grid-row--gutters fr-grid-row--center">
-		<div class="fr-col fr-col-md-6">
+		<div class="fr-col-12 fr-col-md-6">
 			<div class="fr-card fr-enlarge-link">
 				<div class="fr-card__body">
 					<h2 class="fr-card__title">
@@ -13,6 +14,16 @@
 					<p class="fr-card__desc">Les 106 critères de contrôle RGAA, les tests et la méthodologie associée.</p>
 					<p class="fr-card__detail">Méthode technique du RGAA.</p>
 				</div>
+			</div>
+		</div>
+
+		<div class="fr-col">
+			<div>
+					<h2>Télécharger le RGAA</h2>
+				<ul>
+					<li><a class="fr-link fr-fi-file-download-line fr-link--icon-right" download href="/doc/RGAA-v4.1.pdf">Au format PDF 3.1Mo</a></li>
+					<li><a class="fr-link fr-fi-file-download-line fr-link--icon-right" download href="/doc/RGAA-v4.1.odt">Au format ODT 215Ko</a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -27,4 +38,5 @@
 		<p>Dans un premier temps, les contributions sur le site, ses fonctionnalités et ses ressources seront prioritaires. Les contributions concernant les contenus règlementaires (obligations légales, critères et tests) seront étudiées dans un second temps.</p>
 		<p>Le guide de contribution est disponible à la racine du dépôt : <a href="https://github.com/DISIC/accessibilite.numerique.gouv.fr/blob/main/CONTRIBUTING.md">github.com/DISIC/accessibilite.numerique.gouv.fr/blob/main/CONTRIBUTING.md</a></p>
 	</div>
+</div>
 {% endblock %}

@@ -1,5 +1,5 @@
 ---
-title: Le site officiel du RGAA
+title: RGAA 4.1
 layout: layouts/accueil.njk
 eleventyNavigation:
   title: Accueil

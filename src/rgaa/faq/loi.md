@@ -1,5 +1,5 @@
 ---
-title: Quelles obligations légales ?
+title: Quelle loi ?
 cat: Loi
 ---
 

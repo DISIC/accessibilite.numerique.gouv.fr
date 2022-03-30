@@ -1,6 +1,17 @@
 Changelog
 ====================================================================
 
+v0.4.0
+--------------------------------------------------------------------
+
+* Mise à jour du DSFR v1.4.1 ;
+* Mise à jour du nom et de la baseline ;
+* Ajout des différents documents téléchargeables ;
+* Ajout de la page licence ;
+* Ajout des documents de références ;
+* Suppression de la « documentation RGAA » ;
+* Mise à jour du plan du site ;
+* Corrections d’anomalies RGAA.
 
 v0.3.0
 --------------------------------------------------------------------

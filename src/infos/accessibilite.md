@@ -3,16 +3,15 @@ title: Accessibilité
 layout: layouts/base.njk
 ---
 
-La [dinum](https://www.numerique.gouv.fr/accessibilite/) s’engage à rendre ses sites internet, intranet, extranet et ses progiciels accessibles conformément à l’article 47 de la loi n°2005-102 du 11 février 2005.
+La Direction interministérielle du numérique s’engage à rendre ses sites internet, intranet, extranet et ses progiciels accessibles conformément à l’article 47 de la loi n°2005-102 du 11 février 2005.
 
 Le site accessibilite.numerique.gouv.fr est développé selon les recommendations du référentiel général d’amélioration de l’accessibilité (RGAA) pour être accessible à tous les usagers quel que soit le matériel ou le logiciel utilisé pour naviguer sur internet.
 
-Cette déclaration d’accessibilité s’applique à accessibilite.numerique.gouv.fr.
+Cette déclaration d’accessibilité s’applique au site accessibilite.numerique.gouv.fr.
 
 ## État de conformité
 
-Aucun audit n’a été effectué sur accessibilite.numerique.gouv.fr.
-Le site est non conforme avec le référentiel général d’amélioration de l’accessibilité (RGAA), version 4.
+Aucun audit n’a été effectué sur accessibilite.numerique.gouv.fr : le site est <strong>non conforme</strong> avec le RGAA 4.
 
 ## Retour d’information et contact
 

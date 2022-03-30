@@ -12,11 +12,11 @@ eleventyNavigation:
 		<p class="fr-alert__title">Ce site est une version bêta.</p>
     <p>Découvrez les <a href="/infos/nouveautes/"><strong>nouveautés</strong></a> qu’il propose.</p>
     <p>Faîtes-nous part de vos remarques et suggestions d’amélioration en nous écrivant à <strong>contact@design.numerique.gouv.fr</strong>.<p>
-    <p>Cette version est suceptible d’évoluer pendant toute la durée du test et jusqu’à l’arrêt de la version actuelle du RGAA (<a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/">numerique.gouv.fr/publications/rgaa-accessibilite</a>).</p>
+    <p>Cette version est suceptible d’évoluer pendant toute la durée du test et jusqu’à l’arrêt de la <a target="_blank" title="version actuelle du RGAA - nouvelle fenêtre" href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/">version actuelle du RGAA</a>.</p>
 </div>
 
 
-La [direction interministérielle du numérique](https://www.numerique.gouv.fr) (DINUM) édite le référentiel général d’amélioration de l’accessibilité (RGAA), dont voici la quatrième version.
+<p class="fr-text--lead">La <a target="_blank" title="direction interministérielle du numérique - nouvelle fenêtre" href="https://www.numerique.gouv.fr">Direction interministérielle du numérique (DINUM)</a> édite le <strong>référentiel général d’amélioration de l’accessibilité</strong> (RGAA), dont voici la quatrième version.</p>
 
 <div class="fr-grid-row fr-grid-row--gutters fr-grid-row--center">
 <div class="fr-callout fr-my-6w fr-p-4w fr-col-sm-8" >
@@ -28,7 +28,7 @@ La [direction interministérielle du numérique](https://www.numerique.gouv.fr) 
 
 
 
-La <strong>version 4.1 du RGAA</strong> a été arrêtée conjointement par la ministre chargée des personnes handicapées et le ministre chargé du numérique le 20 septembre 2019.
+La <strong>version 4.1 du RGAA</strong> a été arrêtée conjointement par la ministre chargée des personnes handicapées et le ministre chargé du numérique le <strong>20 septembre 2019</strong>.
 
 Le RGAA est structuré en 2 parties :
 

@@ -1,8 +1,8 @@
 ---
-WCAG: 
-- successCriterion: 1.1.1
-  title: Non-text Content
-  level: A
-Techniques: 
-- G144
+WCAG:
+  - successCriterion: 1.1.1
+    title: Non-text Content
+    level: A
+Techniques:
+  - G144
 ---

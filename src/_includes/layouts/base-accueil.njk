@@ -1,0 +1,14 @@
+{% include "components/header.njk" %}
+<main role="main" id="contenu">
+	<div class="fr-container fr-mb-4w fr-mt-6w">
+    	<div class="fr-grid-row fr-grid-row--gutters fr-grid-row--center">
+    		<div class="fr-col-12 fr-col-sm-12 fr-col-md-10 fr-col-lg-8">
+          <h1>{{ title }}</h1>
+          {% block contenu %}
+          {{ content | safe }}
+          {% endblock %}
+      </div>
+    </div>
+  </div>
+</main>
+{% include "components/footer.njk" %}

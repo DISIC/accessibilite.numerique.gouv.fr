@@ -2,9 +2,9 @@
 title: Environnement de test
 layout: layouts/base.njk
 eleventyNavigation:
-  title: Ressources
-  parent: ressources
-  order: 2
+  title: Méthode technique
+  parent: methode
+  order: 4
 ---
 
 Quelques critères RGAA, notamment ceux de la thématique JavaScript, incluent des tests de restitution à effectuer sur des technologies d’assistance associées à des navigateurs et des systèmes d’exploitation.
@@ -20,8 +20,6 @@ Les systèmes d’exploitation retenus sont Windows et Mac OS X et les navigateu
 Lorsque le site ou l’application est destiné à un public dont l’équipement est maîtrisé, les tests devront se faire sur un environnement de test adapté au contexte de l’environnement maîtrisé.
 
 Pour qu’un dispositif HTML / WAI-ARIA ou son alternative soit considéré comme compatible avec l’accessibilité, il faut qu’il soit pleinement fonctionnel, en termes de restitution et de fonctionnalités, sur au moins une des combinaisons suivantes.
-
-
 
 <div class="fr-table fr-table--bordered">
     <table>
@@ -74,13 +72,10 @@ Pour qu’un dispositif HTML / WAI-ARIA ou son alternative soit considéré comm
         </tbody>
     </table>
 </div>
-	
-
 
 ## Environnement de test Terminal mobile
+
 Les systèmes d’exploitation retenus sont Android et iOS et les navigateurs Chrome et Safari. Il appartient à l’auditeur de définir, en concertation avec les responsables du site audité, les versions de système d’exploitation et de navigateur en adéquation avec le contexte d’usage du site et l’environnement de test utilisé lors du développement du site. Les versions des technologies d’assistance à utiliser seront soit la dernière disponible en langue française sur le système d’exploitation retenu, soit la version précédente. Pour tester un site web sur un terminal mobile, l’environnement de test devra comporter une des deux combinaisons complémentaires suivantes :
-
-
 
 <div class="fr-table fr-table--bordered">
     <table>
@@ -125,9 +120,11 @@ Les systèmes d’exploitation retenus sont Android et iOS et les navigateurs Ch
 À noter que dans le cas d’un site web mobile grand public, il est fortement conseillé de tester dans les deux environnements.
 
 ### Autres environnements
+
 Enfin, en fonction du contexte du site audité, d’autres technologies d’assistance complémentaires peuvent être utiles telles que :
-* ZoomText sur Windows ou Mac OSX.
-* Dragon Naturally Speaking sur Windows ou Mac OSX.
+
+- ZoomText sur Windows ou Mac OSX.
+- Dragon Naturally Speaking sur Windows ou Mac OSX.
 
 ### Environnement maîtrisé
 

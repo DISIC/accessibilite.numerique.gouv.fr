@@ -1,5 +1,5 @@
 ---
-title: Contenu visible 
+title: Contenu visible
 ---
 
 Pour le {% test '12.2.1' %} : « Contenu présent » signifie que le contenu
@@ -13,4 +13,3 @@ lorsque CSS est désactivé.
 Note : la pratique qui consiste à gérer des images en propriété de fond
 d’éléments via CSS est formellement déconseillée, même si elle est accompagnée
 d’un texte caché.
-

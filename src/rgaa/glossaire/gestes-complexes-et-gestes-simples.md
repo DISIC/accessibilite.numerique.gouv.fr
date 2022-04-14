@@ -1,5 +1,5 @@
 ---
-title: Gestes complexes et gestes simples 
+title: Gestes complexes et gestes simples
 ---
 
 Un geste simple implique un contact en un point unique de l’écran. Il peut
@@ -12,4 +12,3 @@ zoomer ou dézoomer une carte) et un geste basé sur le suivi d’une trajectoir
 sur l’écran (exemple : fonction JavaScript permettant de détection le
 déplacement d’un doigt vers la gauche ou droite sur une surface tactile pour
 déclencher le passage à l’item précédent / suivant d’un carrousel).
-

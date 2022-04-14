@@ -1,5 +1,5 @@
 ---
-title: Changement de langue 
+title: Changement de langue
 ---
 
 L’indication des changements de langue est nécessaire pour indiquer aux
@@ -13,4 +13,3 @@ sur l’élément qui contient l’attribut. Par exemple un lien affecté d’un
 `title` en anglais devra comporter un attribut `lang="en"`.Lorsque
 l’attribut contient plusieurs passages de texte dans des langues différentes,
 le critère est non applicable.
-

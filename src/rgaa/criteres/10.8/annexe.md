@@ -1,13 +1,13 @@
 ---
-WCAG: 
-- successCriterion: 1.3.2
-  title: Meaningful Sequence
-  level: A
-- successCriterion: 4.1.2
-  title: Name, Role, Value
-  level: A
+WCAG:
+  - successCriterion: 1.3.2
+    title: Meaningful Sequence
+    level: A
+  - successCriterion: 4.1.2
+    title: Name, Role, Value
+    level: A
 Techniques:
-- G57
+  - G57
 ---
 
 #### Notes techniques

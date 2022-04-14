@@ -1,5 +1,5 @@
 ---
-title: Titre 
+title: Titre
 ---
 
 Élément HTML (balise `h`) à 6 niveaux de hiérarchie (de `h1` pour le titre le
@@ -16,4 +16,3 @@ pratiques ne sont pas encouragées, elles n’invalident pas le critère.
 
 Note : les titres visuellement cachés via CSS sont considérés comme présents
 et valident le {% crit 9.1 %}.
-

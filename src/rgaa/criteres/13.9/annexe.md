@@ -1,8 +1,8 @@
 ---
-WCAG: 
-- successCriterion: 1.3.4
-  title: Orientation
-  level: AA
+WCAG:
+  - successCriterion: 1.3.4
+    title: Orientation
+    level: AA
 ---
 
 #### Cas particuliers
@@ -15,5 +15,5 @@ Si l’interface est le seul moyen d’accéder au service proposé, une alterna
 
 #### Références documentaires
 
-* API JS : https://www.w3.org/TR/screen-orientation/
-* API Viewport : https://www.w3.org/TR/css-device-adapt-1/#orientation-desc
+- API JS : https://www.w3.org/TR/screen-orientation/
+- API Viewport : https://www.w3.org/TR/css-device-adapt-1/#orientation-desc

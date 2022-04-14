@@ -1,5 +1,5 @@
 ---
-title: Ensemble de pages 
+title: Ensemble de pages
 ---
 
 Pages web liées les unes aux autres par des liens et constituant un ensemble
@@ -9,4 +9,3 @@ sont autant d’ensembles de page.
 
 Note : la page d’accueil d’un site web peut constituer, à elle seule, un «
 ensemble de pages » du fait de son unicité.
-

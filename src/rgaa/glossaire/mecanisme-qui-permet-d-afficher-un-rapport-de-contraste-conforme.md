@@ -1,5 +1,5 @@
 ---
-title: Mécanisme qui permet d’afficher un rapport de contraste conforme 
+title: Mécanisme qui permet d’afficher un rapport de contraste conforme
 ---
 
 Composant d’interface dont l’activation permet de modifier l’apparence du site
@@ -8,4 +8,3 @@ suffisant. Le design de ce composant d’interface devra être conforme au {% cr
 un mécanisme permettant d’afficher un rapport de contraste conforme. Ce
 mécanisme doit conserver à l’identique les contenus et les fonctionnalités du
 site ou de la page qu’il modifie.
-

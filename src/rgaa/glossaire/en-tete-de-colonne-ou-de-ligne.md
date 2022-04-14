@@ -1,5 +1,5 @@
 ---
-title: En-tête de colonne ou de ligne 
+title: En-tête de colonne ou de ligne
 ---
 
 Contenu d’une cellule dans un tableau de données (la première cellule d’une
@@ -16,4 +16,3 @@ technologies d’assistance, il est fortement recommandé de privilégier cette
 solution lors de la mise en œuvre afin d’éviter de nombreuses vérifications
 dans les différentes combinaisons prévues dans l’environnement de test (ou «
 base de référence »).
-

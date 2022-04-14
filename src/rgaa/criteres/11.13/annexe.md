@@ -1,10 +1,10 @@
 ---
-WCAG: 
-- successCriterion: 1.3.5
-  title: Identify Input Purpose
-  level: AA
+WCAG:
+  - successCriterion: 1.3.5
+    title: Identify Input Purpose
+    level: AA
 Techniques:
-- H98
+  - H98
 ---
 
 #### Notes techniques

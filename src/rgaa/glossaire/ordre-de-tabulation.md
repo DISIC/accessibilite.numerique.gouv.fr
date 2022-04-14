@@ -1,5 +1,5 @@
 ---
-title: Ordre de tabulation 
+title: Ordre de tabulation
 ---
 
 Ordre dans lequel le focus se déplace (vers un élément suivant ou vers un
@@ -12,4 +12,3 @@ Attention : lorsqu’un élément initie un changement dans la page (changement
 contexte, gestion de zones cachées, ajout de contenu, gestion de champs de
 formulaire…) il est nécessaire d’activer l’élément qui initie le changement
 pour tester la cohérence de l’ordre de tabulation.
-

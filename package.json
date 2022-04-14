@@ -1,28 +1,37 @@
 {
-  "name": "accessibilite.numerique.gouv.fr",
-  "version": "0.1.0",
-  "description": "Le site officiel du Référentiel général d’amélioration de l’accessibilité (RGAA)",
-  "scripts": {
-    "build": "eleventy",
-    "watch": "eleventy --watch",
-    "start": "eleventy --serve",
-    "debug": "DEBUG=* eleventy"
-  },
-  "main": "index.js",
-  "keywords": [],
-  "author": "DesignGouv",
-  "license": "Licence Ouverte Etalab v2.0",
-  "homepage": "https://accessibilite.numerique.gouv.fr",
-  "dependencies": {
-    "@11ty/eleventy": "^1.0.0-beta.10",
-    "@11ty/eleventy-navigation": "^0.3.2",
-    "@gouvfr/dsfr": "^1.2.1",
-    "eleventy-plugin-styles": "^1.4.1",
-    "eleventy-plugin-toc": "github:DISIC/eleventy-plugin-toc",
-    "markdown-it": "^12.3.0",
-    "markdown-it-anchor": "^8.4.1",
-    "npm-run-all": "^4.1.5",
-    "sass": "^1.45.2",
-    "slugify": "^1.6.5"
-  }
+	"name": "accessibilite.numerique.gouv.fr",
+	"version": "0.4.0",
+	"description": "Référentiel général d’amélioration de l’accessibilité (RGAA)",
+	"scripts": {
+		"build": "eleventy",
+		"watch": "eleventy --watch",
+		"start": "eleventy --serve",
+		"debug": "DEBUG=* eleventy",
+		"format": "prettier ./ --write"
+	},
+	"main": "index.js",
+	"keywords": [],
+	"author": "DesignGouv",
+	"license": "Licence Ouverte Etalab v2.0",
+	"homepage": "https://accessibilite.numerique.gouv.fr",
+	"dependencies": {
+		"@11ty/eleventy": "^1.0.0-beta.10",
+		"@11ty/eleventy-navigation": "^0.3.2",
+		"@gouvfr/dsfr": "^1.2.1",
+		"eleventy-plugin-styles": "^1.4.1",
+		"eleventy-plugin-toc": "github:DISIC/eleventy-plugin-toc",
+		"fastdom": "^1.0.10",
+		"markdown-it": "^12.3.0",
+		"markdown-it-anchor": "^8.4.1",
+		"npm-run-all": "^4.1.5",
+		"sass": "^1.45.2",
+		"slugify": "^1.6.5"
+	},
+	"devDependencies": {
+		"@babel/preset-env": "^7.16.11",
+		"esbuild": "^0.14.19",
+		"esbuild-plugin-babel": "github:schloerke/esbuild-plugin-babel#patch-2",
+		"eslint": "^8.8.0",
+		"prettier": "^2.5.1"
+	}
 }

@@ -1,5 +1,5 @@
 ---
-title: Contrôle (contenu en mouvement ou clignotant) 
+title: Contrôle (contenu en mouvement ou clignotant)
 ---
 
 Possibilité pour l’utilisateur de contrôler l’affichage ou la lecture d’un
@@ -23,4 +23,3 @@ et il n’est pas possible d’en donner le contrôle à l’utilisateur, par ex
 une barre de progression dont la fonction est d’indiquer par un mouvement la
 progression d’un évènement comme un téléchargement. Dans ce cas le critère est
 Non Applicable.
-

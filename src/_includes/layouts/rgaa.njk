@@ -51,7 +51,7 @@
 		<li class="criterion" data-wcag-level="{{ wcagLevels }}">
 
 			<h3 class="fr-accordion__title">
-			<a class="ancre  fr-icon-links-line" href="#{{ critNum }}" id="{{ critNum }}">&nbsp;<span class="crit">{{ critNum }}</span></a>
+			<a class="ancre  fr-icon-links-line fr-fi--sm" href="#{{ critNum }}" id="{{ critNum }}">&nbsp;<span class="crit">{{ critNum }}</span></a>
 			{{ crit.data.title | markdownInline | safe | replace("#","/methode/glossaire/#")}}
 			</h3>
 			<button aria-expanded="false" aria-controls="fr-{{ critNum }}" class=" fr-accordion__btn">Tests et références du critère {{ critNum }}</button>

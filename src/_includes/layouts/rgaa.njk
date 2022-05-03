@@ -1,5 +1,6 @@
 {% extends './base-rgaaNav.njk' %}
 {% block contenu %}
+<!--
 <div id="criteria-filters" class="summary">
 	<div class="fr-form-group">
 		<fieldset class="fr-fieldset fr-fieldset--inline">
@@ -20,11 +21,12 @@
 			</div>
 		</fieldset>
 	</div>
-	<!--div class="fr-toggle">
+	<div class="fr-toggle">
 				<input disabled type="checkbox" class="fr-toggle__input" id="allCriterion">
 				<label class="fr-toggle__label" for="allCriterion">Affichage du détail de tous les critères</label>
-	</div-->
+	</div>
 </div>
+	-->
 <div id="criteria-container">
 	{% set curThemeNum = 0 %}
 	{% for c in collections.criteriaAndTests %}

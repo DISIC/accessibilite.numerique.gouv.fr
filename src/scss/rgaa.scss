@@ -125,3 +125,11 @@ a.ancre {
 		margin-top: 1em;
 	}
 }
+
+.bandeau {
+	background-color: var(--background-contrast-green-emeraude);
+	p { 
+		margin: 0;
+		color: var(--text-label-green-emeraude);
+	}
+}

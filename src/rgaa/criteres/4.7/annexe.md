@@ -1,11 +1,11 @@
 ---
-WCAG: 
-- successCriterion: 1.1.1
-  title: Non-text Content
-  level: A
-Techniques: 
-- G68
-- G100
+WCAG:
+  - successCriterion: 1.1.1
+    title: Non-text Content
+    level: A
+Techniques:
+  - G68
+  - G100
 ---
 
 #### Cas particuliers

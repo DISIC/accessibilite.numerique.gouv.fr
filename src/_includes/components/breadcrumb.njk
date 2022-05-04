@@ -1,0 +1,20 @@
+<nav role="navigation" class="fr-breadcrumb" aria-label="vous êtes ici :">
+    <button class="fr-breadcrumb__button" aria-expanded="false" aria-controls="breadcrumb">Voir le fil d’Ariane</button>
+    <div class="fr-collapse" id="breadcrumb">
+        <ol class="fr-breadcrumb__list">
+            <li>
+                <a class="fr-breadcrumb__link" href="/">Accueil</a>
+            </li>
+            {% if eleventyNavigation.parent == "methode" %}
+            <li><a class="fr-breadcrumb__link" href="/methode/">{{ eleventyNavigation.title }}</a></li>
+            {% elif eleventyNavigation.parent == "ressources" %}
+            <li><a class="fr-breadcrumb__link" href="/ressources/">{{ eleventyNavigation.title }}</a></li>
+            {% elif eleventyNavigation.parent == "obligations" %}
+            <li><a class="fr-breadcrumb__link" href="/obligations/">{{ eleventyNavigation.title }}</a></li>
+            {% endif %} 
+            <li>
+                <a class="fr-breadcrumb__link"  aria-current="page">{{ title }}</a>
+            </li>
+        </ol>
+    </div>
+</nav>

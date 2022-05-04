@@ -1,21 +1,43 @@
 <div class="fr-header__menu fr-modal" id="modal-menu-mobile" aria-labelledby="fr-btn-menu-mobile">
 <div class="fr-container">
-    <button class="fr-link--close fr-link" aria-controls="modal-menu-mobile">Fermer</button>
+    <button class="fr-btn--close fr-btn" aria-controls="modal-menu-mobile">Fermer</button>
     <div class="fr-header__menu-links"></div>
     <nav class="fr-nav" id="header-navigation" role="navigation" aria-label="Menu principal">
         <ul class="fr-nav__list">
-            <li class="fr-nav__item">
-                <a class="fr-nav__link" href="/">Accueil</a>
+            {%- for entry in collections.all | eleventyNavigation %}
+            <li class="fr-nav__item {% if entry.url == page.url %} fr-nav__item--active{% endif %}">
+            {% if entry.key ==  "methode" %}
+            <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-methode">{{ entry.title }} </button>
+            <div class="fr-collapse fr-menu" id="menu-methode">
+                <ul class="fr-menu__list">
+                {% for g in collections.methodeTechnique %}
+                 <li><a class="fr-nav__link" href="/methode/{{  g.slug }}" target="_self">{{  g.methode.data.title }}</a></li>
+                {% endfor %}
+                </ul>
+            </div>
+            {% elif entry.key ==  "ressources" %}
+            <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-ressources">{{ entry.title }} </button>
+            <div class="fr-collapse fr-menu" id="menu-ressources">
+                <ul class="fr-menu__list">
+                {% for g in collections.ressources %}
+                 <li><a class="fr-nav__link" href="/ressources/{{  g.slug }}" target="_self">{{  g.ressource.data.title }}</a></li>
+                {% endfor %}
+                </ul>
+            </div>
+            {% elif entry.key ==  "obligations" %}
+            <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-obligations">{{ entry.title }} </button>
+            <div class="fr-collapse fr-menu" id="menu-obligations">
+                <ul class="fr-menu__list">
+                {% for g in collections.obligations %}
+                 <li><a class="fr-nav__link" href="/obligations/{{  g.slug }}" target="_self">{{  g.obligation.data.title }}</a></li>
+                {% endfor %}
+                </ul>
+            </div>
+            {% else %}
+                <a class="fr-nav__link" href="{{ entry.url | url }}" {% if entry.url == page.url %}aria-current="page"{% endif %}>{{ entry.title }}</a>
+            {% endif %}
             </li>
-            <li class="fr-nav__item">
-                <a class="fr-nav__link" href="/obligations/">Obligations</a>
-            </li>
-            <li class="fr-nav__item">
-                <a class="fr-nav__link" href="/criteres-et-tests/">Critères et tests</a>
-            </li>
-            <li class="fr-nav__item">
-                <a class="fr-nav__link" href="/ressources/">Ressources</a>
-            </li>
+            {%- endfor %}
         </ul>
     </nav>
 </div>

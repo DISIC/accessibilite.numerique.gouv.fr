@@ -1,12 +1,12 @@
 ---
-WCAG: 
-- successCriterion: 2.4.5
-  title: Multiple Ways
-  level: AA
+WCAG:
+  - successCriterion: 2.4.5
+    title: Multiple Ways
+    level: AA
 Techniques:
-- G63
-- G64
-- G161
+  - G63
+  - G64
+  - G161
 ---
 
 #### Cas particuliers

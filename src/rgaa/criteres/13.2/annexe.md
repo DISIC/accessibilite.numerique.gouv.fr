@@ -1,9 +1,9 @@
 ---
-WCAG: 
-- successCriterion: 3.2.1
-  title: On focus
-  level: A
+WCAG:
+  - successCriterion: 3.2.1
+    title: On focus
+    level: A
 Techniques:
-- F55
-- G107
+  - F55
+  - G107
 ---

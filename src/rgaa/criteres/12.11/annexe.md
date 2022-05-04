@@ -1,8 +1,8 @@
 ---
-WCAG: 
-- successCriterion: 2.1.1
-  title: Keyboard
-  level: A
+WCAG:
+  - successCriterion: 2.1.1
+    title: Keyboard
+    level: A
 ---
 
 #### Notes techniques

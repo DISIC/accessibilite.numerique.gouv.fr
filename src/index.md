@@ -9,10 +9,9 @@ eleventyNavigation:
 <p class="fr-text--xs">16 septembre 2019 - Mis à jour le 18 février 2021</p>
 
 <div class="fr-alert fr-alert--info fr-mb-4w">
-		<p class="fr-alert__title">Ce site est une version bêta.</p>
+		<p class="fr-alert__title">Ce site est une version beta.</p>
     <p>Découvrez les <a href="/infos/nouveautes/"><strong>nouveautés</strong></a> qu’il propose.</p>
     <p>Faîtes-nous part de vos remarques et suggestions d’amélioration en nous écrivant à <strong>contact@design.numerique.gouv.fr</strong>.<p>
-    <p>Cette version est suceptible d’évoluer pendant toute la durée du test et jusqu’à l’arrêt de la <a target="_blank" title="version actuelle du RGAA - nouvelle fenêtre" href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/">version actuelle du RGAA</a>.</p>
 </div>
 
 

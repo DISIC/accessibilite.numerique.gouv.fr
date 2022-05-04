@@ -8,13 +8,6 @@ eleventyNavigation:
 
 <p class="fr-text--xs">16 septembre 2019 - Mis à jour le 18 février 2021</p>
 
-<div class="fr-alert fr-alert--info fr-mb-4w">
-		<p class="fr-alert__title">Ce site est une version beta.</p>
-    <p>Découvrez les <a href="/infos/nouveautes/"><strong>nouveautés</strong></a> qu’il propose.</p>
-    <p>Faîtes-nous part de vos remarques et suggestions d’amélioration en nous écrivant à <strong>contact@design.numerique.gouv.fr</strong>.<p>
-</div>
-
-
 <p class="fr-text--lead">La <a target="_blank" title="direction interministérielle du numérique - nouvelle fenêtre" href="https://www.numerique.gouv.fr">Direction interministérielle du numérique (DINUM)</a> édite le <strong>référentiel général d’amélioration de l’accessibilité</strong> (RGAA), dont voici la quatrième version.</p>
 
 <div class="fr-grid-row fr-grid-row--gutters fr-grid-row--center">

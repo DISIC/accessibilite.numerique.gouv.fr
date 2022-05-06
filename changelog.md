@@ -1,6 +1,14 @@
 Changelog
 ====================================================================
 
+v0.6
+--------------------------------------------------------------------
+
+Suite à un audit UI :
+* Aération de la page d’accueil ;
+* La FAQ utilise des accordéons (et non des modales) ;
+* Harmonisation des marges, des espaces et des couleurs.
+
 v0.5.1
 --------------------------------------------------------------------
 

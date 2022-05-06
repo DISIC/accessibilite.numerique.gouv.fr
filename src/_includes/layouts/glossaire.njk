@@ -5,7 +5,7 @@
 		{% for g in collections.glossary %}
 			{% set letter = g.term.data.title | truncate(1, true, "")  | slugify %}
 			{% if letter != currentLetter %}
-			<li><a class="fr-tag fr-tag fr-tag--ecume" href="#{{ letter}}">{{ letter | capitalize }}</a></li>
+			<li><a class="fr-tag" href="#{{ letter}}">{{ letter | capitalize }}</a></li>
 			{% endif %}
 				{% set currentLetter =  letter %}
 		{% endfor %}

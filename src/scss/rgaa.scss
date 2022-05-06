@@ -51,6 +51,9 @@ code {
 	}
 }
 ul.letters {
+	li a.fr-tag {
+		background-color: var(--background-alt-blue-france);
+	}
 	li a {
 		font-size: 0.75rem;
 	}

@@ -23,8 +23,6 @@ code {
 	}
 }
 .annexes {
-	padding: 1rem;
-	background-color: var(--background-action-low-blue-ecume);
 	li {
 		list-style-type: inherit;
 	}
@@ -36,19 +34,11 @@ code {
 		display: inline;
 	}
 }
-.ref {
-	background-color: #ffffff;
-}
 .fr-accordion__btn {
 	background-color: transparent;
 }
 .summary {
 	padding: 0.25em;
-}
-.tests,
-.annexes {
-	/*padding: 1rem;*/
-	margin: 0;
 }
 .test {
 	margin-bottom: 2em;
@@ -68,34 +58,47 @@ button.fr-accordion__btn, div.methodologie {
 li.criterion {
 	list-style-type: none;
 	border-bottom: 1px solid var(--grey-200-850);
-
-	div.criteres {
+/*
+	a.ancre:hover {
+		mask-image: url(../icons/business/links-line.svg) ;
+		padding-left: 2em;
+	}
+*/	
+li {
+	list-style-position: inside;
+}
+	div.criteres, div.test {
 		display: flex;
 		justify-content: flex-start;
 	}
-				div.title {
-					margin-left: 3em;
-				}
-	section {
+	div.title {
+		margin-left: 3em;
+	}
+	section.fr-accordion {
 		background-color: var(--background-alt-blue-france);
-	}
-	button.fr-accordion__btn[aria-expanded="false"] {
-		background-color: white;
-	}
-	button.fr-accordion__btn[aria-expanded="true"] {
-		background-color:var(--background-alt-blue-france);
-	}
-	button:hover,
-	button:focus {
-		background-image: none;
-	}
-	.number {
-//		font-weight: 200;
-//		padding-right: 0.25em;
-//		font-size: 1.25em;
-	}
-	.methodologie button {
+		button.fr-accordion__btn[aria-expanded="false"] {
+			background-color: white;
+		}
+		button.fr-accordion__btn[aria-expanded="true"] {
+			background-color:var(--background-alt-blue-france);
+		}
+		button:hover,
+		button:focus {
+			background-image: none;
+		}
+		.methodologie {
+			button.fr-accordion__btn {
+				background-color:var(--background-alt-blue-france);
+			}	
+		}
+		.number {
+			//		font-weight: 200;
+			//		padding-right: 0.25em;
+			//		font-size: 1.25em;
+		}
+		.methodologie button {
 			//flex-flow: row-reverse;	
+		}
 	}
 }
 span.aModifier {

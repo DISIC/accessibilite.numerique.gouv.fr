@@ -5,6 +5,12 @@ code {
 	font-family: courier;
 	background-color: ghostwhite;
 }
+
+#criteria-container {
+	ul {
+		padding: 0;
+	}
+}
 .methodologie {
 	font-size: 0.9em;
 	background-color: #ffffff;
@@ -61,45 +67,32 @@ button.fr-accordion__btn, div.methodologie {
 }
 li.criterion {
 	list-style-type: none;
-	margin: 2em 0;
-	padding: 0.25em;
-	/*border: 1px solid var(--background-action-low-blue-ecume);
-	border-top: 1px solid var(--artwork-minor-beige-gris-galet);*/
-	h3 {
-		font-weight: 400;
-		span.crit {
-			font-weight: 700;
-		}
-	}
-			section {
-				background-color: var(--background-alt-blue-france);
-			}
+	border-bottom: 1px solid var(--grey-200-850);
 
-	.fr-collapse--expanded {
-/*		
-tests de couleurs :(
-background-color: var(--background-action-low-blue-ecume);
-background-color: var(--yellow-tournesol-975-75);
-background-color: var(--background-alt-beige-gris-galet);
-background-color: var(--yellow-moutarde-975-75);
-border-left: 3px solid var(--background-action-low-blue-ecume);
-*/
-margin-left: 1em;
+	div.criteres {
+		display: flex;
+		justify-content: flex-start;
 	}
-	button {
-		font-size: smaller;
-		flex-flow: row;
-		width: fit-content;
-		background: none;
+				div.title {
+					margin-left: 3em;
+				}
+	section {
+		background-color: var(--background-alt-blue-france);
+	}
+	button.fr-accordion__btn[aria-expanded="false"] {
+		background-color: white;
+	}
+	button.fr-accordion__btn[aria-expanded="true"] {
+		background-color:var(--background-alt-blue-france);
 	}
 	button:hover,
 	button:focus {
 		background-image: none;
 	}
-	.crit {
-		font-weight: 200;
-		padding-right: 0.25em;
-		font-size: 1.25em;
+	.number {
+//		font-weight: 200;
+//		padding-right: 0.25em;
+//		font-size: 1.25em;
 	}
 	.methodologie button {
 			//flex-flow: row-reverse;	

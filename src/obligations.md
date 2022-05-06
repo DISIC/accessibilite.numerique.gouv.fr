@@ -4,5 +4,5 @@ layout: layouts/base-rubrique.njk
 eleventyNavigation:
   key: obligations
   title: Obligations légales
-  order: 2
+  order: 1
 ---

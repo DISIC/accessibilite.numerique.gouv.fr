@@ -94,16 +94,18 @@ li {
 				background-color:var(--background-alt-blue-france);
 			}	
 		}
-		.number {
-			//		font-weight: 200;
-			//		padding-right: 0.25em;
-			//		font-size: 1.25em;
-		}
-		.methodologie button {
-			//flex-flow: row-reverse;	
-		}
 	}
 }
+
+dd {
+	background-color:var(--background-alt-blue-france);
+	margin:0;
+	padding: 1em;
+	li {
+		list-style-position: inside;
+	}
+}
+
 span.aModifier {
 	background-color: var(--yellow-moutarde-975-75);
 	font-weight: 200;

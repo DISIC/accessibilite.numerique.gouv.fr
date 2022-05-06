@@ -41,7 +41,7 @@
 		{% endif %}
 		{% if themeNum !== curThemeNum %}
 			{% set curThemeNum = themeNum %}
-			<h2 id="{{ themeNum }}">{{ themeNum }}.&nbsp;{{ themes[themeNum].title }}&nbsp;<a class="ancre fr-icon-links-fill" href="#{{ themeNum }}"></a></h2>
+			<h2 class="fr-mt-6w" id="{{ themeNum }}">{{ themeNum }}.&nbsp;{{ themes[themeNum].title }}&nbsp;<a title="Lien vers la thématique {{ themes[themeNum].title }}" class="ancre" href="#{{ themeNum }}"><span class="fr-icon-links-fill" aria-label="Lien vers la thématique {{ themes[themeNum].title }}"></span></a></h2>
 			<ul>
 		{% endif %}
 		{% for wcag in annexeCrit.data.WCAG %}
@@ -51,11 +51,11 @@
 	<li class="criterion fr-mt-3w fr-pb-3w" data-wcag-level="{{ wcagLevels }}">
 	<div class="criteres">
 		<div class="anchor">
-			<p class="fr-h6 number"><a class="ancre" href="#{{ critNum }}" id="{{ critNum }}">{{ critNum }}</a></p>
+			<p class="fr-h6 number">{{ critNum }}</p>
 		</div>		
 		<div class="title">		
 		<h3 class="fr-h6">
-				{{ crit.data.title | markdownInline | safe | replace("#","/methode/glossaire/#")}}
+				{{ crit.data.title | markdownInline | safe | replace("#","/methode/glossaire/#")}} <a title="Lien vers le critère {{ critNum }}" class="ancre" href="#{{ critNum }}" id="{{ critNum }}"><span class="fr-icon-links-fill" aria-label="Lien vers le critère {{ critNum }}"></span></a>
 		</h3>
 		<section class="fr-accordion">
 			<button class="fr-accordion__title fr-accordion__btn" aria-expanded="false" aria-controls="fr-{{ critNum }}">Tests et références du critère {{ critNum }}</button>
@@ -66,10 +66,10 @@
 						{% for t in tests %}
 							<div class="test" id="{{ t.testSlug }}">
 								<div class="anchor">
-									<h4 class="fr-h5">{{ t.testSlug }}<!--a class="ancre  fr-icon-links-fill fr-fi--sm" href="#{{ t.testSlug }}">&nbsp;{{ t.testSlug }}</a--></h4>
+									<h4 class="fr-h5">{{ t.testSlug }}</h4>
 								</div>
 								<div class="title">	
-									<p>{{ t.test.data.title | markdownInline | safe  | replace("#","/methode/glossaire/#") }}</p>
+									<p>{{ t.test.data.title | markdownInline | safe  | replace("#","/methode/glossaire/#") }}&nbsp;<a title="Lien vers le test {{ t.testSlug }}" class="ancre" href="#{{ t.testSlug }}"><span class="fr-icon-links-fill  fr-icon--sm" aria-label="Lien vers le test {{ t.testSlug }}"></span></a></p>
 									{% if t.test.data.steps %}
 									<ul>
 									{% for step in t.test.data.steps %}

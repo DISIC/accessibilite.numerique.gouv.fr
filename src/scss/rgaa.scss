@@ -7,6 +7,9 @@ code {
 }
 
 #criteria-container {
+	h2 {
+		color: var(--text-title-blue-france);
+	}
 	ul {
 		padding: 0;
 	}
@@ -72,7 +75,7 @@ li {
 		justify-content: flex-start;
 	}
 	div.title {
-		margin-left: 3em;
+		margin-left: 1em;
 	}
 	section.fr-accordion {
 		background-color: var(--background-alt-blue-france);

@@ -7,11 +7,8 @@ le type ou le format des informations attendues. L’étiquette peut être
 associée au champ de formulaire de plusieurs manières :
 
 - Par l’utilisation d’une balise `<label>` ;
-
 - Par l’utilisation de l’attribut WAI-ARIA `aria-label` ;
-
 - Par l’utilisation d’une liaison entre le texte et le champ par l’attribut WAI-ARIA `aria-labelledby` ;
-
 - Par l’utilisation de l’attribut `title`.
 
 Note importante : lorsque plusieurs de ces techniques sont présentes sur un
@@ -19,11 +16,8 @@ même champ, le calcul du « nom accessible », c’est-à-dire ce qui sera
 restitué, obéit à un ordre strict :
 
 - `aria-labelledby` ;
-
 - Sinon `aria-label` ;
-
 - Sinon `<label>` ;
-
 - Sinon `title`.
 
 Cet ordre doit être utilisé pour l’évaluation de la pertinence de l’étiquette

@@ -1,10 +1,10 @@
 # accessibilite.numerique.gouv.fr
 
-Ce dépôt est, pour l’instant, le bac à sable pour le nouveau site dédié au référentiel général d’amélioration de l’accessibilité (RGAA).
+Version beta du nouveau site [accessibilite.numerique.gouv.fr](https://accessibilite.numerique.gouv.fr) dédié au référentiel général d’amélioration de l’accessibilité (RGAA).
 
 ## Infos
 
-Ce site est créé avec [11ty](https://www.11ty.dev/) et utilise la version 1.3.1 du [système de design de l’État](https://www.systeme-de-design.gouv.fr/).
+Ce site est créé avec [11ty](https://www.11ty.dev/) et utilise la version 1.5.1 du [système de design de l’État](https://www.systeme-de-design.gouv.fr/).
 
 Tous les contenus sont au format _md_
 

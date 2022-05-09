@@ -82,11 +82,18 @@ li {
 	}
 	section.fr-accordion {
 		background-color: var(--background-alt-blue-france);
-		button.fr-accordion__btn[aria-expanded="false"] {
-			background-color: white;
+
+		button {
+			padding: 0 1em;
+			&[aria-expanded="false"] {
+				background-color: white;
+			}
+			&[aria-expanded="true"] {
+				background-color:var(--background-alt-blue-france);
+			}	
 		}
-		button.fr-accordion__btn[aria-expanded="true"] {
-			background-color:var(--background-alt-blue-france);
+		.fr-collapse--expanded {
+			padding: 0 1em;
 		}
 		button:hover,
 		button:focus {

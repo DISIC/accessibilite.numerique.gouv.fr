@@ -5,6 +5,7 @@
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="/css/dsfr.min.css" />
+    <link rel="stylesheet" href="/css/utility.min.css" />
     <link rel="stylesheet" href="rgaa.scss" />
     <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" /><!-- 180×180 -->
     <link rel="icon" href="/favicon/favicon.svg" type="image/svg+xml" />
@@ -36,8 +37,12 @@
                             </div>
                         </div>
                         <div class="fr-header__service">
-                            <a href="/" title="Accueil - accessibilité numérique"  class="fr-header__service-title  text-highlight">Accessibilité numérique</a>
-                            <p class="fr-badge fr-badge--info fr-badge--no-icon fr-badge--purple-glycine">Version bêta</p>
+                            <a href="/" title="Accueil - accessibilité numérique">
+                                <p class="fr-header__service-title">
+                                    Accessibilité numérique
+                                    <span class="fr-badge fr-badge--green-emeraude">BETA</span>
+                                </p>
+                            </a>
                             <p class="fr-header__service-tagline">Référentiel général d’amélioration de l’accessibilité</p>
                         </div>
                     </div>
@@ -46,3 +51,4 @@
         </div>
         {% include "components/navigation.njk" %}
     </header>
+    {% include "components/bandeau.njk" %}

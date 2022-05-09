@@ -1,4 +1,4 @@
-# Contribuer au Référentiel général d’amélioration de l’accessibilité et à son site dédié
+# Contribuer au site accessibilite.numerique.gouv.fr et au RGAA
 
 Vos contributions sont les bienvenues !
 
@@ -24,4 +24,4 @@ Tous les autres contenus du site sont dans des fichiers markdown du type `réper
 
 ### Assets
 
-Ce site utilise le système de design de l’État dont les composants n’ont pas vocation à être modifiés (sauf dysfonctionnement).
+Ce site utilise le [système de design de l’État](https://www.systeme-de-design.gouv.fr/) dont les composants n’ont pas vocation à être modifiés.

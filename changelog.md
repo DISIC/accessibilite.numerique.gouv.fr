@@ -1,6 +1,43 @@
 Changelog
 ====================================================================
 
+v0.6
+--------------------------------------------------------------------
+
+Suite à un audit UI :
+* Aération de la page d’accueil ;
+* La FAQ utilise des accordéons (et non des modales) ;
+* Harmonisation des marges, des espaces et des couleurs.
+
+v0.5.1
+--------------------------------------------------------------------
+
+* Un seul bandeau beta
+
+v0.5.0
+--------------------------------------------------------------------
+
+* Ajout d’une page dédiée à la contribution
+
+v0.4.3
+--------------------------------------------------------------------
+
+* Correction du chemin vers les icônes.
+
+v0.4.2
+--------------------------------------------------------------------
+
+* Mise à jour du DSFR v1.5.1 ;
+* Ajout d’un bandeau beta ;
+* Mise à jour du badge beta.
+
+v0.4.1
+--------------------------------------------------------------------
+
+* Mise à jour du bandeau beta ;
+* Les ancres du glossaire sont en css ;
+* Quelques typos.
+
 v0.4.0
 --------------------------------------------------------------------
 

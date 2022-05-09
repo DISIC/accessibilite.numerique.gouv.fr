@@ -94,6 +94,7 @@ module.exports = function (eleventyConfig) {
 	});
 	eleventyConfig.addPlugin(styles, {
 		inputDirectory: "src/scss",
+		publicDirectory: "css",
 		purgeCSSOptions: "off",
 		cssnanoOptions: "off",
 	});
@@ -279,6 +280,7 @@ module.exports = function (eleventyConfig) {
 	/** @todo : remove dsfr passthrough when bundle with esbuild **/
 	eleventyConfig.addPassthroughCopy("./src/js/dsfr*");
 	eleventyConfig.addPassthroughCopy("./src/favicon");
+	eleventyConfig.addPassthroughCopy("./src/icons");
 
 	return {
 		dir: {

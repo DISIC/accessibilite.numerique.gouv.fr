@@ -1,30 +1,38 @@
 {% extends './base-accueil.njk' %}
 {% block contenu %}
 	{{ content | safe }}
-<div class="fr-container">	
-	<div class="fr-mt-6w fr-grid-row fr-grid-row--gutters fr-grid-row--center">
-		<div class="fr-col-12 fr-col-md-6 fr-pr-8w">
+<div class="fr-my-6w rgaa-home">	
+	<div class="fr-py-6w fr-container fr-col-md-12 fr-col-lg-8 fr-col-xl-6">
+	<div class="fr-grid-row fr-grid-row--gutters">
+
+		<div class="fr-col">
 			<div class="fr-card fr-enlarge-link">
 				<div class="fr-card__body">
 					<h2 class="fr-card__title">
 						<a  class="fr-h3" href="/methode/criteres-et-tests/" class="fr-card__link">Critères et tests</a>
 					</h2>
 					<p class="fr-card__desc">Les 106 critères de contrôle RGAA, les tests et la méthodologie associée.</p>
-					<p class="fr-card__detail">Méthode technique du RGAA.</p>
+					<p class="fr-card__detail">Méthode technique du RGAA</p>
 				</div>
 			</div>
 		</div>
 
 		<div class="fr-col">
-			<div>
-					<h2 class="fr-h3">Télécharger le RGAA</h2>
-				<ul>
-					<li><a class="fr-link fr-fi-file-download-line fr-link--icon-right" download href="/doc/RGAA-v4.1.pdf">Au format PDF 3.1Mo</a></li>
-					<li><a class="fr-link fr-fi-file-download-line fr-link--icon-right" download href="/doc/RGAA-v4.1.odt">Au format ODT 215Ko</a></li>
+			<div class="fr-card">
+				<div class="fr-card__body">
+					<h2 class="fr-card__title fr-h3">Télécharger le RGAA</h2>
+					<ul class="fr-card__desc">
+					<li class="fr-py-2w"><a class="fr-link" download href="/doc/RGAA-v4.1.odt" title="Télécharger le RGAA au format ODT (215 ko)">Au format ODT - 215 ko <span class="fr-icon-download-line" aria-hidden="true"></span></a></li>
+					<li class="fr-py-2w"><a class="fr-link" download href="/doc/RGAA-v4.1.pdf" title="Télécharger le RGAA au format PDF (3.1 Mo)">Au format PDF - 3.1 Mo <span class="fr-icon-download-line" aria-hidden="true"></span></a></li>
 				</ul>
+					<p class="fr-card__detail">Ressources</p>
+				</div>
 			</div>
 		</div>
+
+			</div></div>
 	</div>
+
 	<div class="fr-mt-6w">
 		<h2 class="fr-h3">Questions fréquentes</h2>
 	</div>
@@ -32,7 +40,7 @@
 	<div class="fr-my-6w">
 		<h2 class="fr-h3">Vous pouvez contribuer</h2>
 		<p class="fr-text--lead">Vos contributions sont les bienvenues !</p>
-		<p>Vous pouvez contribuer en proposant des <a href="https://github.com/DISIC/accessibilite.numerique.gouv.fr/pulls" title="pull requests sur le dépôt - nouvelle fenêtre" target="_blank"><em lang="en">pull requests</em> sur le dépôt</a>. <br>Toutes les propositions d’évolutions seront étudiées.<p>
+		<p>Vous pouvez contribuer en proposant des <a href="https://github.com/DISIC/accessibilite.numerique.gouv.fr/pulls" title="pull requests sur le dépôt - nouvelle fenêtre" target="_blank"><em lang="en">pull requests</em> sur le dépôt</a> ou nous écrire à <strong>rgaa@design.numerique.gouv.fr</strong>. <br>Toutes les propositions d’évolutions seront étudiées.<p>
 		<p>Dans un premier temps, les contributions sur le site, ses fonctionnalités et ses ressources seront prioritaires. Les contributions concernant les contenus règlementaires (obligations légales, critères et tests) seront étudiées dans un second temps.</p>
 		<p>Le guide de contribution est disponible à la racine du dépôt : <a title="guide de contribution - nouvelle fenêtre" target="_blank" href="https://github.com/DISIC/accessibilite.numerique.gouv.fr/blob/main/CONTRIBUTING.md">github.com/DISIC/accessibilite.numerique.gouv.fr/blob/main/CONTRIBUTING.md</a></p>
 	</div>

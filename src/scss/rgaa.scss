@@ -123,14 +123,15 @@ span.aModifier {
 }
 
 
-a[href].direct-link, a[href].direct-link:visited {
-  visibility: hidden;
-}
-a[href].direct-link, a[href].direct-link:visited {
-	visibility: hidden;
+a[href].direct-link {
+	opacity: 0.60;
 }	
+a[href].direct-link:focus, a[href].direct-link:visited {
+	opacity: 1;
+}	
+
 :focus>a[href].direct-link, :focus>a[href].direct-link:visited, :hover>a[href].direct-link, :hover>a[href].direct-link:visited, a[href].direct-link:focus, a[href].direct-link:focus:visited {
-  visibility: visible;
+	opacity: 1;
 }
 a.direct-link {
 	box-shadow: none;

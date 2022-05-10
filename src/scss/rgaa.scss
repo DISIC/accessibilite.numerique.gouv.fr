@@ -121,7 +121,18 @@ span.aModifier {
 	font-weight: 200;
 	padding: 0 0.2em;
 }
-a.ancre {
+
+
+a[href].direct-link, a[href].direct-link:visited {
+  visibility: hidden;
+}
+a[href].direct-link, a[href].direct-link:visited {
+	visibility: hidden;
+}	
+:focus>a[href].direct-link, :focus>a[href].direct-link:visited, :hover>a[href].direct-link, :hover>a[href].direct-link:visited, a[href].direct-link:focus, a[href].direct-link:focus:visited {
+  visibility: visible;
+}
+a.direct-link {
 	box-shadow: none;
 	background-image: none;
 }

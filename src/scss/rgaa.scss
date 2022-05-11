@@ -82,11 +82,18 @@ li {
 	}
 	section.fr-accordion {
 		background-color: var(--background-alt-blue-france);
-		button.fr-accordion__btn[aria-expanded="false"] {
-			background-color: white;
+
+		button {
+			padding: 0 1em;
+			&[aria-expanded="false"] {
+				background-color: white;
+			}
+			&[aria-expanded="true"] {
+				background-color:var(--background-alt-blue-france);
+			}	
 		}
-		button.fr-accordion__btn[aria-expanded="true"] {
-			background-color:var(--background-alt-blue-france);
+		.fr-collapse--expanded {
+			padding: 0 1em;
 		}
 		button:hover,
 		button:focus {
@@ -114,7 +121,19 @@ span.aModifier {
 	font-weight: 200;
 	padding: 0 0.2em;
 }
-a.ancre {
+
+
+a[href].direct-link {
+	opacity: 0.60;
+}	
+a[href].direct-link:focus, a[href].direct-link:visited {
+	opacity: 1;
+}	
+
+:focus>a[href].direct-link, :focus>a[href].direct-link:visited, :hover>a[href].direct-link, :hover>a[href].direct-link:visited, a[href].direct-link:focus, a[href].direct-link:focus:visited {
+	opacity: 1;
+}
+a.direct-link {
 	box-shadow: none;
 	background-image: none;
 }

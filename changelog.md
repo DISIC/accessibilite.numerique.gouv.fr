@@ -5,7 +5,7 @@ v0.6.1
 --------------------------------------------------------------------
 
 * Fix RWD accueil ;
-* Meilleeure gestion des ancres ;
+* Meilleure gestion des ancres ;
 * Fix contenu.
 
 v0.6

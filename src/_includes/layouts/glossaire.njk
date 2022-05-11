@@ -19,7 +19,7 @@
 			{% if letter != currentLetter %}
 				<span id="{{ letter }}"></span>
 			{% endif %}
-			<h2 class="fr-h5">{{ term.data.title }}&nbsp;<a class="ancre" title="Lien vers {{ term.data.title }}" href="#{{ term.data.title | slugify }}" id="{{ term.data.title | slugify }}"><span class="fr-icon-links-fill" arial-label="Lien vers {{ term.data.title }}"></span></a></h2></dt>
+			<h2 class="fr-h5" id="{{ term.data.title | slugify }}">{{ term.data.title }}&nbsp;<a class="direct-link" title="Lien vers {{ term.data.title }}" href="#{{ term.data.title | slugify }}" ><span class="fr-icon-links-fill" ></span></a></h2></dt>
 			<dd class="fr-mb-4w">{{ term.templateContent | safe }}</dd>
 				{% set currentLetter =  letter %}
 		{% endfor %}

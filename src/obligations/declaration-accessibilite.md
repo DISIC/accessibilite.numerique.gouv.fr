@@ -89,6 +89,7 @@ Si vous n’arrivez pas à accéder à un contenu ou à un service, vous pouvez 
 
 Envoyer un message [url du formulaire en ligne]
 Contacter [Nom de l’entité responsable du service en ligne] [url d’une page avec les coordonnées de l’entité]
+
 VOIES DE RECOURS
 
 Cette procédure est à utiliser dans le cas suivant.
@@ -107,7 +108,8 @@ La déclaration d’accessibilité est valide à partir de sa date de publicatio
 18 mois après la date de publication d’une nouvelle version du référentiel, pour les personnes qui appliquent la méthode technique.
 Il peut cependant être souhaitable de mettre à jour plus régulièrement la déclaration d’accessibilité, y compris pour une même version de la méthode technique, afin de souligner les efforts réalisés et de mettre à jour le pourcentage de critères respectés.
 
-Publication de la déclaration d’accessibilité
+## Publication de la déclaration d’accessibilité
+
 La déclaration d’accessibilité est publiée sur internet dans un format accessible.
 
 Pour les sites internet, la déclaration d’accessibilité est publiée sur le site internet concerné. Elle est mise à disposition au sein d’une page accessibilité, directement accessible depuis la page d’accueil et depuis n’importe quelle page du site.
@@ -118,7 +120,8 @@ Pour les autres services de communication au public en ligne, elle est disponibl
 
 La déclaration d’accessibilité fait l’objet d’un dépôt par le biais d’un téléservice selon les modalités arrêtées conjointement par le ministre chargé des personnes handicapées et le ministre chargé du numérique.
 
-Réponse aux usagers
+## Réponse aux usagers
+
 L’organisme concerné fournit en ligne aux utilisateurs la possibilité de faire des réclamations relatives à l’accessibilité de ses services de communication au public en ligne. Il accuse réception de ces réclamations conformément aux dispositions de l’article R112-3 du code des relations entre le public et l’Administration. L’accusé de réception comporte les informations mentionnées à l’article R112-5 du même code.
 
 L’organisme concerné répond à toute réclamation dans un délai d’une semaine à compte de sa date d’envoi. Si la réclamation de l’utilisateur soulève une ou plusieurs questions complexes justifiant un délai d’examen plus long, la réponse indique un délai raisonnable pour la réponse définitive. Le caractère complexe des questions soulevées doit être dûment motivé.

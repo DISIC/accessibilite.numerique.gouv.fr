@@ -7,20 +7,23 @@ eleventyNavigation:
   order: 4
 ---
 
-## Contenu de la déclaration d’accessibilité
+<div class="fr-callout">
+    <p class="fr-callout__text">La déclaration d’accessibilité est le résultat d’une évaluation effective de la conformité du service de communication au public en ligne à la norme de référence.</p>
+</div>
 
-La déclaration d’accessibilité est le résultat d’une évaluation effective de la conformité du service de communication au public en ligne à la norme de référence.
 
 La déclaration d’accessibilité comprend :
 
-- un état de conformité :
+- un **état de conformité** :
   - Conformité totale : si tous les critères de contrôle du RGAA sont respectés
   - Conformité partielle : si au moins 50 % des critères de contrôle du RGAA sont respectés ;
   - Non-conformité : s’il n’existe aucun résultat d’audit en cours de validité permettant de mesurer le respect des critères ou si moins de 50 % des critères de contrôle du RGAA sont respectés ;
-- un signalement des contenus non accessibles, distingués selon qu’il s’agit de non-conformité avec le RGAA, de contenus exemptés ou de contenus soumis à dérogation pour charge disproportionnée. Dans ce dernier cas, les dérogations doivent être expliquées et motivées. Le signalement est assorti, le cas échéant, d’une présentation des alternatives accessibles prévues ;
-- des dispositifs d’assistance et de contact :
+- un **signalement des contenus non accessibles**, distingués selon qu’il s’agit de non-conformité avec le RGAA, de contenus exemptés ou de contenus soumis à dérogation pour charge disproportionnée. Dans ce dernier cas, les dérogations doivent être expliquées et motivées. Le signalement est assorti, le cas échéant, d’une présentation des alternatives accessibles prévues ;
+- des **dispositifs d’assistance et de contact** :
   - un mécanisme accessible (adresse électronique ou formulaire) pour permettre à toute personne de signaler à l’organisme concerné tout défaut d’accessibilité et à une personne handicapée de demander les informations correspondantes ou une solution alternative accessible ;
-- la mention de la faculté pour la personne concernée de saisir le Défenseur des droits, en cas d’absence de réponse ou de solution, une fois les démarches effectuées via le mécanisme mentionné ci-dessus.
+- la mention de la faculté pour la personne concernée de **saisir le Défenseur des droits**, en cas d’absence de réponse ou de solution, une fois les démarches effectuées via le mécanisme mentionné ci-dessus.
+
+## Contenu de la déclaration d’accessibilité
 
 **La déclaration d’accessibilité adopte obligatoirement ce format :**
 

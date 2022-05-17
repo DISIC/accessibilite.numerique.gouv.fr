@@ -12,19 +12,7 @@ Note 1 : l’utilisation d’éléments `<div>` ou `<span>` ou plusieurs `<br>`
 créer visuellement un paragraphe est considérée comme non conforme et invalide
 le critère.
 
-Exemple :
-
-`<div>`
-
-`paragraphes d’un bloc de texte simulés`
-
-`<br>`
-
-`<br>`
-
-`à l’aide de plusieurs balises <br>`
-
-`</div>`
+Exemple : `<div>`, `paragraphes d’un bloc de texte simulés`, `<br>`, `à l’aide de plusieurs balises <br>`, `</div>`
 
 Note 2 : WAI-ARIA propose un rôle `presentation` permettant de supprimer la
 sémantique d’un élément, par exemple `<h1 role="presentation">Titre</h1>`.

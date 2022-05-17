@@ -24,6 +24,7 @@ layout: layouts/base.njk
 - [Accessibilité](/infos/accessibilite/)
 - [Mentions légales](/infos/mentions-legales/)
 - [Licence](/infos/licence/)
+- [Contributions](/infos/contributions/)
 - [Quoi de neuf ?](/infos/nouveautes/)
 
 

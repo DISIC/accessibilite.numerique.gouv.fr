@@ -5,7 +5,7 @@
 		{% for g in collections.glossary %}
 			{% set letter = g.term.data.title | truncate(1, true, "")  | slugify %}
 			{% if letter != currentLetter %}
-			<li><a class="fr-tag fr-tag fr-tag--ecume" href="#{{ letter}}">{{ letter | capitalize }}</a></li>
+			<li><a class="fr-tag" href="#{{ letter}}">{{ letter | capitalize }}</a></li>
 			{% endif %}
 				{% set currentLetter =  letter %}
 		{% endfor %}
@@ -15,12 +15,12 @@
 		{% for g in collections.glossary %}
 			{% set term = g.term %}
 			{% set letter = term.data.title | truncate(1, true, "")  | slugify %}
-			<dt class="fr-h5" id="{{ term.data.title | slugify }}">
+			<dt id="{{ term.data.title | slugify }}">
 			{% if letter != currentLetter %}
 				<span id="{{ letter }}"></span>
 			{% endif %}
-			<a class="ancre" href="#{{ term.data.title | slugify }}" id="{{ term.data.title | slugify }}"><svg role="img" aria-label="{{ term.data.title }}" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>&nbsp;{{ term.data.title }} </dt>
-			<dd class="annexes fr-mb-4w">{{ term.templateContent | safe }}</dd>
+			<h2 class="fr-h5" id="{{ term.data.title | slugify }}">{{ term.data.title }}&nbsp;<a class="direct-link" title="Lien vers {{ term.data.title }}" href="#{{ term.data.title | slugify }}" ><span class="fr-icon-links-fill" ></span></a></h2></dt>
+			<dd class="fr-mb-4w">{{ term.templateContent | safe }}</dd>
 				{% set currentLetter =  letter %}
 		{% endfor %}
 	</dl>

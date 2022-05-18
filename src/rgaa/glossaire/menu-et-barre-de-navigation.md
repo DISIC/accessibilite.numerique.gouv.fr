@@ -8,7 +8,7 @@ rubrique ou dans une collection de pages.
 Les principales barres de navigation ({% crit 12.2 %}) sont :
 
 - Un menu de navigation ;
-- Un fil d’Ariane ;
+- Un fil d’ariane ;
 - Une liste de navigation d’une liste de résultats ;
 - Des liens d’évitement.
 

@@ -44,8 +44,9 @@ RÉSULTATS DES TESTS
 
 L’audit de conformité réalisé [en interne / par la société NNN] révèle que :
 
-[pourcentage de critères RGAA respectés] des critères RGAA sont respectés.
-[Facultatif] Le taux moyen de conformité du service en ligne s’élève à [taux moyen de conformité du service en ligne].
+- [pourcentage de critères RGAA respectés] des critères RGAA sont respectés.
+- [Facultatif] Le taux moyen de conformité du service en ligne s’élève à [taux moyen de conformité du service en ligne].
+
 [Détailler ici les résultats des tests ou insérer un lien vers le rapport de test]
 
 CONTENUS NON ACCESSIBLES
@@ -54,15 +55,15 @@ Les contenus listés ci-dessous ne sont pas accessibles pour les raisons suivant
 
 Non conformité
 
-[Lister la/les non-conformité(s) du/de la/des site(s) internet/application(s) mobile(s) et/ou décrire quels section(s)/contenu(s)/fonction(s) ne sont pas encore conformes, indiquer les alternatives s’il y a lieu].
+- [Lister la/les non-conformité(s) du/de la/des site(s) internet/application(s) mobile(s) et/ou décrire quels section(s)/contenu(s)/fonction(s) ne sont pas encore conformes, indiquer les alternatives s’il y a lieu].
 
 Dérogations pour charge disproportionnée
 
-[Lister la/le/les section(s)/contenu(s)/fonction(s) non accessible(s) pour laquelle/lequel/lesquels la dérogation pour charge disproportionnée est temporairement invoquée, indiquer les alternatives s’il y a lieu].
+- [Lister la/le/les section(s)/contenu(s)/fonction(s) non accessible(s) pour laquelle/lequel/lesquels la dérogation pour charge disproportionnée est temporairement invoquée, indiquer les alternatives s’il y a lieu].
 
 Contenus non soumis à l’obligation d’accessibilité
 
-[Lister la/le/les section(s)/contenu(s)/fonction(s) non accessible(s) qui n’entre(nt) pas dans le champ d’application de la législation applicable, indiquer les alternatives s’il y a lieu].
+- [Lister la/le/les section(s)/contenu(s)/fonction(s) non accessible(s) qui n’entre(nt) pas dans le champ d’application de la législation applicable, indiquer les alternatives s’il y a lieu].
 
 ÉTABLISSEMENT DE CETTE DÉCLARATION D’ACCESSIBILITÉ
 

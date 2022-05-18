@@ -8,11 +8,11 @@ afin d’en faciliter l’utilisation par les utilisateurs de technologies
 d’assistance par exemple.
 
 Note : en HTML5, la seule technique utilisable actuellement est celle qui
-consiste à insérer le résumé directement dans le titre (balise `<caption>`)
+consiste à insérer le résumé directement dans le titre (élément `<caption>`)
 en masquant le résumé via CSS si nécessaire.
 
 Dans les versions précédentes de HTML, le résumé peut être inséré via un
-attribut `summary` sur la balise `<table>`.
+attribut `summary` sur l'élément `<table>`.
 
 Dans le cas d’une balise avec l’attribut WAI-ARIA `role="table"`, le résumé
 doit être fourni au moyen d’un attribut `aria-describedby` et être

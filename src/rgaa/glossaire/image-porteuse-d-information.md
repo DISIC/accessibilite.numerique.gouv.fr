@@ -10,7 +10,7 @@ l’intitulé du lien. Dans ce cas, l’alternative de l’image devrait être �
 avec la thématique « Liens ».
 
 Note 2 : lorsqu’un bouton de formulaire, inséré avec l’élément `<button>`, ne
-contient qu’une image (balise `<img>`, `<object>`, `<embed>`, `<canvas>` ou
+contient qu’une image (élément `<img>`, `<object>`, `<embed>`, `<canvas>` ou
 `<svg>`), l’alternative de l’image est l’intitulé du bouton. Deux cas peuvent
 se présenter :
 

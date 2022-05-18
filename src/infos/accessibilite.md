@@ -5,7 +5,7 @@ layout: layouts/base.njk
 
 La Direction interministérielle du numérique s’engage à rendre ses sites internet, intranet, extranet et ses progiciels accessibles conformément à l’article 47 de la loi n°2005-102 du 11 février 2005.
 
-Le site accessibilite.numerique.gouv.fr est développé selon les recommendations du référentiel général d’amélioration de l’accessibilité (RGAA) pour être accessible à tous les usagers quel que soit le matériel ou le logiciel utilisé pour naviguer sur internet.
+Le site accessibilite.numerique.gouv.fr est développé selon les recommandations du référentiel général d’amélioration de l’accessibilité (RGAA) pour être accessible à tous les usagers quel que soit le matériel ou le logiciel utilisé pour naviguer sur internet.
 
 Cette déclaration d’accessibilité s’applique au site accessibilite.numerique.gouv.fr.
 

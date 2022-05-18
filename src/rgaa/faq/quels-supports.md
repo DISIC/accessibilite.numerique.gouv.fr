@@ -3,7 +3,7 @@ title: Quels sites ?
 cat: Périmètre
 ---
 
-**Tous les sites et applications** utilisées au travers d’un navigateur web sont concernées :
+**Tous les sites et applications** utilisées au travers d’un navigateur web sont concernés :
 
 - les sites internet, intranet, extranet et progiciels ;
 - les applications mobiles ;

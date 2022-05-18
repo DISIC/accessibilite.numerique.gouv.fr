@@ -7,10 +7,10 @@ que l’utilisateur n’en soit conscient, peuvent désorienter l’utilisateur 
 ne peut voir l’ensemble de la page en même temps. Les changements de contexte
 comprennent les changements :
 
-- D’agent utilisateur ;
-- D’espace de restitution ;
-- De focus ;
-- De contenu qui modifie la signification de la page web.
+- d’agent utilisateur ;
+- d’espace de restitution ;
+- de focus ;
+- de contenu qui modifie la signification de la page web.
 
 Note : Un changement de contenu n’est pas toujours un changement de contexte.
 Un changement dans le contenu comme le déploiement d’une arborescence, un menu

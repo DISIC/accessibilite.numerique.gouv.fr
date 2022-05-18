@@ -7,7 +7,7 @@ contenu en mouvement ou clignotant par le clavier et la souris, au moins.
 
 Tous les contenus en mouvement, à l’exception des médias temporels pris en
 charge par la thématique multimédia, sont concernés : les images animées (par
-exemple un gif animé), les contenus en mouvement proposés via une balise
+exemple un gif animé), les contenus en mouvement proposés via un élément
 `<object>`, du code JavaScript ou des effets CSS par exemple.
 
 Note 1 : lorsque c’est approprié, la méthode de contrôle devrait être

@@ -13,5 +13,5 @@ via CSS. Les éléments (`basefont`, `blink`, `center`, `font`, `marquee`,
 `size`) sont interdits.
 
 Note : les attributs `width` et `height` utilisés sur d’autres éléments que
-les balises `<img>`, `<object>`, `<embed>`, `<canvas>` et `<svg>` sont
+les éléments `<img>`, `<object>`, `<embed>`, `<canvas>` et `<svg>` sont
 également interdits.

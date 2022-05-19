@@ -281,6 +281,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("./src/js/dsfr*");
 	eleventyConfig.addPassthroughCopy("./src/favicon");
 	eleventyConfig.addPassthroughCopy("./src/icons");
+	eleventyConfig.addPassthroughCopy("./src/doc");
 
 	return {
 		dir: {

@@ -7,16 +7,16 @@ title: Intitulé (ou nom accessible) de lien
 Dans le cas d’un lien HTML, le « nom accessible » est obtenu selon l’ordre
 suivant :
 
-- Passage de texte associé par l’attribut WAI-ARIA `aria-labelledby` ;
-- Sinon, contenu de l’attribut WAI-ARIA `aria-label` ;
-- Sinon, contenu du lien ;
-- Sinon, contenu de l’attribut `title`.
+- passage de texte associé par l’attribut WAI-ARIA `aria-labelledby` ;
+- sinon, contenu de l’attribut WAI-ARIA `aria-label` ;
+- sinon, contenu du lien ;
+- sinon, contenu de l’attribut `title`.
 
 Cet ordre doit être utilisé pour déterminer ce qui constitue l’intitulé du
 lien. Par exemple :
 
-- En cas de présence conjointe d’un attribut WAI-ARIA `aria-label` et d’un attribut WAI-ARIA `aria-labelledby`, c’est le passage de texte référencé par l’attribut WAI-ARIA `aria-labelledby` qui doit être considéré comme l’intitulé ;
-- En cas de présence conjointe d’un attribut WAI-ARIA `aria-label` et d’un contenu dans le lien, c’est le contenu de l’attribut WAI-ARIA `aria-label` qui doit être considéré comme l’intitulé.
+- en cas de présence conjointe d’un attribut WAI-ARIA `aria-label` et d’un attribut WAI-ARIA `aria-labelledby`, c’est le passage de texte référencé par l’attribut WAI-ARIA `aria-labelledby` qui doit être considéré comme l’intitulé ;
+- en cas de présence conjointe d’un attribut WAI-ARIA `aria-label` et d’un contenu dans le lien, c’est le contenu de l’attribut WAI-ARIA `aria-label` qui doit être considéré comme l’intitulé.
 
 Référence : <span lang="en">[Accessible name and description
 calculation](https://www.w3.org/TR/accname-1.1/)</span>.
@@ -28,27 +28,27 @@ Lien texte :
 
 En HTML, le « nom accessible » correspond au texte constitué à partir :
 
-- Du texte contenu dans le lien ;
-- Du texte contenu dans les éléments enfants du lien.
+- du texte contenu dans le lien ;
+- du texte contenu dans les éléments enfants du lien.
 
 Lien image :
 
 En HTML, le « nom accessible » correspond au texte constitué à partir de
 l’alternative textuelle d’une ou plusieurs images dans le lien du type :
 
-- Image (balise `<img>` ou balise ayant l’attribut WAI-ARIA `role="img"`) ;
-- Image objet (balise `<object>`) ;
-- Image bitmap (balise `<canvas>`) ;
-- Image vectorielle (balise `<svg>`).
+- Image (élément `<img>` ou balise ouvrante ayant l’attribut WAI-ARIA `role="img"`) ;
+- Image objet (élément `<object>`) ;
+- Image bitmap (élément `<canvas>`) ;
+- Image vectorielle (élément `<svg>`).
 
 Lien composite :
 
 En HTML, le « nom accessible » correspond au texte constitué à partir de
 l’ensemble :
 
-- Du texte contenu dans le lien ;
-- Du texte contenu dans les éléments enfant du lien ;
-- Du contenu de l’alternative textuelle de la ou des images comprises dans le lien.
+- du texte contenu dans le lien ;
+- du texte contenu dans les éléments enfant du lien ;
+- du contenu de l’alternative textuelle de la ou des images comprises dans le lien.
 
 Dans le cas d’un lien SVG (version 1.1), le « nom accessible » est obtenu
 comme suit :
@@ -63,8 +63,7 @@ Il faut cependant être vigilant car cet algorithme de calcul n’est pas encore
 pris en compte et effectif au sein des différents lecteurs d’écran. À ce jour,
 le support est disponible avec VoiceOver, mais incomplet ou lacunaire avec
 JAWS et NVDA. Si bien que le plus petit dénominateur commun sur lequel il est
-possible de se reposer pour fournir un intitulé au lien est l’élément `<text>`
-.
+possible de se reposer pour fournir un intitulé au lien est l’élément `<text>`.
 
 Note 1 : un intitulé de lien sera considéré comme non-explicite dans le cas où
 le « nom accessible » ne reprend pas l’[intitulé visible](#intitule-visible)

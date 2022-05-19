@@ -9,7 +9,7 @@ suivants doivent être respectés :
 - Liste des fonctionnalités obligatoires de contrôle de la consultation :
   - L’objet multimédia doit toujours avoir les fonctionnalités suivantes, au minimum : lecture, pause ou stop ;
   - Si l’objet multimédia a du son, il doit avoir une fonctionnalité d’activation / désactivation du son ;
-  - Si l’objet multimédia a une audiodescription, il doit avoir une fonctionnalité de contrôle de l’apparition/disparition de l’audiodescription.
+  - Si l’objet multimédia a une audiodescription, il doit avoir une fonctionnalité de contrôle de l’apparition / disparition de l’audiodescription.
 - Chaque fonctionnalité doit être accessible par le clavier, via la touche de tabulation, et par tout dispositif de pointage au moins.
 - Chaque fonctionnalité doit être activable par le clavier et par tout dispositif de pointage, au moins.
 

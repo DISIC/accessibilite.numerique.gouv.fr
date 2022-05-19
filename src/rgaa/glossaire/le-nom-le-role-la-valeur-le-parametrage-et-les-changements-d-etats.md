@@ -8,7 +8,7 @@ transmis aux APIs d’accessibilité notamment.
 
 Un composant peut s’appuyer sur un élément interactif HTML ou sur un élément
 non interactif surchargé par WAI-ARIA via un rôle ad hoc. Important : les
-boutons (balises `<button>` ou `<input type="button">`) lorsqu’ils sont
+boutons (élément `<button>` ou `<input type="button">`) lorsqu’ils sont
 contrôlés via JavaScript sont à évaluer avec le {% crit 7.1 %}.
 
 Le nom peut être l’intitulé du composant (l’intitulé d’un bouton, par
@@ -18,14 +18,14 @@ La valeur est, par exemple, l’élément sélectionné d’une liste déroulant
 valeur actuelle d’un curseur (slider).
 
 Le rôle correspond au type d’élément défini par la spécification HTML ou WAI-
-ARIA (comme la balise `<button>` ou l’attribut WAI-ARIA `role="button"`).
+ARIA (comme l'élément `<button>` ou l’attribut WAI-ARIA `role="button"`).
 
 Le paramétrage correspond aux informations particulières d’un composant,
-généralement mis à disposition par WAI-ARIA. Par exemple aria-controls est un
+généralement mis à disposition par WAI-ARIA. Par exemple `aria-controls` est un
 paramètre qui transmet aux APIs l’information que le composant contrôle tel ou
 tel contenu (référencé par son identifiant - attribut `id`).
 
-Les changements d’états sont également mis à disposition par WAI-ARIA. Par
+Les changements d’état sont également mis à disposition par WAI-ARIA. Par
 exemple `aria-expanded` est un état permettant de signaler aux APIs que le
 composant est « ouvert » ou « fermé ». À noter qu’un état peut également être
 transmis via le nom, lorsque l’intitulé est changé dynamiquement pour

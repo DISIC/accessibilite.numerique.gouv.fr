@@ -2,7 +2,7 @@
 title: Titre de cadre
 ---
 
-Contenu de l’attribut `title` de la balise `<iframe>` ou `<frame>` permettant
+Contenu de l’attribut `title` de l'élément `<iframe>` ou `<frame>` permettant
 de connaître la nature du contenu diffusé via le cadre lorsque l’utilisateur
 navigue de cadre en cadre ou affiche la liste des cadres de la page par
 exemple.

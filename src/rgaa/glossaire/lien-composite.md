@@ -5,11 +5,11 @@ title: Lien composite
 En HTML, [lien](#lien) contenant à la fois du texte et un ou plusieurs enfants
 de type image :
 
-- Image (balise `<img>` ou balise ayant l’attribut WAI-ARIA `role="img"`) ;
-- Zone cliquable (balise `<area>`) possédant un attribut `href` ;
-- Image objet (balise `<object>`) ;
-- Image bitmap (balise `<canvas>`) ;
-- Image vectorielle (balise `<svg>`).
+- Image (élément `<img>` ou balise ouvrante ayant l’attribut WAI-ARIA `role="img"`) ;
+- Zone cliquable (élément `<area>`) possédant un attribut `href` ;
+- Image objet (élément `<object>`) ;
+- Image bitmap (élément `<canvas>`) ;
+- Image vectorielle (élément `<svg>`).
 
 Note importante: il est rappelé que l’utilisation de deux liens adjacents
 (lien image et lien texte) et identiques constitue une gêne importante pour

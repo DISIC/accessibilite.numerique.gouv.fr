@@ -15,7 +15,7 @@ Couleur contiguë : couleur directement en contact avec une autre couleur.
 Exemple dans un panneau de « sens interdit » le rouge du panneau est la
 couleur contiguë au trait blanc au centre du panneau.
 
-Note 1: dans le cas de la présence d’un dégradé, c’est la couleur contiguë la
+Note 1 : dans le cas de la présence d’un dégradé, c’est la couleur contiguë la
 moins contrastée du dégradé qui sera à considérer comme la couleur contiguë ou
 couleur d’arrière-plan contiguë.
 

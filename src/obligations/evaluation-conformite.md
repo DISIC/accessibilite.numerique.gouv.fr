@@ -16,9 +16,9 @@ L’audit (ou évaluation) répond aux critères suivants :
 - il est fiable : il revient à l’organisme concerné de veiller à la fiabilité de sa déclaration par tous moyens (recours à un prestataire externe, formation d’experts internes, audits croisés…) ;
 - il est représentatif : il porte sur un échantillon représentatif des pages du service de communication au public en ligne (cf. section « Échantillon » ci-dessous).
 
-En application de l’article 5 du décret n° 2019-768 du 24 juillet 2019 susmentionné relatif à l’accessibilité des services de communication au public en ligne aux personnes handicapées, les personnes mentionnées aux 1° à 3° de l’article 47 précité vérifient l’accessibilité de leurs services de communication au public en ligne, conformément à la norme de référence, en appliquant la méthode technique du présent référentiel. Cependant, jusqu’au 31 décembre 2019, il reste possible d’effectuer un audit de conformité tel que définit dans le RGAA3.0 mis à jour en 2017.
+En application de l’article 5 du décret n° 2019-768 du 24 juillet 2019 susmentionné relatif à l’accessibilité des services de communication au public en ligne aux personnes handicapées, les personnes mentionnées aux 1° à 3° de l’article 47 précité vérifient l’accessibilité de leurs services de communication au public en ligne, conformément à la norme de référence, en appliquant la méthode technique du présent référentiel. Cependant, jusqu’au 31 décembre 2019, il reste possible d’effectuer un audit de conformité tel que défini dans le RGAA3.0 mis à jour en 2017.
 
-Les personnes mentionnées au 4° de l’article 47 précité peuvent recourir à une autre méthode de tests, à une triple condition:
+Les personnes mentionnées au 4° de l’article 47 précité peuvent recourir à une autre méthode de tests, à une triple condition :
 
 - s’assurer que la méthode de test utilisée est communicable sur demande à un utilisateur ou à une administration ;
 - produire une table de correspondance explicite entre les critères et tests et la norme de référence choisie ;
@@ -38,7 +38,7 @@ L’échantillon sur lequel est réalisé l’audit porte au moins sur les pages
 
 S’ajoutent à ces pages, les pages suivantes, lorsqu’elles existent :
 
-- au moins une page pertinente pour chaque type de service fourni et toute autre utilisation principale prévue (ex. : rubriques de 1er niveau dans l’arborescence…), y compris la fonctionnalité de recherche ;
+- au moins une page pertinente pour chaque type de service fourni et toute autre utilisation principale prévue (ex. : rubriques de 1<sup>er<sup> niveau dans l’arborescence…), y compris la fonctionnalité de recherche ;
 - au moins un document téléchargeable pertinent, le cas échéant, pour chaque type de service fourni et pour toute autre utilisation principalement prévue ;
 - l’ensemble des pages constituant un processus (par exemple, un formulaire de saisie ou une transaction sur plusieurs pages) ;
 - des exemples de pages ayant un aspect sensiblement distinct ou présentant un type de contenu différent (ex. : page contenant des tableaux de données, des éléments multimédia, des illustrations, des formulaires, etc.).
@@ -71,7 +71,7 @@ Il existe 3 raisons pour qu’un critère ne soit pas applicable à une page :
 
 Les pages sont ensuite testées au regard des critères applicables. Ces tests permettent d’obtenir :
 
-- le nombre de critères validés et non validés pour chaque page
+- le nombre de critères validés et non validés pour chaque page ;
 - le taux de conformité de chaque page.
 
 À noter :

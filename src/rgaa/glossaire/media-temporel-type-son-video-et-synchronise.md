@@ -24,7 +24,7 @@ différentes :
 Un média temporel peut être diffusé en temps réel ou être proposé en lecture
 de manière asynchrone (média pré-enregistré).
 
-Note 1 : l’utilisation du paramètre wmode pour un objet Flash avec les valeurs
+Note 1 : l’utilisation du paramètre `wmode` pour un objet Flash avec les valeurs
 `"transparent"` et `"opaque"` invalide de fait le {% crit 4.13 %}. En
 effet, l’utilisation de ces valeurs a pour conséquence que l’animation Flash
 vue du côté des utilisateurs de lecteur d’écran est invisible.

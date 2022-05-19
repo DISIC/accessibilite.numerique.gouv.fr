@@ -11,5 +11,5 @@ contenu CSS activé.
 
 Note : “signalés uniquement par la couleur” signifie que le lien n’est
 accompagné d’aucun marqueur visuel (icône, soulignement, bordure…). En
-conséquence un lien de la même couleur que le texte environnant est concerné
+conséquence, un lien de la même couleur que le texte environnant est concerné
 par ce critère.

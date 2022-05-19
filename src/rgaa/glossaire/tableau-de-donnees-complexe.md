@@ -2,9 +2,9 @@
 title: Tableau de données complexe
 ---
 
-Un tableau de données est une structure introduite par une balise `<table>` ou
+Un tableau de données est une structure introduite par un élément `<table>` ou
 lorsqu’il est correctement restitué par les technologies d’assistance par une
-balise pourvue d’un attribut WAI-ARIA `role="table"`.
+balise ouvrante pourvue d’un attribut WAI-ARIA `role="table"`.
 
 Lorsqu’un tableau de données contient des en-têtes qui ne sont pas répartis
 uniquement sur la première ligne et/ou la première colonne de la grille ou

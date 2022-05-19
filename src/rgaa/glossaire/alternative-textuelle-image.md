@@ -5,26 +5,26 @@ title: Alternative textuelle (image)
 « Nom accessible » restitué par les technologies d’assistance pour les
 éléments graphiques de type :
 
-- Image (balise `<img>` ou balise possédant un attribut WAI-ARIA `role="img"`) ;
-- Zone d’image réactive (balise `<area>`) ;
-- Bouton de type image (balise `<input>` avec l’attribut `type="image"`) ;
-- Image objet (balise `<object type="image/…">`) ;
-- Image vectorielle (balise `<svg>`) ;
-- Image bitmap (balise `<canvas>`) ;
-- Image embarquée (balise `<embed>`).
+- Image (élément `<img>` ou balise ouvrante possédant un attribut WAI-ARIA `role="img"`) ;
+- Zone d’image réactive (élément `<area>`) ;
+- Bouton de type image (balise ouvrante `<input>` avec l’attribut `type="image"`) ;
+- Image objet (balise ouvrante `<object type="image/…">`) ;
+- Image vectorielle (élément `<svg>`) ;
+- Image bitmap (élément `<canvas>`) ;
+- Image embarquée (élément `<embed>`).
 
 Dans le cas d’un élément graphique, le « nom accessible » est obtenu selon
 l’ordre suivant :
 
-- Passage de texte associé via l’attribut WAI-ARIA `aria-labelledby` pour les balises :
+- Passage de texte associé via l’attribut WAI-ARIA `aria-labelledby` pour les éléments :
   - `<img>` ;
   - `<input type="image">` ;
   - `<svg>` ;
   - `<object type="image/…">` ;
   - `<embed type="image/…">` ;
   - `<canvas>` ;
-  - balises possédant un attribut WAI-ARIA `role="img"`.
-- Sinon, contenu de l’attribut WAI-ARIA `aria-label` pour les balises :
+  - balises ouvrantes possédant un attribut WAI-ARIA `role="img"`.
+- Sinon, contenu de l’attribut WAI-ARIA `aria-label` pour les éléments :
   - `<img>` ;
   - `<area>` ;
   - `<input type="image">` ;
@@ -32,12 +32,12 @@ l’ordre suivant :
   - `<object type="image/…">` ;
   - `<embed type="image/…">` ;
   - `<canvas>` ;
-  - balises possédant un attribut WAI-ARIA `role="img"`.
-- Sinon, contenu de l’attribut `alt` pour les balises :
+  - balises ouvrantes possédant un attribut WAI-ARIA `role="img"`.
+- Sinon, contenu de l’attribut `alt` pour les éléments :
   - `<img>` ;
   - `<area>` ;
   - `<input type="image">`.
-- Sinon, contenu de l’attribut `title` pour les balises :
+- Sinon, contenu de l’attribut `title` pour les éléments :
   - `<img>` ;
   - `<input type="image">` ;
   - `<object type="image/…">` ;
@@ -53,8 +53,8 @@ qu’il faudra considérer comme alternative textuelle.
 
 Par exemple :
 
-- En cas de présence conjointe d’un attribut WAI-ARIA `aria-label` et d’un attribut WAI-ARIA `aria-labelledby` sur une balise `<img>`, c’est le passage de texte référencé par l’attribut WAI-ARIA `aria-labelledby` qui doit être considérée comme alternative textuelle si le contenu du passage de texte est réellement restitué par les technologies d’assistance utilisées dans l’environnement de test ;
-- En cas de présence conjointe d’un attribut WAI-ARIA `aria-label` et d’un attribut `alt` sur une balise `<img>`, c’est le contenu de l’attribut WAI-ARIA `aria-label` qui doit être considéré comme alternative textuelle si le contenu de l’attribut WAI-ARIA `aria-label` est réellement restitué par les technologies d’assistance utilisées dans l’environnement de test.
+- En cas de présence conjointe d’un attribut WAI-ARIA `aria-label` et d’un attribut WAI-ARIA `aria-labelledby` sur un élément `<img>`, c’est le passage de texte référencé par l’attribut WAI-ARIA `aria-labelledby` qui doit être considérée comme alternative textuelle si le contenu du passage de texte est réellement restitué par les technologies d’assistance utilisées dans l’environnement de test ;
+- En cas de présence conjointe d’un attribut WAI-ARIA `aria-label` et d’un attribut `alt` sur un élément `<img>`, c’est le contenu de l’attribut WAI-ARIA `aria-label` qui doit être considéré comme alternative textuelle si le contenu de l’attribut WAI-ARIA `aria-label` est réellement restitué par les technologies d’assistance utilisées dans l’environnement de test.
 
 Référence : [Accessible name and description
 calculation](https://www.w3.org/TR/accname-1.1/).
@@ -85,20 +85,20 @@ Note 3 : pour les image-lien, l’alternative doit permettre de comprendre la
 fonction et la destination du lien ; ce cas est traité dans la thématique
 liens.
 
-Note 4 : pour les images vectorielles (balise `<svg>`) l’alternative
-textuelle pourrait se trouver aussi présente dans une balise `<text>` que
-cette balise soit ou non visible, même si ce n’est pas le rôle dévolu à cet
+Note 4 : pour les images vectorielles (élément `<svg>`) l’alternative
+textuelle pourrait se trouver aussi présente dans un élément `<text>` que
+cet élément soit ou non visible, même si ce n’est pas le rôle dévolu à cet
 élément en SVG.
 
 Note 5 : l’utilisation de l’attribut `alt` étant la seule technique totalement
 supportée par les aides techniques il est recommandé de privilégier cette
-solution lors de la mise en œuvre d’une alternative à une balise `<img>`,
+solution lors de la mise en œuvre d’une alternative à un élément `<img>`,
 `<area>` et `<input type="image">`.
 
 Note 6 : bien que l’attribut `title` soit considéré comme une possibilité
 d’alternative textuelle à une image, son usage peut poser problème, notamment
 du fait qu’une image avec un attribut `alt` absent ou vide est considérée
-comme une image pourvue d’un rôle “présentation” par WAI-ARIA :
+comme une image pourvue d’un `rôle “présentation”` par WAI-ARIA :
 <https://www.w3.org/TR/html-aam-1.0/#details-id-54>.Il faut s’assurer que
 les assistances techniques présentes dans l’environnement de test retenu
 restituent correctement l’alternative proposée par l’attribut `title`.

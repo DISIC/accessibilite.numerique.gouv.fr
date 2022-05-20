@@ -12,5 +12,5 @@ en HTML. Les formats de document dont la compatibilité est reconnue sont :
 - Adobe PDF ;
 - Epub/Daisy.
 
-Note : le format txt ne peut pas être utilisé pour produire une version
+Note : le format texte (TXT) ne peut pas être utilisé pour produire une version
 accessible pour un document en téléchargement.

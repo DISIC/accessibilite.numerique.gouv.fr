@@ -27,7 +27,7 @@ disponibles est fournie par la spécification WCAG 2.1 :
 - `address-level1` \- Le plus large niveau administratif d’une adresse, c’est-à-dire la province dans laquelle se trouve la localité ;
 - `country` \- Code pays ;
 - `country-name` \- Nom de pays ;
-- `postal-code` \- Code postal, code CEDEX (si le CEDEX est présent, ajouter “CEDEX”, et ce qui le suit doit être ajouté dans le champ address-level2) ;
+- `postal-code` \- Code postal, code CEDEX (si le CEDEX est présent, ajouter “CEDEX”, et ce qui le suit doit être ajouté dans le champ `address-level2`) ;
 - `cc-name` \- Nom complet figurant sur le moyen de paiement ;
 - `cc-given-name` \- Prénom figurant sur le moyen de paiement ;
 - `cc-additional-name` \- Prénoms additionnels figurant sur le moyen de paiement cc-family-name - Nom de famille figurant sur le moyen de paiement ;

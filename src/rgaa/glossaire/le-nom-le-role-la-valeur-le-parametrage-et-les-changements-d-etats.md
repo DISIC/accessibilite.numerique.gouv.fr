@@ -7,8 +7,9 @@ paramètres éventuels doivent également être accessibles et correctement
 transmis aux APIs d’accessibilité notamment.
 
 Un composant peut s’appuyer sur un élément interactif HTML ou sur un élément
-non interactif surchargé par WAI-ARIA via un rôle ad hoc. Important : les
-boutons (élément `<button>` ou `<input type="button">`) lorsqu’ils sont
+non interactif surchargé par WAI-ARIA via un rôle ad hoc. 
+
+Note importante : les boutons (élément `<button>` ou `<input type="button">`) lorsqu’ils sont
 contrôlés via JavaScript sont à évaluer avec le {% crit 7.1 %}.
 
 Le nom peut être l’intitulé du composant (l’intitulé d’un bouton, par

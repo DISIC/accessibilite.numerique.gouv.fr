@@ -10,5 +10,5 @@ saisie d’un champ de formulaire. Par exemple :
 - Code postal (5 chiffres : ex. 75001).
 
 Note importante : lorsque le type de champ de formulaire propose un masque de
-saisie, par exemple les champs date ou time, l’indication de format n’est pas
+saisie, par exemple les champs `date` ou `time`, l’indication de format n’est pas
 nécessaire.

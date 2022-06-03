@@ -7,7 +7,8 @@
 		"watch": "eleventy --watch",
 		"start": "eleventy --serve",
 		"debug": "DEBUG=* eleventy",
-		"format": "prettier ./ --write"
+		"format": "prettier ./ --write",
+		"generate-glossary": "node ./scripts/generate-glossary.js && git add ./scripts/glossaire.json"
 	},
 	"main": "index.js",
 	"keywords": [],
@@ -33,6 +34,10 @@
 		"esbuild": "^0.14.19",
 		"esbuild-plugin-babel": "github:schloerke/esbuild-plugin-babel#patch-2",
 		"eslint": "^8.8.0",
+		"pre-commit": "^1.2.2",
 		"prettier": "^2.5.1"
-	}
+	},
+	"pre-commit": [
+    "generate-glossary"
+  ]
 }

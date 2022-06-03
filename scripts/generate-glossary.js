@@ -37,11 +37,12 @@ async function generateGlossary() {
       // Handle shortcodes
       const critRegex = /\{% crit (?<id>\d{1,2}.\d{1,2}) %\}/g // {% crit 12.10 %}
       const testRegex = /\{% test '(?<id>\d{1,2}.\d{1,2}.\d{1,2})' %\}/g // {% test 2.10.3 %}
-      const baseUrl = "https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/"
+      const baseUrl = 'https://accessibilite.numerique.gouv.fr'
+      const url = `${baseUrl}/methode/criteres-et-tests/`
 
       cleanedContent = content
-        .replace(critRegex, `<a ${baseUrl}#$<id>">critère $<id></a>`)
-        .replace(testRegex, `<a ${baseUrl}#$<id>">test $<id></a>`)
+        .replace(critRegex, `<a ${url}#$<id>">critère $<id></a>`)
+        .replace(testRegex, `<a ${url}#$<id>">test $<id></a>`)
 
       // Push to JSON data
       jsonData.glossary.push({ title, body: cleanedContent })

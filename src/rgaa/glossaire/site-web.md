@@ -5,7 +5,7 @@ title: Site web
 Ensemble de toutes les pages web :
 
 - Reliées par des liens web ;
-- Appartenant au même nom de domaine (ex : references.modernisation.gouv.fr) ;
+- Appartenant au même nom de domaine (ex : design.numerique.gouv.fr) ;
 - Qui constituent un ensemble cohérent du point de vue de l’utilisateur.
 
 Cas particulier des pages web d’un sous-domaine ; un sous-domaine peut :

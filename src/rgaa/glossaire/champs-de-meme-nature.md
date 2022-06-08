@@ -2,9 +2,7 @@
 title: Champs de même nature
 ---
 
-Dans un formulaire, ensemble des champs pouvant être regroupés par la nature
-des informations attendues. Le regroupement vise à identifier les champs
-devant être traités comme un ensemble.
+Dans un formulaire, ensemble des champs pouvant être regroupés par la nature des informations attendues. Le regroupement vise à identifier les champs devant être traités comme un ensemble.
 
 Quelques exemples :
 
@@ -13,6 +11,4 @@ Quelques exemples :
 - Un bloc destiné à saisir l’identité et l’adresse de l’utilisateur, lorsque le formulaire contient plusieurs blocs de contact ;
 - Un ensemble de boutons radio ou de cases à cocher qui se rapportent à une question.
 
-Ces champs doivent être regroupés lorsque les intitulés d'étiquette (`<label>`) ne sont pas
-suffisants pour informer l’utilisateur que les champs font partie d’un
-regroupement.
+Ces champs doivent être regroupés lorsque les intitulés d'étiquette (`<label>`) ne sont pas suffisants pour informer l’utilisateur que les champs font partie d’un regroupement.

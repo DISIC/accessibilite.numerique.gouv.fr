@@ -2,8 +2,7 @@
 title: Image de décoration
 ---
 
-Image n’ayant aucune fonction et ne véhiculant aucune information particulière
-par rapport au contenu auquel elle est associée. 
+Image n’ayant aucune fonction et ne véhiculant aucune information particulière par rapport au contenu auquel elle est associée. 
 
 Exemples :
 - Une image précédant chaque item d’une liste ;
@@ -11,6 +10,4 @@ Exemples :
 - Une image de coin arrondie pour habiller un bloc d’information ;
 - Une image d’illustration n’apportant aucune information nécessaire à la compréhension du texte auquel elle est associée.
 
-Note : les balises ouvrantes possédant un attribut WAI-ARIA `role="img"` ne peuvent
-faire office d’image de décoration qu’à la condition qu’elles possèdent un
-attribut WAI-ARIA `aria-hidden="true"`.
+Note : les balises ouvrantes possédant un attribut WAI-ARIA `role="img"` ne peuvent faire office d’image de décoration qu’à la condition qu’elles possèdent un attribut WAI-ARIA `aria-hidden="true"`.

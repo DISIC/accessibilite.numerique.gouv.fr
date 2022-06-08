@@ -2,8 +2,7 @@
 title: Liste des valeurs possibles pour l’attribut `autocomplete`
 ---
 
-[La liste des valeurs](https://www.w3.org/TR/WCAG21/#input-purposes)
-disponibles est fournie par la spécification WCAG 2.1 :
+[La liste des valeurs](https://www.w3.org/TR/WCAG21/#input-purposes) disponibles est fournie par la spécification WCAG 2.1 :
 
 - `name` \- Nom complet ;
 - `honorific-prefix` \- Abréviation, civilité ou titre ;

@@ -2,8 +2,7 @@
 title: Règles d’écriture
 ---
 
-Le code source doit respecter les règles suivantes en accord avec la
-déclaration de type de document utilisée dans la page :
+Le code source doit respecter les règles suivantes en accord avec la déclaration de type de document utilisée dans la page :
 
 - Pas de balise ouvrante ou fermante sans `<` ou `>` (exemple d’erreur : `li>vélo`) ;
 - pas de balise fermante avec `/` manquant (exemple d’erreur : `<li>vélo<li>`) ;

@@ -49,7 +49,7 @@ async function generateGlossary() {
     }
 
     // Remove line breaks (\n) and create JSON file
-    let data = JSON.stringify(jsonData, null, 2).replaceAll(/\\n/g, '')
+    let data = JSON.stringify(jsonData, null, 2).replaceAll(/\\n/g, ' ')
     fs.writeFile(GLOSSARY_DESTINATION, data);
 
     console.log(`✅ Glossary successfully generated.`);

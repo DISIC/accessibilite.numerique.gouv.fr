@@ -48,11 +48,10 @@ async function generateGlossary() {
       jsonData.glossary.push({ title, body: cleanedContent })
     }
 
-    // Create JSON file
-    let data = JSON.stringify(jsonData, null, 2);
+    // Remove line breaks (\n) and create JSON file
+    let data = JSON.stringify(jsonData, null, 2).replaceAll(/\\n/g, ' ')
     fs.writeFile(GLOSSARY_DESTINATION, data);
 
-    // TODO: Escape HTML tags?
     console.log(`✅ Glossary successfully generated.`);
 
   } catch (err) {

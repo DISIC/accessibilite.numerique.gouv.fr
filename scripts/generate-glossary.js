@@ -1,6 +1,5 @@
 const fs = require('fs').promises;
-const markdownIt = require('markdown-it')
-const md = new markdownIt()
+const md = require('markdown-it')({ html: true })
 const fm = require('front-matter')
 
 const GLOSSARY_SOURCE = './src/rgaa/glossaire'

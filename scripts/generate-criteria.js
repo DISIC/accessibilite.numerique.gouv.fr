@@ -6,7 +6,6 @@ const themes = require('../src/_data/themes.json')
 /*
   TODO:
     - handle TN and PC sub items
-    - parse shortcodes
     - add npm command
 */
 
@@ -66,6 +65,27 @@ const CRITERIA_DESTINATION = './RGAA/4.1/criteres.json'
 }
 
 /**
+ * Split a string into an array of strings with shortcodes replacements
+ * @param {string} str
+ * @returns {string[]}
+ */
+function formatPCAndTN(str) {
+  const critRegex = /\{% crit (?<id>\d{1,2}.\d{1,2}) %\}/g // {% crit 12.10 %}
+  const testRegex = /\{% test '(?<id>\d{1,2}.\d{1,2}.\d{1,2})' %\}/g // {% test 2.10.3 %}
+  const baseUrl = 'https://accessibilite.numerique.gouv.fr'
+  const url = `${baseUrl}/methode/criteres-et-tests/`
+
+  return str
+    .split('\n')
+    .filter(Boolean)
+    .map(s => {
+      return s
+        .replace(critRegex, `<a ${url}#$<id>">critère $<id></a>`)
+        .replace(testRegex, `<a ${url}#$<id>">test $<id></a>`)
+    })
+}
+
+/**
  * Return criterion technical notes (TN) and particular cases (PC)
  * @param {string} path
  * @returns {object}
@@ -81,13 +101,13 @@ async function parseParticularCasesAndTechnicalNote(path) {
   if (hasTN && hasPC) {
     const TNIndex = parts.indexOf('#### Notes techniques')
     return {
-      particularCases: parts.slice(1, TNIndex)[0].split('\n').filter(Boolean),
-      technicalNote: parts.slice(TNIndex + 1)[0].split('\n').filter(Boolean)
+      particularCases: formatPCAndTN(parts.slice(1, TNIndex)[0]),
+      technicalNote: formatPCAndTN(parts.slice(TNIndex + 1)[0])
     }
   } else if (hasTN) {
-    return { technicalNote: parts.slice(1)[0].split('\n').filter(Boolean) }
+    return { technicalNote: formatPCAndTN(parts.slice(1)[0]) }
   } else if (hasPC) {
-    return { particularCases: parts.slice(1)[0].split('\n').filter(Boolean) }
+    return { particularCases: formatPCAndTN(parts.slice(1)[0]) }
   }
 
   return {}

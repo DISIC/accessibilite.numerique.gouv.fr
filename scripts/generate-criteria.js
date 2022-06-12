@@ -5,8 +5,8 @@ const themes = require('../src/_data/themes.json')
 
 /*
   TODO:
-    - parse particularCases
-    - parse technicalNotes
+    - handle TN and PC sub items
+    - parse shortcodes
     - add npm command
 */
 
@@ -66,6 +66,34 @@ const CRITERIA_DESTINATION = './RGAA/4.1/criteres.json'
 }
 
 /**
+ * Return criterion technical notes (TN) and particular cases (PC)
+ * @param {string} path
+ * @returns {object}
+ */
+async function parseParticularCasesAndTechnicalNote(path) {
+  const data = await fs.readFile(path, "utf-8");
+  const result = await fm(data)
+
+  const parts = result.body.split(/(#### .*)/g).map(el => el.trim()).filter(Boolean)
+  const hasTN = parts.includes('#### Notes techniques') || parts.includes('#### Note technique')
+  const hasPC = parts.includes('#### Cas particuliers')
+
+  if (hasTN && hasPC) {
+    const TNIndex = parts.indexOf('#### Notes techniques')
+    return {
+      particularCases: parts.slice(1, TNIndex)[0].split('\n').filter(Boolean),
+      technicalNote: parts.slice(TNIndex + 1)[0].split('\n').filter(Boolean)
+    }
+  } else if (hasTN) {
+    return { technicalNote: parts.slice(1)[0].split('\n').filter(Boolean) }
+  } else if (hasPC) {
+    return { particularCases: parts.slice(1)[0].split('\n').filter(Boolean) }
+  }
+
+  return {}
+}
+
+/**
  * Generate a JSON file containing all the criteria
  * from `src/rgaa/criteres` grouped by topics.
  */
@@ -82,7 +110,8 @@ async function generateCriteria() {
         criterium: {
           number: folder,
           title: await parseTitle(`${CRITERIA_SOURCE}/${folder}/index.md`),
-          tests: await parseTests(`${CRITERIA_SOURCE}/${folder}/tests`)
+          tests: await parseTests(`${CRITERIA_SOURCE}/${folder}/tests`),
+          ...(await parseParticularCasesAndTechnicalNote(`${CRITERIA_SOURCE}/${folder}/annexe.md`))
         },
         references: await parseReferences(`${CRITERIA_SOURCE}/${folder}/annexe.md`)
       }

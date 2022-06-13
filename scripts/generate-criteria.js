@@ -5,8 +5,6 @@ const themes = require('../src/_data/themes.json')
 
 /*
   TODO:
-    - parse glossary links
-    - handle singular
     - add npm command
 */
 
@@ -81,8 +79,8 @@ function formatPCAndTN(str) {
     .filter(Boolean)
     .map(s => {
       return s
-        .replace(critRegex, `<a ${url}#$<id>">critère $<id></a>`)
-        .replace(testRegex, `<a ${url}#$<id>">test $<id></a>`)
+        .replace(critRegex, `<a href="${url}#$<id>">critère $<id></a>`)
+        .replace(testRegex, `<a href="${url}#$<id>">test $<id></a>`)
     })
 }
 
@@ -135,6 +133,18 @@ async function parsePCAndTN(path) {
   }
 
   return {}
+}
+
+/**
+ * Transform glossary Markdown links to HTML links
+ * @param {string} str
+ * @returns string
+ */
+function transformGlossaryLinks(str) {
+  const regex = /\[(?<label>.*?)\]\(#(?<slug>.*?)\)/g // bla [label](#slug) bla
+  const baseUrl = 'https://accessibilite.numerique.gouv.fr'
+  const url = `${baseUrl}/methode/glossaire/`
+  return str.replace(regex, `<a href="${url}#$<slug>">$<label></a>`)
 }
 
 /**

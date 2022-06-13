@@ -123,7 +123,7 @@ async function parsePCAndTN(path) {
   const hasPC = parts.includes('#### Cas particuliers')
 
   if (hasTN && hasPC) {
-    const TNIndex = parts.indexOf('#### Notes techniques')
+    const TNIndex = parts.findIndex(p => p.match(/#### Notes? techniques?/))
     return {
       particularCases: handlePCAndTNSubItems(formatPCAndTN(parts.slice(1, TNIndex)[0])),
       technicalNote: handlePCAndTNSubItems(formatPCAndTN(parts.slice(TNIndex + 1)[0]))

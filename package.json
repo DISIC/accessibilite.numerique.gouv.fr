@@ -8,7 +8,8 @@
 		"start": "eleventy --serve",
 		"debug": "DEBUG=* eleventy",
 		"format": "prettier ./ --write",
-		"generate-glossary": "node ./scripts/generate-glossary.js && git add ./RGAA/4.1/glossaire.json"
+		"generate-glossary": "node ./scripts/generate-glossary.js && git add ./RGAA/4.1/glossaire.json",
+		"generate-criteria": "node ./scripts/generate-criteria.js && git add ./RGAA/4.1/criteres.json"
 	},
 	"main": "index.js",
 	"keywords": [],
@@ -38,6 +39,7 @@
 		"prettier": "^2.5.1"
 	},
 	"pre-commit": [
-    "generate-glossary"
+    "generate-glossary",
+		"generate-criteria"
   ]
 }

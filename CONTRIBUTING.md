@@ -25,3 +25,17 @@ Tous les autres contenus du site sont dans des fichiers markdown du type `réper
 ### Assets
 
 Ce site utilise le [système de design de l’État](https://www.systeme-de-design.gouv.fr/) dont les composants n’ont pas vocation à être modifiés.
+
+## Générer le glossaire et les critères
+
+Pour générer manuellement le fichier contenant l'ensemble des éléments du glossaire :
+
+```js
+node ./scripts/generate-glossary.js
+```
+
+Pour générer manuellement le fichier contenant l'ensemble des critères :
+
+```js
+node ./scripts/generate-criteria.js
+```

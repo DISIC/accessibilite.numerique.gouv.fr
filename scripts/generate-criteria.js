@@ -3,11 +3,6 @@ const fm = require("front-matter");
 
 const themes = require("../src/_data/themes.json");
 
-/*
-  TODO:
-    - add npm command
-*/
-
 const CRITERIA_SOURCE = "./src/rgaa/criteres";
 const CRITERIA_DESTINATION = "./RGAA/4.1/criteres.json";
 
@@ -61,7 +56,7 @@ async function parseTests(folderPath) {
 
 		tests[i + 1] = result.attributes.steps
 			? [result.attributes.title, ...result.attributes.steps]
-			: result.attributes.title;
+			: [result.attributes.title];
 	});
 
 	return tests;
@@ -175,18 +170,31 @@ async function generateCriteria() {
 		const criteria = [];
 
 		const folders = await fs.readdir(CRITERIA_SOURCE);
+
+		// Order folders by topic + criterion number
+		folders.sort((a, b) => {
+			const [topicA, criteriumA] = a.split(".").map(Number);
+			const [topicB, criteriumB] = b.split(".").map(Number);
+
+			if (topicA == topicB) {
+				return criteriumA - criteriumB;
+			}
+
+			return topicA - topicB;
+		});
+
 		for (const folder of folders) {
 			// Build all criterion properties
 			const criterionObject = {
 				criterium: {
-					number: folder.split(".")[1],
+					number: folder,
 					title: await parseTitle(`${CRITERIA_SOURCE}/${folder}/index.md`),
 					tests: await parseTests(`${CRITERIA_SOURCE}/${folder}/tests`),
 					...(await parsePCAndTN(`${CRITERIA_SOURCE}/${folder}/annexe.md`)),
+					references: await parseReferences(
+						`${CRITERIA_SOURCE}/${folder}/annexe.md`
+					),
 				},
-				references: await parseReferences(
-					`${CRITERIA_SOURCE}/${folder}/annexe.md`
-				),
 			};
 
 			// Push to JSON data
@@ -198,10 +206,19 @@ async function generateCriteria() {
 			const topicNumber = t[0];
 			return {
 				topic: t[1].title,
-				number: topicNumber,
-				criteria: criteria.filter((c) => {
-					return c.criterium.number.split(".")[0] === topicNumber;
-				}),
+				number: Number(topicNumber),
+				criteria: criteria
+					.filter((c) => {
+						return c.criterium.number.split(".")[0] === topicNumber;
+					})
+					.map((c) => {
+						return {
+							criterium: {
+								...c.criterium,
+								number: Number(c.criterium.number.split(".")[1]),
+							},
+						};
+					}),
 			};
 		});
 

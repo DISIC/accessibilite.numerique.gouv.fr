@@ -5,7 +5,8 @@ const themes = require('../src/_data/themes.json')
 
 /*
   TODO:
-    - handle TN and PC sub items
+    - parse glossary links
+    - handle singular
     - add npm command
 */
 
@@ -15,7 +16,7 @@ const CRITERIA_DESTINATION = './RGAA/4.1/criteres.json'
 /**
  * Get criterion title
  * @param {string} path
- * @returns {string} title attribute
+ * @returns {Promise<string>} title attribute
  */
  async function parseTitle(path) {
   const data = await fs.readFile(path, "utf-8");
@@ -27,7 +28,7 @@ const CRITERIA_DESTINATION = './RGAA/4.1/criteres.json'
 /**
  * Parse criterion WCAG and techniques references.
  * @param {string} path
- * @returns {object}
+ * @returns {Promise<object>}
  */
  async function parseReferences(path) {
   const data = await fs.readFile(path, "utf-8");
@@ -46,7 +47,7 @@ const CRITERIA_DESTINATION = './RGAA/4.1/criteres.json'
 /**
  * Return criterion tests with or without steps
  * @param {string} folderPath
- * @returns {array|string}
+ * @returns {Promise<array|string>}
  */
  async function parseTests(folderPath) {
   const tests = {}
@@ -86,11 +87,34 @@ function formatPCAndTN(str) {
 }
 
 /**
+ * Render PC and TN sub items as a nested list
+ * @param {string[]} lines
+ * @returns {array}
+ */
+function handlePCAndTNSubItems(lines) {
+  const result = []
+
+  lines.forEach(line => {
+    if (line.startsWith('- ')) {
+      if (typeof result.at(-1) === 'object') {
+        result.at(-1).ul.push(line)
+      } else {
+        result.push({ ul: [line] })
+      }
+    } else {
+      result.push(line)
+    }
+  })
+
+  return result
+}
+
+/**
  * Return criterion technical notes (TN) and particular cases (PC)
  * @param {string} path
- * @returns {object}
+ * @returns {Promise<object>}
  */
-async function parseParticularCasesAndTechnicalNote(path) {
+async function parsePCAndTN(path) {
   const data = await fs.readFile(path, "utf-8");
   const result = await fm(data)
 
@@ -101,13 +125,13 @@ async function parseParticularCasesAndTechnicalNote(path) {
   if (hasTN && hasPC) {
     const TNIndex = parts.indexOf('#### Notes techniques')
     return {
-      particularCases: formatPCAndTN(parts.slice(1, TNIndex)[0]),
-      technicalNote: formatPCAndTN(parts.slice(TNIndex + 1)[0])
+      particularCases: handlePCAndTNSubItems(formatPCAndTN(parts.slice(1, TNIndex)[0])),
+      technicalNote: handlePCAndTNSubItems(formatPCAndTN(parts.slice(TNIndex + 1)[0]))
     }
   } else if (hasTN) {
-    return { technicalNote: formatPCAndTN(parts.slice(1)[0]) }
+    return { technicalNote: handlePCAndTNSubItems(formatPCAndTN(parts.slice(1)[0]) )}
   } else if (hasPC) {
-    return { particularCases: formatPCAndTN(parts.slice(1)[0]) }
+    return { particularCases: handlePCAndTNSubItems(formatPCAndTN(parts.slice(1)[0]) )}
   }
 
   return {}
@@ -131,7 +155,7 @@ async function generateCriteria() {
           number: folder,
           title: await parseTitle(`${CRITERIA_SOURCE}/${folder}/index.md`),
           tests: await parseTests(`${CRITERIA_SOURCE}/${folder}/tests`),
-          ...(await parseParticularCasesAndTechnicalNote(`${CRITERIA_SOURCE}/${folder}/annexe.md`))
+          ...(await parsePCAndTN(`${CRITERIA_SOURCE}/${folder}/annexe.md`))
         },
         references: await parseReferences(`${CRITERIA_SOURCE}/${folder}/annexe.md`)
       }
@@ -156,7 +180,7 @@ async function generateCriteria() {
 
     // Create JSON file
     let data = JSON.stringify(jsonData, null, 2)
-    fs.writeFile(CRITERIA_DESTINATION, data);
+    await fs.writeFile(CRITERIA_DESTINATION, data);
 
     console.log(`✅ Criteria list successfully generated.`);
   } catch(error) {

@@ -36,10 +36,14 @@ async function parseReferences(path) {
 		return `${w.successCriterion} ${w.title} (${w.level})`;
 	});
 
-	return {
-		wcag,
-		techniques: result.attributes.Techniques,
-	};
+	return [
+		{
+			wcag,
+		},
+		{
+			techniques: result.attributes.Techniques,
+		},
+	];
 }
 
 /**
@@ -175,7 +179,7 @@ async function generateCriteria() {
 			// Build all criterion properties
 			const criterionObject = {
 				criterium: {
-					number: folder,
+					number: folder.split(".")[1],
 					title: await parseTitle(`${CRITERIA_SOURCE}/${folder}/index.md`),
 					tests: await parseTests(`${CRITERIA_SOURCE}/${folder}/tests`),
 					...(await parsePCAndTN(`${CRITERIA_SOURCE}/${folder}/annexe.md`)),

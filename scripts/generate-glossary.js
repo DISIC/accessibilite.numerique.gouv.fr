@@ -1,6 +1,5 @@
 const fs = require('fs').promises;
-const markdownIt = require('markdown-it')
-const md = new markdownIt()
+const md = require('markdown-it')({ html: true })
 const fm = require('front-matter')
 
 const GLOSSARY_SOURCE = './src/rgaa/glossaire'
@@ -41,8 +40,8 @@ async function generateGlossary() {
       const url = `${baseUrl}/methode/criteres-et-tests/`
 
       cleanedContent = content
-        .replace(critRegex, `<a ${url}#$<id>">critère $<id></a>`)
-        .replace(testRegex, `<a ${url}#$<id>">test $<id></a>`)
+        .replace(critRegex, `<a href="${url}#$<id>">critère $<id></a>`)
+        .replace(testRegex, `<a href="${url}#$<id>">test $<id></a>`)
 
       // Push to JSON data
       jsonData.glossary.push({ title, body: cleanedContent })

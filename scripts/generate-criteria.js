@@ -94,9 +94,9 @@ function handlePCAndTNSubItems(lines) {
 	lines.forEach((line) => {
 		if (line.startsWith("- ")) {
 			if (typeof result.at(-1) === "object") {
-				result.at(-1).ul.push(line);
+				result.at(-1).items.push(line);
 			} else {
-				result.push({ ul: [line] });
+				result.push({ items: [line] });
 			}
 		} else {
 			result.push(line);

@@ -716,7 +716,7 @@
             "particularCases": [
               "Dans ces situations, les critères sont non applicables pour ces éléments :",
               {
-                "ul": [
+                "items": [
                   "- Le texte fait partie d’un logo ou d’un nom de marque d’un organisme ou d’une société ;",
                   "- Le texte ou l’image de texte est purement décoratif ;",
                   "- Le texte fait partie d’une image véhiculant une information mais le texte lui-même n’apporte aucune information essentielle ;",
@@ -770,7 +770,7 @@
             "particularCases": [
               "Les cas suivants sont non applicables pour ce critère :",
               {
-                "ul": [
+                "items": [
                   "- Composant d’interface inactif (par exemple, un bouton avec un attribut `disabled`) sur lequel aucune action n’est possible ;",
                   "- Composant d’interface pour lequel l’apparence est gérée par les styles natifs du navigateur sans aucune modification par l’auteur (par exemple, le style au focus natif dans Chrome ou Firefox) ;",
                   "- Composant d’interface pour lequel la couleur n’est pas nécessaire pour identifier le composant ou son état (par exemple, un groupe de liens faisant office de navigation dont la position dans la page, la taille et la couleur du texte permettent de comprendre qu’il s’agit de liens même si la couleur du soulignement des liens avec le fond blanc n’a pas un ratio de 3:1 et que le texte lui a un ratio de 4.5:1) ;",
@@ -837,7 +837,7 @@
             "particularCases": [
               "Il existe une gestion de cas particulier lorsque :",
               {
-                "ul": [
+                "items": [
                   "- Le [média temporel](#media-temporel-type-son-video-et-synchronise) est utilisé à des fins décoratives (c’est-à-dire qu’il n’apporte aucune information) ;",
                   "- Le [média temporel](#media-temporel-type-son-video-et-synchronise) est lui-même une alternative à un contenu de la page (une vidéo en langue des signes ou la vocalisation d’un texte, par exemple) ;",
                   "- Le [média temporel](#media-temporel-type-son-video-et-synchronise) est utilisé pour accéder à une version agrandie ;",
@@ -1101,7 +1101,7 @@
             "particularCases": [
               "Il existe une gestion de cas particulier lorsque :",
               {
-                "ul": [
+                "items": [
                   "- Le [média temporel](#media-non-temporel) est utilisé à des fins décoratives (c’est-à-dire qu’il n’apporte aucune information) ;",
                   "- Le [média temporel](#media-non-temporel) est diffusé dans un [environnement maîtrisé](#environnement-maitrise) ;",
                   "- Le [média temporel](#media-non-temporel) est inséré via JavaScript en vérifiant la présence et la version du plug-in, en remplacement d’un [contenu alternatif](#contenu-alternatif) déjà présent."
@@ -1568,7 +1568,7 @@
               "Il existe une gestion de cas particuliers pour les tests 6.1.1, 6.1.2, 6.1.3 et 6.1.4 lorsque le lien est [ambigu pour tout le monde](#ambigu-pour-tout-le-monde). Dans cette situation, où il n’est pas possible de rendre le lien explicite dans son contexte, le critère est non applicable.",
               "Il existe une gestion de cas particuliers pour le test 6.1.5 lorsque :",
               {
-                "ul": [
+                "items": [
                   "- La ponctuation et les lettres majuscules sont présentes dans le texte de l’[intitulé visible](#intitule-visible) : elles peuvent être ignorées dans le nom accessible sans porter à conséquence ;",
                   "- Le texte de l’[intitulé visible](#intitule-visible) sert de symbole : le texte ne doit pas être interprété littéralement au niveau du nom accessible. Le nom doit exprimer la fonction véhiculée par le symbole (par exemple, “B” au niveau d’un éditeur de texte aura pour nom accessible “Mettre en gras”, le signe “>” en fonction du contexte signifiera “Suivant” ou “Lancer la vidéo”). Le cas des symboles mathématiques fait cependant exception (voir la note ci-dessous)."
                 ]
@@ -1578,14 +1578,14 @@
             "technicalNote": [
               "Lorsque l’intitulé visible est complété par une autre expression dans le nom accessible :",
               {
-                "ul": [
+                "items": [
                   "- WCAG insiste sur le placement de l’intitulé visible au début du nom accessible sans toutefois réserver l’exclusivité de cet emplacement ;",
                   "- WCAG considère comme un cas d’échec une correspondance non exacte de la chaîne de caractères de l’intitulé visible au sein du nom accessible."
                 ]
               },
               "Par exemple, si l’on considère l’intitulé visible « Commander maintenant » complété dans le nom accessible par l’expression «produit X », on peut avoir les différents cas suivants :",
               {
-                "ul": [
+                "items": [
                   "- « Commander maintenant produit X » est valide (bonne pratique) ;",
                   "- « Produit X : commander maintenant » est valide ;",
                   "- « Commander produit X maintenant » est non valide."
@@ -1679,7 +1679,7 @@
             "particularCases": [
               "Il existe une gestion de cas particuliers pour le test 7.1.3 lorsque :",
               {
-                "ul": [
+                "items": [
                   "- La ponctuation et les lettres majuscules sont présentes dans le texte de l’intitulé visible : elles peuvent être ignorées dans le nom accessible sans porter à conséquence ;",
                   "- Le texte de l’intitulé visible sert de symbole : le texte ne doit pas être interprété littéralement au niveau du nom accessible. Le nom doit exprimer la fonction véhiculée par le symbole (par exemple, “B” au niveau d’un éditeur de texte aura pour nom accessible “Mettre en gras”, le signe “>” en fonction du contexte signifiera “Suivant” ou “Lancer la vidéo”). Le cas des symboles mathématiques fait cependant exception (voir la note ci-dessous)."
                 ]
@@ -1851,7 +1851,7 @@
             "technicalNote": [
               "Les rôles WAI-ARIA `log`, `status` et `alert` ont implicitement une valeur d’attribut WAI-ARIA `aria-live` et `aria-atomic`. On pourra donc considérer (conformément à la spécification WAI-ARIA 1.1) que :",
               {
-                "ul": [
+                "items": [
                   "- Un attribut WAI-ARIA `aria-live=\"polite\"` associé à un message de statut peut valoir pour un rôle WAI-ARIA `log` ;",
                   "- Un attribut WAI-ARIA `aria-live=\"polite\"` et un attribut WAI-ARIA `aria-atomic=\"true\"` associés à un message de statut peuvent valoir pour un rôle WAI-ARIA `status` ;",
                   "- Un attribut WAI-ARIA `aria-live=\"assertive\"` et un attribut WAI-ARIA `aria-atomic=\"true\"` associés à un message de statut peuvent valoir pour un rôle WAI-ARIA `alert`."
@@ -2058,7 +2058,7 @@
             "particularCases": [
               "Il y a une gestion de cas particuliers sur le changement de langue pour les cas suivants :",
               {
-                "ul": [
+                "items": [
                   "- Nom propre, le critère est non applicable ;",
                   "- Nom commun de langue étrangère présent dans le dictionnaire officiel de la langue (voir note 1 ci-dessous) par défaut de la page web, le critère est non applicable ;",
                   "- Le terme de langue étrangère soumis, via un [champ de formulaire](#champ-de-saisie-de-formulaire) et rappelé dans la page (par exemple comme indication du terme recherché dans le cas d’un moteur de recherche), le critère est non applicable ;",
@@ -2661,7 +2661,7 @@
             "particularCases": [
               "Font exception à ce critère, les contenus dont l'agencement requiert deux dimensions pour être compris ou utilisés comme :",
               {
-                "ul": [
+                "items": [
                   "- Les images, les graphiques ou les vidéos ;",
                   "- Les jeux (jeux de plateforme, par exemple) ;",
                   "- Les présentations (type diaporama, par exemple) ;",
@@ -2700,7 +2700,7 @@
             "particularCases": [
               "Font exception à ce critère, les contenus pour lesquels l’utilisateur n’a pas de possibilité de personnalisation :",
               {
-                "ul": [
+                "items": [
                   "- Les sous-titres directement intégrés à une vidéo ;",
                   "- Les images texte ;",
                   "- Le texte au sein d’une balise `<canvas>`."
@@ -2881,7 +2881,7 @@
             "particularCases": [
               "Il existe une gestion de cas particuliers pour le test 11.2.5 lorsque :",
               {
-                "ul": [
+                "items": [
                   "- La ponctuation et les lettres majuscules sont présentes dans le texte de l’[intitulé visible](#intitule-visible) : elles peuvent être ignorées dans le nom accessible sans porter à conséquence ;",
                   "- Le texte de l’[intitulé visible](#intitule-visible) sert de symbole : le texte ne doit pas être interprété littéralement au niveau du nom accessible. Le nom doit exprimer la fonction véhiculée par le symbole (par exemple, “B” au niveau d’un éditeur de texte aura pour nom accessible “Mettre en gras”, le signe “>” en fonction du contexte signifiera “Suivant” ou “Lancer la vidéo”). Le cas des symboles mathématiques fait cependant exception (voir la note ci-dessous)."
                 ]
@@ -2960,7 +2960,7 @@
             "particularCases": [
               "Les tests 11.4.2 et 11.4.3 seront considérés comme non applicables :",
               {
-                "ul": [
+                "items": [
                   "- Dans le cas où l’[étiquette](#etiquette-de-champ-de-formulaire) mélange une portion de texte qui se lit de droite à gauche avec une portion de texte qui se lit de gauche à droite ;",
                   "- Dans le cas où un formulaire contient des labels de plusieurs langues qui se liraient de droite à gauche et inversement. Par exemple, un formulaire de commande en arabe qui propose une liste de cases à cocher de produit en langue française ou mixant des produits en langue arabe ou en langue française ;",
                   "- Dans le cas où les champs de type `radio` ou `checkbox` et les balises ayant un attribut WAI-ARIA `role=\"checkbox\"`, `role=\"radio\"` ou `role=\"switch\"` ne sont pas visuellement présentés sous forme de bouton radio ou de case à cocher ;",
@@ -3183,7 +3183,7 @@
             "particularCases": [
               "Le test 11.10.1 et le test 11.10.2 seront considérés comme non applicables lorsque le formulaire comporte un seul [champ de formulaire](#champ-de-saisie-de-formulaire) ou qu’il indique les champs optionnels de manière :",
               {
-                "ul": [
+                "items": [
                   "- Visible ;",
                   "- Dans la balise `<label>` ou dans la [légende](#legende) associée au champ."
                 ]
@@ -3193,7 +3193,7 @@
             "technicalNote": [
               "Dans un long formulaire dont la majorité des champs sont obligatoires, on pourrait constater que ce sont les quelques champs restés facultatifs qui sont explicitement signalés comme tels. Dans ce cas, il faudrait s’assurer que :",
               {
-                "ul": [
+                "items": [
                   "- Un message précise visuellement en haut de formulaire que “tous les champs sont obligatoires sauf ceux indiqués comme étant facultatifs” ;",
                   "- Une mention “facultatif” est présente visuellement dans le libellé des champs facultatifs ou dans la légende d’un groupe de champs facultatifs ;",
                   "- Un attribut `required` ou `aria-required=\"true\"` reste associé à chaque champ qui n’est pas concerné par ce caractère facultatif."
@@ -3383,7 +3383,7 @@
             "particularCases": [
               "Il existe une gestion de cas particuliers lorsque :",
               {
-                "ul": [
+                "items": [
                   "- La page est la page d’accueil ;",
                   "- Le site web est constitué d’une seule page ;",
                   "- Le changement fait suite à une modification initiée par l’utilisateur."
@@ -3788,7 +3788,7 @@
             "particularCases": [
               "Il existe une gestion de cas particuliers :",
               {
-                "ul": [
+                "items": [
                   "- Pour les personnes de droit privé mentionnées aux 2° à 4° du I de l’article 47 de la loi du 11 février 2005 : si les fichiers bureautiques (ex : PDF, documents Microsoft ou LibreOffice, etc.) ont été publiés avant le 23 septembre 2018 (sauf si ce sont des documents nécessaires pour accomplir une démarche administrative relevant des tâches effectuées par l’organisme concerné), ils sont exemptés de l’obligation d’accessibilité."
                 ]
               },
@@ -4031,7 +4031,7 @@
             "particularCases": [
               "Il existe une gestion de cas particuliers dans deux types de situation :",
               {
-                "ul": [
+                "items": [
                   "- Le critère ne s’applique qu’à des fonctionnalités mises en place par l’auteur du site. Il ne concerne donc pas les gestes requis par l’agent utilisateur ou le système d’exploitation ;",
                   "- Le critère ne s’applique pas aux fonctionnalités dont la réalisation d’un geste complexe est essentielle (exécuter le tracé d’une signature, par exemple)."
                 ]
@@ -4070,7 +4070,7 @@
             "technicalNote": [
               "Deux exemples de mécanisme mis en place pour annuler ou abandonner une action déclenchée au moyen d’un dispositif de pointage sur un point unique de l’écran :",
               {
-                "ul": [
+                "items": [
                   "- Une fenêtre modale permettant d’annuler l’action après son achèvement ;",
                   "- Pour une fonction de glisser/déposer, le fait d’abandonner l’action si l’utilisateur relâche l’élément en dehors de la zone cible."
                 ]
@@ -4104,7 +4104,7 @@
             "particularCases": [
               "Il existe une gestion de cas particulier lorsque :",
               {
-                "ul": [
+                "items": [
                   "- Le mouvement est essentiel à l’accomplissement de la fonctionnalité (ex. podomètre) ;",
                   "- La détection du mouvement est utilisée pour contrôler une fonctionnalité au travers d’une interface compatible avec l’accessibilité."
                 ]

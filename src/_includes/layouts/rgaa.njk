@@ -52,10 +52,10 @@
 	<div class="criteres">
 		<div class="anchor">
 			<p class="fr-h6 number">{{ critNum }}</p>
-		</div>		
-		<div class="title">		
-		<h3 class="fr-h6">
-				{{ crit.data.title | markdownInline | safe | replace("#","/methode/glossaire/#")}} <a title="Lien vers le critère {{ critNum }}" class="direct-link" href="#{{ critNum }}" id="{{ critNum }}"><span class="fr-icon-links-fill" ></span></a>
+		</div>
+		<div class="title">
+		<h3 id="{{ critNum }}" class="fr-h6">
+				{{ crit.data.title | markdownInline | safe | replace("#","/methode/glossaire/#")}} <a title="Lien vers le critère {{ critNum }}" class="direct-link" href="#{{ critNum }}" ><span class="fr-icon-links-fill" ></span></a>
 		</h3>
 		<section class="fr-accordion">
 			<button class="fr-accordion__title fr-accordion__btn" aria-expanded="false" aria-controls="fr-{{ critNum }}">Tests et références du critère {{ critNum }}</button>
@@ -68,7 +68,7 @@
 								<div class="anchor">
 									<h4 class="fr-h5">{{ t.testSlug }}</h4>
 								</div>
-								<div class="title">	
+								<div class="title">
 									<p>{{ t.test.data.title | markdownInline | safe  | replace("#","/methode/glossaire/#") }}&nbsp;<a title="Lien vers le test {{ t.testSlug }}" class="direct-link" href="#{{ t.testSlug }}"><span class="fr-icon-links-fill  fr-icon--sm" ></span></a></p>
 									{% if t.test.data.steps %}
 									<ul>

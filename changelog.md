@@ -1,6 +1,15 @@
 Changelog
 ====================================================================
 
+v0.7.0
+--------------------------------------------------------------------
+
+* génération des fichiers glossaire.json et criteres.json ;
+* update DFSR 1.6 ;
+* Bandeau d'information importante ;
+* Ajout d’un marqueur matomo ;
+* Fix ancres des critères.
+
 v0.6.2
 --------------------------------------------------------------------
 

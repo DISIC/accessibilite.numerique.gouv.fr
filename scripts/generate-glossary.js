@@ -2,21 +2,21 @@ const fs = require('fs').promises;
 const md = require('markdown-it')({ html: true })
 const fm = require('front-matter')
 
-const GLOSSARY_SOURCE = './src/rgaa/glossaire'
-const GLOSSARY_DESTINATION = './RGAA/4.1/glossaire.json'
+const GLOSSARY_SOURCE = "./src/rgaa/glossaire";
+const GLOSSARY_DESTINATION = "./RGAA/4.1/glossaire.json";
 
 /**
  * @param {string} filename
  * @returns {object} Frontmatter attributes and main content
  */
 async function parseMarkdownFile(filename) {
-  const data = await fs.readFile(`${GLOSSARY_SOURCE}/${filename}`, "utf-8");
-  const result = fm(data)
+	const data = await fs.readFile(`${GLOSSARY_SOURCE}/${filename}`, "utf-8");
+	const result = fm(data);
 
-  return {
-    title: result.attributes.title,
-    content: md.render(result.body)
-  }
+	return {
+		title: result.attributes.title,
+		content: md.render(result.body),
+	};
 }
 /**
  * Generate a JSON file containing all the glossary entries
@@ -58,4 +58,4 @@ async function generateGlossary() {
   }
 }
 
-generateGlossary()
+generateGlossary();

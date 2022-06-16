@@ -69,7 +69,7 @@ li.criterion {
 		mask-image: url(../icons/business/links-line.svg) ;
 		padding-left: 2em;
 	}
-*/	
+*/
 li {
 	list-style-position: inside;
 }
@@ -90,7 +90,7 @@ li {
 			}
 			&[aria-expanded="true"] {
 				background-color:var(--background-alt-blue-france);
-			}	
+			}
 		}
 		.fr-collapse--expanded {
 			padding: 0 1em;
@@ -102,7 +102,7 @@ li {
 		.methodologie {
 			button.fr-accordion__btn {
 				background-color:var(--background-alt-blue-france);
-			}	
+			}
 		}
 	}
 }
@@ -125,10 +125,10 @@ span.aModifier {
 
 a[href].direct-link {
 	opacity: 0.60;
-}	
+}
 a[href].direct-link:focus, a[href].direct-link:visited {
 	opacity: 1;
-}	
+}
 
 :focus>a[href].direct-link, :focus>a[href].direct-link:visited, :hover>a[href].direct-link, :hover>a[href].direct-link:visited, a[href].direct-link:focus, a[href].direct-link:focus:visited {
 	opacity: 1;
@@ -152,14 +152,6 @@ a.direct-link {
 	}
 	p {
 		margin-top: 1em;
-	}
-}
-
-.bandeau {
-	background-color: var(--background-contrast-green-emeraude);
-	p { 
-		margin: 0;
-		color: var(--text-label-green-emeraude);
 	}
 }
 

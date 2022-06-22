@@ -26,5 +26,6 @@ layout: layouts/base.njk
 - [Licence](/infos/licence/)
 - [Contributions](/infos/contributions/)
 - [Quoi de neuf ?](/infos/nouveautes/)
+- [Notes de révision](/infos/notes-de-revision/)
 
 

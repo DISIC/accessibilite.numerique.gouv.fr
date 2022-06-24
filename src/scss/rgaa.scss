@@ -166,6 +166,12 @@ a.direct-link {
 	background: var(--background-alt-green-emeraude);
 }
 
+.date {
+	text-align: right;
+}
+button.fr-accordion__btn:hover {
+	background-color: transparent;
+}
 main {
 	overflow: hidden;
 }

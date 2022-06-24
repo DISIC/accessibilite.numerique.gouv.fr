@@ -1,7 +1,15 @@
 {% extends './base-accueil.njk' %}
 
 {% block contenu %}
-	{{ content | safe }}
+<div class="fr-grid-row fr-grid-row--bottom">
+<div class="fr-col-12 fr-col-sm-4">
+	<h2>Le RGAA 4</h2>
+</div>
+<div class="date fr-col">
+	<p class="fr-text--xs">publié le 16 septembre 2019 - Mis à jour le 18 février 2021</p>
+</div>
+</div>
+
 
 <div class="fr-grid-row fr-grid-row--gutters">
     <div class="fr-col-12 fr-col-md-6">
@@ -13,7 +21,7 @@
                 <p class="fr-tile__desc">Qui est concerné par le RGAA ?<br>Quelles sont les obligations légales à respecter ?</p>
             </div>
             <div class="fr-tile__img">
-                <img src="../img/placeholder.1x1.png" class="fr-responsive-img" alt="">
+                <img src="css/icons/ol.svg" class="fr-responsive-img" alt="" />
             </div>
         </div>
     </div>
@@ -26,7 +34,7 @@
                 <p class="fr-tile__desc">Quels sont les 106 critères à respecter ?<br>Comment tester la conformité ?</p>
             </div>
             <div class="fr-tile__img">
-                <img src="../img/placeholder.1x1.png" class="fr-responsive-img" alt="">
+                <img src="css/icons/mt.svg" class="fr-responsive-img" alt="" />
             </div>
         </div>
     </div>
@@ -55,15 +63,32 @@
 				</div>
 			</div>
 			<div class="fr-col fr-col-sm-12 fr-col-md-6">
-				<div class="fr-card">
-					<div class="fr-card__body">
-						<h2 class="fr-card__title fr-h3">Télécharger le RGAA</h2>
-						<ul class="fr-card__desc">
-						<li class="fr-py-2w"><a class="fr-link" download href="/doc/RGAA-v4.1.odt" title="Télécharger le RGAA au format ODT (215 ko)">Au format ODT - 215 ko <span class="fr-icon-download-line" aria-hidden="true"></span></a></li>
-						<li class="fr-py-2w"><a class="fr-link" download href="/doc/RGAA-v4.1.pdf" title="Télécharger le RGAA au format PDF (3.1 Mo)">Au format PDF - 3.1 Mo <span class="fr-icon-download-line" aria-hidden="true"></span></a></li>
-						</ul>
-					</div>
-				</div>
+				<div class="fr-downloads-group fr-downloads-group--bordered">
+    <h2 class="fr-h3 fr-downloads-group__title">Télécharger le RGAA</h4>
+    <ul>
+        <li>
+            <div class="fr-download">
+
+                   <a class="fr-download__link" download href="/doc/RGAA-v4.1.odt" title="Télécharger le RGAA au format ODT (215 ko)">Au format ODT
+                        <span class="fr-download__detail">
+                            215 ko
+                        </span>
+                    </a>
+
+            </div>
+        </li>
+        <li>
+ <div class="fr-download">
+                   <a class="fr-download__link" download href="/doc/RGAA-v4.1.pdf" title="Télécharger le RGAA au format PDF (3.1 Mo)">Au format PDF
+                        <span class="fr-download__detail">
+                           3.1 Mo
+                        </span>
+                    </a>
+            </div>
+        </li>
+    </ul>
+</div>
+
 			</div>
 		</div>
 </div>

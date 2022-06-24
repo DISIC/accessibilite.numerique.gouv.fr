@@ -1,101 +1,108 @@
-{% extends './base-accueil.njk' %}
-
-{% block contenu %}
-<div class="fr-grid-row fr-grid-row--bottom">
-<div class="fr-col-12 fr-col-sm-4">
-	<h2>Le RGAA 4</h2>
-</div>
-<div class="date fr-col">
-	<p class="fr-text--xs">publié le 16 septembre 2019 - Mis à jour le 18 février 2021</p>
-</div>
-</div>
-
-
-<div class="fr-grid-row fr-grid-row--gutters">
-    <div class="fr-col-12 fr-col-md-6">
-        <div class="fr-tile fr-enlarge-link">
-            <div class="fr-tile__body">
-                <h3 class="fr-tile__title">
-                    <a class="fr-tile__link" href>Les obligations légales</a>
-                </h3>
-                <p class="fr-tile__desc">Qui est concerné par le RGAA ?<br>Quelles sont les obligations légales à respecter ?</p>
-            </div>
-            <div class="fr-tile__img">
-                <img src="css/icons/ol.svg" class="fr-responsive-img" alt="" />
-            </div>
-        </div>
-    </div>
-    <div class="fr-col-12 fr-col-md-6">
-        <div class="fr-tile fr-enlarge-link">
-            <div class="fr-tile__body">
-                <h3 class="fr-tile__title">
-                    <a class="fr-tile__link" href>La méthode technique</a>
-                </h3>
-                <p class="fr-tile__desc">Quels sont les 106 critères à respecter ?<br>Comment tester la conformité ?</p>
-            </div>
-            <div class="fr-tile__img">
-                <img src="css/icons/mt.svg" class="fr-responsive-img" alt="" />
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<div class="fr-mt-6w fr-py-6w home">
-    	<div class="fr-grid-row fr-grid-row--center">
-    		<div class="fr-col-10">
-	<h2 class="fr-h3">Questions fréquentes</h2>
-	{% include 'components/faq.njk' %}
-	</div>
-	</div>
-</div>
-<div class="fr-my-8w">
-		<div class="fr-grid-row fr-grid-row--center fr-grid-row--gutters">
-			<div class="fr-col-sm-12 fr-col-md-6">
-				<div class="fr-card fr-enlarge-link">
-					<div class="fr-card__body">
-						<h2 class="fr-card__title">
-							<a  class="fr-h3" href="/methode/criteres-et-tests/" class="fr-card__link">Critères et tests</a>
-						</h2>
-						<p class="fr-card__desc">Les 106 critères de contrôle RGAA, les tests et la méthodologie associée.</p>
-					</div>
+{% include "components/header.njk" %}
+<main role="main" id="contenu">
+	<div class="rgaa-home home">
+		<div class="fr-container fr-mb-6w fr-pt-8w fr-pb-6w">
+			<div class="fr-grid-row">
+				<div class="fr-col-offset-md-1 fr-col-12 fr-col-sm-12 fr-col-md-6 ">
+					<h1>{{ title }}</h1>
+					<p class="fr-text--lead">L’<strong>accessibilité numérique</strong> consiste à rendre les contenus et services numériques <strong>compréhensibles</strong> et <strong>utilisables</strong> par les personnes en situation de handicap.</p>
+				</div>
+				<div class="fr-col-md-4 fr-hidden fr-unhidden-md">
+					<img src="/css/icons/rgaa.svg" width="300" class="fr-responsive-img" alt="" />
 				</div>
 			</div>
-			<div class="fr-col fr-col-sm-12 fr-col-md-6">
-				<div class="fr-downloads-group fr-downloads-group--bordered">
-    <h2 class="fr-h3 fr-downloads-group__title">Télécharger le RGAA</h4>
-    <ul>
-        <li>
-            <div class="fr-download">
+		</div>
+	</div>
 
-                   <a class="fr-download__link" download href="/doc/RGAA-v4.1.odt" title="Télécharger le RGAA au format ODT (215 ko)">Au format ODT
-                        <span class="fr-download__detail">
-                            215 ko
-                        </span>
-                    </a>
+	<div class="fr-container fr-mb-4w fr-mt-8w">
+		<div class="fr-grid-row fr-grid-row--center">
+			<div class="fr-col-12 fr-col-md-10 ">
+				<div class="fr-grid-row fr-grid-row--bottom">
+					<div class="fr-col-12 fr-col-sm-4">
+						<h2>Le RGAA 4</h2>
+					</div>
+					<div class="fr-col">
+						<p class="fr-text--xs date">Publié le 16 septembre 2019 - Mis à jour le 18 février 2021</p>
+					</div>
+				</div>
+				<p class="fr-text--lg">Pour faciliter la mise en accessibilité des sites et services numériques, la <a href="https://www.numerique.gouv.fr" target="_blank" title="direction interministérielle du numérique - nouvelle fenêtre">direction interministérielle du numérique</a> (DINUM) édite le référentiel général d’amélioration de l’accessibilité, dont voici la quatrième version. Il est structuré en deux parties :</p>
+				<div class="fr-grid-row fr-grid-row--gutters">
+					<div class="fr-col-12 fr-col-md-6">
+						<div class="fr-tile fr-enlarge-link">
+							<div class="fr-tile__body">
+								<h3 class="fr-tile__title"><a class="fr-tile__link" href="/obligations/">Les obligations légales</a></h3>
+								<p class="fr-tile__desc">Qui est concerné par le RGAA ?<br>Quelles sont les obligations légales à respecter ?</p>
+							</div>
+							<div class="fr-tile__img">
+								<img src="css/icons/ol.svg" class="fr-responsive-img" alt="" />
+							</div>
+						</div>
+					</div>
+					<div class="fr-col-12 fr-col-md-6">
+						<div class="fr-tile fr-enlarge-link">
+							<div class="fr-tile__body">
+								<h3 class="fr-tile__title"><a class="fr-tile__link" href="/methode/">La méthode technique</a></h3>
+								<p class="fr-tile__desc">Quels sont les 106 critères à respecter ?<br>Comment tester la conformité ?</p>
+							</div>
+							<div class="fr-tile__img">
+								<img src="css/icons/mt.svg" class="fr-responsive-img" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
 
-            </div>
-        </li>
-        <li>
- <div class="fr-download">
-                   <a class="fr-download__link" download href="/doc/RGAA-v4.1.pdf" title="Télécharger le RGAA au format PDF (3.1 Mo)">Au format PDF
-                        <span class="fr-download__detail">
-                           3.1 Mo
-                        </span>
-                    </a>
-            </div>
-        </li>
-    </ul>
-</div>
+				<div class="fr-mt-6w fr-py-6w home">
+					<div class="fr-grid-row fr-grid-row--center">
+						<div class="fr-col-10">
+							<h2 class="fr-h3">Questions fréquentes</h2>
+							{% include 'components/faq.njk' %}
+						</div>
+					</div>
+				</div>
+
+				<div class="fr-my-8w">
+					<div class="fr-grid-row fr-grid-row--center fr-grid-row--gutters">
+						<div class="fr-col-sm-12 fr-col-md-6">
+							<div class="fr-card fr-enlarge-link">
+								<div class="fr-card__body">
+									<h2 class="fr-card__title"><a  class="fr-h3" href="/methode/criteres-et-tests/" class="fr-card__link">Critères et tests</a></h2>
+									<p class="fr-card__desc">Les 106 critères de contrôle RGAA, les tests et la méthodologie associée.</p>
+								</div>
+							</div>
+						</div>
+						<div class="fr-col fr-col-sm-12 fr-col-md-6">
+							<div class="fr-downloads-group fr-downloads-group--bordered">
+								<h2 class="fr-h3 fr-downloads-group__title">Télécharger le RGAA</h2>
+								<ul>
+									<li>
+										<div class="fr-download">
+											<a class="fr-download__link" download href="/doc/RGAA-v4.1.odt" title="Télécharger le RGAA au format ODT (215 ko)">Au format ODT
+												<span class="fr-download__detail">215 ko </span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="fr-download">
+											<a class="fr-download__link" download href="/doc/RGAA-v4.1.pdf" title="Télécharger le RGAA au format PDF (3.1 Mo)">Au format PDF
+												<span class="fr-download__detail">3.1 Mo</span>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="fr-my-6w">
+					<h2 class="fr-h3">Vos contributions sont les bienvenues !</h2>
+					<p>Vous pouvez contribuer en écrivant à <strong>rgaa@design.numerique.gouv.fr</strong> ou en proposant des <a href="https://github.com/DISIC/accessibilite.numerique.gouv.fr/pulls" title="pull requests sur le dépôt - nouvelle fenêtre" target="_blank"><em lang="en">pull requests</em></a> sur le dépôt. <br>Toutes les propositions d’évolutions seront étudiées.<p>
+					<p>Dans un premier temps, les contributions sur le site, ses fonctionnalités et ses ressources seront prioritaires. Les contributions concernant les contenus règlementaires (obligations légales, critères et tests) seront étudiées dans un second temps.</p>
+					<p>Le guide de contribution est disponible à la racine du dépôt : <a title="guide de contribution - nouvelle fenêtre" target="_blank" href="https://github.com/DISIC/accessibilite.numerique.gouv.fr/blob/main/CONTRIBUTING.md">github.com/DISIC/accessibilite.numerique.gouv.fr/blob/main/CONTRIBUTING.md</a></p>
+				</div>
 
 			</div>
-		</div>
-</div>
-<div class="fr-my-6w">
-	<h2 class="fr-h3">Vos contributions sont les bienvenues !</h2>
-	<p>Vous pouvez contribuer en écrivant à <strong>rgaa@design.numerique.gouv.fr</strong> ou en proposant des <a href="https://github.com/DISIC/accessibilite.numerique.gouv.fr/pulls" title="pull requests sur le dépôt - nouvelle fenêtre" target="_blank"><em lang="en">pull requests</em></a> sur le dépôt. <br>Toutes les propositions d’évolutions seront étudiées.<p>
-	<p>Dans un premier temps, les contributions sur le site, ses fonctionnalités et ses ressources seront prioritaires. Les contributions concernant les contenus règlementaires (obligations légales, critères et tests) seront étudiées dans un second temps.</p>
-	<p>Le guide de contribution est disponible à la racine du dépôt : <a title="guide de contribution - nouvelle fenêtre" target="_blank" href="https://github.com/DISIC/accessibilite.numerique.gouv.fr/blob/main/CONTRIBUTING.md">github.com/DISIC/accessibilite.numerique.gouv.fr/blob/main/CONTRIBUTING.md</a></p>
-</div>
-{% endblock %}
+  		</div>
+	</div>
+</main>
+{% include "components/footer.njk" %}

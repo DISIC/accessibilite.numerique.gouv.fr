@@ -9,4 +9,4 @@ eleventyNavigation:
 
 Vous pouvez poser vos questions sur la liste de discussion du RGAA accessible sur inscription.
 
-[S’inscrire à la liste de discussion RGAA](https://framalistes.org/sympa/subscribe/rgaa)
+[S’inscrire à la liste de discussion RGAA](https://groupes.renater.fr/sympa/subscribe/rgaa)

@@ -11,7 +11,7 @@ Cette déclaration d’accessibilité s’applique au site accessibilite.numeriq
 
 ## État de conformité
 
-Aucun audit n’a été effectué sur accessibilite.numerique.gouv.fr : le site est <strong>non conforme</strong> avec le RGAA 4.
+Aucun audit n’a été effectué sur accessibilite.numerique.gouv.fr : le site est <strong>non conforme</strong> avec le RGAA 4.
 
 ## Retour d’information et contact
 

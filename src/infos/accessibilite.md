@@ -11,13 +11,12 @@ Cette déclaration d’accessibilité s’applique au site accessibilite.numeriq
 
 ## État de conformité
 
-Aucun audit n’a été effectué sur accessibilite.numerique.gouv.fr : le site est <strong>non conforme</strong> avec le RGAA 4.
+En l’absence d’audit, le site est <strong>non conforme</strong> avec le RGAA 4.<br>
+L’audit de conformité est programmé début août. 
 
 ## Retour d’information et contact
 
-La DINUM s’engage à prendre les moyens nécessaires afin de donner accès, dans un délai raisonnable, aux informations et fonctionnalités recherchées par la personne handicapée, que le contenu fasse l’objet d’une dérogation ou non.
-
-La DINUM invite les personnes qui rencontreraient des difficultés à la contacter par courriel à communication.dinum@modernisation.gouv.fr afin qu’une assistance puisse être apportée (alternative accessible, information et contenu donnés sous une autre forme).
+Si vous n’arrivez pas à accéder à un contenu ou à un service, vous pouvez nous contacter par courriel à l’adresse <strong>contact@design.numerique.gouv.fr</strong> pour être orienté vers une alternative accessible ou obtenir le contenu sous une autre forme.
 
 ## Défenseur des droits
 

@@ -126,8 +126,9 @@ span.aModifier {
 a[href].direct-link {
 	opacity: 0.60;
 }
-a[href].direct-link:focus, a[href].direct-link:visited {
+a[href].direct-link:focus, a[href].direct-link:visited, a[href].direct-link:active {
 	opacity: 1;
+	background-color: transparent;
 }
 
 :focus>a[href].direct-link, :focus>a[href].direct-link:visited, :hover>a[href].direct-link, :hover>a[href].direct-link:visited, a[href].direct-link:focus, a[href].direct-link:focus:visited {

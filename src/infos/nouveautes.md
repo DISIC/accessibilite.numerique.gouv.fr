@@ -3,7 +3,7 @@ title: Nouveautés
 layout: layouts/base.njk
 ---
 
-Vous êtes sur la **version beta** du site dédié au **référentiel général d’amélioration de l’accessibilité** (RGAA).
+Vous êtes sur la **version bêta** du site dédié au **référentiel général d’amélioration de l’accessibilité** (RGAA).
 
 Ce site a pour but de faciliter :
 - la compréhension des enjeux de l’accessibilité numérique ;
@@ -18,7 +18,7 @@ Ce site a pour but de faciliter :
     </p>
 </div>
 
-## version beta
+## version bêta
 
 - Refonte et intégration du système de design de l’État v1.6.0 ;
 - Nouvelle architecture technique : chaque critère, chaque test, chaque terme du glossaire est dans un ficher markdown. La procédure de mise à jour de ces contenus est maintenant très simple et très rapide ;

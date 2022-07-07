@@ -29,4 +29,4 @@ layout: layouts/base.njk
 * mise à jour intitulé du critère 13.3
 * mise à jour intitulé du critère 13.5
 * mise à jour intitulé du critère 13.6
-* mise à jour intitulé du-critère 13.9
+* mise à jour intitulé du critère 13.9

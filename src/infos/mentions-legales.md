@@ -18,11 +18,11 @@ Xavier Albouy, directeur interministériel du numérique par interim.
 
 ## Conception et gestion du site
 
-Ce site est conçu et développé par l’équipe Design des services numériques. 
+Ce site est conçu et développé par l’équipe <a href="https://design.numerique.gouv.fr" target="_blank" title="Design des services numériques - nouvelle fenêtre">Design des services numériques</a> et  utilise le <a href="https://www.systeme-de-design.gouv.fr/" target="_blank" title="système de design de l’État - nouvelle fenêtre">système de design de l’État</a>.
 
 ## Code source du site
 
-Le code source du site est disponible sur [Github](https://github.com/DISIC/accessibilite.numerique.gouv.fr).
+Le code source du site est disponible sur <a href="https://github.com/DISIC/accessibilite.numerique.gouv.fr" target="_blank" title="Github - nouvelle fenêtre">Github</a>.
 
 ## Propriété intellectuelle et liens
 

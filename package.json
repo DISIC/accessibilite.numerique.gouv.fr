@@ -1,6 +1,6 @@
 {
 	"name": "accessibilite.numerique.gouv.fr",
-	"version": "0.7.0",
+	"version": "0.8.0",
 	"description": "Référentiel général d’amélioration de l’accessibilité (RGAA)",
 	"scripts": {
 		"build": "eleventy",

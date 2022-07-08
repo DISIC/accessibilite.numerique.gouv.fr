@@ -7,12 +7,10 @@ Vous pouvez contribuer à l’amélioration du site <em>accessibilite.numerique.
 
 <div class="fr-highlight fr-pt-2v fr-my-2w">
   <p>Les contributions sur <strong>le site, ses fonctionnalités et ses ressources</strong> sont les bienvenues.</p>
-  <p>Les contributions concernant les contenus règlementaires, obligations légales et méthode technique ne seront pas prises en compte pour le moment.
-    </p>
+  <p>Les contributions concernant les contenus règlementaires, obligations légales et méthode technique seront prises en compte ultérieurement.</p>
 </div>
 
-
-Le guide de contribution est disponible à la racine du dépôt : https://github.com/DISIC/accessibilite.numerique.gouv.fr/blob/main/CONTRIBUTING.md
+Le guide de contribution est disponible à la racine du dépôt : [github.com/DISIC/accessibilite.numerique.gouv.fr/blob/main/CONTRIBUTING.md](https://github.com/DISIC/accessibilite.numerique.gouv.fr/blob/main/CONTRIBUTING.md).
 
 
 

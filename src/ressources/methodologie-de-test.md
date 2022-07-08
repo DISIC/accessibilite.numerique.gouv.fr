@@ -13,6 +13,10 @@ Il est destiné à toute personne soucieuse de vérifier la conformité d’un c
 Pour chacun des tests d’un critère correspond une procédure de test ; la mise en oeuvre de cette procédure peut recourir parfois l’usage d’outils spécifiques, autrement un navigateur suffit pour effectuer la majorité des tests.
 Une liste d’outils est aussi proposée pour aider à la réalisation des tests ; ils ont été retenus à la fois parce qu’ils sont fréquemment utilisés par les experts du métier et parce qu’ils facilitent la recherche de certains résultats.
 
+<div class="fr-callout"><p class="fr-text--lg">
+La méthodologie de test est désormais disponible au niveau de chaque test sur la page <a href="/methode/criteres-et-tests/" >critères et tests</a>.</p>
+</div>
+
 ## Outils
 
 L’outil le plus utile reste l’inspecteur de code que propose chaque navigateur. Il permet de rechercher facilement les éléments et les attributs requis pour un examen par un test d’accessibilité.

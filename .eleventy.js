@@ -3,7 +3,6 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const pluginTOC = require("eleventy-plugin-toc");
 const esbuild = require("esbuild");
 const babel = require("esbuild-plugin-babel");
-
 /**
  * Get the criteria number to be compared for sorting purpose
  *

@@ -3,7 +3,6 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const pluginTOC = require("eleventy-plugin-toc");
 const esbuild = require("esbuild");
 const babel = require("esbuild-plugin-babel");
-const fs = require("fs");
 /**
  * Get the criteria number to be compared for sorting purpose
  *
@@ -85,24 +84,6 @@ module.exports = function (eleventyConfig) {
 		return mainPromiseNoModule.then(mainPromiseModule);
 	});
 	eleventyConfig.addWatchTarget("./src/js/");
-
-
-	  // Browsersync Overrides
-		eleventyConfig.setBrowserSyncConfig({
-			callbacks: {
-				ready: function(err, browserSync) {
-					const content_404 = fs.readFileSync('public/404/index.html');
-
-					browserSync.addMiddleware("*", (req, res) => {
-						// Provides the 404 content without redirect.
-						res.write(content_404);
-						res.end();
-					});
-				},
-			},
-			ui: false,
-			ghostMode: false
-		});
 
 	eleventyConfig.addPlugin(pluginTOC, {
 		tags: ["h2"],

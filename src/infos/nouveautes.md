@@ -1,5 +1,6 @@
 ---
 title: Nouveautés
+description: Les nouveautés du site accessibilite.numerique.gouv.fr
 layout: layouts/base.njk
 ---
 

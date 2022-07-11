@@ -1,6 +1,7 @@
 ---
 title: Rappel du champ d’application
 layout: layouts/base.njk
+description: Champ d’application du RGAA. Contenus concernés, contenus exemptés, norme de référence et niveau de conformité et dérogation pour charge disproportionnée
 eleventyNavigation:
   title: Obligations légales
   parent: obligations

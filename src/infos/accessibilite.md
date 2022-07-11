@@ -1,5 +1,6 @@
 ---
 title: Accessibilité
+description: Déclaration d’accessibilité du site accessibilite.numerique.gouv.fr
 layout: layouts/base.njk
 ---
 

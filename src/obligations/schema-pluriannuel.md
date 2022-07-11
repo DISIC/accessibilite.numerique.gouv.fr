@@ -1,6 +1,7 @@
 ---
 title: Schéma pluriannuel de mise en accessibilité
 layout: layouts/base.njk
+description: Le contenu et la publication du schéma pluriannuel de mise en accessibilité
 eleventyNavigation:
   title: Obligations légales
   parent: obligations

@@ -1,6 +1,7 @@
 ---
 title: Questions
 layout: layouts/base.njk
+descirption: Vous pouvez poser vos questions sur la liste de discussion du RGAA accessible sur inscription
 eleventyNavigation:
   title: Ressources
   parent: ressources

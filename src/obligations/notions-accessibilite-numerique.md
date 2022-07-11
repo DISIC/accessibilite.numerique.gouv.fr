@@ -1,6 +1,7 @@
 ---
 title: Notion d’accessibilité numérique
 layout: layouts/base.njk
+description: L’accessibilité numérique consiste à rendre les services de communication au public en ligne accessibles aux personnes handicapées
 eleventyNavigation:
   title: Obligations légales
   parent: obligations

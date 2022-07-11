@@ -1,6 +1,7 @@
 ---
 title: Mentions et pages obligatoires
 layout: layouts/base.njk
+description: La mention de conformité obligatoire sur la page d’accueil et les pages obligatoires
 eleventyNavigation:
   title: Obligations légales
   parent: obligations

@@ -1,6 +1,7 @@
 ---
 title: Documents de référence
 layout: layouts/base.njk
+description: Références et ressources documentaires utilisées par le RGAA
 eleventyNavigation:
   title: Ressources
   parent: ressources

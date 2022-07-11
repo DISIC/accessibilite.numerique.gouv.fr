@@ -1,6 +1,7 @@
 ---
 title: Déclaration d’accessibilité
 layout: layouts/base.njk
+description: Contenus et format de la déclaration d’accessibilité
 eleventyNavigation:
   title: Obligations légales
   parent: obligations

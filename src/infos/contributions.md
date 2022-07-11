@@ -1,5 +1,6 @@
 ---
 title: Vos contributions sont les bienvenues !
+description: Contribuer à l’amélioration du site accessibilite.numerique.gouv.fr
 layout: layouts/base.njk
 ---
 

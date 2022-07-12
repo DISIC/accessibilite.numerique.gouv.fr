@@ -105,7 +105,7 @@
 							<h5 class="fr-h6 fr-mb-1w"><abbr lang="en" title="Web content accessibility guidelines">WCAG</abbr></h5>
 						<ul class="wcag ">
 							{% for wcag in annexeCrit.data.WCAG %}
-							<li class="fr-text--sm fr-mb-1w"><a href="https://www.w3.org/TR/WCAG21/#{{ wcag.title  | lower | replace(" ", "-") | replace(",", "") | replace("(", "") | replace(")", "")}}" target="_blank" title="critère {{ wcag.successCriterion }} - nouvelle fenêtre">{{ wcag.successCriterion }}</a> <span lang="en">{{ wcag.title }}</span> ({{ wcag.level }})</li>
+							<li class="fr-text--sm fr-mb-1w"><a href="https://www.w3.org/Translations/WCAG21-fr/#{{ wcag.title  | lower | replace(" ", "-") | replace(",", "") | replace("(", "") | replace(")", "")}}" target="_blank" title="critère {{ wcag.successCriterion }} - nouvelle fenêtre">{{ wcag.successCriterion }}</a> <span lang="en">{{ wcag.title }}</span> ({{ wcag.level }})</li>
 							{% endfor %}
 						</ul>
 						{% endif %}

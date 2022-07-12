@@ -4,7 +4,7 @@ Version beta du nouveau site [accessibilite.numerique.gouv.fr](https://accessibi
 
 ## Infos
 
-Ce site est créé avec [11ty](https://www.11ty.dev/) et utilise la version 1.5.1 du [système de design de l’État](https://www.systeme-de-design.gouv.fr/).
+Ce site est créé avec [11ty](https://www.11ty.dev/) et utilise la version 1.6.0 du [système de design de l’État](https://www.systeme-de-design.gouv.fr/).
 
 Tous les contenus sont au format _md_
 

@@ -10,4 +10,4 @@ eleventyNavigation:
 
 Vous pouvez poser vos questions sur la liste de discussion du RGAA accessible sur inscription.
 
-[S’inscrire à la liste de discussion RGAA](https://groupes.renater.fr/sympa/subscribe/rgaa)
+<a href="https://groupes.renater.fr/sympa/subscribe/rgaa" class="fr-btn">S’inscrire à la liste de discussion RGAA</a>

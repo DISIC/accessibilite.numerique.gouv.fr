@@ -19,7 +19,7 @@ Ce site a pour but de faciliter :
     </p>
 </div>
 
-## version bêta
+## Version bêta
 
 - Refonte et intégration du système de design de l’État v1.6.0 ;
 - Nouvelle architecture technique : chaque critère, chaque test, chaque terme du glossaire est dans un ficher markdown. La procédure de mise à jour de ces contenus est maintenant très simple et très rapide ;
@@ -32,3 +32,5 @@ Ce site a pour but de faciliter :
     - z est l’identifiant du test (Ex. #1.1.5 pour accéder au test _1.1.5_).
 - Ajout d’un exemple de déclaration d’accessibilité ;
 - Ajout d’une « <abbr title="foire aux questions">FAQ</abbr> » simplifiée pour faciliter la compréhension des enjeux d’accessibilité numérique.
+
+

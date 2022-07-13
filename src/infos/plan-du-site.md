@@ -1,5 +1,6 @@
 ---
 title: Plan du site
+description: Plan du site accessibilite.numerique.gouv.fr
 layout: layouts/base.njk
 ---
 

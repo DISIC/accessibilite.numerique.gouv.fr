@@ -1,6 +1,7 @@
 ---
 title: Évaluation de la conformité à la norme de référence
 layout: layouts/base.njk
+description: Comment mener un audit RGAA ? L’échantillon, l’environnement de test, le test des pages et le taux de conformité à la norme.
 eleventyNavigation:
   title: Obligations légales
   parent: obligations

@@ -1,6 +1,7 @@
 ---
 title: Déclaration d’accessibilité
 layout: layouts/base.njk
+description: Contenus et format de la déclaration d’accessibilité
 eleventyNavigation:
   title: Obligations légales
   parent: obligations
@@ -129,7 +130,7 @@ La déclaration d’accessibilité fait l’objet d’un dépôt par le biais d�
 
 L’organisme concerné fournit en ligne aux utilisateurs la possibilité de faire des réclamations relatives à l’accessibilité de ses services de communication au public en ligne. Il accuse réception de ces réclamations conformément aux dispositions de l’article R112-3 du code des relations entre le public et l’Administration. L’accusé de réception comporte les informations mentionnées à l’article R112-5 du même code.
 
-L’organisme concerné répond à toute réclamation dans un délai d’une semaine à compte de sa date d’envoi. Si la réclamation de l’utilisateur soulève une ou plusieurs questions complexes justifiant un délai d’examen plus long, la réponse indique un délai raisonnable pour la réponse définitive. Le caractère complexe des questions soulevées doit être dûment motivé.
+L’organisme concerné répond à toute réclamation dans un délai d’une semaine à compter de sa date d’envoi. Si la réclamation de l’utilisateur soulève une ou plusieurs questions complexes justifiant un délai d’examen plus long, la réponse indique un délai raisonnable pour la réponse définitive. Le caractère complexe des questions soulevées doit être dûment motivé.
 
 L’utilisateur doit s’identifier dans sa réclamation en suivant les prescriptions de l’article R112-9-1 du même code.
 

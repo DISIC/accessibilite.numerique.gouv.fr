@@ -1,6 +1,7 @@
 ---
 title: Kit d’audit
 layout: layouts/base.njk
+description: Outils et Modèles de documents pour réaliser un audit RGAA
 eleventyNavigation:
   title: Ressources
   parent: ressources

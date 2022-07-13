@@ -1,6 +1,7 @@
 ---
 title: Environnement de test
 layout: layouts/base.njk
+description: Les différents environnements de tests desktop ou mobile
 eleventyNavigation:
   title: Méthode technique
   parent: methode

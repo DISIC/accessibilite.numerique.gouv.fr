@@ -1,6 +1,7 @@
 ---
 title: Méthodologie de test
 layout: layouts/base.njk
+description: Méthodologie de tests documentant les étapes permettant de vérifier si un critère du RGAA 4 est conforme ou non
 eleventyNavigation:
   title: Ressources
   parent: ressources

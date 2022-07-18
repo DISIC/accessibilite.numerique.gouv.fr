@@ -1,6 +1,7 @@
 ---
 title: Documents de référence
 layout: layouts/base.njk
+description: Références et ressources documentaires utilisées par le RGAA
 eleventyNavigation:
   title: Ressources
   parent: ressources
@@ -9,10 +10,14 @@ eleventyNavigation:
 
 Le RGAA a été établi en utilisant un certain nombre de références et de sources documentaires. Ce document liste les références qui ont été utilisées.
 
+<small>Sauf mention contraire, tous les documents sont en anglais.</small>
+
+
 ## Documents de référence
 
-- [Accessibility requirements for ICT products and services, EN 301 549 V2.1.2 (.pdf)](/doc/en_301549v020102p.pdf) (2018-08)
+- [Accessibility requirements for ICT products and services, EN 301 549 V2.1.2 (.pdf)](/doc/en_301549v020102p.pdf) (2018-08) ;
 - [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/) - référence à la date de juin 2018 ;
+- [Règles pour l’accessibilité des contenus Web (WCAG) 2.1](https://www.w3.org/Translations/WCAG21-fr) - traduction Française Agréée;
 - [Understanding WCAG 2.1](https://www.w3.org/WAI/WCAG21/Understanding/) - référence à la date d’avril 2019 ;
 - [Techniques for WCAG 2.1](https://www.w3.org/WAI/WCAG21/Techniques/) - référence à la date d’avril 2019 ;
 - [HTML 4.01 Specification](http://www.w3.org/TR/html401/) ;

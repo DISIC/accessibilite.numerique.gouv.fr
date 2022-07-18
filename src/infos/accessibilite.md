@@ -1,5 +1,6 @@
 ---
 title: Accessibilité
+description: Déclaration d’accessibilité du site accessibilite.numerique.gouv.fr
 layout: layouts/base.njk
 ---
 
@@ -9,8 +10,8 @@ Cette déclaration d’accessibilité s’applique au site accessibilite.numeriq
 
 ## État de conformité
 
-En l’absence d’audit, le site est <strong>non conforme</strong> avec le RGAA 4.<br>
-L’audit de conformité est programmé début août. 
+En l’absence d’audit, le site est <strong>non conforme</strong> avec le RGAA 4.  
+L’audit de conformité est planifié pour la semaine du 18 juillet 2022. La correction des anomalies est prévue la semaine du 8 août 2022.
 
 ## Retour d’information et contact
 

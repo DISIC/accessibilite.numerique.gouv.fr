@@ -7,7 +7,7 @@
             {%- for entry in collections.all | eleventyNavigation %}
             <li class="fr-nav__item {% if entry.url == page.url %} fr-nav__item--active{% endif %}">
             {% if entry.key ==  "methode" %}
-            <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-methode">{{ entry.title }} </button>
+            <button  {% if eleventyNavigation.parent == "methode"  or eleventyNavigation.key ==  "methode" %} aria-current="true" {% endif %}class="fr-nav__btn" aria-expanded="false" aria-controls="menu-methode">{{ entry.title }} </button>
             <div class="fr-collapse fr-menu" id="menu-methode">
                 <ul class="fr-menu__list">
                 {% for g in collections.methodeTechnique %}
@@ -16,7 +16,7 @@
                 </ul>
             </div>
             {% elif entry.key ==  "ressources" %}
-            <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-ressources">{{ entry.title }} </button>
+            <button  {% if eleventyNavigation.parent == "ressources" or eleventyNavigation.key ==  "ressources"  %} aria-current="true" {% endif %}class="fr-nav__btn" aria-expanded="false" aria-controls="menu-ressources">{{ entry.title }} </button>
             <div class="fr-collapse fr-menu" id="menu-ressources">
                 <ul class="fr-menu__list">
                 {% for g in collections.ressources %}
@@ -25,7 +25,7 @@
                 </ul>
             </div>
             {% elif entry.key ==  "obligations" %}
-            <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-obligations">{{ entry.title }} </button>
+            <button {% if eleventyNavigation.parent == "obligations"  or eleventyNavigation.key ==  "obligations" %} aria-current="true" {% endif %} class="fr-nav__btn" aria-expanded="false" aria-controls="menu-obligations">{{ entry.title }} </button>
             <div class="fr-collapse fr-menu" id="menu-obligations">
                 <ul class="fr-menu__list">
                 {% for g in collections.obligations %}

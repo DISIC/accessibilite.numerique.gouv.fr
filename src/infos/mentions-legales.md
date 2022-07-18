@@ -1,5 +1,6 @@
 ---
 title: Mentions légales
+description: Mentions légales du site accessibilite.numerique.gouv.fr
 layout: layouts/base.njk
 ---
 

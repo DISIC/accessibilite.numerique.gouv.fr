@@ -1,6 +1,7 @@
 ---
 title: Exemple de déclaration d’accessibilité
 layout: layouts/base.njk
+description: Déclaration d’accessibilité à compléter
 eleventyNavigation:
   title: Ressources
   parent: ressources

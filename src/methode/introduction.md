@@ -1,6 +1,7 @@
 ---
 title: Introduction
 layout: layouts/base.njk
+description: La méthode technique du RGAA permet de vérifier qu’une page web est conforme aux 50 critères de succès des niveaux A et AA de la norme WCAG 2.1
 eleventyNavigation:
   title: Méthode technique
   parent: methode

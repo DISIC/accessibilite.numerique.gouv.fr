@@ -1,6 +1,7 @@
 ---
 title: Critères et tests
 layout: layouts/rgaa.njk
+description: Les 13 thématiques, les 106 critères, les tests et leur méthodologie du référentiel technique d’accessibilité numérique
 eleventyNavigation:
   title: Méthode technique
   parent: methode

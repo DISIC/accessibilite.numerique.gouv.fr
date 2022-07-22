@@ -30,12 +30,12 @@ Ce site utilise le [système de design de l’État](https://www.systeme-de-desi
 
 Pour générer manuellement le fichier contenant l'ensemble des éléments du glossaire :
 
-```js
+```sh
 node ./scripts/generate-glossary.js
 ```
 
 Pour générer manuellement le fichier contenant l'ensemble des critères :
 
-```js
+```sh
 node ./scripts/generate-criteria.js
 ```

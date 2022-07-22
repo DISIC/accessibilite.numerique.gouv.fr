@@ -30,21 +30,25 @@ async function generateGlossary() {
     // Loop over files
     const files = await fs.readdir(GLOSSARY_SOURCE);
     for (const file of files) {
-      const { title, content } = await parseMarkdownFile(file)
-      let cleanedContent = null
+      if (!file.endsWith(".md")) {
+				console.error(`❌ Ignoring "${file}" as it is not a Markdown file.`);
+			} else {
+        const { title, content } = await parseMarkdownFile(file)
+        let cleanedContent = null
 
-      // Handle shortcodes
-      const critRegex = /\{% crit (?<id>\d{1,2}.\d{1,2}) %\}/g // {% crit 12.10 %}
-      const testRegex = /\{% test '(?<id>\d{1,2}.\d{1,2}.\d{1,2})' %\}/g // {% test 2.10.3 %}
-      const baseUrl = 'https://accessibilite.numerique.gouv.fr'
-      const url = `${baseUrl}/methode/criteres-et-tests/`
+        // Handle shortcodes
+        const critRegex = /\{% crit (?<id>\d{1,2}.\d{1,2}) %\}/g // {% crit 12.10 %}
+        const testRegex = /\{% test '(?<id>\d{1,2}.\d{1,2}.\d{1,2})' %\}/g // {% test 2.10.3 %}
+        const baseUrl = 'https://accessibilite.numerique.gouv.fr'
+        const url = `${baseUrl}/methode/criteres-et-tests/`
 
-      cleanedContent = content
-        .replace(critRegex, `<a href="${url}#$<id>">critère $<id></a>`)
-        .replace(testRegex, `<a href="${url}#$<id>">test $<id></a>`)
+        cleanedContent = content
+          .replace(critRegex, `<a href="${url}#$<id>">critère $<id></a>`)
+          .replace(testRegex, `<a href="${url}#$<id>">test $<id></a>`)
 
-      // Push to JSON data
-      jsonData.glossary.push({ title, body: cleanedContent })
+        // Push to JSON data
+        jsonData.glossary.push({ title, body: cleanedContent })
+      }
     }
 
     // Remove line breaks (\n) and create JSON file

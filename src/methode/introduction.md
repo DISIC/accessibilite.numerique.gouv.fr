@@ -8,7 +8,7 @@ eleventyNavigation:
   order: 1
 ---
 
-La méthode technique du RGAA permet de vérifier qu’une page web – c’est-à-dire tout contenu HTML (HTML4, XHTML1 et HTML5) - est conforme aux 50 critères de succès des niveaux A et AA de la norme internationale WCAG 2.1 qui ont été retenus dans la <a target="_blank" title="norme de référence EN 301-549 V2.1.2 (.pdf 2Mo) - nouvelle fenêtre" href="/doc/en_301549v020102p.pdf" download>norme européenne de référence (.pdf 2Mo)</a> pour établir le niveau d’exigence légale en matière d’accessibilité numérique.
+La méthode technique du RGAA permet de vérifier qu’une page web – c’est-à-dire tout contenu HTML (HTML4, XHTML1 et HTML5) - est conforme aux 50 critères de succès des niveaux A et AA de la norme internationale <abbr lang="en" title="web content accessibility guidelines">WCAG</abbr> 2.1 qui ont été retenus dans la <a target="_blank" title="norme de référence EN 301-549 V2.1.2 (.pdf 2Mo) - nouvelle fenêtre" href="/doc/en_301549v020102p.pdf" download>norme européenne de référence (.pdf 2Mo)</a> pour établir le niveau d’exigence légale en matière d’accessibilité numérique.
 
 La méthode technique du RGAA propose un cadre opérationnel de vérification de la conformité aux exigences d’accessibilité.
 

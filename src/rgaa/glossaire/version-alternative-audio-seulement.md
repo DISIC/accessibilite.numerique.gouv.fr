@@ -2,7 +2,7 @@
 title: Version alternative « audio seulement »
 ---
 
-Une version « audio seulement » est une version sonore, sous la forme d’un simple fichier au format MP3 par exemple, utilisée comme alternative à une vidéo seulement (vidéo sans information sonore). Les seuls utilisateurs impactés par l’accessibilité étant les personnes aveugles, qui ne peuvent pas voir la vidéo, WCAG considère comme acceptable de proposer en alternative une version sonore.
+Une version « audio seulement » est une version sonore, sous la forme d’un simple fichier au format MP3 par exemple, utilisée comme alternative à une vidéo seulement (vidéo sans information sonore). Les seuls utilisateurs impactés par l’accessibilité étant les personnes aveugles, qui ne peuvent pas voir la vidéo, <abbr lang="en" title="web content accessibility guidelines">WCAG</abbr> considère comme acceptable de proposer en alternative une version sonore.
 
 La version « audio seulement » doit contenir toutes les informations visuelles importantes de la vidéo.
 

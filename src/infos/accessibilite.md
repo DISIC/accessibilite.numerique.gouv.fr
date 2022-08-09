@@ -14,13 +14,13 @@ Le site est <strong>totalement conforme</strong> avec le référentiel général
 
 ## Résultats des tests
 
-L'audit de conformité réalisé en interne révèle que 100% des critères sont respectés.
+L‘audit de conformité réalisé en interne révèle que 100% des critères sont respectés.
 
-## Établissement de cette déclaration d'accessibilité
+## Établissement de cette déclaration d‘accessibilité
 
 Cette déclaration a été établie le 9/08/2022.
 
-## Technologies utilisées pour la réalisation de l'audit 
+## Technologies utilisées pour la réalisation de l‘audit 
 
 - HTML5 
 - CSS
@@ -33,14 +33,14 @@ Les vérifications de restitution de contenus ont été réalisées sur la base 
 - Firefox et NVDA
 - Safari et VoiceOver
 
-### Outils pour évaluer l'accessibilité
+### Outils pour évaluer l‘accessibilité
 
 - HeadingsMap
 - Web Developer Chrome extension
 - Color Contrast Analyser
 - ArcToolkit
 
-### Pages du site ayant fait l'objet de la vérification de conformité : 
+### Pages du site ayant fait l‘objet de la vérification de conformité : 
 
 - [Accueil](https://accessibilite.numerique.gouv.fr/)
 - [Accessibilité](https://accessibilite.numerique.gouv.fr/infos/accessibilite)

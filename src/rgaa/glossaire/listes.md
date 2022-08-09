@@ -2,13 +2,13 @@
 title: Listes
 ---
 
-Suite d’éléments pouvant être regroupés sous la forme d’une liste structurée ordonnée, non ordonnée ou de définition. Par exemple la suite des liens d’un menu de navigation est une liste de liens non ordonnée, les différentes étapes d’une procédure sont une liste d’éléments ordonnés, le couple terme/description d’un glossaire est une liste de description. En HTML, les listes utilisent les éléments suivants :
+Suite d’éléments pouvant être regroupés sous la forme d’une liste structurée ordonnée, non ordonnée ou de définition. Par exemple la suite des liens d’un menu de navigation est une liste de liens non ordonnée, les différentes étapes d’une procédure sont une liste d’éléments ordonnés, le couple terme/description d’un glossaire est une liste de description. En HTML, les listes utilisent les balises suivantes :
 
-- Liste ordonnée : éléments `<ol>` et `<li>` (chaque élément de la liste est affecté d’un marqueur indexé) ;
-- Liste non ordonnée : éléments `<ul>` et `<li>` (chaque élément de la liste est affecté d’un marqueur non-indexé ;
-- Liste de description : éléments `<dl>`, `<dt>` (terme à décrire) et `<dd>` (description).
+- Liste ordonnée : balises `<ol>` et `<li>` (chaque élément de la liste est affecté d’un marqueur indexé) ;
+- Liste non ordonnée : balises `<ul>` et `<li>` (chaque élément de la liste est affecté d’un marqueur non-indexé ;
+- Liste de description : balises `<dl>`, `<dt>` (terme à décrire) et `<dd>` (description).
 
-Note 1 : En HTML5, l'élément `<dl>` ne représente plus seulement une liste de définition, mais de manière générique toute liste de description qui peut comprendre comme groupe de termes-descriptions des noms et des définitions, des questions et réponses, des catégories et des sujets, etc.
+Note 1 : En HTML5, la balise `<dl>` ne représente plus seulement une liste de définition, mais de manière générique toute liste de description qui peut comprendre comme groupe de termes-descriptions des noms et des définitions, des questions et réponses, des catégories et des sujets, etc.
 
 Note 2 : Il est également possible de structurer les listes à l’aide des attributs WAI-ARIA `role="list"` et `role="listitem"` pour les listes ordonnées et non ordonnées.
 

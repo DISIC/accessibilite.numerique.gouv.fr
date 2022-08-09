@@ -9,4 +9,4 @@ Contenu textuel associé à un média temporel par la technique appropriée (tex
 
 Ces informations textuelles doivent être présentées dans l’ordre chronologique de leur apparition dans le média temporel.
 
-Note : la transcription textuelle doit se situer à l’extérieur de l'élément `<object>`.
+Note : la transcription textuelle doit se situer à l’extérieur de la balise `<object>`.

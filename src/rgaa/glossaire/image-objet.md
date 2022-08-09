@@ -2,4 +2,4 @@
 title: Image objet
 ---
 
-Image incorporée ou générée par un élément `<object>`.
+Image incorporée ou générée par une balise `<object>`.

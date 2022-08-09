@@ -2,7 +2,7 @@
 title: Uniquement à des fins de présentation
 ---
 
-Uniquement à des fins de présentation : utilisation d'éléments HTML pour une finalité différente de celle prévue dans les spécifications (au regard du type de document déclaré). Exemples : utilisation des éléments `h` à seule fin de créer un effet typographique ; utilisation de l'élément `<blockquote>` à seule fin de mettre un paragraphe en retrait, etc.
+Uniquement à des fins de présentation : utilisation de balises HTML pour une finalité différente de celle prévue dans les spécifications (au regard du type de document déclaré). Exemples : utilisation des balises `h` à seule fin de créer un effet typographique ; utilisation de la balise `<blockquote>` à seule fin de mettre un paragraphe en retrait, etc.
 
 Note 1 : l’utilisation d’éléments `<div>` ou `<span>` ou plusieurs `<br>` pour créer visuellement un paragraphe est considérée comme non conforme et invalide le critère.
 

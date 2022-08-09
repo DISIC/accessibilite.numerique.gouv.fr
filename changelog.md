@@ -1,11 +1,22 @@
 Changelog
 ====================================================================
 
+v0.8.3
+--------------------------------------------------------------------
+
+* Conformité totale au RGAA
+	* Fix RGAA  
+	* Mise à jour de la déclaration d‘accessibilité
+* Correctifs balise / éléments
+* Sommaire sticky sur la page critères et tests
+* Fix génération du fichier glossaire.json
+
+
 v0.8.2
 --------------------------------------------------------------------
 
 * Ajout meta desription 
-* Ajout d’un lien vers la trducation officielle des WCAG
+* Ajout d’un lien vers la traduction officielle des WCAG
 * Fix élément actif du menu 
 * Fix couleur des titres 
 * Fix taille des images

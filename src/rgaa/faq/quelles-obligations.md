@@ -3,7 +3,7 @@ title: Quelles obligations ?
 cat: Loi
 ---
 
-Pour **chaque service en ligne** doivent figurer :
+En plus de l‘obligation de conformité totale au RGAA , **chaque service en ligne** doivent proposer :
 
 - une [déclaration d’accessibilité](/obligations/declaration-accessibilite) ;
 - un [schéma d’accessibilité numérique](/obligations/schema-pluriannuel) ;

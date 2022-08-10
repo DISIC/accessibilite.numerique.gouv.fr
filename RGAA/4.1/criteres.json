@@ -13,7 +13,7 @@
             "title": "Chaque [image porteuse d’information](#image-porteuse-d-information) a-t-elle une [alternative textuelle](#alternative-textuelle-image) ?",
             "tests": {
               "1": [
-                "Chaque image (élément ``<img>`` ou balise ouvrante possédant l’attribut WAI-ARIA `role=\"img\"`) [porteuse d’information](#porteuse-d-information) a-t-elle une [alternative textuelle](#alternative-textuelle) ?"
+                "Chaque image (élément `<img>` ou balise ouvrante possédant l’attribut WAI-ARIA `role=\"img\"`) [porteuse d’information](#porteuse-d-information) a-t-elle une [alternative textuelle](#alternative-textuelle) ?"
               ],
               "2": [
                 "Chaque [zone](#zone-d-une-image-reactive) d’une [image réactive](#image-reactive) (élément `<area>`) [porteuse d’information](#image-porteuse-d-information) a-t-elle une [alternative textuelle](#alternative-textuelle-image) ?"
@@ -175,7 +175,7 @@
               ],
               "6": [
                 "Pour chaque image vectorielle (balise `<svg>`) [porteuse d’information](#image-porteuse-d-information), ayant une [alternative textuelle](#alternative-textuelle-image), cette alternative est-elle pertinente (hors cas particuliers) ?",
-                "S’il est présent, le contenu de l’attribut `title` est pertinent ;",
+                "S’il est présent, le contenu de l'élément `<title>` est pertinent ;",
                 "S’il est présent, le contenu de l’attribut WAI-ARIA `aria-label` est pertinent ;",
                 "S’il est présent, le [passage de texte](#passage-de-texte-lie-par-aria-labelledby-ou-aria-describedby) associé via l’attribut WAI-ARIA `aria-labelledby` est pertinent."
               ],
@@ -239,7 +239,7 @@
                 "S’il est présent, le [passage de texte](#passage-de-texte-lie-par-aria-labelledby-ou-aria-describedby) associé via l’attribut WAI-ARIA `aria-labelledby` est pertinent."
               ],
               "3": [
-                "Pour chaque [bouton](#bouton-formulaire) de type image (balise `<input>` avec l’attribut type=\"image\") utilisé comme [CAPTCHA](#captcha) ou comme [image-test](#image-test), ayant une [alternative textuelle](#alternative-textuelle-image), cette alternative est-elle pertinente ?",
+                "Pour chaque [bouton](#bouton-formulaire) de type image (balise `<input>` avec l’attribut `type=\"image\"`) utilisé comme [CAPTCHA](#captcha) ou comme [image-test](#image-test), ayant une [alternative textuelle](#alternative-textuelle-image), cette alternative est-elle pertinente ?",
                 "S’il est présent, le contenu de l’attribut `alt` est pertinent ;",
                 "S’il est présent, le contenu de l’attribut `title` est pertinent ;",
                 "S’il est présent, le contenu de l’attribut WAI-ARIA `aria-label` est pertinent ;",
@@ -3098,7 +3098,7 @@
             "title": "Dans chaque [formulaire](#formulaire), l’intitulé de chaque [bouton](#bouton-formulaire) est-il pertinent (hors cas particuliers) ?",
             "tests": {
               "1": [
-                "L’intitulé de chaque [bouton](#bouton-formulaire) est-il pertinent ?",
+                "L’intitulé de chaque [bouton](#bouton-formulaire) vérifie-t-il ces conditions (hors cas particuliers) ?",
                 "S’il est présent, le contenu de l’attribut WAI-ARIA `aria-label` est pertinent ;",
                 "S’il est présent, le [passage de texte](#passage-de-texte-lie-par-aria-labelledby-ou-aria-describedby) lié au bouton via un attribut WAI-ARIA `aria-labelledby` est pertinent ;",
                 "S’il est présent, le contenu de l’attribut `value` d’une balise `<input>` de type `submit`, `reset` ou `button` est pertinent ;",

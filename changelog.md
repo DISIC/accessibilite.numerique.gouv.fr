@@ -6,6 +6,7 @@ v0.8.5
 
 * Réorganisation des références de chaque critère et ajout de la norme européenne
 * Ajout lien « Haut de page » dans les pages _critères et tests_ et _glossaire_
+* Fix des liens externes du footer
 
 v0.8.4
 --------------------------------------------------------------------

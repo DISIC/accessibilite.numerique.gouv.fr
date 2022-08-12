@@ -16,7 +16,12 @@
 			{% set term = g.term %}
 			{% set letter = term.data.title | truncate(1, true, "")  | slugify %}
 			{% if letter != currentLetter %}
-				<p id="{{ letter }}"></p>
+				{% if letter != "a" %}
+					<div class="fr-grid-row fr-grid-row--right">
+						<a class="fr-link fr-fi-arrow-up-fill fr-link--icon-left" href="#contenu">Haut de page</a>
+					</div>
+				{% endif %}
+				<p class="fr-h2 fr-tag fr-mb-2w" id="{{ letter }}">{{ letter | capitalize }}</p>
 			{% endif %}
 			<h2 class="fr-h5" id="{{ term.data.title | slugify }}">{{ term.data.title }}&nbsp;<a class="direct-link" title="Lien vers {{ term.data.title }}" href="#{{ term.data.title | slugify }}" ><span class="fr-icon-links-fill" ></span></a></h2>
 			<div class="definition fr-mb-4w">{{ term.templateContent | safe }}</div>

@@ -107,9 +107,9 @@
 												{{ annexeCrit.templateContent | safe | replace("#","/methode/glossaire/#") }}
 												<h4 class="fr-h5 fr-my-1w">Références <small>(en anglais)</small></h4>
 												{% if annexeCrit.data.WCAG != null %}
-													<h5 class="fr-h6 fr-mb-1w"><abbr lang="en" title="Web content accessibility guidelines">WCAG</abbr> 2.1</h5>
+													<h5 class="fr-h6 fr-my-2w"><abbr lang="en" title="Web content accessibility guidelines">WCAG</abbr> 2.1</h5>
 													<div class="ref">
-														<h6 class="fr-mb-1w">Critères de succès :</h6>
+														<h6 class="fr-mb-1w fr-text--md">Critères de succès :</h6>
 														<ul>
 															{% for wcag in annexeCrit.data.WCAG %}
 																<li class="fr-text--sm fr-mb-1w"><a href="https://www.w3.org/TR/WCAG21/#{{ wcag.title  | lower | replace(" ", "-") | replace(",", "") | replace("(", "") | replace(")", "")}}" target="_blank" title="critère {{ wcag.successCriterion }} - nouvelle fenêtre">{{ wcag.successCriterion }}</a> <span lang="en">{{ wcag.title }}</span> ({{ wcag.level }})</li>
@@ -117,7 +117,7 @@
 														</ul>
 												{% endif %}
 												{% if annexeCrit.data.Techniques != null %}
-													<h6 class="fr-mb-1w">Technique(s) suffisante(s) et/ou échec(s) :</h6>
+													<h6 class="fr-mb-1w fr-text--md">Technique(s) suffisante(s) et/ou échec(s) :</h6>
 													<ul class="technique">
 														{% for technique in annexeCrit.data.Techniques %}
 															{% set firstLetter = technique | first %}
@@ -144,7 +144,7 @@
 													</ul>
 												{% endif %}
 												</div>
-												<h5 class="fr-h6 fr-mb-1w">EN 301 549 V2.1.2 (2018-08)</h5>
+												<h5 class="fr-h6 fr-my-2w">EN 301 549 V2.1.2 (2018-08)</h5>
 												<div class="ref">
 													<ul>
 														{% for wcag in annexeCrit.data.WCAG %}

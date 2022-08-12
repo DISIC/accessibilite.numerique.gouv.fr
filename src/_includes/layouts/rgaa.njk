@@ -40,6 +40,11 @@
 			</ul>
 		{% endif %}
 		{% if themeNum !== curThemeNum %}
+			{% if themeNum > 1 %}
+				<div class="fr-grid-row fr-grid-row--right">
+					<a class="fr-link fr-fi-arrow-up-fill fr-link--icon-left" href="#contenu">Haut de page</a>
+				</div>
+			{% endif %}
 			{% set curThemeNum = themeNum %}
 			<h2 class="fr-mt-6w" id="{{ themeNum }}">{{ themeNum }}.&nbsp;{{ themes[themeNum].title }}&nbsp;<a title="Lien vers la thématique {{ themes[themeNum].title }}" class="direct-link" href="#{{ themeNum }}"><span class="fr-icon-links-fill" ></span></a></h2>
 			<ul>

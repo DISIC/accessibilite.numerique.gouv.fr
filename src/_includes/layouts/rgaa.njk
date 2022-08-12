@@ -109,7 +109,7 @@
 												{% if annexeCrit.data.WCAG != null %}
 													<h5 class="fr-h6 fr-my-2w"><abbr lang="en" title="Web content accessibility guidelines">WCAG</abbr> 2.1</h5>
 													<div class="ref">
-														<h6 class="fr-mb-1w fr-text--md">Critères de succès :</h6>
+														<h6 class="fr-mb-1w fr-text--md">Critère(s) de succès :</h6>
 														<ul>
 															{% for wcag in annexeCrit.data.WCAG %}
 																<li class="fr-text--sm fr-mb-1w"><a href="https://www.w3.org/TR/WCAG21/#{{ wcag.title  | lower | replace(" ", "-") | replace(",", "") | replace("(", "") | replace(")", "")}}" target="_blank" title="critère {{ wcag.successCriterion }} - nouvelle fenêtre">{{ wcag.successCriterion }}</a> <span lang="en">{{ wcag.title }}</span> ({{ wcag.level }})</li>

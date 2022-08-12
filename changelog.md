@@ -1,6 +1,12 @@
 Changelog
 ====================================================================
 
+v0.8.5
+--------------------------------------------------------------------
+
+* Réorganisation des références de chaque critère et ajout de la norme européenne
+* Ajout lien « Haut de page » dans les pages _critères et tests_ et _glossaire_
+
 v0.8.4
 --------------------------------------------------------------------
 

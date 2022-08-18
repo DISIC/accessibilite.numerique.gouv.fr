@@ -1102,9 +1102,9 @@
               "Il existe une gestion de cas particulier lorsque :",
               {
                 "ul": [
-                  "- Le [média temporel](#media-non-temporel) est utilisé à des fins décoratives (c’est-à-dire qu’il n’apporte aucune information) ;",
-                  "- Le [média temporel](#media-non-temporel) est diffusé dans un [environnement maîtrisé](#environnement-maitrise) ;",
-                  "- Le [média temporel](#media-non-temporel) est inséré via JavaScript en vérifiant la présence et la version du plug-in, en remplacement d’un [contenu alternatif](#contenu-alternatif) déjà présent."
+                  "- Le [média non temporel](#media-non-temporel) est utilisé à des fins décoratives (c’est-à-dire qu’il n’apporte aucune information) ;",
+                  "- Le [média non temporel](#media-non-temporel) est diffusé dans un [environnement maîtrisé](#environnement-maitrise) ;",
+                  "- Le [média non temporel](#media-non-temporel) est inséré via JavaScript en vérifiant la présence et la version du plug-in, en remplacement d’un [contenu alternatif](#contenu-alternatif) déjà présent."
                 ]
               },
               "Dans ces situations, le critère est non applicable."
@@ -1428,7 +1428,7 @@
                 "L’[en-tête de lignes](#en-tete-de-colonne-ou-de-ligne) est structuré au moyen d’une balise pourvue d’un attribut WAI-ARIA `role=\"rowheader\"`."
               ],
               "3": [
-                "Pour chaque [tableau de données](#tableau-de-donnees), chaque en-tête de ligne ne s’appliquant pas à la totalité de la ligne ou de la colonne est-il structuré au moyen d’une balise `<th>` ?"
+                "Pour chaque [tableau de données](#tableau-de-donnees), chaque en-tête ne s’appliquant pas à la totalité de la ligne ou de la colonne est-il structuré au moyen d’une balise `<th>` ?"
               ],
               "4": [
                 "Pour chaque [tableau de données](#tableau-de-donnees), chaque cellule associée à plusieurs en-têtes est-elle structurée au moyen d’une balise `<td>` ou `<th>` ?"
@@ -2672,7 +2672,7 @@
               "Note : la majorité des navigateurs sur les systèmes d'exploitation sur mobile (Android, iOS) ne gère pas correctement la redistribution en cas de zoom. Dans ce contexte, le critère sera considéré comme non applicable sur ces environnements."
             ],
             "technicalNote": [
-              "Lorsqu'il est ici question de pixel, il s'agit du pixel CSS tel que défini par le W3C (<https://www.w3.org/TR/css3-values/#reference-pixel>)."
+              "Lorsqu'il est ici question de pixel, il s'agit du pixel CSS tel que défini par le W3C https://www.w3.org/TR/css3-values/#reference-pixel."
             ],
             "references": [
               {
@@ -3824,7 +3824,7 @@
               "1": [
                 "Chaque document bureautique ayant une version accessible vérifie-t-il une de ces conditions ?",
                 "La version compatible avec l’accessibilité offre la même information ;",
-                "La version alternative au format HTML est pertinente et offre la même information.."
+                "La version alternative au format HTML est pertinente et offre la même information."
               ]
             },
             "references": [

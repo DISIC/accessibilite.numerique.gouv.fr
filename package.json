@@ -20,7 +20,7 @@
 		"@11ty/eleventy": "^1.0.0-beta.10",
 		"@11ty/eleventy-navigation": "^0.3.2",
 		"@gouvfr/dsfr": "^1.6.0",
-		"eleventy-plugin-styles": "^1.4.1",
+		"eleventy-plugin-styles": "^1.1.1",
 		"eleventy-plugin-toc": "github:DISIC/eleventy-plugin-toc",
 		"fastdom": "^1.0.10",
 		"front-matter": "^4.0.2",

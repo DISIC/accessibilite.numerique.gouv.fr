@@ -5,6 +5,8 @@ v0.8.5
 --------------------------------------------------------------------
 
 * Réorganisation des références de chaque critère et ajout de la norme européenne
+* Fix du critère 4.8 et du test 5.6.3
+* Ajout d‘une question sur les applications mobiles dans la FAQ
 * Ajout lien « Haut de page » dans les pages _critères et tests_ et _glossaire_
 * Fix des liens externes du footer
 

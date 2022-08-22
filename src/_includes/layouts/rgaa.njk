@@ -105,19 +105,19 @@
 												<!-- Annexes -->
 											<div class="annexes">
 												{{ annexeCrit.templateContent | safe | replace("#","/methode/glossaire/#") }}
-												<h4 class="fr-h5 fr-my-1w">Références <small>(en anglais)</small></h4>
+												<h4 class="fr-h5 fr-my-1w">Références</h4>
 												{% if annexeCrit.data.WCAG != null %}
 													<h5 class="fr-h6 fr-my-2w"><abbr lang="en" title="Web content accessibility guidelines">WCAG</abbr> 2.1</h5>
 													<div class="ref">
 														<h6 class="fr-mb-1w fr-text--md">Critère(s) de succès :</h6>
-														<ul>
+															<ul class="technique">
 															{% for wcag in annexeCrit.data.WCAG %}
-																<li class="fr-text--sm fr-mb-1w"><a href="https://www.w3.org/TR/WCAG21/#{{ wcag.title  | lower | replace(" ", "-") | replace(",", "") | replace("(", "") | replace(")", "")}}" target="_blank" title="critère {{ wcag.successCriterion }} - nouvelle fenêtre">{{ wcag.successCriterion }}</a> <span lang="en">{{ wcag.title }}</span> ({{ wcag.level }})</li>
+																<li><a class="fr-tag fr-mb-1w" href="https://www.w3.org/Translations/WCAG21-fr/#{{ wcag.title  | lower | replace(" ", "-") | replace(",", "") | replace("(", "") | replace(")", "")}}" target="_blank" title="critère {{ wcag.successCriterion }} ({{ wcag.level }}) - nouvelle fenêtre">{{ wcag.successCriterion }} ({{ wcag.level }})</a></li>
 															{% endfor %}
 														</ul>
 												{% endif %}
 												{% if annexeCrit.data.Techniques != null %}
-													<h6 class="fr-mb-1w fr-text--md">Technique(s) suffisante(s) et/ou échec(s) :</h6>
+													<h6 class="fr-mb-1w fr-text--md">Technique(s) suffisante(s) et/ou échec(s) <small>(en anglais)</small> :</h6>
 													<ul class="technique">
 														{% for technique in annexeCrit.data.Techniques %}
 															{% set firstLetter = technique | first %}
@@ -139,12 +139,12 @@
 																{% set path = "smil" %}
 															{% endif %}
 															{% endif %}
-															<li class="fr-text--sm"><a target="_blank" title="{{ technique }} - nouvelle fenêtre" href="https://www.w3.org/WAI/WCAG21/Techniques/{{ path }}/{{ technique }}">{{ technique }}</a></li>
+															<li class=""><a class="fr-mb-1w fr-tag" target="_blank" title="{{ technique }} - nouvelle fenêtre" href="https://www.w3.org/WAI/WCAG21/Techniques/{{ path }}/{{ technique }}">{{ technique }}</a></li>
 														{% endfor %}
 													</ul>
 												{% endif %}
 												</div>
-												<h5 class="fr-h6 fr-my-2w">EN 301 549 V2.1.2 (2018-08)</h5>
+												<h5 class="fr-h6 fr-my-2w">EN 301 549 V2.1.2 (2018-08) <small>(en anglais)</small></h5>
 												<div class="ref">
 													<ul>
 														{% for wcag in annexeCrit.data.WCAG %}

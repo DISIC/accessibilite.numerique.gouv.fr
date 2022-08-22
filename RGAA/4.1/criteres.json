@@ -3514,7 +3514,7 @@
               {
                 "wcag": [
                   "1.3.1 Info and Relationships (A)",
-                  "2.4.1 CBypass Blocks (A)",
+                  "2.4.1 Bypass Blocks (A)",
                   "4.1.2 Name, Role, Value (A)"
                 ]
               },

@@ -5,7 +5,7 @@ description: Méthodologie de tests documentant les étapes permettant de vérif
 eleventyNavigation:
   title: Ressources
   parent: ressources
-  order: 5
+  order: 3
 ---
 
 Ce document a été établi dans le cadre des ressources venant accompagner la prise en main de la version 4.1 du référentiel général d’amélioration de l’accessibilité (RGAA 4).

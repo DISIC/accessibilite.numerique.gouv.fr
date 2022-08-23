@@ -5,7 +5,7 @@ description: Références et ressources documentaires utilisées par le RGAA
 eleventyNavigation:
   title: Ressources
   parent: ressources
-  order: 3
+  order: 1
 ---
 
 Le RGAA a été établi en utilisant un certain nombre de références et de sources documentaires. Ce document liste les références qui ont été utilisées.

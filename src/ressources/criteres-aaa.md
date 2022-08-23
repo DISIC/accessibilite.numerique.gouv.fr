@@ -5,7 +5,7 @@ descirption: Critères de succès triple A (AAA) des WCAG 2.1
 eleventyNavigation:
   title: Ressources
   parent: ressources
-  order: 9
+  order: 4
 ---
 
 Voici la liste des critères de succès triple A (AAA) des WCAG 2.1 :

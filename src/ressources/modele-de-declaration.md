@@ -57,7 +57,7 @@ Exemples :
 Cette déclaration a été établie le <span class="aModifier">[JJ/MM/AAAA]</span>.
 Elle a été mise à jour le <span class="aModifier">[JJ/MM/AAAA]</span>.
 
-### Technologies utilisées pour la réalisation l’audit
+### Technologies utilisées pour la réalisation du site
 
 - HTML5
 - CSS

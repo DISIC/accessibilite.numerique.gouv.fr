@@ -58,8 +58,6 @@ Pour valider ces critères, il convient de définir un environnement de test (ou
 
 Lorsqu’il est possible de connaître la configuration des postes de travail, ainsi que le matériel utilisé, la base de référence est alors constituée des services réellement utilisés dans cet environnement.
 
-L’environnement de test est présenté en 2.4.
-
 ## Test des pages
 
 Chaque page de l’échantillon doit être vérifiée au regard des critères qui lui sont applicables.

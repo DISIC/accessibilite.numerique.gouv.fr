@@ -10,7 +10,7 @@ layout: layouts/base.njk
     - [Glossaire](/methode/glossaire/)
     - [Environnement de test](/methode/environnement-de-test/)
 - [Obligations légales](/obligations/)
-    - [Notion d’accessibilité numérique](/notions-accessibilite-numerique/)
+    - [Notion d’accessibilité numérique](/obligations/notions-accessibilite-numerique/)
     - [Rappel du champ d’application](/obligations/champ-application/)
     - [Évaluation de la conformité à la norme de référence](/obligations/evaluation-conformite/)
     - [Déclaration d’accessibilité](/obligations/declaration-accessibilite/)

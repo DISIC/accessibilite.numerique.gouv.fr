@@ -30,7 +30,7 @@ D’autres outils sont disponibles pour aider à la recherche des éléments de 
 Les barres d’outils sont des extensions du navigateur qui vont faciliter le repérage visuel de certains éléments dans un document :
 
 - [Web Developer Toolbar pour Firefox](https://addons.mozilla.org/fr/firefox/addon/web-developer/) : barre d’outils pour les développeurs qui peut aider à retrouver visuellement certains éléments dans un document pour en contrôler l’accessibilité ;
-- [Web Developer Toolbar pour Chrome](https://chrome.google.com/webstore/detail/web-developer/) : la même barre d’outils que précédemment, pour Chrome.
+- [Web Developer Toolbar pour Chrome](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm?hl=fr) : la même barre d’outils que précédemment, pour Chrome.
 
 À noter que la Web Accessibility Toolbar pour Internet Explorer n'est plus maintenu par son éditeur (Paciello Group).
 

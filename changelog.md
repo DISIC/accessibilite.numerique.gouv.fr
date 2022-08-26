@@ -8,6 +8,7 @@ v0.8.6
 
 * Liens vers la version française des WCAG pour chaque critère
 * Ajout de la liste des critères AAA
+* Fix des liens vers les techniques WCAG
 
 v0.8.5
 --------------------------------------------------------------------

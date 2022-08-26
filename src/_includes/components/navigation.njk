@@ -11,7 +11,7 @@
             <div class="fr-collapse fr-menu" id="menu-methode">
                 <ul class="fr-menu__list">
                 {% for g in collections.methodeTechnique %}
-                 <li><a class="fr-nav__link" href="/methode/{{  g.slug }}" target="_self">{{  g.methode.data.title }}</a></li>
+                 <li><a class="fr-nav__link" href="/methode/{{  g.slug }}/" target="_self">{{  g.methode.data.title }}</a></li>
                 {% endfor %}
                 </ul>
             </div>
@@ -20,7 +20,7 @@
             <div class="fr-collapse fr-menu" id="menu-ressources">
                 <ul class="fr-menu__list">
                 {% for g in collections.ressources %}
-                 <li><a class="fr-nav__link" href="/ressources/{{  g.slug }}" target="_self">{{  g.ressource.data.title }}</a></li>
+                 <li><a class="fr-nav__link" href="/ressources/{{  g.slug }}/" target="_self">{{  g.ressource.data.title }}</a></li>
                 {% endfor %}
                 </ul>
             </div>
@@ -29,7 +29,7 @@
             <div class="fr-collapse fr-menu" id="menu-obligations">
                 <ul class="fr-menu__list">
                 {% for g in collections.obligations %}
-                 <li><a class="fr-nav__link" href="/obligations/{{  g.slug }}" target="_self">{{  g.obligation.data.title }}</a></li>
+                 <li><a class="fr-nav__link" href="/obligations/{{  g.slug }}/" target="_self">{{  g.obligation.data.title }}</a></li>
                 {% endfor %}
                 </ul>
             </div>

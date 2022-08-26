@@ -43,16 +43,16 @@ Les vérifications de restitution de contenus ont été réalisées sur la base 
 ### Pages du site ayant fait l‘objet de la vérification de conformité : 
 
 - [Accueil](https://accessibilite.numerique.gouv.fr/)
-- [Accessibilité](https://accessibilite.numerique.gouv.fr/infos/accessibilite)
-- [Mentions légales](https://accessibilite.numerique.gouv.fr/infos/mentions-legales)
-- [Plan du site](https://accessibilite.numerique.gouv.fr/infos/plan-du-site)
+- [Accessibilité](https://accessibilite.numerique.gouv.fr/infos/accessibilite/)
+- [Mentions légales](https://accessibilite.numerique.gouv.fr/infos/mentions-legales/)
+- [Plan du site](https://accessibilite.numerique.gouv.fr/infos/plan-du-site/)
 - [Nouveautés](https://accessibilite.numerique.gouv.fr/infos/nouveautes/)
 - [Critères et tests](https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/)
 - [Glossaire](https://accessibilite.numerique.gouv.fr/methode/glossaire/)
 - [Champ d’application](https://accessibilite.numerique.gouv.fr/obligations/champ-application/)
 - [Environnement de test](https://accessibilite.numerique.gouv.fr/methode/environnement-de-test/)
 - [Kits d’audits](https://accessibilite.numerique.gouv.fr/ressources/kit-audit/)
-- [Obligations](https://accessibilite.numerique.gouv.fr/obligations)
+- [Obligations](https://accessibilite.numerique.gouv.fr/obligations/)
 
 ## Retour d’information et contact
 

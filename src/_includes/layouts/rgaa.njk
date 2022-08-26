@@ -121,6 +121,7 @@
 													<ul class="technique">
 														{% for technique in annexeCrit.data.Techniques %}
 															{% set firstLetter = technique | first %}
+															{% set secondLetter = technique | truncate(2, true, "")  %}
 															{% if firstLetter == "A" %}
 																{% set path = "aria" %}
 															{% elif firstLetter ==  "C" %}
@@ -132,12 +133,13 @@
 															{% elif firstLetter ==  "H" %}
 																{% set path = "html" %}
 															{% elif firstLetter ==  "S" %}
-																{% set secondLetter = technique | slice(1) %}
-															{% if "C" == secondLetter %}
-																{% set path = "client-side-script" %}
-															{% else %}
-																{% set path = "smil" %}
-															{% endif %}
+																{% if secondLetter == "SC" %}
+																	{% set path = "client-side-script" %}
+																{% elif secondLetter == "SV" %}
+																	{% set path = "server-side-script" %}
+																{% else %}
+																	{% set path = "smil" %}
+																{% endif %}
 															{% endif %}
 															<li class=""><a class="fr-mb-1w fr-tag" target="_blank" title="{{ technique }} - nouvelle fenêtre" href="https://www.w3.org/WAI/WCAG21/Techniques/{{ path }}/{{ technique }}">{{ technique }}</a></li>
 														{% endfor %}

@@ -26,16 +26,12 @@ Tous les autres contenus du site sont dans des fichiers markdown du type `réper
 
 Ce site utilise le [système de design de l’État](https://www.systeme-de-design.gouv.fr/) dont les composants n’ont pas vocation à être modifiés.
 
-## Générer le glossaire et les critères
+## Générer les critères, les méthodologies et le glossaire
 
-Pour générer manuellement le fichier contenant l'ensemble des éléments du glossaire :
-
-```sh
-node ./scripts/generate-glossary.js
-```
-
-Pour générer manuellement le fichier contenant l'ensemble des critères :
+Pour générer manuellement les fichiers contenant l'ensemble des critères, des méthodologies et des éléments du glossaire :
 
 ```sh
 node ./scripts/generate-criteria.js
+node ./scripts/generate-methodologies.js
+node ./scripts/generate-glossary.js
 ```

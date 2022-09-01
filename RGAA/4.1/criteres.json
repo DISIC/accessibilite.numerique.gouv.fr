@@ -4096,6 +4096,9 @@
               ],
               "2": [
                 "Dans chaque page web, les fonctionnalités disponibles en faisant un geste en direction de l’appareil peuvent-elles être accomplies avec des [composants d’interface](#composant-d-interface) utilisateur (hors cas particuliers) ?"
+              ],
+              "3": [
+                "L’utilisateur a-t-il la possibilité de désactiver la détection du mouvement pour éviter un déclenchement accidentel de la fonctionnalité (hors cas particuliers) ?"
               ]
             },
             "particularCases": [

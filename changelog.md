@@ -7,6 +7,7 @@ v0.8.6
 --------------------------------------------------------------------
 
 * Liens vers la version française des WCAG pour chaque critère
+* Ajout d’un fichier methodologies.json et de son script de génération
 * Ajout de la liste des critères AAA
 * Reprise des notes de révision du RGAA 4.0 vers 4.1
 * Fix des liens vers les techniques WCAG

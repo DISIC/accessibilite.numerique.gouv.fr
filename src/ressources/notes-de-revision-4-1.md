@@ -13,7 +13,7 @@ Cet erratum signale les corrections apportées aux sections critères et glossai
 Ces corrections ont été reportées directement aux fichiers criteres.json et glossaire.json disponibles sur le dépôt GitHub du RGAA.
 
 Les différentes sources de cette mise à jour sont :
-* Les issues GitHub du dépôt RGAA (https://github.com/DISIC/RGAA/issues) ; ces modifications sont signalées par la mention “issue” suivi du numéro de l’issue en question ;
+* Les issues GitHub du dépôt RGAA (https://github.com/DISIC/RGAA/issues) ; ces modifications sont signalées par la mention “issue” suivie du numéro de l’issue en question ;
 * Des modifications actées sur la plateforme évolution RGAA qui n’ont pas été reportées lors de la consolidation du référentiel ; ces modifications sont signalées par la mention “évolution RGAA” ;
 * Des retours internes concernant des modifications de forme comme de fond ; dans ce dernier cas, ce sont des remarques de fond ne faisant pas question qui ont été corrigées ; ces modifications sont signalées par la mention “retour interne”.
 
@@ -24,7 +24,7 @@ Les différentes sources de cette mise à jour sont :
 
 Modification du test 1.1.4 afin de tenir compte de mécanismes autres que des liens (par exemple, les options d’un élément select) pour assurer l’alternative à une zone réactive (retour interne) :
 
-“Chaque zone cliquable d’une image réactive côté serveur est-t-elle doublée d’un lien dans la page ?”
+“Chaque zone cliquable d’une image réactive côté serveur est-elle doublée d’un lien dans la page ?”
 
 est remplacée par :
 
@@ -134,7 +134,7 @@ est remplacé par :
 
 Ajout d’une note technique manquante concernant la précision sur le placement de l’intitulé visible dans le nom accessible (évolution RGAA) :
 
-“Lorsque l’intitulé visible est complété par une autre expression dans le nom accessible :
+"Lorsque l’intitulé visible est complété par une autre expression dans le nom accessible :
 
     WCAG insiste sur le placement de l’intitulé visible au début du nom accessible sans toutefois réserver l’exclusivité de cet emplacement ;
     WCAG considère comme un cas d’échec une correspondance non exacte de la chaîne de caractères de l’intitulé visible au sein du nom accessible.

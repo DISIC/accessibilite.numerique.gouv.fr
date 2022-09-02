@@ -18,7 +18,7 @@ Les différentes sources de cette mise à jour sont :
 * Des retours internes concernant des modifications de forme comme de fond ; dans ce dernier cas, ce sont des remarques de fond ne faisant pas question qui ont été corrigées ; ces modifications sont signalées par la mention “retour interne”.
 
 
-## Critères
+<h2 class="fr-mt-4w" id="criteres">Critères</h2>
  
 ### Critère 1.1
 
@@ -135,15 +135,13 @@ est remplacé par :
 Ajout d’une note technique manquante concernant la précision sur le placement de l’intitulé visible dans le nom accessible (évolution RGAA) :
 
 "Lorsque l’intitulé visible est complété par une autre expression dans le nom accessible :
-
-    WCAG insiste sur le placement de l’intitulé visible au début du nom accessible sans toutefois réserver l’exclusivité de cet emplacement ;
-    WCAG considère comme un cas d’échec une correspondance non exacte de la chaîne de caractères de l’intitulé visible au sein du nom accessible.
+* WCAG insiste sur le placement de l’intitulé visible au début du nom accessible sans toutefois réserver l’exclusivité de cet emplacement ;
+* WCAG considère comme un cas d’échec une correspondance non exacte de la chaîne de caractères de l’intitulé visible au sein du nom accessible.
 
 Par exemple, si l’on considère l’intitulé visible « Commander maintenant » complété dans le nom accessible par l’expression «produit X », on peut avoir les différents cas suivants :
-
-    « Commander maintenant produit X» est valide (bonne pratique) ;
-    « Produit X : commander maintenant » est valide ;
-    « Commander produit X maintenant » est non valide.”
+* « Commander maintenant produit X» est valide (bonne pratique) ;
+* « Produit X : commander maintenant » est valide ;
+* « Commander produit X maintenant » est non valide.”
 
 
 ### Critère 6.2
@@ -267,31 +265,27 @@ est remplacée par :
 Modification de la formulation des conditions du test 11.10.4, car c’est un doublon des conditions du test 11.10.2 (retour interne) :
 
 “Les champs obligatoires ayant l’attribut aria-invalid='true' vérifient-ils une de ces conditions ?
-
-    Une indication de champ obligatoire est visible et située dans l’étiquette associée au champ.
-    Une indication de champ obligatoire est visible et située dans le passage de texte associé au champ.”
+* Une indication de champ obligatoire est visible et située dans l’étiquette associée au champ.
+* Une indication de champ obligatoire est visible et située dans le passage de texte associé au champ.”
 
 est remplacée par :
 
 “Les champs obligatoires ayant l’attribut aria-invalid='true' vérifient-ils une de ces conditions ?
-
-    Le message d’erreur indiquant le caractère invalide de la saisie est visible et situé dans l’étiquette associée au champ.
-    Le message d’erreur indiquant le caractère invalide de la saisie est visible et situé dans le passage de texte associé au champ.”
+* Le message d’erreur indiquant le caractère invalide de la saisie est visible et situé dans l’étiquette associée au champ.
+* Le message d’erreur indiquant le caractère invalide de la saisie est visible et situé dans le passage de texte associé au champ.”
 
 Ajout d’un cas d’usage dans une note technique (issue #2) :
 
 “Dans un long formulaire dont la majorité des champs sont obligatoires, on pourrait constater que ce sont les quelques champs restés facultatifs qui sont explicitement signalés comme tels. Dans ce cas, il faudrait s’assurer que :
-
-    Un message précise visuellement en haut de formulaire que “tous les champs sont obligatoires sauf ceux indiqués comme étant facultatifs” ;
-    Une mention “facultatif” est présente visuellement dans le libellé des champs facultatifs ou dans la légende d’un groupe de champs facultatifs ;
-    Un attribut required ou aria-required='true' reste associé à chaque champ qui n’est pas concerné par ce caractère facultatif.”
+* Un message précise visuellement en haut de formulaire que “tous les champs sont obligatoires sauf ceux indiqués comme étant facultatifs” ;
+* Une mention “facultatif” est présente visuellement dans le libellé des champs facultatifs ou dans la légende d’un groupe de champs facultatifs ;
+* Un attribut required ou aria-required='true' reste associé à chaque champ qui n’est pas concerné par ce caractère facultatif.”
 
 Modification de la formulation du cas particulier pour tenir compte du test 11.10.2 :
 
 “Le test 11.10.1 et le test 11.10.2 seront considérés comme non applicables lorsque le formulaire comporte un seul champ de formulaire ou qu’il indique les champs optionnels de manière :
-
-    Visible ;
-    Dans la balise `<label>` ou dans la légende associée au champ.
+* Visible ;
+* Dans la balise `<label>` ou dans la légende associée au champ.
 
 Dans le cas où l’ensemble des champs d’un formulaire sont obligatoires, les tests 11.10.1 et 11.10.2 restent applicables.”
 
@@ -327,9 +321,9 @@ Modification manquante du cas particulier suite à la suppression de l’excepti
 
 “Il existe une gestion de cas particulier lorsque :
 
-    Les pages d’un ensemble de pages sont le résultat ou une partie d’un processus (un processus de paiement ou de prise de commande, par exemple) ;
-    La page est la page d’accueil ;
-    Le site web est constitué d’une seule page.
+* Les pages d’un ensemble de pages sont le résultat ou une partie d’un processus (un processus de paiement ou de prise de commande, par exemple) ;
+* La page est la page d’accueil ;
+* Le site web est constitué d’une seule page.
 
 Dans ces situations, le critère est non applicable.”
 
@@ -337,9 +331,9 @@ est remplacée par :
 
 “Il existe une gestion de cas particulier lorsque :
 
-    La page est la page d’accueil ;
-    Le site web est constitué d’une seule page ;
-    Le changement fait suite à une modification initiée par l’utilisateur.
+* La page est la page d’accueil ;
+* Le site web est constitué d’une seule page ;
+* Le changement fait suite à une modification initiée par l’utilisateur.
 
 Dans ces situations, le critère est non applicable.”
 
@@ -381,8 +375,8 @@ Ajout d’une quatrième condition au test 12.7.2 (issue #19) :
 
 Ajout de deux techniques WCAG récemment associées au SC 2.1.4 (issue #71) :
 
-    G217 (https://www.w3.org/WAI/WCAG21/Techniques/general/G217) ;
-    F99 (https://www.w3.org/WAI/WCAG21/Techniques/failures/F99).
+* G217 (https://www.w3.org/WAI/WCAG21/Techniques/general/G217) ;
+* F99 (https://www.w3.org/WAI/WCAG21/Techniques/failures/F99).
 
 
 ### Critère 13.1
@@ -415,8 +409,8 @@ est remplacé par :
 
 Ajout de deux techniques WCAG récemment associées au SC 2.5.1 (retour interne) :
 
-    G215 (https://www.w3.org/WAI/WCAG21/Techniques/general/G215) ;
-    G216 (https://www.w3.org/WAI/WCAG21/Techniques/general/G216).
+* G215 (https://www.w3.org/WAI/WCAG21/Techniques/general/G215) ;
+* G216 (https://www.w3.org/WAI/WCAG21/Techniques/general/G216).
 
 
 ### Critère 13.11
@@ -425,11 +419,11 @@ Ajout d’une note technique manquante concernant les précisions sur les types 
 
 “Deux exemples de mécanisme mis en place pour annuler ou abandonner une action déclenchée au moyen d’un dispositif de pointage sur un point unique de l’écran :
 
-    Une fenêtre modale permettant d’annuler l’action après son achèvement ;
-    Pour une fonction de glisser/déposer, le fait d’abandonner l’action si l’utilisateur relâche l’élément en dehors de la zone cible.”
+* Une fenêtre modale permettant d’annuler l’action après son achèvement ;
+* Pour une fonction de glisser/déposer, le fait d’abandonner l’action si l’utilisateur relâche l’élément en dehors de la zone cible.”
 
-## Glossaire
 
+<h2 class="fr-mt-4w" id="glossaire">Glossaire</h2>
 
 ### Accéder à chaque page de la collection de pages
 

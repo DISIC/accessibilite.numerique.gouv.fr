@@ -100,16 +100,13 @@ Ajout d’une note technique manquante (évolution RGAA) :
 
 ### Critère 5.3
 
-Suppression de la mention “(hors cas particuliers)” du 
-### Critère 5.3 et du test 5.3.1 (issue #16) :
+Suppression de la mention “(hors cas particuliers)” du critère 5.3 et du test 5.3.1 (issue #16) :
 
-“
-### Critère 5.3. Pour chaque tableau de mise en forme, le contenu linéarisé reste-t-il compréhensible (hors cas particuliers) ?”
+“critère 5.3. Pour chaque tableau de mise en forme, le contenu linéarisé reste-t-il compréhensible (hors cas particuliers) ?”
 
 est remplacé par :
 
-“
-### Critère 5.3 Pour chaque tableau de mise en forme, le contenu linéarisé́ reste-t-il compréhensible ?”
+“critère 5.3 Pour chaque tableau de mise en forme, le contenu linéarisé́ reste-t-il compréhensible ?”
 
 “Test 5.3.1 : Chaque tableau de mise en forme vérifie-t-il ces conditions (hors cas particuliers) ?”
 
@@ -151,8 +148,7 @@ Par exemple, si l’on considère l’intitulé visible « Commander maintenant 
 
 ### Critère 6.2
 
-Modification de l’intitulé du 
-### Critère (issue #54) :
+Modification de l’intitulé du critère (issue #54) :
 
 “Dans chaque page web, chaque lien, à l’exception des ancres, a-t-il un intitulé ?”
 
@@ -170,15 +166,13 @@ est remplacé par :
 
 Ajout d’une note technique :
 
-“Une ancre n’est pas un lien même si pendant longtemps l’élément `<a>` a servi de support à cette technique. Elle n’est donc pas concernée par le présent 
-### Critère.”
+“Une ancre n’est pas un lien même si pendant longtemps l’élément `<a>` a servi de support à cette technique. Elle n’est donc pas concernée par le présent critère.”
 
 ### Critère 8.2
 
 Suppression du cas particulier (issue #73).
 
-Suppression de la mention “(hors cas particuliers)” du 
-### Critère 8.2 et du test 8.2.1.
+Suppression de la mention “(hors cas particuliers)” du critère 8.2 et du test 8.2.1.
 
 ### Critère 8.3
 
@@ -194,13 +188,11 @@ est remplacé par :
 
 “WAI-ARIA permet de définir des titres via le rôle heading et l’attribut aria-level (indication du niveau de titre). Bien qu’il soit préférable d’utiliser l’élément de titre natif en HTML `<hx>`, l’utilisation du rôle WAI-ARIA heading est compatible avec l’accessibilité.”
 
-Suppression de la technique WCAG H69 des références du 
-### Critère 9.1 (issue #21).
+Suppression de la technique WCAG H69 des références du critère 9.1 (issue #21).
 
 ### Critère 10.2
 
-Modification de l’intitulé du 
-### Critère (issue #48) :
+Modification de l’intitulé du critère (issue #48) :
 
 “Dans chaque page web, le contenu visible reste-t-il présent lorsque les feuilles de styles sont désactivées ?”
 
@@ -214,8 +206,7 @@ Suppression du test 10.4.1 (issue #18) et renumérotation consécutive des tests
 
 ### Critère 10.11
 
-Modification de l’intitulé incorrect du 
-### Critère (issue #29) :
+Modification de l’intitulé incorrect du critère (issue #29) :
 
 “Pour chaque page web, les contenus peuvent-ils être présentés sans avoir recours à la fois à un défilement vertical pour une fenêtre ayant une hauteur de 256px ou une largeur de 320px (hors cas particuliers) ?”
 
@@ -263,8 +254,7 @@ est remplacée par :
 
 ### Critère 11.6
 
-Modification de l’intitulé du 
-### Critère (évolution RGAA) :
+Modification de l’intitulé du critère (évolution RGAA) :
 
 “Dans chaque formulaire, chaque regroupement de champs de formulaire a-t-il une légende ?”
 
@@ -307,8 +297,7 @@ Dans le cas où l’ensemble des champs d’un formulaire sont obligatoires, les
 
 ### Critère 11.12
 
-L’intitulé du 
-### Critère n’est pas bon puisqu’il correspond à l’énoncé du premier test (retour interne) :
+L’intitulé du critère n’est pas bon puisqu’il correspond à l’énoncé du premier test (retour interne) :
 
 “Pour chaque formulaire qui modifie ou supprime des données, ou qui transmet des réponses à un test ou à un examen, ou dont la validation a des conséquences financières ou juridiques, la saisie des données vérifie-t-elle une de ces conditions ?”
 
@@ -320,25 +309,21 @@ est remplacée par :
 
 Modification manquante du cas particulier (évolution RGAA) :
 
-“Il existe une gestion de cas particulier lorsque le site web est constitué d’une seule page ou d’un nombre très limité de pages (cf. note) pour lesquels la fonction de recherche du navigateur dans le contenu est considérée comme équivalente à un moteur de recherche. Dans ce cas-là, le 
-### Critère est non applicable.
+“Il existe une gestion de cas particulier lorsque le site web est constitué d’une seule page ou d’un nombre très limité de pages (cf. note) pour lesquels la fonction de recherche du navigateur dans le contenu est considérée comme équivalente à un moteur de recherche. Dans ce cas-là, le critère est non applicable.
 
 Note : l’appréciation d’un nombre très limité de pages devrait réserver ce cas particulier à un site de 2 ou 3 pages, par exemple, avec un volume de contenu peu important.”
 
 est remplacée par :
 
-“Il existe une gestion de cas particulier lorsque le site web est constitué d’une seule page ou d’un nombre très limité de pages (cf. note). Dans ce cas-là, le 
-### Critère est non applicable.
+“Il existe une gestion de cas particulier lorsque le site web est constitué d’une seule page ou d’un nombre très limité de pages (cf. note). Dans ce cas-là, le critère est non applicable.
 
-Le 
-### Critère est également non applicable pour les pages d’un ensemble de pages qui sont le résultat ou une partie d’un processus (un processus de paiement ou de prise de commande, par exemple) ;
+Le critère est également non applicable pour les pages d’un ensemble de pages qui sont le résultat ou une partie d’un processus (un processus de paiement ou de prise de commande, par exemple) ;
 
 Note : l’appréciation d’un nombre très limité de pages devrait être réservé à un site dont l’ensemble des pages sont atteignables depuis la page d’accueil.”
 
 ### Critère 12.2
 
-Modification manquante du cas particulier suite à la suppression de l’exception concernant les pages d’un ensemble de pages qui sont le résultat ou une partie d’un processus (ce qui n’est pas prévu au 
-### Critère 3.2.3 des WCAG), et l’ajout d’une exception lorsque la modification est initiée par l’utilisateur (évolution RGAA) :
+Modification manquante du cas particulier suite à la suppression de l’exception concernant les pages d’un ensemble de pages qui sont le résultat ou une partie d’un processus (ce qui n’est pas prévu au critère 3.2.3 des WCAG), et l’ajout d’une exception lorsque la modification est initiée par l’utilisateur (évolution RGAA) :
 
 “Il existe une gestion de cas particulier lorsque :
 
@@ -346,8 +331,7 @@ Modification manquante du cas particulier suite à la suppression de l’excepti
     La page est la page d’accueil ;
     Le site web est constitué d’une seule page.
 
-Dans ces situations, le 
-### Critère est non applicable.”
+Dans ces situations, le critère est non applicable.”
 
 est remplacée par :
 
@@ -357,13 +341,11 @@ est remplacée par :
     Le site web est constitué d’une seule page ;
     Le changement fait suite à une modification initiée par l’utilisateur.
 
-Dans ces situations, le 
-### Critère est non applicable.”
+Dans ces situations, le critère est non applicable.”
 
 ### Critère 12.6
 
-Ajout de la technique WCAG H69 aux références du 
-### Critère 12.6 (issue #21).
+Ajout de la technique WCAG H69 aux références du critère 12.6 (issue #21).
 
 Modification de l’intitulé de la deuxième condition du test 12.6.1 (issue #70) :
 
@@ -409,8 +391,7 @@ Suppression du lien associé à l’entrée de glossaire “URL” dans le cas p
 
 ### Critère 13.2
 
-Suppression des techniques WCAG F22, F52 et F60 qui sont associées au SC 3.2.5 et donc hors du périmètre du 
-### Critère 13.2 (retour interne).
+Suppression des techniques WCAG F22, F52 et F60 qui sont associées au SC 3.2.5 et donc hors du périmètre du critère 13.2 (retour interne).
 
 ### Critère 13.4
 

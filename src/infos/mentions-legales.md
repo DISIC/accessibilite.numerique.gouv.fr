@@ -4,7 +4,7 @@ description: Mentions légales du site accessibilite.numerique.gouv.fr
 layout: layouts/base.njk
 ---
 
-<p class="fr-text--lead">Ce site est édité par l’équipe <a href="https://design.numerique.gouv.fr/" target="_blank" title="Design des services numériques - nouvelle fenêtre">Design des services numériques</a>, au sein de la <a href="https://www.numerique.gouv.fr/" target="_blank" title="Direction interministérielle du numérique - nouvelle fenêtre">Direction interministérielle du numérique</a>, un service du Premier ministre.</p>
+<p class="fr-text--lead">Ce site est édité par l’équipe <a href="https://design.numerique.gouv.fr/" target="_blank" rel="noreferrer noopener" title="Design des services numériques - nouvelle fenêtre">Design des services numériques</a>, au sein de la <a href="https://www.numerique.gouv.fr/" target="_blank" rel="noreferrer noopener" title="Direction interministérielle du numérique - nouvelle fenêtre">Direction interministérielle du numérique</a>, un service du Premier ministre.</p>
 
 DINUM<br>
 20 avenue de Ségur<br>
@@ -19,11 +19,11 @@ Xavier Albouy, directeur interministériel du numérique par interim.
 
 ## Conception et gestion du site
 
-Ce site est conçu et développé par l’équipe <a href="https://design.numerique.gouv.fr/" target="_blank" title="Design des services numériques - nouvelle fenêtre">Design des services numériques</a> et  utilise le <a href="https://www.systeme-de-design.gouv.fr/" target="_blank" title="système de design de l’État - nouvelle fenêtre">système de design de l’État</a>.
+Ce site est conçu et développé par l’équipe <a href="https://design.numerique.gouv.fr/" target="_blank" rel="noreferrer noopener" title="Design des services numériques - nouvelle fenêtre">Design des services numériques</a> et  utilise le <a href="https://www.systeme-de-design.gouv.fr/" target="_blank" rel="noreferrer noopener" title="système de design de l’État - nouvelle fenêtre">système de design de l’État</a>.
 
 ## Code source du site
 
-Le code source du site est disponible sur <a href="https://github.com/DISIC/accessibilite.numerique.gouv.fr" target="_blank" title="Github - nouvelle fenêtre">Github</a>.
+Le code source du site est disponible sur <a href="https://github.com/DISIC/accessibilite.numerique.gouv.fr" target="_blank" rel="noreferrer noopener" title="Github - nouvelle fenêtre">Github</a>.
 
 ## Propriété intellectuelle et liens
 

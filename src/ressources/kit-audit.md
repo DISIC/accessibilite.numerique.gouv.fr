@@ -8,7 +8,7 @@ eleventyNavigation:
   order: 2
 ---
 
-La partie « Évaluation de la conformité à la norme » du RGAA contient les instructions pour mener à bien l’audit d’un site internet, intranet ou extranet (échantillonnage des pages, critères applicables, taux de conformité…).
+La partie « [Évaluation de la conformité à la norme](/obligations/evaluation-conformite/) » du RGAA contient les instructions pour mener à bien l’audit d’un site internet, intranet ou extranet (échantillonnage des pages, critères applicables, taux de conformité…).
 
 Voici en complément, des outils et des modèles de documents pour réaliser un audit :
 

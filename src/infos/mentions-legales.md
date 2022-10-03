@@ -13,9 +13,9 @@ Tel. accueil : 01.71.21.01.70<br>
 SIRET : 12000101100010 (secrétariat général du gouvernement)<br>
 SIREN : 120 001 011
 
-## Directeur de publication
+## Directrice de publication
 
-Xavier Albouy, directeur interministériel du numérique par interim.
+Stéphanie Schaer, directrice interministérielle du numérique.
 
 ## Conception et gestion du site
 

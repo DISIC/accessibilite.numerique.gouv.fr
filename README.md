@@ -1,6 +1,6 @@
 # accessibilite.numerique.gouv.fr
 
-Version beta du nouveau site [accessibilite.numerique.gouv.fr](https://accessibilite.numerique.gouv.fr) dédié au référentiel général d’amélioration de l’accessibilité (RGAA).
+Le nouveau site [accessibilite.numerique.gouv.fr](https://accessibilite.numerique.gouv.fr) dédié au référentiel général d’amélioration de l’accessibilité (RGAA).
 
 ## Infos
 

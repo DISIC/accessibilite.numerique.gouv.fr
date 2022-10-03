@@ -4,7 +4,7 @@ description: Les nouveautés du site accessibilite.numerique.gouv.fr
 layout: layouts/base.njk
 ---
 
-Vous êtes sur la **version bêta** du site dédié au **référentiel général d’amélioration de l’accessibilité** (RGAA).
+Vous êtes sur le nouveau site dédié au **référentiel général d’amélioration de l’accessibilité** (RGAA).
 
 Ce site a pour but de faciliter :
 - la compréhension des enjeux de l’accessibilité numérique ;
@@ -13,15 +13,11 @@ Ce site a pour but de faciliter :
 - la proposition de nouvelles [ressources](/ressources/) ;
 - la contribution aux évolutions des critères, tests et autres éléments du référentiel.
 
-<div class="fr-callout fr-my-4w">
-    <p class="fr-callout__text">
-        Cette version bêta publique est ouverte aux <a href="/infos/contributions/">contributions</a>.
-    </p>
-</div>
 
-## Version bêta
+## Ce qui change
 
-- Refonte et intégration du système de design de l’État v1.6.0 ;
+- Nouvelle adresse
+- Intégration du système de design de l’État v1.6.0 ;
 - Nouvelle architecture technique : chaque critère, chaque test, chaque terme du glossaire est dans un ficher markdown. La procédure de mise à jour de ces contenus est maintenant très simple et très rapide ;
 - Le format du fichier [glossaire.json](https://github.com/DISIC/accessibilite.numerique.gouv.fr/blob/main/RGAA/4.1/glossaire.json) a été revu et simplifié. Le format du fichier [criteres.json](https://github.com/DISIC/accessibilite.numerique.gouv.fr/blob/main/RGAA/4.1/criteres.json) reste identique ;
 - La contribution est désormais possible au niveau d’un critère, d’un test, d’un terme du glossaire, etc. ;

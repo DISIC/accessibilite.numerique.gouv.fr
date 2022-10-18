@@ -2,7 +2,7 @@
 WCAG:
   - successCriterion: 2.5.1
     title: Pointer Gestures
-    level: AA
+    level: A
 Techniques:
   - G215
   - G216

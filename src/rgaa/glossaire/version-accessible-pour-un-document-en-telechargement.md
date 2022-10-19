@@ -9,4 +9,4 @@ Les documents en téléchargement dont les types de format sont reconnus compati
 - Adobe PDF ;
 - Epub/Daisy.
 
-Note : le format texte (TXT) ne peut pas être utilisé pour produire une version accessible pour un document en téléchargement.
+Note : le format texte (txt) ne peut pas être utilisé pour produire une version accessible pour un document en téléchargement.

@@ -50,13 +50,17 @@ async function parseTests(folderPath) {
 	const tests = {};
 
 	const folders = await fs.readdir(folderPath);
-	folders.forEach(async (_, i) => {
-		const data = await fs.readFile(`${folderPath}/${i + 1}.md`, "utf-8");
-		const result = fm(data);
+	folders.forEach(async (f, i) => {
+		if (!f.endsWith(".md")) {
+			console.error(`❌ Ignoring "${f}" as it is not a Markdown file.`);
+		} else {
+			const data = await fs.readFile(`${folderPath}/${i + 1}.md`, "utf-8");
+			const result = fm(data);
 
-		tests[i + 1] = result.attributes.steps
-			? [result.attributes.title, ...result.attributes.steps]
-			: [result.attributes.title];
+			tests[i + 1] = result.attributes.steps
+				? [result.attributes.title, ...result.attributes.steps]
+				: [result.attributes.title];
+		}
 	});
 
 	return tests;
@@ -183,7 +187,12 @@ async function generateCriteria() {
 			return topicA - topicB;
 		});
 
-		for (const folder of folders) {
+		// Clean unwanted files (`.DS_Store`...)
+		const filteredFolders = folders.filter((f) => {
+			return f.match(/\d\.\d/); // "X.X" where X are numbers
+		});
+
+		for (const folder of filteredFolders) {
 			// Build all criterion properties
 			const criterionObject = {
 				criterium: {

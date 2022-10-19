@@ -4,7 +4,7 @@ WCAG:
     title: Info and Relationships
     level: A
   - successCriterion: 2.4.1
-    title: CBypass Blocks
+    title: Bypass Blocks
     level: A
   - successCriterion: 4.1.2
     title: Name, Role, Value

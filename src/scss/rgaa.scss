@@ -16,7 +16,7 @@ code {
 	background-color: #ffffff;
 	text-align: right;
 	p {
-		font-weight: 800;
+	//	font-weight: 800;
 	}
 	div.fr-collapse--expanded {
 		text-align: left;
@@ -32,6 +32,9 @@ code {
 	}
 	.technique li {
 		display: inline;
+	}
+	.ref {
+		margin-left: 1.5em;
 	}
 }
 .fr-accordion__btn {
@@ -104,7 +107,7 @@ li {
 	}
 }
 
-dd {
+div.definition {
 	background-color:var(--background-alt-blue-france);
 	margin:0;
 	padding: 1em;
@@ -170,6 +173,6 @@ a.direct-link {
 button.fr-accordion__btn:hover {
 	background-color: transparent;
 }
-main {
+main.accueil {
 	overflow: hidden;
 }

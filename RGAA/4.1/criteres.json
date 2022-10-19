@@ -13,39 +13,39 @@
             "title": "Chaque [image porteuse d’information](#image-porteuse-d-information) a-t-elle une [alternative textuelle](#alternative-textuelle-image) ?",
             "tests": {
               "1": [
-                "Chaque image (élément `<img>` ou balise ouvrante possédant l’attribut WAI-ARIA `role=\"img\"`) [porteuse d’information](#porteuse-d-information) a-t-elle une [alternative textuelle](#alternative-textuelle) ?"
+                "Chaque image (balise `<img>` ou balise possédant l’attribut WAI-ARIA `role=\"img\"`) [porteuse d’information](#porteuse-d-information) a-t-elle une [alternative textuelle](#alternative-textuelle-image) ?"
               ],
               "2": [
-                "Chaque [zone](#zone-d-une-image-reactive) d’une [image réactive](#image-reactive) (élément `<area>`) [porteuse d’information](#image-porteuse-d-information) a-t-elle une [alternative textuelle](#alternative-textuelle-image) ?"
+                "Chaque [zone](#zone-d-une-image-reactive) d’une [image réactive](#image-reactive) (balise `<area>`) [porteuse d’information](#image-porteuse-d-information) a-t-elle une [alternative textuelle](#alternative-textuelle-image) ?"
               ],
               "3": [
-                "Chaque bouton de type `image` (élément `<input>` avec l’attribut `type=\"image\"`) a-t-il une [alternative textuelle](#alternative-textuelle-image) ?"
+                "Chaque bouton de type `image` (balise `<input>` avec l’attribut `type=\"image\"`) a-t-il une [alternative textuelle](#alternative-textuelle-image) ?"
               ],
               "4": [
                 "Chaque [zone cliquable](#zone-cliquable) d’une image réactive côté serveur est-elle doublée d’un mécanisme utilisable quel que soit le dispositif de pointage utilisé et permettant d’accéder à la même destination ?"
               ],
               "5": [
-                "Chaque image vectorielle (élément `<svg>`) [porteuse d’information](#image-porteuse-d-information), vérifie-t-elle ces conditions ?",
-                "L'élément `<svg>` possède un attribut WAI-ARIA `role=\"img\"` ;",
-                "L'élément `<svg>` a une [alternative textuelle](#alternative-textuelle-image)."
+                "Chaque image vectorielle (balise `<svg>`) [porteuse d’information](#image-porteuse-d-information), vérifie-t-elle ces conditions ?",
+                "La balise `<svg>` possède un attribut WAI-ARIA `role=\"img\"` ;",
+                "La balise `<svg>` a une [alternative textuelle](#alternative-textuelle-image)."
               ],
               "6": [
-                "Chaque [image objet](#image-objet) (balise ouvrante `<object>` avec l’attribut `type=\"image/…\"`) [porteuse d’information](#image-porteuse-d-information), vérifie-t-elle une de ces conditions ?",
-                "La balise ouvrante `<object>` possède une [alternative textuelle](#alternative-textuelle-image) et un attribut `role=\"img\"` ;",
+                "Chaque [image objet](#image-objet) (balise `<object>` avec l’attribut `type=\"image/…\"`) [porteuse d’information](#image-porteuse-d-information), vérifie-t-elle une de ces conditions ?",
+                "La balise `<object>` possède une [alternative textuelle](#alternative-textuelle-image) et un attribut `role=\"img\"` ;",
                 "L’élément `<object>` est immédiatement suivi d’un [lien ou bouton adjacent](#lien-ou-bouton-adjacent) permettant d’accéder à un [contenu alternatif](#contenu-alternatif) ;",
                 "Un mécanisme permet à l’utilisateur de remplacer l’élément `<object>` par un [contenu alternatif](#contenu-alternatif)."
               ],
               "7": [
-                "Chaque image embarquée (élément `<embed>` avec l’attribut `type=\"image/…\"`) [porteuse d’information](#image-porteuse-d-information), vérifie-t-elle une de ces conditions ?",
-                "L'élément `<embed>` possède une [alternative textuelle](#alternative-textuelle-image) et un attribut `role=\"img\"` ;",
+                "Chaque image embarquée (balise `<embed>` avec l’attribut `type=\"image/…\"`) [porteuse d’information](#image-porteuse-d-information), vérifie-t-elle une de ces conditions ?",
+                "La balise `<embed>` possède une [alternative textuelle](#alternative-textuelle-image) et un attribut `role=\"img\"` ;",
                 "L’élément `<embed>` est immédiatement suivi d’un [lien ou bouton adjacent](#lien-ou-bouton-adjacent) permettant d’accéder à un [contenu alternatif](#contenu-alternatif) ;",
                 "Un mécanisme permet à l’utilisateur de remplacer l’élément `<embed>` par un [contenu alternatif](#contenu-alternatif)."
               ],
               "8": [
-                "Chaque image bitmap (élément `<canvas>`) [porteuse d’information](#image-porteuse-d-information), vérifie-t-elle une de ces conditions  ?",
+                "Chaque image bitmap (balise `<canvas>`) [porteuse d’information](#image-porteuse-d-information), vérifie-t-elle une de ces conditions  ?",
                 "La balise `<canvas>` possède une [alternative textuelle](#alternative-textuelle-image) et un attribut `role=\"img\"` ;",
                 "Un [contenu alternatif](#contenu-alternatif) est présent entre les balises `<canvas>` et `</canvas>` ;",
-                "La balise ouvrante `<canvas>` est immédiatement suivie d’un [lien ou bouton adjacent](#lien-ou-bouton-adjacent) permettant d’accéder à un [contenu alternatif](#contenu-alternatif) ;",
+                "L‘élément `<canvas>` est immédiatement suivi d’un [lien ou bouton adjacent](#lien-ou-bouton-adjacent) permettant d’accéder à un [contenu alternatif](#contenu-alternatif) ;",
                 "Un mécanisme permet à l’utilisateur de remplacer l’élément `<canvas>` par un [contenu alternatif](#contenu-alternatif)."
               ]
             },
@@ -73,43 +73,43 @@
             "title": "Chaque [image de décoration](#image-de-decoration) est-elle correctement ignorée par les technologies d’assistance ?",
             "tests": {
               "1": [
-                "Chaque image (élément `<img>`) [de décoration](#image-de-decoration), sans [légende](#legende-d-image), vérifie-t-elle une de ces conditions ?",
-                "L'élément `<img>` possède un attribut `alt` vide (`alt=\"\"`) et est dépourvu de tout autre attribut permettant de fournir une [alternative textuelle](#alternative-textuelle-image) ;",
-                "L'élément `<img>` possède un attribut WAI-ARIA `aria-hidden=\"true\"` ou `role=\"presentation\"`."
+                "Chaque image (balise `<img>`) [de décoration](#image-de-decoration), sans [légende](#legende-d-image), vérifie-t-elle une de ces conditions ?",
+                "La balise `<img>` possède un attribut `alt` vide (`alt=\"\"`) et est dépourvu de tout autre attribut permettant de fournir une [alternative textuelle](#alternative-textuelle-image) ;",
+                "La balise `<img>` possède un attribut WAI-ARIA `aria-hidden=\"true\"` ou `role=\"presentation\"`."
               ],
               "2": [
-                "Chaque [zone non cliquable](#zone-non-cliquable) (élément `<area>` sans attribut `href`) [de décoration](#image-de-decoration), vérifie-t-elle une de ces conditions ?",
-                "L'élément `<area>` possède un attribut `alt` vide (`alt=\"\"`) et est dépourvu de tout autre attribut permettant de fournir une [alternative textuelle](#alternative-textuelle-image) ;",
-                "L'élément `<area>` possède un attribut WAI-ARIA `aria-hidden=\"true\"` ou `role=\"presentation\"`."
+                "Chaque [zone non cliquable](#zone-non-cliquable) (balise `<area>` sans attribut `href`) [de décoration](#image-de-decoration), vérifie-t-elle une de ces conditions ?",
+                "La balise `<area>` possède un attribut `alt` vide (`alt=\"\"`) et est dépourvu de tout autre attribut permettant de fournir une [alternative textuelle](#alternative-textuelle-image) ;",
+                "La balise `<area>` possède un attribut WAI-ARIA `aria-hidden=\"true\"` ou `role=\"presentation\"`."
               ],
               "3": [
-                "Chaque [image objet](#image-objet) (élément `<object>` avec l’attribut `type=\"image/…\"`) [de décoration](#image-de-decoration), sans [légende](#legende-d-image), vérifie-t-elle ces conditions ?",
-                "L'élément `<object>` possède un attribut WAI-ARIA `aria-hidden=\"true\"` ;",
-                "L'élément `<object>` est dépourvu d’alternative textuelle ;",
+                "Chaque [image objet](#image-objet) (balise `<object>` avec l’attribut `type=\"image/…\"`) [de décoration](#image-de-decoration), sans [légende](#legende-d-image), vérifie-t-elle ces conditions ?",
+                "La balise `<object>` possède un attribut WAI-ARIA `aria-hidden=\"true\"` ;",
+                "La balise `<object>` est dépourvu d’alternative textuelle ;",
                 "Il n’y a aucun texte faisant office d’alternative textuelle entre `<object>` et `</object>`."
               ],
               "4": [
-                "Chaque image vectorielle (élément `<svg>`) [de décoration](#image-de-decoration), sans [légende](#legende-d-image), vérifie-t-elle ces conditions ?",
-                "L'élément `<svg>` possède un attribut WAI-ARIA `aria-hidden=\"true\"` ;",
-                "L'élément `<svg>` et ses enfants sont dépourvus d’[alternative textuelle](#alternative-textuelle-image) ;",
-                "Les éléments `<title>` et `<desc>` sont absents ou vides ;",
-                "L'élément `<svg>` et ses enfants sont dépourvus d’attribut `title`."
+                "Chaque image vectorielle (balise `<svg>`) [de décoration](#image-de-decoration), sans [légende](#legende-d-image), vérifie-t-elle ces conditions ?",
+                "La balise `<svg>` possède un attribut WAI-ARIA `aria-hidden=\"true\"` ;",
+                "La balise `<svg>` et ses enfants sont dépourvus d’[alternative textuelle](#alternative-textuelle-image) ;",
+                "Les balises `<title>` et `<desc>` sont absentes ou vides ;",
+                "La balise `<svg>` et ses enfants sont dépourvus d’attribut `title`."
               ],
               "5": [
-                "Chaque image bitmap (élément `<canvas>`) [de décoration](#image-de-decoration), sans [légende](#legende-d-image), vérifie-t-elle ces conditions ?",
-                "La balise ouvrante `<canvas>` possède un attribut WAI-ARIA `aria-hidden=\"true\"` ;",
-                "La balise ouvrante `<canvas>` et ses enfants sont dépourvus d’[alternative textuelle](#alternative-textuelle-image) ;",
+                "Chaque image bitmap (balise `<canvas>`) [de décoration](#image-de-decoration), sans [légende](#legende-d-image), vérifie-t-elle ces conditions ?",
+                "La balise `<canvas>` possède un attribut WAI-ARIA `aria-hidden=\"true\"` ;",
+                "La balise `<canvas>` et ses enfants sont dépourvus d’[alternative textuelle](#alternative-textuelle-image) ;",
                 "Il n’y a aucun texte faisant office d’[alternative textuelle](#alternative-textuelle-image) entre `<canvas>` et `</canvas>`."
               ],
               "6": [
-                "Chaque image embarquée (élément `<embed>` avec l’attribut `type=\"image/…\"`) [de décoration](#image-de-decoration), sans [légende](#legende-d-image), vérifie-t-elle ces conditions ?",
-                "L'élément `<embed>` possède un attribut WAI-ARIA `aria-hidden=\"true\"` ;",
-                "L'élément `<embed>` et ses enfants sont dépourvus d’[alternative textuelle](#alternative-textuelle-image)."
+                "Chaque image embarquée (balise `<embed>` avec l’attribut `type=\"image/…\"`) [de décoration](#image-de-decoration), sans [légende](#legende-d-image), vérifie-t-elle ces conditions ?",
+                "La balise `<embed>` possède un attribut WAI-ARIA `aria-hidden=\"true\"` ;",
+                "La balise `<embed>` et ses enfants sont dépourvus d’[alternative textuelle](#alternative-textuelle-image)."
               ]
             },
             "technicalNote": [
-              "Lorsqu'une image est associée à une [légende](#legende-d-image), la note technique WCAG recommande de prévoir systématiquement une [alternative textuelle](#alternative-textuelle-image) (cf. <a href=\"https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#1.9\">critère 1.9</a>. Dans ce cas le critère 1.2 est non applicable.",
-              "Dans le cas d'une image vectorielle (élément `<svg>`) de décoration qui serait affichée au travers d'un élément `<use href=\"...\">` enfant de l'élément `<svg>`, le test 1.2.4 s'appliquera également à l'élément `<svg>` associée par le biais de l'élément `<use>`.",
+              "Lorsqu'une image est associée à une [légende](#legende-d-image), la note technique WCAG recommande de prévoir systématiquement une [alternative textuelle](#alternative-textuelle-image) (cf. critère 1.9). Dans ce cas le critère 1.2 est non applicable.",
+              "Dans le cas d'une image vectorielle (balise `<svg>`) de décoration qui serait affichée au travers d'un élément `<use href=\"...\">` enfant de l'élément `<svg>`, le test 1.2.4 s'appliquera également à l'élément `<svg>` associée par le biais de l'élément `<use>`.",
               "Un attribut WAI-ARIA `role=\"presentation\"` peut être utilisé sur les images de décoration et les zones non cliquables de décoration. Le rôle `\"none\"` introduit en ARIA 1.1 et synonyme du rôle `\"presentation\"` peut être aussi utilisé. Il reste préférable cependant d'utiliser le rôle `\"presentation\"` en attendant un support satisfaisant du rôle `\"none\"`."
             ],
             "references": [
@@ -139,7 +139,7 @@
             "title": "Pour chaque image [porteuse d’information](#image-porteuse-d-information) ayant une [alternative textuelle](#alternative-textuelle-image), cette alternative est-elle pertinente (hors cas particuliers) ?",
             "tests": {
               "1": [
-                "Chaque image (élément `<img>` ou balise ouvrante possédant l’attribut WAI-ARIA `role=\"img\"`) [porteuse d’information](#image-porteuse-d-information), ayant une [alternative textuelle](#alternative-textuelle-image), cette alternative est-elle pertinente (hors cas particuliers) ?",
+                "Chaque image (balise `<img>` ou balise possédant l’attribut WAI-ARIA `role=\"img\"`) [porteuse d’information](#image-porteuse-d-information), ayant une [alternative textuelle](#alternative-textuelle-image), cette alternative est-elle pertinente (hors cas particuliers) ?",
                 "S’il est présent, le contenu de l’attribut `alt` est pertinent ;",
                 "S’il est présent, le contenu de l’attribut `title` est pertinent ;",
                 "S’il est présent, le contenu de l’attribut WAI-ARIA `aria-label` est pertinent ;",
@@ -493,7 +493,7 @@
                 "Chaque [image texte](#image-texte) bitmap (balise `<canvas>`) [porteuse d’information](#image-porteuse-d-information), en l’absence d’un [mécanisme de remplacement](#mecanisme-de-remplacement), doit si possible être remplacée par du [texte stylé](#texte-style). Cette règle est-elle respectée (hors cas particuliers) ?"
               ],
               "6": [
-                "Chaque [image texte](#image-texte) SVG (balise `<svg>`) [porteuse d’information](#image-porteuse-d-information), en l’absence d’un [mécanisme de remplacement](#mecanisme-de-remplacement), doit si possible être remplacée par du [texte stylé](#texte-style). Cette règle est-elle respectée (hors cas particuliers) ?"
+                "Chaque [image texte](#image-texte) SVG (balise `<svg>`) [porteuse d’information](#image-porteuse-d-information) et dont le texte n’est pas complètement structuré au moyen d’éléments `<text>`, en l’absence d’un [mécanisme de remplacement](#mecanisme-de-remplacement), doit si possible être remplacée par du [texte stylé](#texte-style). Cette règle est-elle respectée (hors cas particuliers) ?"
               ]
             },
             "particularCases": [
@@ -1103,9 +1103,9 @@
               "Il existe une gestion de cas particulier lorsque :",
               {
                 "ul": [
-                  "- Le [média temporel](#media-non-temporel) est utilisé à des fins décoratives (c’est-à-dire qu’il n’apporte aucune information) ;",
-                  "- Le [média temporel](#media-non-temporel) est diffusé dans un [environnement maîtrisé](#environnement-maitrise) ;",
-                  "- Le [média temporel](#media-non-temporel) est inséré via JavaScript en vérifiant la présence et la version du plug-in, en remplacement d’un [contenu alternatif](#contenu-alternatif) déjà présent."
+                  "- Le [média non temporel](#media-non-temporel) est utilisé à des fins décoratives (c’est-à-dire qu’il n’apporte aucune information) ;",
+                  "- Le [média non temporel](#media-non-temporel) est diffusé dans un [environnement maîtrisé](#environnement-maitrise) ;",
+                  "- Le [média non temporel](#media-non-temporel) est inséré via JavaScript en vérifiant la présence et la version du plug-in, en remplacement d’un [contenu alternatif](#contenu-alternatif) déjà présent."
                 ]
               },
               "Dans ces situations, le critère est non applicable."
@@ -1429,7 +1429,7 @@
                 "L’[en-tête de lignes](#en-tete-de-colonne-ou-de-ligne) est structuré au moyen d’une balise pourvue d’un attribut WAI-ARIA `role=\"rowheader\"`."
               ],
               "3": [
-                "Pour chaque [tableau de données](#tableau-de-donnees), chaque en-tête de ligne ne s’appliquant pas à la totalité de la ligne ou de la colonne est-il structuré au moyen d’une balise `<th>` ?"
+                "Pour chaque [tableau de données](#tableau-de-donnees), chaque en-tête ne s’appliquant pas à la totalité de la ligne ou de la colonne est-il structuré au moyen d’une balise `<th>` ?"
               ],
               "4": [
                 "Pour chaque [tableau de données](#tableau-de-donnees), chaque cellule associée à plusieurs en-têtes est-elle structurée au moyen d’une balise `<td>` ou `<th>` ?"
@@ -1513,7 +1513,7 @@
               "1": [
                 "Chaque [tableau de mise en forme](#tableau-de-mise-en-forme) (balise `<table>`) vérifie-t-il ces conditions ?",
                 "Le tableau de mise en forme (balise `<table>`) n’a pas d’attribut `summary` (sinon vide) et ne contient pas de balises `<caption>`, `<th>`, `<thead>`, `<tfoot>` ou de balises ayant un attribut WAI-ARIA `role=\"rowheader\"`, `role=\"columnheader\"` ;",
-                "Les cellules du tableau de mise en forme (balises `<td>`) ne possèdent pas d’attributs `<scope>`, `<headers>` et `<axis>`."
+                "Les cellules du tableau de mise en forme (balises `<td>`) ne possèdent pas d’attributs `scope`, `headers` et `axis`."
               ]
             },
             "references": [
@@ -2673,7 +2673,7 @@
               "Note : la majorité des navigateurs sur les systèmes d'exploitation sur mobile (Android, iOS) ne gère pas correctement la redistribution en cas de zoom. Dans ce contexte, le critère sera considéré comme non applicable sur ces environnements."
             ],
             "technicalNote": [
-              "Lorsqu'il est ici question de pixel, il s'agit du pixel CSS tel que défini par le W3C (<https://www.w3.org/TR/css3-values/#reference-pixel>)."
+              "Lorsqu'il est ici question de pixel, il s'agit du pixel CSS tel que défini par le W3C https://www.w3.org/TR/css3-values/"
             ],
             "references": [
               {
@@ -3319,7 +3319,7 @@
               ]
             },
             "technicalNote": [
-              "La [liste des valeurs possibles pour l’attribut `autocomplete`](https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode-rgaa/glossaire/#liste-des-valeurs-possibles-pour-l-attribut-autocomplete) repose sur la liste des valeurs présentes dans la spécification WCAG2.1 qui reprend elle-même la liste des valeurs de type “field name” de la spécification HTML5.2. Le critère WCAG demande à ce que l’une de ces valeurs soit présente pour qualifier un champ de saisie concernant l’utilisateur.",
+              "La [liste des valeurs possibles pour l’attribut `autocomplete`](#liste-des-valeurs-possibles-pour-l-attribut-autocomplete) repose sur la liste des valeurs présentes dans la spécification WCAG2.1 qui reprend elle-même la liste des valeurs de type “field name” de la spécification HTML5.2. Le critère WCAG demande à ce que l’une de ces valeurs soit présente pour qualifier un champ de saisie concernant l’utilisateur.",
               "Ce que le critère WCAG laisse implicite, ce sont les différentes règles de construction possibles pour obtenir une valeur (simple ou composée) pour l’attribut `autocomplete`. C’est cependant l’affaire du développeur de fournir à l’attribut `autocomplete` une valeur ou un ensemble de valeurs valides au regard des exigences de l’algorithme fourni par la spécification HTML5.2. Ainsi, un attribut `autocomplete` ne peut contenir qu’une seule valeur de type `“field name”`, comme `\"name\"` ou `\"street-address\"`. On peut avoir également un ensemble composé de différentes valeurs comme, par exemple, `autocomplete=\"shipping name\"` ou `autocomplete=\"section-software shipping street-address\"` : `\"section-software\"` renvoie à une valeur de type “scope” et `\"shipping\"` à une valeur de type “hint set”, mais toujours une seule valeur de type “field name”."
             ],
             "references": [
@@ -3520,7 +3520,7 @@
               {
                 "wcag": [
                   "1.3.1 Info and Relationships (A)",
-                  "2.4.1 CBypass Blocks (A)",
+                  "2.4.1 Bypass Blocks (A)",
                   "4.1.2 Name, Role, Value (A)"
                 ]
               },
@@ -3830,7 +3830,7 @@
               "1": [
                 "Chaque document bureautique ayant une version accessible vérifie-t-il une de ces conditions ?",
                 "La version compatible avec l’accessibilité offre la même information ;",
-                "La version alternative au format HTML est pertinente et offre la même information.."
+                "La version alternative au format HTML est pertinente et offre la même information."
               ]
             },
             "references": [

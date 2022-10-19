@@ -22,4 +22,4 @@ Note : la majorité des navigateurs sur les systèmes d'exploitation sur mobile 
 
 #### Note technique
 
-Lorsqu'il est ici question de pixel, il s'agit du pixel CSS tel que défini par le W3C (<https://www.w3.org/TR/css3-values/#reference-pixel>).
+Lorsqu'il est ici question de pixel, il s'agit du pixel CSS tel que défini par le W3C https://www.w3.org/TR/css3-values/

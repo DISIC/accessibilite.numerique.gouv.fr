@@ -4,7 +4,7 @@ title: Étiquette de champ de formulaire
 
 Texte à proximité du champ de formulaire permettant d’en connaître la nature, le type ou le format des informations attendues. L’étiquette peut être associée au champ de formulaire de plusieurs manières :
 
-- Par l’utilisation d’un élément `<label>` ;
+- Par l’utilisation d’une balise `<label>` ;
 - Par l’utilisation de l’attribut WAI-ARIA `aria-label` ;
 - Par l’utilisation d’une liaison entre le texte et le champ par l’attribut WAI-ARIA `aria-labelledby` ;
 - Par l’utilisation de l’attribut `title`.

@@ -52,7 +52,7 @@ Toutefois jusqu’à l’entrée en vigueur du décret n° 2019-768 du 24 juille
 
 Sont considérés comme conformes aux exigences légales en matière d’accessibilité les services de communication au public en ligne qui respectent la norme européenne EN 301 549 V2.1.2 (2018-08).
 
-Pour les personnes mentionnées au 4° du I de l’article 47 qui font le choix de se référer aux normes internationales en matière d’accessibilité numérique, leurs contenus et services web doivent en conséquence satisfaire aux critères de succès des Règles pour l’accessibilité des contenus Web (WCAG) 2.1 de niveau simple A (A) et double A (AA).
+Pour les personnes mentionnées au 4° du I de l’article 47 qui font le choix de se référer aux normes internationales en matière d’accessibilité numérique, leurs contenus et services web doivent en conséquence satisfaire aux critères de succès des Règles pour l’accessibilité des contenus Web (<abbr lang="en" title="web content accessibility guidelines">WCAG</abbr>) 2.1 de niveau simple A (A) et double A (AA).
 
 ## Dérogation pour charge disproportionnée
 

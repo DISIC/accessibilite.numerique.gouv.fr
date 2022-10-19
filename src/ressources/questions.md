@@ -5,7 +5,7 @@ descirption: Vous pouvez poser vos questions sur la liste de discussion du RGAA 
 eleventyNavigation:
   title: Ressources
   parent: ressources
-  order: 8
+  order: 7
 ---
 
 Vous pouvez poser vos questions sur la liste de discussion du RGAA accessible sur inscription.

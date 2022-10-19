@@ -1,6 +1,6 @@
 {
 	"name": "accessibilite.numerique.gouv.fr",
-	"version": "0.8.2",
+	"version": "0.8.6",
 	"description": "Référentiel général d’amélioration de l’accessibilité (RGAA)",
 	"scripts": {
 		"build": "eleventy",
@@ -9,7 +9,8 @@
 		"debug": "DEBUG=* eleventy",
 		"format": "prettier ./ --write",
 		"generate-glossary": "node ./scripts/generate-glossary.js && git add ./RGAA/4.1/glossaire.json",
-		"generate-criteria": "node ./scripts/generate-criteria.js && git add ./RGAA/4.1/criteres.json"
+		"generate-criteria": "node ./scripts/generate-criteria.js && git add ./RGAA/4.1/criteres.json",
+		"generate-methodologies": "node ./scripts/generate-methodologies.js && git add ./RGAA/4.1/methodologies.json"
 	},
 	"main": "index.js",
 	"keywords": [],
@@ -20,7 +21,7 @@
 		"@11ty/eleventy": "^1.0.0-beta.10",
 		"@11ty/eleventy-navigation": "^0.3.2",
 		"@gouvfr/dsfr": "^1.6.0",
-		"eleventy-plugin-styles": "^1.4.1",
+		"eleventy-plugin-styles": "^1.1.1",
 		"eleventy-plugin-toc": "github:DISIC/eleventy-plugin-toc",
 		"fastdom": "^1.0.10",
 		"front-matter": "^4.0.2",
@@ -40,6 +41,7 @@
 	},
 	"pre-commit": [
 		"generate-glossary",
-		"generate-criteria"
+		"generate-criteria",
+		"generate-methodologies"
 	]
 }

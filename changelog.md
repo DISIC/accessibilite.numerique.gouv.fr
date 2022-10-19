@@ -1,11 +1,49 @@
 Changelog
 ====================================================================
 
+
+
+v0.8.6
+--------------------------------------------------------------------
+
+* Liens vers la version française des WCAG pour chaque critère
+* Ajout d’un fichier methodologies.json et de son script de génération
+* Ajout de la liste des critères AAA
+* Reprise des notes de révision du RGAA 4.0 vers 4.1
+* Fix des liens vers les techniques WCAG
+* Fix de nombreux liens cassés
+
+v0.8.5
+--------------------------------------------------------------------
+
+* Réorganisation des références de chaque critère et ajout de la norme européenne
+* Fix du critère 4.8 et du test 5.6.3
+* Ajout d‘une question sur les applications mobiles dans la FAQ
+* Ajout lien « Haut de page » dans les pages _critères et tests_ et _glossaire_
+* Fix des liens externes du footer
+
+v0.8.4
+--------------------------------------------------------------------
+
+* Mise à jour de la méthodologie de test 4.1
+* Fix génération du fichier criteres.json
+
+v0.8.3
+--------------------------------------------------------------------
+
+* Conformité totale au RGAA
+	* Fix RGAA  
+	* Mise à jour de la déclaration d‘accessibilité
+* Correctifs balise / éléments
+* Sommaire sticky sur la page critères et tests
+* Fix génération du fichier glossaire.json
+
+
 v0.8.2
 --------------------------------------------------------------------
 
 * Ajout meta desription 
-* Ajout d’un lien vers la trducation officielle des WCAG
+* Ajout d’un lien vers la traduction officielle des WCAG
 * Fix élément actif du menu 
 * Fix couleur des titres 
 * Fix taille des images

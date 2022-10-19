@@ -10,8 +10,49 @@ Cette déclaration d’accessibilité s’applique au site accessibilite.numeriq
 
 ## État de conformité
 
-En l’absence d’audit, le site est <strong>non conforme</strong> avec le RGAA 4.  
-L’audit de conformité est planifié pour la semaine du 18 juillet 2022. La correction des anomalies est prévue la semaine du 8 août 2022.
+Le site est <strong>totalement conforme</strong> avec le référentiel général d’amélioration de l’accessibilité (RGAA), version 4.  
+
+## Résultats des tests
+
+L‘audit de conformité réalisé en interne révèle que 100% des critères sont respectés.
+
+## Établissement de cette déclaration d‘accessibilité
+
+Cette déclaration a été établie le 9/08/2022.
+
+## Technologies utilisées pour la réalisation de l‘audit 
+
+- HTML5 
+- CSS
+- Javascript
+
+### Environnement de test 
+
+Les vérifications de restitution de contenus ont été réalisées sur la base de la combinaison fournie par la base de référence du RGAA, avec les versions suivantes :
+
+- Firefox et NVDA
+- Safari et VoiceOver
+
+### Outils pour évaluer l‘accessibilité
+
+- HeadingsMap
+- Web Developer Chrome extension
+- Color Contrast Analyser
+- ArcToolkit
+
+### Pages du site ayant fait l‘objet de la vérification de conformité : 
+
+- [Accueil](https://accessibilite.numerique.gouv.fr/)
+- [Accessibilité](https://accessibilite.numerique.gouv.fr/infos/accessibilite/)
+- [Mentions légales](https://accessibilite.numerique.gouv.fr/infos/mentions-legales/)
+- [Plan du site](https://accessibilite.numerique.gouv.fr/infos/plan-du-site/)
+- [Nouveautés](https://accessibilite.numerique.gouv.fr/infos/nouveautes/)
+- [Critères et tests](https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/)
+- [Glossaire](https://accessibilite.numerique.gouv.fr/methode/glossaire/)
+- [Champ d’application](https://accessibilite.numerique.gouv.fr/obligations/champ-application/)
+- [Environnement de test](https://accessibilite.numerique.gouv.fr/methode/environnement-de-test/)
+- [Kits d’audits](https://accessibilite.numerique.gouv.fr/ressources/kit-audit/)
+- [Obligations](https://accessibilite.numerique.gouv.fr/obligations/)
 
 ## Retour d’information et contact
 

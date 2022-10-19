@@ -25,7 +25,7 @@ Il présente également les travaux de mise en conformité des services de commu
 
 - la prise en compte de l’accessibilité numérique dans les nouveaux projets ;
 - la prise en compte des personnes en situation de handicap dans les tests utilisateurs ;
-- les évaluations (ou audits) de conformité prévus pour l’ensemble des services de communication ;
+- les évaluations (ou audits) de conformité prévues pour l’ensemble des services de communication ;
 - les mesures correctives qui seront prises pour traiter les contenus non accessibles, y compris un calendrier de mise en œuvre de ces mesures, tenant compte du caractère prioritaire des contenus les plus consultés et des services les plus utilisés ;
 - les mesures d’accessibilité non obligatoires, notamment l’accès aux contenus audios et vidéos en langue des signes, la traduction de certains contenus en langage simplifié et tout autre mesure permettant de prendre en compte des critères de niveau triple AAA, des normes internationales, listés en annexe de la norme de référence ;
 - le bilan des plans d’actions annuels.

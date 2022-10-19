@@ -3,6 +3,9 @@ WCAG:
   - successCriterion: 1.4.10
     title: Reflow
     level: AA
+Techniques:
+  - C34
+  - C37
 ---
 
 #### Cas particuliers

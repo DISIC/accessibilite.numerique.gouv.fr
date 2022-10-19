@@ -29,4 +29,4 @@ Il existe une gestion de cas particuliers pour le test 11.2.5 lorsque :
 
 Note : si l’étiquette visible représente une expression mathématique, les symboles mathématiques peuvent être repris littéralement pour servir d’étiquette au nom accessible (ex. : “A>B”). Il est laissé à l’utilisateur le soin d’opérer la correspondance entre l’expression et ce qu’il doit épeler compte tenu de la connaissance qu’il a du fonctionnement de son logiciel de saisie vocale (“A plus grand que B” ou “A supérieur à B”).
 
-Ce cas particulier s’applique également au test 11.9.3.
+Ce cas particulier s’applique également au test 11.9.2.

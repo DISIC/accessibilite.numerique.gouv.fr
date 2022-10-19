@@ -11,5 +11,5 @@ Techniques:
   - SCR26
   - SCR27
   - SCR37
-  - C7
+  - C27
 ---

@@ -13,7 +13,7 @@
             "title": "Chaque [image porteuse d’information](#image-porteuse-d-information) a-t-elle une [alternative textuelle](#alternative-textuelle-image) ?",
             "tests": {
               "1": [
-                "Chaque image (balise `<img>` ou balise possédant l’attribut WAI-ARIA `role=\"img\"`) [porteuse d’information](#porteuse-d-information) a-t-elle une [alternative textuelle](#alternative-textuelle-image) ?"
+                "Chaque image (balise `<img>` ou balise possédant l’attribut WAI-ARIA `role=\"img\"`) [porteuse d’information](#image-porteuse-d-information) a-t-elle une [alternative textuelle](#alternative-textuelle-image) ?"
               ],
               "2": [
                 "Chaque [zone](#zone-d-une-image-reactive) d’une [image réactive](#image-reactive) (balise `<area>`) [porteuse d’information](#image-porteuse-d-information) a-t-elle une [alternative textuelle](#alternative-textuelle-image) ?"

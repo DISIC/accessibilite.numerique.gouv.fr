@@ -10,7 +10,7 @@ Techniques:
 
 #### Cas particuliers
 
-L'objectif de ce critère est de garantir un défilement dans une **unique** direction pour une lecture facilitée selon le sens de l'écriture.
+L'objectif de ce critère est de garantir un défilement dans une unique direction pour une lecture facilitée selon le sens de l'écriture.
 
 Font exception à ce critère, les contenus dont l'agencement requiert deux dimensions pour être compris ou utilisés comme :
 

@@ -64,7 +64,7 @@ Note 2 : pour un groupe d’images, par exemple un système de vote constitué 
 
 Note 3 : pour les image-lien, l’alternative doit permettre de comprendre la fonction et la destination du lien ; ce cas est traité dans la thématique liens.
 
-Note 4 : pour les images vectorielles (balise `<svg>`) l’alternative textuelle pourrait se trouver aussi présente dans une balise `<text>` que cette balise soit ou non visible, même si ce n’est pas le rôle dévolu à cet élément en SVG.
+Note 4 : pour les images vectorielles (balise `<svg>`) l’alternative textuelle pourrait se trouver aussi présente dans une balise `<title>` ou dans une balise `<text>` que cette dernière balise soit ou non visible, même si ce n’est pas le rôle dévolu à cet élément en SVG.
 
 Note 5 : l’utilisation de l’attribut `alt` étant la seule technique totalement supportée par les aides techniques il est recommandé de privilégier cette solution lors de la mise en œuvre d’une alternative à une balise `<img>`, `<area>` et `<input type="image">`.
 

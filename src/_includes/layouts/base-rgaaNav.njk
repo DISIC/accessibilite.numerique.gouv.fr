@@ -1,5 +1,5 @@
 {% include "components/header.njk" %}
-<main role="main" id="contenu">
+<main role="main" id="contenu" tabindex="-1">
 	<div class="fr-container">
     	<div class="fr-grid-row">
     		<div class="fr-col">
@@ -10,8 +10,8 @@
     	<div class="fr-grid-row">
         <div class="fr-col-md-4 fr-col-12">
           {% include "components/rgaaNav.njk" %}
-        </div>  
-    	  <div class="fr-col-12 fr-col-xs-10 fr-col-md-8">          
+        </div>
+    	  <div class="fr-col-12 fr-col-xs-10 fr-col-md-8">
           {% block contenu %}
             {{ content | safe }}
           {% endblock %}

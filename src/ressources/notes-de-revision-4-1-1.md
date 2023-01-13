@@ -1,11 +1,11 @@
 ---
-title: Notes de révision du RGAA 4.0 vers 4.1
+title: Notes de révision du RGAA 4.1 vers 4.1.1
 layout: layouts/base.njk
 descirption: 
 eleventyNavigation:
   title: Ressources
   parent: ressources
-  order: 7
+  order: 6
 ---
 
 Cet erratum signale les corrections apportées aux sections critères et glossaire de la version 4 du RGAA. Ces corrections concernent les [critères](#criteres) (tests, cas particuliers et notes techniques) ainsi que le [glossaire](#glossaire).

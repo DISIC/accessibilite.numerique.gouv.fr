@@ -19,16 +19,16 @@ Les sources de cette mise à jour sont issues du dépôt RGAA
 
 ### 1.1.5
 
-Ajout de la mention "Contenu de l'élément `<title>`" dans la méthodolgie de test.
+Ajout de la mention "Contenu de l’élément `<title>`" dans la méthodologie de test.
 
 ### 1.6
 
 Ajout  de la _note technique_ suivante :  
-"attribut `longdesc` qui constitue une des conditions du test 1.6.1 (et dont la pertinence est vérifiée avec le test 1.7.1) est désormais considéré comme obsolète par la spécification HTML en cours. La vérification de cet attribut ne sera donc requise que pour les versions de la spécification HTML antérieure à HTML 5."
+"attribut `longdesc` qui constitue une des conditions du test 1.6.1 (et dont la pertinence est vérifiée avec le test 1.7.1) est désormais considéré comme obsolète par la spécification HTML en cours. La vérification de cet attribut ne sera donc requise que pour les versions de la spécification HTML antérieure à HTML5."
 
 ### 4.5.1 et 4.5.2
 
-Ajout de la mention " accessible au moyen d’un bouton ou d'un lien adjacent (une URL ou une ancre)."
+Ajout de la mention "accessible au moyen d’un bouton ou d’un lien adjacent (une URL ou une ancre)."
 
 ### 5.8.1
 
@@ -56,7 +56,7 @@ est remplacé par :
 * Modification de l’intitulé du critère :  
 "Pour chaque page web, les contenus peuvent-ils être présentés sans avoir recours à un défilement vertical pour une fenêtre ayant une hauteur de 256px ou à un défilement horizontal pour une fenêtre ayant une largeur de 320px (hors cas particuliers) ?"  
 est remplacé par :  
-"Pour chaque page web, les contenus peuvent-ils être présentés sans perte d'information ou de fonctionnalité et sans avoir recours soit à un défilement vertical pour une fenêtre ayant une hauteur de 256px, soit à un défilement horizontal pour une fenêtre ayant une largeur de 320px (hors cas particuliers) ?"
+"Pour chaque page web, les contenus peuvent-ils être présentés sans perte d’information ou de fonctionnalité et sans avoir recours soit à un défilement vertical pour une fenêtre ayant une hauteur de 256px, soit à un défilement horizontal pour une fenêtre ayant une largeur de 320px (hors cas particuliers) ?"
 
 ### 11.2
 
@@ -80,8 +80,8 @@ Reformulation de la méthodologie de test :
 * Il existe une version alternative du document en téléchargement au format HTML.  
 
 est remplacé par 
-* Il en existe une version alternative en téléchargement compatible avec l'accessibilité ;
-* Il en existe une version alternative au format HTML compatible avec l'accessibilité.
+* Il en existe une version alternative en téléchargement compatible avec l’accessibilité ;
+* Il en existe une version alternative au format HTML compatible avec l’accessibilité.
 
 
 ## Glossaire

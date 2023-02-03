@@ -42,7 +42,7 @@ S’ajoutent à ces pages, les pages suivantes, lorsqu’elles existent :
 - au moins une page pertinente pour chaque type de service fourni et toute autre utilisation principale prévue (ex. : rubriques de 1<sup>er</sup> niveau dans l’arborescence…), y compris la fonctionnalité de recherche ;
 - au moins un document téléchargeable pertinent, le cas échéant, pour chaque type de service fourni et pour toute autre utilisation principalement prévue ;
 - l’ensemble des pages constituant un processus (par exemple, un formulaire de saisie ou une transaction sur plusieurs pages) ;
-- des exemples de pages ayant un aspect sensiblement distinct ou présentant un type de contenu différent (ex. : page contenant des tableaux de données, des éléments multimédia, des illustrations, des formulaires, etc.).
+- des exemples de pages ayant un aspect sensiblement distinct ou présentant un type de contenu différent (ex. : page contenant des tableaux de données, des éléments multimédias, des illustrations, des formulaires, etc.).
 
 La sélection des pages auditées ainsi que leur nombre doivent être représentatifs du service de communication au public en ligne. Le nombre de visiteurs par page peut notamment être pris en compte lors de la constitution de l’échantillon.
 

@@ -3,9 +3,14 @@ WCAG:
   - successCriterion: 1.4.10
     title: Reflow
     level: AA
+Techniques:
+  - C34
+  - C37
 ---
 
 #### Cas particuliers
+
+L'objectif de ce critère est de garantir un défilement dans une unique direction pour une lecture facilitée selon le sens de l'écriture.
 
 Font exception à ce critère, les contenus dont l'agencement requiert deux dimensions pour être compris ou utilisés comme :
 

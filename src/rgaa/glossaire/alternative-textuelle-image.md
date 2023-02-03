@@ -64,8 +64,8 @@ Note 2 : pour un groupe d’images, par exemple un système de vote constitué 
 
 Note 3 : pour les image-lien, l’alternative doit permettre de comprendre la fonction et la destination du lien ; ce cas est traité dans la thématique liens.
 
-Note 4 : pour les images vectorielles (balise `<svg>`) l’alternative textuelle pourrait se trouver aussi présente dans une balise `<text>` que cette balise soit ou non visible, même si ce n’est pas le rôle dévolu à cet élément en SVG.
+Note 4 : pour les images vectorielles (balise `<svg>`) l’alternative textuelle pourrait se trouver aussi présente dans une balise `<title>` ou dans une balise `<text>` que cette dernière balise soit ou non visible, même si ce n’est pas le rôle dévolu à cet élément en SVG.
 
 Note 5 : l’utilisation de l’attribut `alt` étant la seule technique totalement supportée par les aides techniques il est recommandé de privilégier cette solution lors de la mise en œuvre d’une alternative à une balise `<img>`, `<area>` et `<input type="image">`.
 
-Note 6 : bien que l’attribut `title` soit considéré comme une possibilité d’alternative textuelle à une image, son usage peut poser problème, notamment du fait qu’une image avec un attribut `alt` absent ou vide est considérée comme une image pourvue d’un `rôle “présentation”` par WAI-ARIA : <https://www.w3.org/TR/html-aam-1.0/#details-id-54>.Il faut s’assurer que les assistances techniques présentes dans l’environnement de test retenu restituent correctement l’alternative proposée par l’attribut `title`.
+Note 6 : bien que l’attribut `title` soit considéré comme une possibilité d’alternative textuelle à une image, son usage peut poser problème, notamment du fait qu’une image avec un attribut `alt` absent ou vide est considérée comme une image pourvue d’un `role=“présentation”` par WAI-ARIA : <https://www.w3.org/TR/html-aam-1.0/#details-id-54>.Il faut s’assurer que les assistances techniques présentes dans l’environnement de test retenu restituent correctement l’alternative proposée par l’attribut `title`.

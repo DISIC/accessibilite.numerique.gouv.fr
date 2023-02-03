@@ -386,7 +386,8 @@
             "technicalNote": [
               "Dans le cas du SVG, le manque de support de l’élément `<title>` et `<desc>` par les technologies d’assistance crée une difficulté dans le cas de l’implémentation de l’[alternative textuelle](#alternative-textuelle-image) de l’image et de sa [description détaillée](#description-detaillee-image). Dans ce cas, il est recommandé d’utiliser l’attribut WAI-ARIA `aria-label` pour implémenter à la fois l’[alternative textuelle](#alternative-textuelle-image) courte et la référence à la [description détaillée](#description-detaillee-image) adjacente ou l’attribut WAI-ARIA `aria-labelledby` pour associer les passages de texte faisant office d’alternative courte et de [description détaillée](#description-detaillee-image).",
               "L’utilisation de l’attribut WAI-ARIA aria-describedby n’est pas recommandée pour lier une image (`<img>`, `<object>`, `<embed>`, `<canvas>`) à sa [description détaillée](#description-detaillee-image), par manque de support des technologies d’assistance. Néanmoins, lorsqu’il est utilisé, l’attribut devra nécessairement faire référence à l’`id` de la zone contenant la [description détaillée](#description-detaillee-image).",
-              "La [description détaillée](#description-detaillee-image) adjacente peut être implémentée via une balise `<figcaption>`, dans ce cas le critère 1.9 doit être vérifié (utilisation de `<figure>` et des attributs WAI-ARIA `role=\"figure\"` et `aria-label`, notamment)."
+              "La [description détaillée](#description-detaillee-image) adjacente peut être implémentée via une balise `<figcaption>`, dans ce cas le critère 1.9 doit être vérifié (utilisation de `<figure>` et des attributs WAI-ARIA `role=\"figure\"` et `aria-label`, notamment).",
+              "L'attribut `longdesc` qui constitue une des conditions du test 1.6.1 (et dont la pertinence est vérifiée avec le test 1.7.1) est désormais considéré comme obsolète par la spécification HTML en cours. La vérification de cet attribut ne sera donc requise que pour les versions de la spécification HTML antérieure à HTML 5."
             ],
             "references": [
               {
@@ -1511,8 +1512,8 @@
             "tests": {
               "1": [
                 "Chaque [tableau de mise en forme](#tableau-de-mise-en-forme) (balise `<table>`) vérifie-t-il ces conditions ?",
-                "Le tableau de mise en forme (balise `<table>`) n’a pas d’attribut `summary` (sinon vide) et ne contient pas de balises `<caption>`, `<th>`, `<thead>`, `<tfoot>`, `<colgroup>` ou de balises ayant un attribut WAI-ARIA `role=\"rowheader\"`, `role=\"columnheader\"` ;",
-                "Les cellules du tableau de mise en forme (balises `<td>`) ne possèdent pas d’attributs `<scope>`, `<headers>` et `<axis>`."
+                "Le tableau de mise en forme (balise `<table>`) n’a pas d’attribut `summary` (sinon vide) et ne contient pas de balises `<caption>`, `<th>`, `<thead>`, `<tfoot>` ou de balises ayant un attribut WAI-ARIA `role=\"rowheader\"`, `role=\"columnheader\"` ;",
+                "Les cellules du tableau de mise en forme (balises `<td>`) ne possèdent pas d’attributs `scope`, `headers` et `axis`."
               ]
             },
             "references": [
@@ -2649,7 +2650,7 @@
         {
           "criterium": {
             "number": 11,
-            "title": "Pour chaque page web, les contenus peuvent-ils être présentés sans avoir recours à un défilement vertical pour une fenêtre ayant une hauteur de 256px ou à un défilement horizontal pour une fenêtre ayant une largeur de 320px (hors cas particuliers) ?",
+            "title": "Pour chaque page web, les contenus peuvent-ils être présentés sans perte d'information ou de fonctionnalité et sans avoir recours soit à un défilement vertical pour une fenêtre ayant une hauteur de 256px, soit à un défilement horizontal pour une fenêtre ayant une largeur de 320px (hors cas particuliers) ?",
             "tests": {
               "1": [
                 "Pour chaque page web, lorsque le contenu dont le sens de lecture est horizontal est affiché dans une fenêtre réduite à une largeur de 320px, l’ensemble des informations et des fonctionnalités sont-elles disponibles sans aucun défilement horizontal (hors cas particuliers) ?"
@@ -2659,6 +2660,7 @@
               ]
             },
             "particularCases": [
+              "L'objectif de ce critère est de garantir un défilement dans une unique direction pour une lecture facilitée selon le sens de l'écriture.",
               "Font exception à ce critère, les contenus dont l'agencement requiert deux dimensions pour être compris ou utilisés comme :",
               {
                 "ul": [
@@ -2680,7 +2682,12 @@
                   "1.4.10 Reflow (AA)"
                 ]
               },
-              {}
+              {
+                "techniques": [
+                  "C34",
+                  "C37"
+                ]
+              }
             ]
           }
         },
@@ -2887,7 +2894,7 @@
                 ]
               },
               "Note : si l’étiquette visible représente une expression mathématique, les symboles mathématiques peuvent être repris littéralement pour servir d’étiquette au nom accessible (ex. : “A>B”). Il est laissé à l’utilisateur le soin d’opérer la correspondance entre l’expression et ce qu’il doit épeler compte tenu de la connaissance qu’il a du fonctionnement de son logiciel de saisie vocale (“A plus grand que B” ou “A supérieur à B”).",
-              "Ce cas particulier s’applique également au test 11.9.3."
+              "Ce cas particulier s’applique également au test 11.9.2."
             ],
             "references": [
               {
@@ -3597,7 +3604,7 @@
                   "SCR26",
                   "SCR27",
                   "SCR37",
-                  "C7"
+                  "C27"
                 ]
               }
             ]
@@ -3780,9 +3787,9 @@
             "tests": {
               "1": [
                 "Dans chaque page web, chaque fonctionnalité de téléchargement d’un document bureautique vérifie-t-elle une de ces conditions ?",
-                "Le document en téléchargement est compatible avec l’accessibilité ;",
-                "Il existe une version alternative du document en téléchargement compatible avec l’accessibilité ;",
-                "Il existe une version alternative du document en téléchargement au format HTML."
+                "Le document en téléchargement est compatible avec l'accessibilité ;",
+                "Il en existe une version alternative en téléchargement compatible avec l'accessibilité ;",
+                "Il en existe une version alternative au format HTML compatible avec l'accessibilité."
               ]
             },
             "particularCases": [

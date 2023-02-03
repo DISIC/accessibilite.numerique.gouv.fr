@@ -43,7 +43,7 @@ title: Liste des valeurs possibles pour l’attribut `autocomplete`
 - `bday-day` \- Le jour de la date d’anniversaire ;
 - `bday-month` \- Le mois de la date d’anniversaire ;
 - `bday-year` \- L’année de la date d’anniversaire ;
-- `sex` \- Identité sexuelle ;
+- `sex` \- Identité de genre ;
 - `url` \- Page d’accueil ou une autre page Web correspondant à l’organisation, la personne, l’adresse ou à l’information de contact dans les autres champs associés avec ce champ ;
 - `photo` \- Photographie, icône ou une autre image correspondant à l’organisation, la personne, l’adresse ou à l’information de contact dans les autres champs associés avec ce champ ;
 - `tel` \- Numéro de téléphone complet, y compris le code pays ;

@@ -2181,7 +2181,7 @@
                 "Dans chaque page web, le contenu de chaque [titre](#titre) (balise `<hx>` ou balise possédant un attribut WAI-ARIA `role=\"heading\"` associé à un attribut WAI-ARIA `aria-level`) est-il pertinent ?"
               ],
               "3": [
-                "Dans chaque page web, chaque passage de texte constituant un [titres](#titre) est-il structuré à l’aide d’une balise `<hx>` ou d’une balise possédant un attribut WAI-ARIA `role=\"heading\"` associé à un attribut WAI-ARIA `aria-level` ?"
+                "Dans chaque page web, chaque passage de texte constituant un [titre](#titre) est-il structuré à l’aide d’une balise `<hx>` ou d’une balise possédant un attribut WAI-ARIA `role=\"heading\"` associé à un attribut WAI-ARIA `aria-level` ?"
               ]
             },
             "technicalNote": [

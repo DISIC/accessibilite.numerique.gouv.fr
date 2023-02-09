@@ -8,9 +8,9 @@
 		"start": "eleventy --serve",
 		"debug": "DEBUG=* eleventy",
 		"format": "prettier ./ --write",
-		"generate-glossary": "node ./scripts/generate-glossary.js && git add ./RGAA/4.1/glossaire.json",
-		"generate-criteria": "node ./scripts/generate-criteria.js && git add ./RGAA/4.1/criteres.json",
-		"generate-methodologies": "node ./scripts/generate-methodologies.js && git add ./RGAA/4.1/methodologies.json"
+		"generate-glossary": "node ./scripts/generate-glossary.js && git add ./RGAA/glossaire.json",
+		"generate-criteria": "node ./scripts/generate-criteria.js && git add ./RGAA/criteres.json",
+		"generate-methodologies": "node ./scripts/generate-methodologies.js && git add ./RGAA/methodologies.json"
 	},
 	"main": "index.js",
 	"keywords": [],

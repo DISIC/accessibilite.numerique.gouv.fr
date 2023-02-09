@@ -3,7 +3,7 @@ const md = require('markdown-it')({ html: true })
 const fm = require('front-matter')
 
 const GLOSSARY_SOURCE = "./src/rgaa/glossaire";
-const GLOSSARY_DESTINATION = "./RGAA/4.1/glossaire.json";
+const GLOSSARY_DESTINATION = "./RGAA/glossaire.json";
 
 /**
  * @param {string} filename

@@ -16,7 +16,7 @@ async function generateMethodologies() {
 	const METHODOLOGY_DESTINATION = path.join(
 		__dirname,
 		"..",
-		"./RGAA/4.1/methodologies.json"
+		"./RGAA/methodologies.json"
 	);
 
 	const testsData = [];

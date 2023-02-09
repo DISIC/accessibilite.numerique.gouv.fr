@@ -4,7 +4,7 @@ const fm = require("front-matter");
 const themes = require("../src/_data/themes.json");
 
 const CRITERIA_SOURCE = "./src/rgaa/criteres";
-const CRITERIA_DESTINATION = "./RGAA/4.1/criteres.json";
+const CRITERIA_DESTINATION = "./RGAA/criteres.json";
 
 /**
  * Get criterion title

@@ -7,5 +7,5 @@ Le [schéma pluriannuel de mise en accessibilité](/obligations/schema-pluriannu
 
 - **Évaluation** : identification des services et évaluation de leur niveau d’accessibilité ;
 - **Consignation** : production d’une déclaration d’accessibilité par service ;
-- **Organisation** : mise d’une organisation pour améliorer les services et définition des plans d’actions annuels ;
+- **Organisation** : mise en place d’une organisation pour améliorer les services et définition des plans d’actions annuels ;
 - **Communication** de ces éléments sur le site de l’organisation.

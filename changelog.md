@@ -5,7 +5,7 @@ v1.1.0
 --------------------------------------------------------------------
 
 * Mise à jour du RGAA. La version en vigueur est maintenant la 4.1.1.
-* Les fichiers criteres.json, glossaire.json et methologies.json sont maintenant à la racine du diossier RGAA
+* Les fichiers criteres.json, glossaire.json et methologies.json sont maintenant à la racine du dossier RGAA
 * Ajout d’Ara dans le kit d’audit
 
 
@@ -41,7 +41,7 @@ v0.8.5
 
 * Réorganisation des références de chaque critère et ajout de la norme européenne
 * Fix du critère 4.8 et du test 5.6.3
-* Ajout d‘une question sur les applications mobiles dans la FAQ
+* Ajout d’une question sur les applications mobiles dans la FAQ
 * Ajout lien « Haut de page » dans les pages _critères et tests_ et _glossaire_
 * Fix des liens externes du footer
 
@@ -56,7 +56,7 @@ v0.8.3
 
 * Conformité totale au RGAA
 	* Fix RGAA  
-	* Mise à jour de la déclaration d‘accessibilité
+	* Mise à jour de la déclaration d’accessibilité
 * Correctifs balise / éléments
 * Sommaire sticky sur la page critères et tests
 * Fix génération du fichier glossaire.json
@@ -65,7 +65,7 @@ v0.8.3
 v0.8.2
 --------------------------------------------------------------------
 
-* Ajout meta desription 
+* Ajout meta description 
 * Ajout d’un lien vers la traduction officielle des WCAG
 * Fix élément actif du menu 
 * Fix couleur des titres 
@@ -92,7 +92,7 @@ v0.7.0
 
 * génération des fichiers glossaire.json et criteres.json 
 * update DFSR 1.6 
-* Bandeau d'information importante 
+* Bandeau d’information importante 
 * Ajout d’un marqueur matomo 
 * Fix ancres des critères
 
@@ -122,7 +122,7 @@ Suite à un audit UI :
 v0.5.1
 --------------------------------------------------------------------
 
-* Un seul bandeau beta
+* Un seul bandeau bêta
 
 v0.5.0
 --------------------------------------------------------------------
@@ -138,13 +138,13 @@ v0.4.2
 --------------------------------------------------------------------
 
 * Mise à jour du DSFR v1.5.1 
-* Ajout d’un bandeau beta 
-* Mise à jour du badge beta
+* Ajout d’un bandeau bêta 
+* Mise à jour du badge bêta
 
 v0.4.1
 --------------------------------------------------------------------
 
-* Mise à jour du bandeau beta 
+* Mise à jour du bandeau bêta 
 * Les ancres du glossaire sont en css 
 * Quelques typos
 

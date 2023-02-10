@@ -47,7 +47,7 @@ La vérification des contrastes de couleurs bénéficie de différents outils :
 La vérification de l’arborescence du document et de la hiérarchie des titres dispose d’une extension très utile :
 
 - [HeadingsMap pour Firefox](https://addons.mozilla.org/fr/firefox/addon/headingsmap/) : extension Firefox qui permet de donner un aperçu du plan du document et de son arborescence ;
-- [HeadingsMap pour Chrome](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm?hl=fr) : même extension que la précédente pour Chrome.
+- [HeadingsMap pour Chrome](https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi) : même extension que la précédente pour Chrome.
 
 L’analyse des fichiers bureautiques peut être réalisée au moyen de différents outils en fonction du format du fichier :
 

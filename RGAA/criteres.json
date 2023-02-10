@@ -74,18 +74,18 @@
             "tests": {
               "1": [
                 "Chaque image (balise `<img>`) [de décoration](#image-de-decoration), sans [légende](#legende-d-image), vérifie-t-elle une de ces conditions ?",
-                "La balise `<img>` possède un attribut `alt` vide (`alt=\"\"`) et est dépourvu de tout autre attribut permettant de fournir une [alternative textuelle](#alternative-textuelle-image) ;",
+                "La balise `<img>` possède un attribut `alt` vide (`alt=\"\"`) et est dépourvue de tout autre attribut permettant de fournir une [alternative textuelle](#alternative-textuelle-image) ;",
                 "La balise `<img>` possède un attribut WAI-ARIA `aria-hidden=\"true\"` ou `role=\"presentation\"`."
               ],
               "2": [
                 "Chaque [zone non cliquable](#zone-non-cliquable) (balise `<area>` sans attribut `href`) [de décoration](#image-de-decoration), vérifie-t-elle une de ces conditions ?",
-                "La balise `<area>` possède un attribut `alt` vide (`alt=\"\"`) et est dépourvu de tout autre attribut permettant de fournir une [alternative textuelle](#alternative-textuelle-image) ;",
+                "La balise `<area>` possède un attribut `alt` vide (`alt=\"\"`) et est dépourvue de tout autre attribut permettant de fournir une [alternative textuelle](#alternative-textuelle-image) ;",
                 "La balise `<area>` possède un attribut WAI-ARIA `aria-hidden=\"true\"` ou `role=\"presentation\"`."
               ],
               "3": [
                 "Chaque [image objet](#image-objet) (balise `<object>` avec l’attribut `type=\"image/…\"`) [de décoration](#image-de-decoration), sans [légende](#legende-d-image), vérifie-t-elle ces conditions ?",
                 "La balise `<object>` possède un attribut WAI-ARIA `aria-hidden=\"true\"` ;",
-                "La balise `<object>` est dépourvu d’alternative textuelle ;",
+                "La balise `<object>` est dépourvue d’alternative textuelle ;",
                 "Il n’y a aucun texte faisant office d’alternative textuelle entre `<object>` et `</object>`."
               ],
               "4": [
@@ -887,15 +887,15 @@
               "2": [
                 "Chaque [média temporel](#media-temporel-type-son-video-et-synchronise) pré-enregistré seulement vidéo vérifie-t-il une de ces conditions (hors cas particuliers) ?",
                 "La [transcription textuelle](#transcription-textuelle-media-temporel) est pertinente ;",
-                "L [’audiodescription](#audiodescription-synchronisee-media-temporel) synchronisée est pertinente ;",
-                "L [’audiodescription](#audiodescription-synchronisee-media-temporel) synchronisée de la version alternative est pertinente ;",
+                "L’[audiodescription](#audiodescription-synchronisee-media-temporel) synchronisée est pertinente ;",
+                "L’[audiodescription](#audiodescription-synchronisee-media-temporel) synchronisée de la version alternative est pertinente ;",
                 "La version alternative audio seulement est pertinente."
               ],
               "3": [
                 "Chaque [média temporel](#media-temporel-type-son-video-et-synchronise) synchronisé pré-enregistré vérifie-t-il une de ces conditions (hors cas particuliers) ?",
                 "La [transcription textuelle](#transcription-textuelle-media-temporel) est pertinente ;",
-                "L [’audiodescription](#audiodescription-synchronisee-media-temporel) synchronisée est pertinente ;",
-                "L [’audiodescription](#audiodescription-synchronisee-media-temporel) synchronisée de la version alternative est pertinente."
+                "L’[audiodescription](#audiodescription-synchronisee-media-temporel) synchronisée est pertinente ;",
+                "L’[audiodescription](#audiodescription-synchronisee-media-temporel) synchronisée de la version alternative est pertinente."
               ]
             },
             "particularCases": [
@@ -3957,14 +3957,15 @@
                 "Dans chaque page web, chaque contenu en mouvement déclenché automatiquement, vérifie-t-il une de ces conditions ?",
                 "La durée du mouvement est inférieure ou égale à 5 secondes",
                 "L’utilisateur peut arrêter et relancer le mouvement",
-                "L’utilisateur peut afficher et masquer le contenu en mouvement ; L’utilisateur peut afficher la totalité de l’information sans le mouvement"
+                "L’utilisateur peut afficher et masquer le contenu en mouvement",
+                "L’utilisateur peut afficher la totalité de l’information sans le mouvement"
               ],
               "2": [
                 "Dans chaque page web, chaque contenu clignotant déclenché automatiquement, vérifie-t-il une de ces conditions ?",
                 "La durée du clignotement est inférieure ou égale à 5 secondes",
                 "L’utilisateur peut arrêter et relancer le clignotement",
                 "L’utilisateur peut afficher et masquer le contenu clignotant",
-                "L’utilisateur peut afficher la totalité de l’information sans le clignotement."
+                "L’utilisateur peut afficher la totalité de l’information sans le clignotement"
               ]
             },
             "references": [

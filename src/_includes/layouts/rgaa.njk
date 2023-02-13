@@ -39,12 +39,11 @@
 					<li class="criterion fr-mt-3w fr-pb-3w" data-wcag-level="{{ wcagLevels }}">
 						<div class="criteres">
 							<div class="anchor">
-								<h3 class="fr-h6 number">{{ critNum }}</h3>
-							</div>
-							<div class="title">
-								<span id="{{ critNum }}" class="fr-h6">{{ crit.data.title | markdownInline | safe | replace("#","/methode/glossaire/#")}}
-									<a title="Lien vers le critère {{ critNum }}" class="direct-link" href="#{{ critNum }}" ><span class="fr-icon-links-fill" ></span></a>
-								</span>
+								<h3 class="fr-h6 ">
+									<span class="number">{{ critNum }}</span>
+									<span id="{{ critNum }}" class="title">{{ crit.data.title | markdownInline | safe | replace("#","/methode/glossaire/#")}}
+									<a title="Lien vers le critère {{ critNum }}" class="direct-link" href="#{{ critNum }}" ><span class="fr-icon-links-fill" ></span></a></span>
+								</h3>
 								<section class="fr-mt-3w  fr-accordion">
 									<button class="fr-accordion__title fr-accordion__btn" aria-expanded="false" aria-controls="fr-{{ critNum }}">
 										Tests et références du critère {{ critNum }}

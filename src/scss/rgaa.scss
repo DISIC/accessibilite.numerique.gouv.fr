@@ -10,6 +10,20 @@ code {
 	ul {
 		padding: 0;
 	}
+	.criteres {
+		.anchor {
+			h3 {
+				display: flex;
+				.number {
+					flex-basis: 2.4em;
+					flex-shrink: 0;
+				}
+			}
+			section {
+				margin-left: 2.4em;
+			}
+		}
+	}
 }
 .methodologie {
 	font-size: 0.9em;

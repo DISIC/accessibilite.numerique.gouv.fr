@@ -17,7 +17,7 @@ title: Média temporel (type son, vidéo et synchronisé)
 
 Un média temporel peut être diffusé en temps réel ou être proposé en lecture de manière asynchrone (média pré-enregistré).
 
-Note 1 : l’utilisation du paramètre `wmode` pour un objet Flash avec les valeurs `"transparent"` et `"opaque"` invalide de fait le {% crit 4.13 %}. En effet, l’utilisation de ces valeurs a pour conséquence que l’animation Flash vue du côté des utilisateurs de lecteur d’écran est invisible.
+Note 1 : l’utilisation du paramètre `wmode` pour un objet Flash avec les valeurs `"transparent"` et `"opaque"` invalide de fait le {% crit 4.13 %}. En effet, l’utilisation de ces valeurs a pour conséquence que l’animation Flash vue du côté des utilisateurs de lecteur d’écran est invisible.
 
 Note 2 : les gif animés, les animations d’images réalisées par JavaScript ou CSS ne sont pas considérés comme étant des médias temporels.
 

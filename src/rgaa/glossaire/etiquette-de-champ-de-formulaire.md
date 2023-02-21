@@ -9,7 +9,7 @@ Texte à proximité du champ de formulaire permettant d’en connaître la natur
 - Par l’utilisation d’une liaison entre le texte et le champ par l’attribut WAI-ARIA `aria-labelledby` ;
 - Par l’utilisation de l’attribut `title`.
 
-Note importante : lorsque plusieurs de ces techniques sont présentes sur un même champ, le calcul du « nom accessible », c’est-à-dire ce qui sera restitué, obéit à un ordre strict :
+Note importante : lorsque plusieurs de ces techniques sont présentes sur un même champ, le calcul du « nom accessible », c’est-à-dire ce qui sera restitué, obéit à un ordre strict :
 
 - `aria-labelledby` ;
 - Sinon `aria-label` ;

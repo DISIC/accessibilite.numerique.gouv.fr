@@ -13,4 +13,4 @@ Dans la mesure où il est bien correctement restitué et associé par les techno
 - Dans un attribut WAI-ARIA `aria-label` ;
 - Dans une balise associée au tableau de données via un attribut WAI-ARIA `aria-labelledby` sur le tableau.
 
-Note : seule la balise `<caption>` étant complètement supporté par l’ensemble des technologies d’assistance, il est fortement recommandé de privilégier cette solution lors de la mise en œuvre afin d’éviter de nombreuses vérifications dans les différentes combinaisons prévues par l’environnement de test (ou « base de référence »).
+Note : seule la balise `<caption>` étant complètement supporté par l’ensemble des technologies d’assistance, il est fortement recommandé de privilégier cette solution lors de la mise en œuvre afin d’éviter de nombreuses vérifications dans les différentes combinaisons prévues par l’environnement de test (ou « base de référence »).

@@ -4,7 +4,7 @@ title: Lien SVG
 
 Lien contenu dans un élément `<svg>`.
 
-Dans le cas d’un lien SVG (version 1.1), le « nom accessible » est obtenu comme suit :
+Dans le cas d’un lien SVG (version 1.1), le « nom accessible » est obtenu comme suit :
 
 - Passage de texte associé par l’attribut WAI-ARIA `aria-labelledby` ;
 - Sinon, contenu de l’attribut WAI-ARIA `aria-label` ;

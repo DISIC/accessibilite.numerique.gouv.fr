@@ -29,7 +29,7 @@ title: Liste des valeurs possibles pour l’attribut `autocomplete`
 - `postal-code` -- Code postal, code CEDEX (si le CEDEX est présent, ajouter “CEDEX”, et ce qui le suit doit être ajouté dans le champ `address-level2`) ;
 - `cc-name` -- Nom complet figurant sur le moyen de paiement ;
 - `cc-given-name` -- Prénom figurant sur le moyen de paiement ;
-- `cc-additional-name` -- Prénoms additionnels figurant sur le moyen de paiement `cc-family-name` - Nom de famille figurant sur le moyen de paiement ;
+- `cc-additional-name` -- Prénoms additionnels figurant sur le moyen de paiement `cc-family-name` -- Nom de famille figurant sur le moyen de paiement ;
 - `cc-number` -- Code identifiant le moyen de paiement (e.g., un numéro de carte bancaire) ;
 - `cc-exp` -- Date d’expiration du moyen de paiement ;
 - `cc-exp-month` -- Le mois de la date d’expiration du moyen de paiement ;

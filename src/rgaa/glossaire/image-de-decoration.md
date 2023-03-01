@@ -5,6 +5,7 @@ title: Image de décoration
 Image n’ayant aucune fonction et ne véhiculant aucune information particulière par rapport au contenu auquel elle est associée. 
 
 Exemples :
+
 - Une image précédant chaque item d’une liste ;
 - Une image servant à caler la mise en page ;
 - Une image de coin arrondie pour habiller un bloc d’information ;

@@ -7,6 +7,6 @@ Les documents en téléchargement dont les types de format sont reconnus compati
 - Microsoft Office (Word 2003, OOXML) ;
 - Open Office Org (ODF) ;
 - Adobe PDF ;
-- Epub/Daisy.
+- EPUB/Daisy.
 
 Note : le format texte (txt) ne peut pas être utilisé pour produire une version accessible pour un document en téléchargement.

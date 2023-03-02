@@ -50,7 +50,7 @@ Par exemple :
 - En cas de présence conjointe d’un attribut WAI-ARIA `aria-label` et d’un attribut WAI-ARIA `aria-labelledby` sur une balise `<img>`, c’est le passage de texte référencé par l’attribut WAI-ARIA `aria-labelledby` qui doit être considérée comme alternative textuelle si le contenu du passage de texte est réellement restitué par les technologies d’assistance utilisées dans l’environnement de test ;
 - En cas de présence conjointe d’un attribut WAI-ARIA `aria-label` et d’un attribut `alt` sur une balise `<img>`, c’est le contenu de l’attribut WAI-ARIA `aria-label` qui doit être considéré comme alternative textuelle si le contenu de l’attribut WAI-ARIA `aria-label` est réellement restitué par les technologies d’assistance utilisées dans l’environnement de test.
 
-Référence : [Accessible name and description calculation](https://www.w3.org/TR/accname-1.1/).
+Référence : <span lang="en">[Accessible name and description calculation](https://www.w3.org/TR/html-aam-1.0/#accessible-name-and-description-computation)</span>.
 
 RGAA considère trois types d’alternatives textuelles liées à la nature de l’image :
 

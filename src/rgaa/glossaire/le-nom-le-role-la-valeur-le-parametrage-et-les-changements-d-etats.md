@@ -8,7 +8,7 @@ Un composant peut s’appuyer sur un élément interactif HTML ou sur un éléme
 
 Le nom peut être l’intitulé du composant (l’intitulé d’un bouton, par exemple).
 
-La valeur est, par exemple, l’élément sélectionné d’une liste déroulante ou la valeur actuelle d’un curseur (slider).
+La valeur est, par exemple, l’élément sélectionné d’une liste déroulante ou la valeur actuelle d’un curseur (`slider`).
 
 Le rôle correspond au type d’élément défini par la spécification HTML ou WAI-ARIA (comme la balise `<button>` ou l’attribut WAI-ARIA `role="button"`).
 

@@ -25,8 +25,8 @@ Note importante : lorsque plusieurs de ces techniques sont présentes sur un m�
 
 - `aria-labelledby` ;
 - Sinon `aria-label` ;
-- Sinon `alt` pour le cas des input `image` ;
-- Sinon `value` pour le cas des input `submit`, `reset` ou `button` ;
+- Sinon `alt` pour le cas des <span lang="en">input</span> `image` ;
+- Sinon `value` pour le cas des <span lang="en">input</span> `submit`, `reset` ou `button` ;
 - Sinon contenu de la balise `<button>` ;
 - Sinon `title`.
 

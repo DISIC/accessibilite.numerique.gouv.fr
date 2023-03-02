@@ -6,4 +6,4 @@ Zone contenant les principaux contenus de la page, là où se trouvent les infor
 
 Note : Cette zone est unique dans la page. Elle peut être difficile à déterminer sur certaines pages particulières, comme la page d’accueil.
 
-Voir la définition technique fournie par WAI-ARIA : <span lang="en">[`Main (role)`](https://www.w3.org/TR/wai-aria-1.1/#main)</span>.
+Voir la définition technique fournie par WAI-ARIA : <span lang="en">[`Main (role)`](https://www.w3.org/TR/wai-aria-1.1/#main)</span>.

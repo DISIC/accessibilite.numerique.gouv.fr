@@ -15,4 +15,4 @@ Une image sans légende peut définir :
 
 Note : lorsque le texte adjacent à l’image peut faire office de texte de remplacement, il n’est pas obligatoire de recourir à l’ensemble `figure`, `figcaption`, l’image pouvant être simplement traitée comme une image de décoration.
 
-Vous pouvez consulter, à ce sujet, la note <span lang="en">[Requirements for providing text to act as an alternative for images](https://www.w3.org/TR/html51/semantics-embedded-content.html#alt-text)</span> du W3C.
+Vous pouvez consulter, à ce sujet, la note en anglais <span lang="en">[Requirements for providing text to act as an alternative for images](https://www.w3.org/TR/html51/semantics-embedded-content.html#alt-text)</span> du W3C.

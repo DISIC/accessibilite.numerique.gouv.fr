@@ -16,7 +16,7 @@ Cet ordre doit être utilisé pour déterminer ce qui constitue l’intitulé du
 - en cas de présence conjointe d’un attribut WAI-ARIA `aria-label` et d’un attribut WAI-ARIA `aria-labelledby`, c’est le passage de texte référencé par l’attribut WAI-ARIA `aria-labelledby` qui doit être considéré comme l’intitulé ;
 - en cas de présence conjointe d’un attribut WAI-ARIA `aria-label` et d’un contenu dans le lien, c’est le contenu de l’attribut WAI-ARIA `aria-label` qui doit être considéré comme l’intitulé.
 
-Référence : <span lang="en">[Accessible name and description calculation](https://www.w3.org/TR/accname-1.1/)</span>.
+Référence : <span lang="en">[Accessible name and description calculation](https://www.w3.org/TR/html-aam-1.0/#accessible-name-and-description-computation)</span>.
 
 Dans le cas où le « nom accessible » est obtenu à partir du contenu du lien, celui-ci sera variable en fonction des cas suivants :
 

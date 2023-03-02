@@ -6,4 +6,4 @@ Zone donnant accès directement (formulaire) ou indirectement (élément d’int
 
 Note : Attention à ne pas confondre cette zone de recherche, unique dans le site, avec tout autre moteur de recherche permettant par exemple de faire des recherches sur une partie restreinte du site : un catalogue, les offres sur une section marchés publics…
 
-Voir la définition technique de zone d’en-tête fournie par WAI-ARIA [`search`(role)](https://www.w3.org/TR/wai-aria-1.1/#search).
+Voir la définition technique de zone d’en-tête fournie par WAI-ARIA [`search(role)`](https://www.w3.org/TR/wai-aria-1.1/#search).

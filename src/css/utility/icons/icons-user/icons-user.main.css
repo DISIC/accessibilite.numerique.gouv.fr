@@ -1,5 +1,5 @@
 /*!
- * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.9.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @charset "UTF-8";
 
@@ -164,26 +164,26 @@
 
 .fr-fi-account-line::before,
 .fr-fi-account-line::after {
-  -webkit-mask-image: url("../../../icons/user/account-circle-line.svg") !important;
-  mask-image: url("../../../icons/user/account-circle-line.svg") !important;
+  -webkit-mask-image: url("../../../icons/user/account-circle-line.svg");
+  mask-image: url("../../../icons/user/account-circle-line.svg");
 }
 
 .fr-fi-account-fill::before,
 .fr-fi-account-fill::after {
-  -webkit-mask-image: url("../../../icons/user/account-circle-fill.svg") !important;
-  mask-image: url("../../../icons/user/account-circle-fill.svg") !important;
+  -webkit-mask-image: url("../../../icons/user/account-circle-fill.svg");
+  mask-image: url("../../../icons/user/account-circle-fill.svg");
 }
 
 .fr-icon-account-line::before,
 .fr-icon-account-line::after {
-  -webkit-mask-image: url("../../../icons/user/account-circle-line.svg") !important;
-  mask-image: url("../../../icons/user/account-circle-line.svg") !important;
+  -webkit-mask-image: url("../../../icons/user/account-circle-line.svg");
+  mask-image: url("../../../icons/user/account-circle-line.svg");
 }
 
 .fr-icon-account-fill::before,
 .fr-icon-account-fill::after {
-  -webkit-mask-image: url("../../../icons/user/account-circle-fill.svg") !important;
-  mask-image: url("../../../icons/user/account-circle-fill.svg") !important;
+  -webkit-mask-image: url("../../../icons/user/account-circle-fill.svg");
+  mask-image: url("../../../icons/user/account-circle-fill.svg");
 }
 
 @media (min-width: 36em) {

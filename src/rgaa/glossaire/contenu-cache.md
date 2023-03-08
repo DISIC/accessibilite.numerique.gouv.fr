@@ -6,7 +6,7 @@ Les technologies d’assistance (notamment les lecteurs d’écran) ne restituen
 
 - `display` avec la valeur `none` (`display: none`) ;
 - `visibility` avec la valeur `hidden` (`visibility: hidden`) ;
-- `font-size` avec la valeur `0` (`font-size:0`) ;
+- `font-size` avec la valeur `0` (`font-size:0`) ;
 - Attribut HTML5 `hidden` ;
 - Attribut WAI-ARIA `aria-hidden="true"`.
 

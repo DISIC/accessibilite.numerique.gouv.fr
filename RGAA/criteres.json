@@ -25,7 +25,7 @@
                 "Chaque [zone cliquable](#zone-cliquable) d’une image réactive côté serveur est-elle doublée d’un mécanisme utilisable quel que soit le dispositif de pointage utilisé et permettant d’accéder à la même destination ?"
               ],
               "5": [
-                "Chaque image vectorielle (balise `<svg>`) [porteuse d’information](#image-porteuse-d-information), vérifie-t-elle ces conditions ?",
+                "Chaque image vectorielle (balise `<svg>`) [porteuse d’information](#image-porteuse-d-information), vérifie-t-elle ces conditions ?",
                 "La balise `<svg>` possède un attribut WAI-ARIA `role=\"img\"` ;",
                 "La balise `<svg>` a une [alternative textuelle](#alternative-textuelle-image)."
               ],
@@ -42,10 +42,10 @@
                 "Un mécanisme permet à l’utilisateur de remplacer l’élément `<embed>` par un [contenu alternatif](#contenu-alternatif)."
               ],
               "8": [
-                "Chaque image bitmap (balise `<canvas>`) [porteuse d’information](#image-porteuse-d-information), vérifie-t-elle une de ces conditions  ?",
+                "Chaque image bitmap (balise `<canvas>`) [porteuse d’information](#image-porteuse-d-information), vérifie-t-elle une de ces conditions ?",
                 "La balise `<canvas>` possède une [alternative textuelle](#alternative-textuelle-image) et un attribut `role=\"img\"` ;",
                 "Un [contenu alternatif](#contenu-alternatif) est présent entre les balises `<canvas>` et `</canvas>` ;",
-                "L‘élément `<canvas>` est immédiatement suivi d’un [lien ou bouton adjacent](#lien-ou-bouton-adjacent) permettant d’accéder à un [contenu alternatif](#contenu-alternatif) ;",
+                "L’élément `<canvas>` est immédiatement suivi d’un [lien ou bouton adjacent](#lien-ou-bouton-adjacent) permettant d’accéder à un [contenu alternatif](#contenu-alternatif) ;",
                 "Un mécanisme permet à l’utilisateur de remplacer l’élément `<canvas>` par un [contenu alternatif](#contenu-alternatif)."
               ]
             },
@@ -109,7 +109,7 @@
             },
             "technicalNote": [
               "Lorsqu'une image est associée à une [légende](#legende-d-image), la note technique WCAG recommande de prévoir systématiquement une [alternative textuelle](#alternative-textuelle-image) (cf. critère 1.9). Dans ce cas le critère 1.2 est non applicable.",
-              "Dans le cas d'une image vectorielle (balise `<svg>`) de décoration qui serait affichée au travers d'un élément `<use href=\"...\">` enfant de l'élément `<svg>`, le test 1.2.4 s'appliquera également à l'élément `<svg>` associée par le biais de l'élément `<use>`.",
+              "Dans le cas d'une image vectorielle (balise `<svg>`) de décoration qui serait affichée au travers d'un élément `<use href=\"…\">` enfant de l'élément `<svg>`, le test 1.2.4 s'appliquera également à l'élément `<svg>` associée par le biais de l'élément `<use>`.",
               "Un attribut WAI-ARIA `role=\"presentation\"` peut être utilisé sur les images de décoration et les zones non cliquables de décoration. Le rôle `\"none\"` introduit en ARIA 1.1 et synonyme du rôle `\"presentation\"` peut être aussi utilisé. Il reste préférable cependant d'utiliser le rôle `\"presentation\"` en attendant un support satisfaisant du rôle `\"none\"`."
             ],
             "references": [
@@ -160,7 +160,7 @@
                 "S’il est présent, le [passage de texte](#passage-de-texte-lie-par-aria-labelledby-ou-aria-describedby) associé via l’attribut WAI-ARIA `aria-labelledby` est pertinent."
               ],
               "4": [
-                "Pour chaque [image objet](#image-objet) (balise `<object>` avec l’attribut `type=\"image/…\"`) [porteuse d’information](#image-porteuse-d-information), ayant une [alternative textuelle](#alternative-textuelle-image) ou un [contenu alternatif](#contenu-alternatif), cette alternative est-elle pertinente (hors cas particuliers) ?",
+                "Pour chaque [image objet](#image-objet) (balise `<object>` avec l’attribut `type=\"image/…\"`) [porteuse d’information](#image-porteuse-d-information), ayant une [alternative textuelle](#alternative-textuelle-image) ou un [contenu alternatif](#contenu-alternatif), cette alternative est-elle pertinente (hors cas particuliers) ?",
                 "S’il est présent, le contenu de l’attribut `title` est pertinent ;",
                 "S’il est présent, le contenu de l’attribut WAI-ARIA `aria-label` est pertinent ;",
                 "S’il est présent, le [passage de texte](#passage-de-texte-lie-par-aria-labelledby-ou-aria-describedby) associé via l’attribut WAI-ARIA `aria-labelledby` est pertinent ;",
@@ -174,13 +174,13 @@
                 "S’il est présent le [contenu alternatif](#contenu-alternatif) est pertinent."
               ],
               "6": [
-                "Pour chaque image vectorielle (balise `<svg>`) [porteuse d’information](#image-porteuse-d-information), ayant une [alternative textuelle](#alternative-textuelle-image), cette alternative est-elle pertinente (hors cas particuliers) ?",
+                "Pour chaque image vectorielle (balise `<svg>`) [porteuse d’information](#image-porteuse-d-information), ayant une [alternative textuelle](#alternative-textuelle-image), cette alternative est-elle pertinente (hors cas particuliers) ?",
                 "S’il est présent, le contenu de l'élément `<title>` est pertinent ;",
                 "S’il est présent, le contenu de l’attribut WAI-ARIA `aria-label` est pertinent ;",
                 "S’il est présent, le [passage de texte](#passage-de-texte-lie-par-aria-labelledby-ou-aria-describedby) associé via l’attribut WAI-ARIA `aria-labelledby` est pertinent."
               ],
               "7": [
-                "Pour chaque image bitmap (balise `<canvas>`) [porteuse d’information](#image-porteuse-d-information), ayant une [alternative textuelle](#alternative-textuelle-image) ou un [contenu alternatif](#contenu-alternatif), cette alternative est-elle pertinente (hors cas particuliers) ?",
+                "Pour chaque image bitmap (balise `<canvas>`) [porteuse d’information](#image-porteuse-d-information), ayant une [alternative textuelle](#alternative-textuelle-image) ou un [contenu alternatif](#contenu-alternatif), cette alternative est-elle pertinente (hors cas particuliers) ?",
                 "S’il est présent, le contenu de l’attribut `title` est pertinent ;",
                 "S’il est présent, le contenu de l’attribut WAI-ARIA `aria-label` est pertinent ;",
                 "S’il est présent, le [passage de texte](#passage-de-texte-lie-par-aria-labelledby-ou-aria-describedby) associé via l’attribut WAI-ARIA `aria-labelledby` est pertinent ;",
@@ -195,7 +195,7 @@
             },
             "particularCases": [
               "Il existe une gestion de cas particuliers lorsque l’image est utilisée comme [CAPTCHA](#captcha) ou comme [image-test](#image-test). Dans cette situation, où il n’est pas possible de donner une alternative pertinente sans détruire l’objet du CAPTCHA ou du test, le critère est non applicable.",
-              "Note : le cas des CAPTCHA et des images-test est traité de manière spécifique par le critère 1.4."
+              "Note : le cas des CAPTCHA et des images-test est traité de manière spécifique par le critère 1.4."
             ],
             "references": [
               {
@@ -562,9 +562,9 @@
             },
             "technicalNote": [
               "L’implémentation d’un attribut WAI-ARIA `role=\"group\"` ou `role=\"figure\"` sur l’élément parent `<figure>` est destiné à pallier le manque de support actuel des éléments `<figure>` par les technologies d’assistance. L’utilisation d’un élément `<figcaption>` pour associer une [légende](#legende-d-image) à une image impose au minimum l’utilisation d’un attribut WAI-ARIA `aria-label` sur l’élément parent `<figure>` dont le contenu sera identique au contenu de l’élément `<figcaption>`. Pour s’assurer d’un support optimal, il peut également être fait une association explicite entre le contenu de l’[alternative textuelle](#alternative-textuelle-image) de l’image et le contenu de l’élément `<figcaption>`, par exemple :",
-              "`<img src=\"image.png\" alt=\"Photo : soleil couchant\" /><figcaption>Photo : crédit xxx</figcaption>`",
+              "`<img src=\"image.png\" alt=\"Photo : soleil couchant\" /><figcaption>Photo : crédit xxx</figcaption>`",
               "Les attributs WAI-ARIA `aria-labelledby` et `aria-describedby` ne peuvent pas être utilisés actuellement par manque de support par les technologies d’assistance.",
-              "Note : les images légendées doivent par ailleurs respecter le critère 1.1 et le critère 1.3 relatifs aux images porteuses d’information."
+              "Note : les images légendées doivent par ailleurs respecter le critère 1.1 et le critère 1.3 relatifs aux images porteuses d’information."
             ],
             "references": [
               {
@@ -595,7 +595,7 @@
             "title": "Chaque [cadre](#cadre) a-t-il un [titre de cadre](#titre-de-cadre) ?",
             "tests": {
               "1": [
-                "Chaque cadre (balise `<iframe>` ou `<frame>`) a-t-il un attribut `title` ?"
+                "Chaque cadre (balise `<iframe>` ou `<frame>`) a-t-il un attribut `title` ?"
               ]
             },
             "references": [
@@ -755,7 +755,7 @@
                 "Un [mécanisme](#mecanisme-qui-permet-d-afficher-un-rapport-de-contraste-conforme) permet un rapport de [contraste](#contraste) de 3:1, au moins."
               ],
               "2": [
-                "Dans chaque page web, le rapport de [contraste](#contraste) des différentes couleurs composant un [élément graphique](#element-graphique), lorsqu’elles sont nécessaires à sa compréhension, et la [couleur d’arrière-plan contiguë](#couleur-d-arriere-plan-contigue-et-couleur-contigue), vérifie-t-il une de ces conditions (hors cas particuliers) ?",
+                "Dans chaque page web, le rapport de [contraste](#contraste) des différentes couleurs composant un [élément graphique](#element-graphique), lorsqu’elles sont nécessaires à sa compréhension, et la [couleur d’arrière-plan contiguë](#couleur-d-arriere-plan-contigue-et-couleur-contigue), vérifie-t-il une de ces conditions (hors cas particuliers) ?",
                 "Le rapport de [contraste](#contraste) est de 3:1, au moins ;",
                 "Un [mécanisme](#mecanisme-qui-permet-d-afficher-un-rapport-de-contraste-conforme) permet un rapport de [contraste](#contraste) de 3:1, au moins."
               ],
@@ -820,8 +820,8 @@
               ],
               "2": [
                 "Chaque [média temporel](#media-temporel-type-son-video-et-synchronise) pré-enregistré seulement vidéo vérifie-t-il, si nécessaire, l’une de ces conditions (hors cas particuliers) ?",
-                "Il existe une [version alternative « audio seulement »](#version-alternative-audio-seulement) accessible via un [lien ou bouton adjacent](#lien-ou-bouton-adjacent) ;",
-                "Il existe une [version alternative « audio seulement »](#version-alternative-audio-seulement) adjacente clairement identifiable ;",
+                "Il existe une [version alternative « audio seulement »](#version-alternative-audio-seulement) accessible via un [lien ou bouton adjacent](#lien-ou-bouton-adjacent) ;",
+                "Il existe une [version alternative « audio seulement »](#version-alternative-audio-seulement) adjacente clairement identifiable ;",
                 "Il existe une [transcription textuelle](#transcription-textuelle-media-temporel) accessible via un [lien ou bouton adjacent](#lien-ou-bouton-adjacent) ;",
                 "Il existe une [transcription textuelle](#transcription-textuelle-media-temporel) adjacente clairement identifiable ;",
                 "Il existe une [audiodescription](#audiodescription-synchronisee-media-temporel) synchronisée ;",
@@ -1508,7 +1508,7 @@
         {
           "criterium": {
             "number": 8,
-            "title": "Chaque [tableau de mise en forme](#tableau-de-mise-en-forme) ne doit pas utiliser d’éléments propres aux  [tableaux de données](#tableau-de-donnees). Cette règle est-elle respectée ?",
+            "title": "Chaque [tableau de mise en forme](#tableau-de-mise-en-forme) ne doit pas utiliser d’éléments propres aux  [tableaux de données](#tableau-de-donnees). Cette règle est-elle respectée ?",
             "tests": {
               "1": [
                 "Chaque [tableau de mise en forme](#tableau-de-mise-en-forme) (balise `<table>`) vérifie-t-il ces conditions ?",
@@ -1542,7 +1542,7 @@
             "title": "Chaque [lien](#lien) est-il explicite (hors cas particuliers) ?",
             "tests": {
               "1": [
-                "Chaque [lien texte](#lien-texte) vérifie-t-il une de ces conditions (hors cas particuliers) ?",
+                "Chaque [lien texte](#lien-texte) vérifie-t-il une de ces conditions (hors cas particuliers) ?",
                 "L’[intitulé de lien](#intitule-ou-nom-accessible-de-lien) seul permet d’en comprendre la fonction et la destination ;",
                 "L’[intitulé de lien](#intitule-ou-nom-accessible-de-lien) additionné au [contexte du lien](#contexte-du-lien) permet d’en comprendre la fonction et la destination."
               ],
@@ -1574,7 +1574,7 @@
                   "- Le texte de l’[intitulé visible](#intitule-visible) sert de symbole : le texte ne doit pas être interprété littéralement au niveau du nom accessible. Le nom doit exprimer la fonction véhiculée par le symbole (par exemple, “B” au niveau d’un éditeur de texte aura pour nom accessible “Mettre en gras”, le signe “>” en fonction du contexte signifiera “Suivant” ou “Lancer la vidéo”). Le cas des symboles mathématiques fait cependant exception (voir la note ci-dessous)."
                 ]
               },
-              "Note : si l’étiquette visible représente une expression mathématique, les symboles mathématiques peuvent être repris littéralement pour servir d’étiquette au nom accessible (ex. : “A>B”). Il est laissé à l’utilisateur le soin d’opérer la correspondance entre l’expression et ce qu’il doit épeler compte tenu de la connaissance qu’il a du fonctionnement de son logiciel de saisie vocale (“A plus grand que B” ou “A supérieur à B”)."
+              "Note : si l’étiquette visible représente une expression mathématique, les symboles mathématiques peuvent être repris littéralement pour servir d’étiquette au nom accessible (ex. : “A>B”). Il est laissé à l’utilisateur le soin d’opérer la correspondance entre l’expression et ce qu’il doit épeler compte tenu de la connaissance qu’il a du fonctionnement de son logiciel de saisie vocale (“A plus grand que B” ou “A supérieur à B”)."
             ],
             "technicalNote": [
               "Lorsque l’intitulé visible est complété par une autre expression dans le nom accessible :",
@@ -1584,7 +1584,7 @@
                   "- WCAG considère comme un cas d’échec une correspondance non exacte de la chaîne de caractères de l’intitulé visible au sein du nom accessible."
                 ]
               },
-              "Par exemple, si l’on considère l’intitulé visible « Commander maintenant » complété dans le nom accessible par l’expression «produit X », on peut avoir les différents cas suivants :",
+              "Par exemple, si l’on considère l’intitulé visible « Commander maintenant » complété dans le nom accessible par l’expression « produit X », on peut avoir les différents cas suivants :",
               {
                 "ul": [
                   "- « Commander maintenant produit X » est valide (bonne pratique) ;",
@@ -1685,11 +1685,11 @@
                   "- Le texte de l’intitulé visible sert de symbole : le texte ne doit pas être interprété littéralement au niveau du nom accessible. Le nom doit exprimer la fonction véhiculée par le symbole (par exemple, “B” au niveau d’un éditeur de texte aura pour nom accessible “Mettre en gras”, le signe “>” en fonction du contexte signifiera “Suivant” ou “Lancer la vidéo”). Le cas des symboles mathématiques fait cependant exception (voir la note ci-dessous)."
                 ]
               },
-              "Note : si l’étiquette visible représente une expression mathématique, les symboles mathématiques peuvent être repris littéralement pour servir d’étiquette au nom accessible (ex. : “A>B”). Il est laissé à l’utilisateur le soin d’opérer la correspondance entre l’expression et ce qu’il doit épeler compte tenu de la connaissance qu’il a du fonctionnement de son logiciel de saisie vocale (“A plus grand que B” ou “A supérieur à B”)."
+              "Note : si l’étiquette visible représente une expression mathématique, les symboles mathématiques peuvent être repris littéralement pour servir d’étiquette au nom accessible (ex. : “A>B”). Il est laissé à l’utilisateur le soin d’opérer la correspondance entre l’expression et ce qu’il doit épeler compte tenu de la connaissance qu’il a du fonctionnement de son logiciel de saisie vocale (“A plus grand que B” ou “A supérieur à B”)."
             ],
             "technicalNote": [
               "Le critère 7.1 implémente la notion de « compatible avec les technologies d’assistance » telle que définie par les WCAG, ainsi que le recours à WAI-ARIA pour rendre un composant ou une fonctionnalité accessible. Le bon usage de WAI-ARIA est vérifié via les tests 7.1.1, 7.1.2, 7.1.3.",
-              "Note importante : dans un environnement HTML5, beaucoup de composants peuvent nécessiter JavaScript pour fonctionner ; en conséquence la fourniture d’une alternative à un composant JavaScript qui ne pourrait pas être rendu accessible devra bénéficier d’une méthode spécifique au composant en cause, permettant de le remplacer par une alternative accessible (et de le réactiver). Cela signifie que la désactivation de JavaScript pour l’ensemble de la page ne sera pas acceptée comme une méthode valable, à moins qu’elle ne remette pas en cause l’utilisation des autres composants."
+              "Note importante : dans un environnement HTML5, beaucoup de composants peuvent nécessiter JavaScript pour fonctionner ; en conséquence la fourniture d’une alternative à un composant JavaScript qui ne pourrait pas être rendu accessible devra bénéficier d’une méthode spécifique au composant en cause, permettant de le remplacer par une alternative accessible (et de le réactiver). Cela signifie que la désactivation de JavaScript pour l’ensemble de la page ne sera pas acceptée comme une méthode valable, à moins qu’elle ne remette pas en cause l’utilisation des autres composants."
             ],
             "references": [
               {
@@ -2416,16 +2416,16 @@
         {
           "criterium": {
             "number": 4,
-            "title": "Dans chaque page web, le texte reste-t-il lisible lorsque la [taille des caractères](#taille-des-caracteres) est augmentée jusqu’à 200%, au moins (hors cas particuliers) ?",
+            "title": "Dans chaque page web, le texte reste-t-il lisible lorsque la [taille des caractères](#taille-des-caracteres) est augmentée jusqu’à 200 %, au moins (hors cas particuliers) ?",
             "tests": {
               "1": [
-                "Dans chaque page web, l’augmentation de la [taille des caractères](#taille-des-caracteres) jusqu’à 200%, au moins, ne doit pas provoquer de perte d’information. Cette règle est-elle respectée selon une de ces conditions (hors cas particuliers) ?",
+                "Dans chaque page web, l’augmentation de la [taille des caractères](#taille-des-caracteres) jusqu’à 200 %, au moins, ne doit pas provoquer de perte d’information. Cette règle est-elle respectée selon une de ces conditions (hors cas particuliers) ?",
                 "Lors de l’utilisation de la fonction d’agrandissement du texte du navigateur ;",
                 "Lors de l’utilisation des fonctions de zoom graphique du navigateur ;",
                 "Lors de l’utilisation d’un [composant d’interface](#composant-d-interface) propre au site permettant d’agrandir le texte ou de zoomer."
               ],
               "2": [
-                "Dans chaque page web, l’augmentation de la taille des caractères jusqu’à 200%, au moins, doit être possible pour l’ensemble du texte dans la page. Cette règle est-elle respectée selon une de ces conditions (hors cas particuliers) ?",
+                "Dans chaque page web, l’augmentation de la taille des caractères jusqu’à 200 %, au moins, doit être possible pour l’ensemble du texte dans la page. Cette règle est-elle respectée selon une de ces conditions (hors cas particuliers) ?",
                 "Lors de l’utilisation de la fonction d’agrandissement du texte du navigateur ;",
                 "Lors de l’utilisation des fonctions de zoom graphique du navigateur ;",
                 "Lors de l’utilisation d’un [composant d’interface](#composant-d-interface) propre au site permettant d’agrandir le texte ou de zoomer."
@@ -2555,7 +2555,7 @@
               ]
             },
             "technicalNote": [
-              "WAI-ARIA propose un attribut `aria-hidden` (`true` ou `false`) qui permet d’inhiber la restitution d’un contenu en direction des technologies d’assistance, sans action sur sa visibilité en direction des agents utilisateurs : un contenu avec `aria-hidden=\"true\"` ne sera donc plus vocalisable, mais restera visible.",
+              "WAI-ARIA propose un attribut `aria-hidden` (`true` ou `false`) qui permet d’inhiber la restitution d’un contenu en direction des technologies d’assistance, sans action sur sa visibilité en direction des agents utilisateurs : un contenu avec `aria-hidden=\"true\"` ne sera donc plus vocalisable, mais restera visible.",
               "Sauf si le contenu contrôlé par `aria-hidden` n’a pas vocation à être restitué par les technologies d’assistance, la valeur de l’attribut `aria-hidden` doit être cohérente avec l’état affiché ou masqué du contenu à l’écran.",
               "La spécification HTML5 propose un attribut `hidden` qui permet de rendre indisponible (quand l’attribut `hidden` est présent) un contenu dans le DOM généré (de manière similaire au `type=\"hidden\"` sur un contrôle de formulaire).",
               "Il est possible d’avoir des situations où un contenu contrôlé par `hidden` ou `aria-hidden` se trouve momentanément dans un état incohérent avec le statut affiché ou masqué du contenu, par exemple si l’on désire rendre disponible un élément, mais que son affichage à l’écran reste dépendant d’une action ultérieure. Dans ce cas, c’est l’état final du contenu qui doit être considéré."
@@ -2650,13 +2650,13 @@
         {
           "criterium": {
             "number": 11,
-            "title": "Pour chaque page web, les contenus peuvent-ils être présentés sans perte d'information ou de fonctionnalité et sans avoir recours soit à un défilement vertical pour une fenêtre ayant une hauteur de 256px, soit à un défilement horizontal pour une fenêtre ayant une largeur de 320px (hors cas particuliers) ?",
+            "title": "Pour chaque page web, les contenus peuvent-ils être présentés sans avoir recours à un défilement vertical pour une fenêtre ayant une hauteur de 256 px ou à un défilement horizontal pour une fenêtre ayant une largeur de 320 px (hors cas particuliers) ?",
             "tests": {
               "1": [
-                "Pour chaque page web, lorsque le contenu dont le sens de lecture est horizontal est affiché dans une fenêtre réduite à une largeur de 320px, l’ensemble des informations et des fonctionnalités sont-elles disponibles sans aucun défilement horizontal (hors cas particuliers) ?"
+                "Pour chaque page web, lorsque le contenu dont le sens de lecture est horizontal est affiché dans une fenêtre réduite à une largeur de 320 px, l’ensemble des informations et des fonctionnalités sont-elles disponibles sans aucun défilement horizontal (hors cas particuliers) ?"
               ],
               "2": [
-                "Pour chaque page web, lorsque le contenu dont le sens de lecture est vertical est affiché dans une fenêtre réduite à une hauteur de 256px, l’ensemble des informations et des fonctionnalités sont-elles disponibles sans aucun défilement vertical (hors cas particuliers) ?"
+                "Pour chaque page web, lorsque le contenu dont le sens de lecture est vertical est affiché dans une fenêtre réduite à une hauteur de 256 px, l’ensemble des informations et des fonctionnalités sont-elles disponibles sans aucun défilement vertical (hors cas particuliers) ?"
               ]
             },
             "particularCases": [
@@ -2671,7 +2671,7 @@
                   "- Les interfaces où il est nécessaire d'avoir un ascenseur horizontal lors de la manipulation de l'interface."
                 ]
               },
-              "Note : la majorité des navigateurs sur les systèmes d'exploitation sur mobile (Android, iOS) ne gère pas correctement la redistribution en cas de zoom. Dans ce contexte, le critère sera considéré comme non applicable sur ces environnements."
+              "Note : la majorité des navigateurs sur les systèmes d'exploitation sur mobile (Android, iOS) ne gère pas correctement la redistribution en cas de zoom. Dans ce contexte, le critère sera considéré comme non applicable sur ces environnements."
             ],
             "technicalNote": [
               "Lorsqu'il est ici question de pixel, il s'agit du pixel CSS tel que défini par le W3C https://www.w3.org/TR/css3-values/"
@@ -2893,7 +2893,7 @@
                   "- Le texte de l’[intitulé visible](#intitule-visible) sert de symbole : le texte ne doit pas être interprété littéralement au niveau du nom accessible. Le nom doit exprimer la fonction véhiculée par le symbole (par exemple, “B” au niveau d’un éditeur de texte aura pour nom accessible “Mettre en gras”, le signe “>” en fonction du contexte signifiera “Suivant” ou “Lancer la vidéo”). Le cas des symboles mathématiques fait cependant exception (voir la note ci-dessous)."
                 ]
               },
-              "Note : si l’étiquette visible représente une expression mathématique, les symboles mathématiques peuvent être repris littéralement pour servir d’étiquette au nom accessible (ex. : “A>B”). Il est laissé à l’utilisateur le soin d’opérer la correspondance entre l’expression et ce qu’il doit épeler compte tenu de la connaissance qu’il a du fonctionnement de son logiciel de saisie vocale (“A plus grand que B” ou “A supérieur à B”).",
+              "Note : si l’étiquette visible représente une expression mathématique, les symboles mathématiques peuvent être repris littéralement pour servir d’étiquette au nom accessible (ex. : “A>B”). Il est laissé à l’utilisateur le soin d’opérer la correspondance entre l’expression et ce qu’il doit épeler compte tenu de la connaissance qu’il a du fonctionnement de son logiciel de saisie vocale (“A plus grand que B” ou “A supérieur à B”).",
               "Ce cas particulier s’applique également au test 11.9.2."
             ],
             "references": [
@@ -3178,7 +3178,7 @@
               ],
               "6": [
                 "Les messages d’erreurs fournissant une instruction ou une indication du type de données et/ou de format obligatoire des champs vérifient-ils une de ces conditions ?",
-                "Le message d’erreur fournissant une instruction ou une indication du type de données et/ou de format obligatoires est visible et identifie le champ concerné ;",
+                "Le message d’erreur fournissant une instruction ou une indication du type de données et/ou de format obligatoires est visible et identifie le champ concerné ;",
                 "Le champ dispose de l’attribut `aria-invalid=\"true\"`."
               ],
               "7": [
@@ -3321,7 +3321,7 @@
             },
             "technicalNote": [
               "La [liste des valeurs possibles pour l’attribut `autocomplete`](#liste-des-valeurs-possibles-pour-l-attribut-autocomplete) repose sur la liste des valeurs présentes dans la spécification WCAG2.1 qui reprend elle-même la liste des valeurs de type “field name” de la spécification HTML5.2. Le critère WCAG demande à ce que l’une de ces valeurs soit présente pour qualifier un champ de saisie concernant l’utilisateur.",
-              "Ce que le critère WCAG laisse implicite, ce sont les différentes règles de construction possibles pour obtenir une valeur (simple ou composée) pour l’attribut `autocomplete`. C’est cependant l’affaire du développeur de fournir à l’attribut `autocomplete` une valeur ou un ensemble de valeurs valides au regard des exigences de l’algorithme fourni par la spécification HTML5.2. Ainsi, un attribut `autocomplete` ne peut contenir qu’une seule valeur de type `“field name”`, comme `\"name\"` ou `\"street-address\"`. On peut avoir également un ensemble composé de différentes valeurs comme, par exemple, `autocomplete=\"shipping name\"` ou `autocomplete=\"section-software shipping street-address\"` : `\"section-software\"` renvoie à une valeur de type “scope” et `\"shipping\"` à une valeur de type “hint set”, mais toujours une seule valeur de type “field name”."
+              "Ce que le critère WCAG laisse implicite, ce sont les différentes règles de construction possibles pour obtenir une valeur (simple ou composée) pour l’attribut `autocomplete`. C’est cependant l’affaire du développeur de fournir à l’attribut `autocomplete` une valeur ou un ensemble de valeurs valides au regard des exigences de l’algorithme fourni par la spécification HTML5.2. Ainsi, un attribut `autocomplete` ne peut contenir qu’une seule valeur de type `“field name”`, comme `\"name\"` ou `\"street-address\"`. On peut avoir également un ensemble composé de différentes valeurs comme, par exemple, `autocomplete=\"shipping name\"` ou `autocomplete=\"section-software shipping street-address\"` : `\"section-software\"` renvoie à une valeur de type <span lang=\"en\">“scope”</span> et `\"shipping\"` à une valeur de type <span lang=\"en\">“hint set”</span>, mais toujours une seule valeur de type <span lang=\"en\">“field name”</span>."
             ],
             "references": [
               {
@@ -3358,7 +3358,7 @@
             "particularCases": [
               "Il existe une gestion de cas particulier lorsque le site web est constitué d’une seule page ou d’un nombre très limité de pages (cf. note). Dans ce cas-là, le critère est non applicable.",
               "Le critère est également non applicable pour les pages d’un ensemble de pages qui sont le résultat ou une partie d’un processus (un processus de paiement ou de prise de commande, par exemple).",
-              "Note : l’appréciation d’un nombre très limité de pages devrait être réservé à un site dont l’ensemble des pages sont atteignables depuis la page d’accueil."
+              "Note : l’appréciation d’un nombre très limité de pages devrait être réservé à un site dont l’ensemble des pages sont atteignables depuis la page d’accueil."
             ],
             "references": [
               {
@@ -3645,8 +3645,8 @@
             "tests": {
               "1": [
                 "Dans chaque page web, chaque [raccourci clavier](#raccourci-clavier) n’utilisant qu’une seule touche (lettre minuscule ou majuscule, ponctuation, chiffre ou symbole) vérifie-t-il l’une de ces conditions ?",
-                "Un mécanisme est disponible pour désactiver le [raccourci clavier](#raccourci-clavier) ;",
-                "Un mécanisme est disponible pour configurer la touche de [raccourci clavier](#raccourci-clavier) au moyen des touches de modification (Ctrl, Alt, Maj, etc) ;",
+                "Un mécanisme est disponible pour désactiver le [raccourci clavier](#raccourci-clavier) ;",
+                "Un mécanisme est disponible pour configurer la touche de [raccourci clavier](#raccourci-clavier) au moyen des touches de modification (Ctrl, Alt, Maj, etc.) ;",
                 "Dans le cas d’un [composant d’interface](#composant-d-interface) utilisateur, le [raccourci clavier](#raccourci-clavier) qui lui est associé ne peut être activé que si le focus clavier est sur ce composant."
               ]
             },
@@ -3724,7 +3724,7 @@
             },
             "particularCases": [
               "Il existe une gestion de cas particuliers lorsque la limite de temps est essentielle, notamment lorsqu’elle ne pourrait pas être supprimée sans changer fondamentalement le contenu ou les fonctionnalités liées au contenu.",
-              "Dans ces situations, le critère est non applicable. Par exemple, le rafraîchissement d’un flux RSS dans une page n’est pas une limite de temps essentielle ; le critère est applicable. En revanche, une redirection automatique qui amène vers la nouvelle version d’une page à partir d’une URL obsolète est essentielle ; le critère est non applicable."
+              "Dans ces situations, le critère est non applicable. Par exemple, le rafraîchissement d’un flux RSS dans une page n’est pas une limite de temps essentielle ; le critère est applicable. En revanche, une redirection automatique qui amène vers la nouvelle version d’une page à partir d’une URL obsolète est essentielle ; le critère est non applicable."
             ],
             "references": [
               {
@@ -3954,18 +3954,18 @@
             "title": "Dans chaque page web, chaque contenu en mouvement ou clignotant est-il [contrôlable](#controle-contenu-en-mouvement-ou-clignotant) par l’utilisateur ?",
             "tests": {
               "1": [
-                "Dans chaque page web, chaque contenu en mouvement déclenché automatiquement, vérifie-t-il une de ces conditions ?",
-                "La durée du mouvement est inférieure ou égale à 5 secondes",
-                "L’utilisateur peut arrêter et relancer le mouvement",
-                "L’utilisateur peut afficher et masquer le contenu en mouvement",
-                "L’utilisateur peut afficher la totalité de l’information sans le mouvement"
+                "Dans chaque page web, chaque contenu en mouvement déclenché automatiquement, vérifie-t-il une de ces conditions ?",
+                "La durée du mouvement est inférieure ou égale à 5 secondes ;",
+                "L’utilisateur peut arrêter et relancer le mouvement ;",
+                "L’utilisateur peut afficher et masquer le contenu en mouvement ;",
+                "L’utilisateur peut afficher la totalité de l’information sans le mouvement."
               ],
               "2": [
-                "Dans chaque page web, chaque contenu clignotant déclenché automatiquement, vérifie-t-il une de ces conditions ?",
-                "La durée du clignotement est inférieure ou égale à 5 secondes",
-                "L’utilisateur peut arrêter et relancer le clignotement",
-                "L’utilisateur peut afficher et masquer le contenu clignotant",
-                "L’utilisateur peut afficher la totalité de l’information sans le clignotement"
+                "Dans chaque page web, chaque contenu clignotant déclenché automatiquement, vérifie-t-il une de ces conditions ?",
+                "La durée du clignotement est inférieure ou égale à 5 secondes ;",
+                "L’utilisateur peut arrêter et relancer le clignotement ;",
+                "L’utilisateur peut afficher et masquer le contenu clignotant ;",
+                "L’utilisateur peut afficher la totalité de l’information sans le clignotement."
               ]
             },
             "references": [

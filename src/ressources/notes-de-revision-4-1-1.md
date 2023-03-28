@@ -32,7 +32,7 @@ Ajout de la mention "accessible au moyen d’un bouton ou d’un lien adjacent (
 
 ### 5.8.1
 
-Suppression de l’élément `colgroup` de la liste des éléments à vérifier
+Suppression de l’élément `<colgroup>` de la liste des éléments à vérifier
 
 ### 10.1.1
 
@@ -52,7 +52,7 @@ est remplacé par :
 ### 10.11
 
 * Ajout des techniques WCAG manquantes
-* Ajouter de la mention suivante dans _Cas particuliers_ : « L’objectif de ce critère est d’imposer un défilement dans une **unique** direction pour une lecture facilitée selon le sens de l’écriture. »
+* Ajouter de la mention suivante dans _Cas particuliers_ : « L’objectif de ce critère est de garantir un défilement dans une **unique** direction pour une lecture facilitée selon le sens de l’écriture. »
 * Modification de l’intitulé du critère :  
 "Pour chaque page web, les contenus peuvent-ils être présentés sans avoir recours à un défilement vertical pour une fenêtre ayant une hauteur de 256px ou à un défilement horizontal pour une fenêtre ayant une largeur de 320px (hors cas particuliers) ?"  
 est remplacé par :  
@@ -77,7 +77,7 @@ est remplacé par :
 Reformulation de la méthodologie de test :
 
 * Il existe une version alternative du document en téléchargement compatible avec l’accessibilité ;
-* Il existe une version alternative du document en téléchargement au format HTML.  
+* Il existe une version alternative du document en téléchargement au format HTML.
 
 est remplacé par 
 * Il en existe une version alternative en téléchargement compatible avec l’accessibilité ;
@@ -99,3 +99,8 @@ Ajout de la mention "Si l’objet multimédia a des sous-titres, il doit avoir u
 ### Liste des valeurs possibles pour l’attribut `autocomplete`
 
 "Identité sexuelle" est remplacé par "identité de genre"
+
+### Présentation de l’information
+
+Les éléments sont listés par ordre alphabétique.
+Ajout de deux notes concernant l’attribut `size` et l’élément `u`.

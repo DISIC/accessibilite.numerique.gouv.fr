@@ -17,7 +17,7 @@ Ce site a pour but de faciliter :
 ## Ce qui change
 
 - Nouvelle adresse
-- Intégration du système de design de l’État v1.6.0 ;
+- Intégration du système de design de l’État ;
 - Nouvelle architecture technique : chaque critère, chaque test, chaque terme du glossaire est dans un ficher markdown. La procédure de mise à jour de ces contenus est maintenant très simple et très rapide ;
 - Le format du fichier [glossaire.json](https://github.com/DISIC/accessibilite.numerique.gouv.fr/blob/main/RGAA/glossaire.json) a été revu et simplifié. Le format du fichier [criteres.json](https://github.com/DISIC/accessibilite.numerique.gouv.fr/blob/main/RGAA/criteres.json) reste identique. La méthodologie est disponible dans le fichier [methodologies.json](https://github.com/DISIC/accessibilite.numerique.gouv.fr/blob/main/RGAA/methodologies.json) ;
 - La contribution est désormais possible au niveau d’un critère, d’un test, d’un terme du glossaire, etc. ;

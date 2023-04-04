@@ -1,5 +1,5 @@
 /*!
- * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.9.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @media (min-width: 36em) {
   /*! media sm */
@@ -14,6 +14,11 @@
   /*! media xl */
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .fr-icon-align-left::before,
+  .fr-icon-align-left::after {
+    background-image: url("../../../icons/media/align-left.svg");
+  }
+
   .fr-icon-camera-fill::before,
   .fr-icon-camera-fill::after {
     background-image: url("../../../icons/media/camera-fill.svg");
@@ -52,6 +57,11 @@
   .fr-icon-film-line::before,
   .fr-icon-film-line::after {
     background-image: url("../../../icons/media/film-line.svg");
+  }
+
+  .fr-icon-fullscreen-line::before,
+  .fr-icon-fullscreen-line::after {
+    background-image: url("../../../icons/media/fullscreen-line.svg");
   }
 
   .fr-icon-gallery-fill::before,
@@ -174,11 +184,6 @@
     background-image: url("../../../icons/media/stop-circle-line.svg");
   }
 
-  .fr-icon-transcription::before,
-  .fr-icon-transcription::after {
-    background-image: url("../../../icons/media/transcription.svg");
-  }
-
   .fr-icon-volume-down-fill::before,
   .fr-icon-volume-down-fill::after {
     background-image: url("../../../icons/media/volume-down-fill.svg");
@@ -259,21 +264,21 @@
 
   .fr-fi-play-line::before,
   .fr-fi-play-line::after {
-    background-image: url("../../../icons/media/play-circle-line.svg") !important;
+    background-image: url("../../../icons/media/play-circle-line.svg");
   }
 
   .fr-fi-play-fill::before,
   .fr-fi-play-fill::after {
-    background-image: url("../../../icons/media/play-circle-fill.svg") !important;
+    background-image: url("../../../icons/media/play-circle-fill.svg");
   }
 
   .fr-icon-play-line::before,
   .fr-icon-play-line::after {
-    background-image: url("../../../icons/media/play-circle-line.svg") !important;
+    background-image: url("../../../icons/media/play-circle-line.svg");
   }
 
   .fr-icon-play-fill::before,
   .fr-icon-play-fill::after {
-    background-image: url("../../../icons/media/play-circle-fill.svg") !important;
+    background-image: url("../../../icons/media/play-circle-fill.svg");
   }
 }

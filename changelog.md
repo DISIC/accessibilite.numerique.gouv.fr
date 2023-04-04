@@ -1,13 +1,19 @@
 Changelog
 ====================================================================
 
+
+v1.2.0
+--------------------------------------------------------------------
+
+* update DFSR 1.9 
+
+
 v1.1.0
 --------------------------------------------------------------------
 
 * Mise à jour du RGAA. La version en vigueur est maintenant la 4.1.1.
 * Les fichiers criteres.json, glossaire.json et methologies.json sont maintenant à la racine du dossier RGAA
 * Ajout d’Ara dans le kit d’audit
-
 
 v1.0.1
 --------------------------------------------------------------------

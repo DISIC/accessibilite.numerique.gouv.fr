@@ -2,6 +2,14 @@
 
 Le nouveau site [accessibilite.numerique.gouv.fr](https://accessibilite.numerique.gouv.fr) dédié au référentiel général d’amélioration de l’accessibilité (RGAA).
 
+## Version du RGAA
+
+La version 4.1.1 a été publiée le 4 avril 2023.
+
+Les fichiers criteres.json, glossaire.json et methodologie.json sont disponibles dans le dossier suivant : https://github.com/DISIC/accessibilite.numerique.gouv.fr/tree/main/RGAA
+
+Les fichiers criteres.json, glossaire.json et methodologie.json de la version 4.1 sont toujours disponibles dans le dossier suivant : https://github.com/DISIC/accessibilite.numerique.gouv.fr/tree/main/RGAA/4.1/
+
 ## Infos
 
 Ce site est créé avec [11ty](https://www.11ty.dev/) et utilise la version 1.6.0 du [système de design de l’État](https://www.systeme-de-design.gouv.fr/).

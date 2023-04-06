@@ -25,4 +25,4 @@ Voici en complément, des outils et des modèles de documents pour réaliser un 
 
 Le document “Grille d’audit RGAA version 4” a été mis à jour. La présente version annule et remplace le document précédent (“rgaa4.0.modele-de-grille-d-audit.ods”) :
 
-- <a href="/doc/rgaa4.1.modele-de-grille-d-audit.ods" download>Modèle de grille d’audit RGAA version 4.1, format ODS (233 Ko)</a>
+- <a href="/doc/rgaa4.1.1.modele-de-grille-d-audit.ods" download>Modèle de grille d’audit RGAA version 4.1.1, format ODS (233 Ko)</a>

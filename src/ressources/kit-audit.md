@@ -17,8 +17,8 @@ La partie « [Évaluation de la conformité à la norme](/obligations/evaluatio
 
 Voici en complément, des outils et des modèles de documents pour réaliser un audit :
 
-- <a href="/doc/rgaa4-2019-modele-rapport-audit.odt" download>Modèle de rapport d’audit RGAA version 4.1, format ODT (51 Ko)</a>
-- <a href="/doc/rgaa4-2019-modele-rapport-audit.pdf" download>Modèle de rapport d’audit RGAA version 4.1, format PDF (2 Mo)</a>
+- <a href="/doc/rgaa4-2019-modele-rapport-audit.odt" download>Modèle de rapport d’audit RGAA version 4, format ODT (51 Ko)</a>
+- <a href="/doc/rgaa4-2019-modele-rapport-audit.pdf" download>Modèle de rapport d’audit RGAA version 4, format PDF (2 Mo)</a>
 - <a href="/doc/rgaa4-2019-exemple-declaration.odt" download>Exemple de déclaration d’accessibilité RGAA, format ODT (41 Ko)</a>
 - <a href="/doc/rgaa4-2019-exemple-declaration.pdf" download>Exemple de déclaration d’accessibilité RGAA, format PDF (207 Ko)</a>
 - <a href="../modele-de-declaration/">Exemple de déclaration d’accessibilité RGAA, format HTML</a>

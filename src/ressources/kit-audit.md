@@ -12,17 +12,62 @@ La partie « [Évaluation de la conformité à la norme](/obligations/evaluatio
 
 <div class="fr-callout fr-my-4w">
 		<h2>Ara</h2>
-    <p class="fr-callout__text"><a href="https://ara.numerique.gouv.fr" target="_blank" rel="noreferrer noopener" title="Ara - nouvelle fenêtre">Ara</a> est l’outil développé par la Dinum pour réaliser des audits d’accessibilité numérique, générer un rapport d’accessibilité et rédiger la déclaration d’accessibilité.</p>
+    <p class="fr-callout__text"><a href="https://ara.numerique.gouv.fr" target="_blank" rel="noreferrer noopener" title="Ara - nouvelle fenêtre">Ara</a> est l’outil développé par la Dinum pour <strong>réaliser des audits</strong> d’accessibilité numérique, <strong>générer un rapport</strong> d’accessibilité et <strong>rédiger la déclaration</strong> d’accessibilité.</p>
 </div>
 
 Voici en complément, des outils et des modèles de documents pour réaliser un audit :
 
-- <a href="/doc/rgaa4-2019-modele-rapport-audit.odt" download>Modèle de rapport d’audit RGAA version 4, format ODT (51 Ko)</a>
-- <a href="/doc/rgaa4-2019-modele-rapport-audit.pdf" download>Modèle de rapport d’audit RGAA version 4, format PDF (2 Mo)</a>
-- <a href="/doc/rgaa4-2019-exemple-declaration.odt" download>Exemple de déclaration d’accessibilité RGAA, format ODT (41 Ko)</a>
-- <a href="/doc/rgaa4-2019-exemple-declaration.pdf" download>Exemple de déclaration d’accessibilité RGAA, format PDF (207 Ko)</a>
-- <a href="../modele-de-declaration/">Exemple de déclaration d’accessibilité RGAA, format HTML</a>
-
-Le document “Grille d’audit RGAA version 4” a été mis à jour. La présente version annule et remplace le document précédent (“rgaa4.0.modele-de-grille-d-audit.ods”) :
-
-- <a href="/doc/rgaa4.1.1.modele-de-grille-d-audit.ods" download>Modèle de grille d’audit RGAA version 4.1.1, format ODS (233 Ko)</a>
+<h2>Modèles à télécharger</h2>
+<div class="fr-downloads-group fr-downloads-group--bordered">
+	<h3 class="fr-downloads-group__title">Rapport d’audit</h3> 
+	<ul>
+		<li>
+			<div class="fr-download">
+				<p>
+					<a href="/doc/rgaa4-2019-modele-rapport-audit.odt" download class="fr-download__link">Au format ODT <span class="fr-download__detail">51 Ko</span></a>
+				</p>
+			</div>
+		</li> 
+		<li>
+			<div class="fr-download">
+				<p>
+					<a href="/doc/rgaa4-2019-modele-rapport-audit.pdf" download class="fr-download__link">Au format PDF <span class="fr-download__detail">2 Mo</span></a>
+				</p>
+			</div>
+		</li> 
+	</ul>
+	<h3 class="fr-downloads-group__title">Déclaration d’accessibilité</h3> 
+	<ul>
+		<li>
+			<div class="fr-download">
+				<p>
+					<a href="/doc/rgaa4-2019-exemple-declaration.odt" download class="fr-download__link">Au format ODT <span class="fr-download__detail">41 Ko</span></a>
+				</p>
+			</div>
+		</li> 
+		<li>
+			<div class="fr-download">
+				<p>
+					<a href="/doc/rgaa4-2019-exemple-declaration.pdf" download class="fr-download__link">Au format PDF <span class="fr-download__detail">207 Ko</span></a>
+				</p>
+			</div>
+		</li> 
+		<li>
+			<div class="fr-download">
+				<p>
+					<a href="../modele-de-declaration/"  class="fr-link">Au format HTML</a>
+				</p>
+			</div>
+		</li> 
+	</ul>
+	<h3 class="fr-downloads-group__title">Grille d’audit RGAA version 4.1.1</h3> 
+	<ul>
+		<li>
+			<div class="fr-download">
+				<p>
+					<a href="/doc/rgaa4.1.1.modele-de-grille-d-audit.ods" download class="fr-download__link">Au format ODS <span class="fr-download__detail">233 Ko</span></a>
+				</p>
+			</div>
+		</li> 
+	</ul>
+</div>

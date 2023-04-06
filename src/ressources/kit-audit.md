@@ -24,14 +24,14 @@ Voici en complément, des outils et des modèles de documents pour réaliser un 
 		<li>
 			<div class="fr-download">
 				<p>
-					<a href="/doc/rgaa4-2019-modele-rapport-audit.odt" download class="fr-download__link">Au format ODT <span class="fr-download__detail">51 Ko</span></a>
+					<a href="/doc/rgaa4-2019-modele-rapport-audit.odt" download title="Télécharger le modèle de rapport d’audit (format ODT - 51 Ko)" class="fr-download__link">Au format ODT <span class="fr-download__detail">51 Ko</span></a>
 				</p>
 			</div>
 		</li> 
 		<li>
 			<div class="fr-download">
 				<p>
-					<a href="/doc/rgaa4-2019-modele-rapport-audit.pdf" download class="fr-download__link">Au format PDF <span class="fr-download__detail">2 Mo</span></a>
+					<a href="/doc/rgaa4-2019-modele-rapport-audit.pdf" download  title="Télécharger le modèle de rapport d’audit (format PDF - 2 Mo)" class="fr-download__link">Au format PDF <span class="fr-download__detail">2 Mo</span></a>
 				</p>
 			</div>
 		</li> 
@@ -41,21 +41,21 @@ Voici en complément, des outils et des modèles de documents pour réaliser un 
 		<li>
 			<div class="fr-download">
 				<p>
-					<a href="/doc/rgaa4-2019-exemple-declaration.odt" download class="fr-download__link">Au format ODT <span class="fr-download__detail">41 Ko</span></a>
+					<a href="/doc/rgaa4-2019-exemple-declaration.odt" download  title="Télécharger le modèle de déclaration d’accessibilité (format ODT - 41 Ko)" class="fr-download__link">Au format ODT <span class="fr-download__detail">41 Ko</span></a>
 				</p>
 			</div>
 		</li> 
 		<li>
 			<div class="fr-download">
 				<p>
-					<a href="/doc/rgaa4-2019-exemple-declaration.pdf" download class="fr-download__link">Au format PDF <span class="fr-download__detail">207 Ko</span></a>
+					<a href="/doc/rgaa4-2019-exemple-declaration.pdf" download title="Télécharger le modèle de déclaration d’accessibilité (format PDF - 207 Ko)" class="fr-download__link">Au format PDF <span class="fr-download__detail">207 Ko</span></a>
 				</p>
 			</div>
 		</li> 
 		<li>
 			<div class="fr-download">
 				<p>
-					<a href="../modele-de-declaration/"  class="fr-link">Au format HTML</a>
+					<a href="../modele-de-declaration/"  title="Modèle de déclaration d’accessibilité au format HTML" class="fr-link">Au format HTML</a>
 				</p>
 			</div>
 		</li> 
@@ -65,7 +65,7 @@ Voici en complément, des outils et des modèles de documents pour réaliser un 
 		<li>
 			<div class="fr-download">
 				<p>
-					<a href="/doc/rgaa4.1.1.modele-de-grille-d-audit.ods" download class="fr-download__link">Au format ODS <span class="fr-download__detail">233 Ko</span></a>
+					<a href="/doc/rgaa4.1.1.modele-de-grille-d-audit.ods" download  title="Télécharger la grille d’audit (format ODS - 233 Ko)" class="fr-download__link">Au format ODS <span class="fr-download__detail">233 Ko</span></a>
 				</p>
 			</div>
 		</li> 

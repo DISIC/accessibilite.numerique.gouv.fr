@@ -28,14 +28,15 @@ Les sources de cette mise à jour sont issues du dépôt RGAA.
 * **1.1.5** Ajout de la mention “Contenu de l’élément `<title>`” dans la méthodologie de test.
 * **1.6** Ajout de la note technique suivante :
 “attribut longdesc qui constitue une des conditions du test 1.6.1 (et dont la pertinence est vérifiée avec le test 1.7.1) est désormais considéré comme obsolète par la spécification HTML en cours. La vérification de cet attribut ne sera donc requise que pour les versions de la spécification HTML antérieure à HTML5.”
-* **4.5.1 et 4.5.2** Ajout de la mention “accessible au moyen d’un bouton ou d’un lien adjacent (une URL ou une ancre).”
+* **4.5.1 et 4.5.2** Ajout de la mention “accessible au moyen d’un bouton ou d’un lien adjacent (une URL ou une ancre).” dans la méthodologie de test. 
 * **5.8.1** Suppression de l’élément `<colgroup>` de la liste des éléments à vérifier
-* **10.1.1** Les éléments de présentation sont listés par ordre alphabétique.
-* **10.1.2** Suppression de l’attribut basefont de la liste des attributs de présentation.
+* **10.1.1** Les éléments de présentation sont listés par ordre alphabétique dans la méthodologie de test.
+* **10.1.2** Suppression de l’attribut basefont de la liste des attributs de présentation dans la méthodologie de test.
 * **10.7.1** Suppression des propriétés css :  
 “(propriétés outline, outline-width, outline-style, outline-color ou toute autre propriété de mise en forme appropriée)”  
 est remplacé par :  
-“(en agissant sur le contour ou le fond ou les deux)”
+“(en agissant sur le contour ou le fond ou les deux)”  
+ dans la méthodologie de test. 
 * **10.11**
   * Ajout des techniques WCAG manquantes
   * Ajout de la mention suivante dans Cas particuliers : « L’objectif de ce critère est de garantir un défilement dans une unique direction pour une lecture facilitée selon le sens de l’écriture. »

@@ -1185,7 +1185,7 @@
             "title": "La consultation de chaque [média temporel](#media-temporel-type-son-video-et-synchronise) est-elle, si nécessaire, [contrôlable par le clavier et tout dispositif de pointage](#accessible-et-activable-par-le-clavier-et-tout-dispositif-de-pointage) ?",
             "tests": {
               "1": [
-                "Chaque [média temporel](#media-temporel-type-son-video-et-synchronise) a-t-il, si nécessaire, les fonctionnalités de contrôle de sa consultation ?"
+                "Chaque [média temporel](#media-temporel-type-son-video-et-synchronise) a-t-il, si nécessaire, les fonctionnalités de [contrôle de sa consultation](#controle-de-la-consultation-d-un-media-temporel) ?"
               ],
               "2": [
                 "Pour chaque [média temporel](#media-temporel-type-son-video-et-synchronise), chaque fonctionnalité vérifie-t-elle une de ces conditions ?",

@@ -98,6 +98,7 @@
 																<li><a class="fr-tag fr-mb-1w" href="https://www.w3.org/Translations/WCAG21-fr/#{{ wcag.title  | lower | replace(" ", "-") | replace(",", "") | replace("(", "") | replace(")", "")}}" target="_blank" rel="noreferrer noopener" title="critère {{ wcag.successCriterion }} ({{ wcag.level }}) - nouvelle fenêtre">{{ wcag.successCriterion }} ({{ wcag.level }})</a></li>
 															{% endfor %}
 														</ul>
+													</div>
 												{% endif %}
 												{% if annexeCrit.data.Techniques != null %}
 													<h6 class="fr-mb-1w fr-text--md">Technique(s) suffisante(s) et/ou échec(s) <small>(en anglais)</small> :</h6>

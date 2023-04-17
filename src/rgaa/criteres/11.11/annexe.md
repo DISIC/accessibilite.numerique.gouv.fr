@@ -1,7 +1,7 @@
 ---
 WCAG:
   - successCriterion: 3.3.3
-    title: Eror Suggestion
+    title: Error Suggestion
     level: AA
 Techniques:
   - G84

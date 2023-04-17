@@ -4,7 +4,7 @@ Changelog
 v1.3.3
 --------------------------------------------------------------------
 
-* Fix définition *Contrôle de la consultation*. La version en vigueur est maintenant la 4.1.2.
+* Fix définition *Contrôle de la consultation*. 
 * Fix orthotypo
 
 v1.3.2

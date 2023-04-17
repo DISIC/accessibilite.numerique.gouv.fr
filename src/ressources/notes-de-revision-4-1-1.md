@@ -60,7 +60,7 @@ est remplacé par :
   * Il en existe une version alternative au format HTML compatible avec l’accessibilité.
 ## Glossaire
 * Alternative textuelle (image) : Précision et ajout de la balise title soit “dans une balise `<title>` ou dans une balise `<text>` que cette dernière balise soit ou non visible”
-* Contrôle de la consultation d’un média temporel : Ajout de la mention “Si l’objet multimédia a des sous-titres, il doit avoir une fonctionnalité de contrôle de l’apparition/disparition des sous-titres”
+* Contrôle de la consultation d’un média temporel : Ajout de la mention “Si l’objet multimédia a des sous-titres non incrustés, il doit avoir une fonctionnalité de contrôle de l’apparition/disparition des sous-titres”
 * Liste des valeurs possibles pour l’attribut `autocomplete` :
 	* “Identité sexuelle” est remplacé par “identité de genre”,
 	* Séparation de deux items indûment fusionnés ;

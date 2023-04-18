@@ -1,5 +1,5 @@
 ---
-title: Notes de révision du RGAA 4.1 vers 4.1.1
+title: Notes de révision du RGAA 4.1 vers 4.1.2
 layout: layouts/base.njk
 descirption: 
 eleventyNavigation:

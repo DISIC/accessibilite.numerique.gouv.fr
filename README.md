@@ -4,7 +4,7 @@ Le nouveau site [accessibilite.numerique.gouv.fr](https://accessibilite.numeriqu
 
 ## Version du RGAA
 
-La version 4.1.1 a été publiée le 4 avril 2023.
+La version 4.1.2 a été publiée le 18 avril 2023.
 
 Les fichiers criteres.json, glossaire.json et methodologie.json sont disponibles dans le dossier suivant : https://github.com/DISIC/accessibilite.numerique.gouv.fr/tree/main/RGAA
 

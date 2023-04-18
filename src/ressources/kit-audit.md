@@ -60,12 +60,12 @@ Voici en complément, des outils et des modèles de documents pour réaliser un 
 			</div>
 		</li> 
 	</ul>
-	<h3 class="fr-downloads-group__title">Grille d’audit RGAA version 4.1.1</h3> 
+	<h3 class="fr-downloads-group__title">Grille d’audit RGAA version 4.1.2</h3> 
 	<ul>
 		<li>
 			<div class="fr-download">
 				<p>
-					<a href="/doc/rgaa4.1.1.modele-de-grille-d-audit.ods" download  title="Télécharger la grille d’audit (format ODS - 233 Ko)" class="fr-download__link">Au format ODS <span class="fr-download__detail">233 Ko</span></a>
+					<a href="/doc/rgaa4.1.2.modele-de-grille-d-audit.ods" download  title="Télécharger la grille d’audit (format ODS - 233 Ko)" class="fr-download__link">Au format ODS <span class="fr-download__detail">233 Ko</span></a>
 				</p>
 			</div>
 		</li> 

@@ -8,7 +8,7 @@ eleventyNavigation:
   order: 6
 ---
 
-Cette édition comporte le premier erratum apporté à la version 4.1 du Référentiel général d’amélioration de l’accessibilité (RGAA). Il n’invalide pas les audits déjà réalisés.
+Cette édition comporte les deux premiers erratum apportés à la version 4.1 du Référentiel général d’amélioration de l’accessibilité (RGAA). Ils n’invalident pas les audits déjà réalisés.
 
 Les corrections concernent essentiellement les critères, les tests et le glossaire.
 

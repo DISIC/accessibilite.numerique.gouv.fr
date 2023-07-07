@@ -2431,6 +2431,16 @@
                 "Lors de l’utilisation d’un [composant d’interface](#composant-d-interface) propre au site permettant d’agrandir le texte ou de zoomer."
               ]
             },
+            "particularCases": [
+              "Font exception à ce critère, les contenus pour lesquels l’utilisateur n’a pas de possibilité de personnalisation :",
+              {
+                "ul": [
+                  "- Les sous-titres incrustés dans une vidéo ;",
+                  "- Les textes en image ;",
+                  "- Le texte au sein d’une balise `<canvas>`."
+                ]
+              }
+            ],
             "references": [
               {
                 "wcag": [

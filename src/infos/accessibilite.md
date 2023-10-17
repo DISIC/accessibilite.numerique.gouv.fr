@@ -65,6 +65,6 @@ Si vous constatez un défaut d’accessibilité vous empêchant d’accéder à 
 Plusieurs moyens sont à votre disposition :
 
 - un [formulaire de contact](https://www.defenseurdesdroits.fr/nous-contacter-355)
-- la [liste des délégués de votre région](https://www.defenseurdesdroits.fr/carte-des-delegues) avec leurs informations de contact directs
+- la [liste des délégués près de chez vous](https://www.defenseurdesdroits.fr/carte-des-delegues) avec leurs informations de contact directs
 - un numéro de téléphone : le 09 69 39 00 00 du lundi au vendredi de 8h00 à 20h00 (coût d’un appel local)
 - une adresse postale dans l’[annuaire de l’administration](https://lannuaire.service-public.fr/autorites-independantes/autorite-administrative-independante_195381)

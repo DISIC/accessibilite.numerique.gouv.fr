@@ -16,7 +16,7 @@ Les combinaisons ont été établies à partir de la liste des technologies d’
 
 ## Environnement de test Ordinateur (desktop)
 
-Les systèmes d’exploitation retenus sont Windows et Mac OS X et les navigateurs Firefox, Chrome, Edge et Safari. Il appartient à l’auditeur de définir, en concertation avec les responsables du site audité, les versions de système d’exploitation et de navigateur en adéquation avec le contexte d’usage du site et l’environnement de test utilisé lors du développement du site. Les versions des technologies d’assistance à utiliser seront soit la dernière disponible sur le système d’exploitation retenu soit la version précédente.
+Les systèmes d’exploitation retenus sont Windows et Mac OS X et les navigateurs Firefox, Chrome, Edge et Safari. Il appartient à l’auditeur de définir, en concertation avec les responsables du site audité, les versions de système d’exploitation et de navigateur en adéquation avec le contexte d’usage du site et l’environnement de test utilisé lors du développement du site. Les versions des technologies d’assistance à utiliser seront soit la dernière disponible en langue française sur le système d’exploitation retenu soit la version précédente.
 
 Lorsque le site ou l’application est destinée à un public dont l’équipement est maîtrisé, les tests devront se faire sur un environnement de test adapté au contexte de l’environnement maîtrisé.
 

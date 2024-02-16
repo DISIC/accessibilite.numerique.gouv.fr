@@ -15,6 +15,7 @@ WCAG:
 Techniques:
   - G82
   - G131
+  - G167
   - H44
   - H65
   - F68

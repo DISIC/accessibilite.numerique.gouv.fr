@@ -4,10 +4,13 @@ WCAG:
     title: Resize Text
     level: AA
 Techniques:
+  - G142
   - G146
+  - G178
   - G179
   - F69
   - F80
+  - F94
   - SCR34
   - C12
   - C13

@@ -10,3 +10,7 @@ Techniques:
   - F23
   - F93
 ---
+
+#### Note
+
+Ce critère est soumis au [principe de non-interférence](../../obligations/evaluation-conformite/#principe-de-non-interférence).

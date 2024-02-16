@@ -24,3 +24,7 @@ Techniques:
   - SM11
   - SM12
 ---
+
+#### Note
+
+Ce critère est soumis au [principe de non-interférence](../../obligations/evaluation-conformite/#principe-de-non-interférence).

@@ -23,7 +23,7 @@
 				{% endif %}
 				<p class="fr-h2 fr-tag fr-mb-2w" id="{{ letter }}">{{ letter | capitalize }}</p>
 			{% endif %}
-			<h2 class="fr-h5" id="{{ term.data.title | slugify }}">{{ term.data.title }}&nbsp;<a class="direct-link" title="Lien vers {{ term.data.title }}" href="#{{ term.data.title | slugify }}" ><span class="fr-icon-links-fill" ></span></a></h2>
+			<h2 class="fr-h5" id="{{ term.data.title | slugify }}">{{ term.data.title }}&nbsp;<a class="direct-link" title="{{ term.data.title }}" href="#{{ term.data.title | slugify }}" ><span class="fr-icon-links-fill" ></span><span class="fr-sr-only">{{ term.data.title }}</span></a></h2>
 			<div class="definition fr-mb-4w">{{ term.templateContent | safe }}</div>
 				{% set currentLetter =  letter %}
 		{% endfor %}

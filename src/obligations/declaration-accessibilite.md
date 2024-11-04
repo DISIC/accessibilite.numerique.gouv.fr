@@ -131,7 +131,11 @@ Cette procédure est à utiliser dans le cas suivant.
 
 Vous avez signalé au responsable du site internet un défaut d’accessibilité qui vous empêche d’accéder à un contenu ou à un des services du portail et vous n’avez pas obtenu de réponse satisfaisante.
 
-- Écrire un message au Défenseur des droits (https://www.defenseurdesdroits.fr/nous-contacter-355)
-- Contacter le délégué du Défenseur des droits près de chez vous (https://www.defenseurdesdroits.fr/carte-des-delegues)
-- Envoyer un courrier par la poste (gratuit, ne pas mettre de timbre) Défenseur des droits
-Libre réponse 71120 75342 Paris CEDEX 07
+- Écrire un message au Défenseur des droits
+  (https://www.defenseurdesdroits.fr/nous-contacter-355)
+- Contacter le délégué du Défenseur des droits près de chez vous
+  (https://www.defenseurdesdroits.fr/carte-des-delegues)
+- Envoyer un courrier par la poste (gratuit, ne pas mettre de timbre)
+  Défenseur des droits
+	Libre réponse 71120
+	75342 Paris CEDEX 07

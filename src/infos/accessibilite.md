@@ -46,7 +46,6 @@ Les vérifications de restitution de contenus ont été réalisées sur la base 
 - [Accessibilité](https://accessibilite.numerique.gouv.fr/infos/accessibilite/)
 - [Mentions légales](https://accessibilite.numerique.gouv.fr/infos/mentions-legales/)
 - [Plan du site](https://accessibilite.numerique.gouv.fr/infos/plan-du-site/)
-- [Nouveautés](https://accessibilite.numerique.gouv.fr/infos/nouveautes/)
 - [Critères et tests](https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/)
 - [Glossaire](https://accessibilite.numerique.gouv.fr/methode/glossaire/)
 - [Champ d’application](https://accessibilite.numerique.gouv.fr/obligations/champ-application/)

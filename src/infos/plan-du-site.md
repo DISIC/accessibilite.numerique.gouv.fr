@@ -22,7 +22,6 @@ layout: layouts/base.njk
     - [Méthodologie de test](/ressources/methodologie-de-test/)
     - [Exemple de déclaration d’accessibilité](/ressources/modele-de-declaration/)
     - [Questions](/ressources/questions/)
-- [Nouveautés](/infos/nouveautes/)
 - [Accessibilité](/infos/accessibilite/)
 - [Mentions légales](/infos/mentions-legales/)
 - [Contributions](/infos/contributions/)

@@ -13,7 +13,6 @@ Techniques:
   - F39
   - F38
   - ARIA4
-  - ARIA10
 ---
 
 #### Note technique

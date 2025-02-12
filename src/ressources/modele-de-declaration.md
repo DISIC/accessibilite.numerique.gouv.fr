@@ -102,7 +102,7 @@ Plusieurs moyens sont à votre disposition :
 
 - Écrire un message au Défenseur des droits
 - Contacter le délégué du Défenseur des droits dans votre région
-- Envoyer un courrier par la poste (gratuit, ne pas mettre de timbre)
-  Défenseur des droits
-  Libre réponse 71120
+- Envoyer un courrier par la poste (gratuit, ne pas mettre de timbre) :<br>
+  Défenseur des droits<br>
+  Libre réponse 71120<br>
   75342 Paris CEDEX 07

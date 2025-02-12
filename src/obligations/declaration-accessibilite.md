@@ -135,7 +135,7 @@ Vous avez signalé au responsable du site internet un défaut d’accessibilité
   (https://www.defenseurdesdroits.fr/nous-contacter-355)
 - Contacter le délégué du Défenseur des droits près de chez vous
   (https://www.defenseurdesdroits.fr/carte-des-delegues)
-- Envoyer un courrier par la poste (gratuit, ne pas mettre de timbre)
-  Défenseur des droits
-	Libre réponse 71120
+- Envoyer un courrier par la poste (gratuit, ne pas mettre de timbre) :<br>
+  Défenseur des droits<br>
+	Libre réponse 71120<br>
 	75342 Paris CEDEX 07

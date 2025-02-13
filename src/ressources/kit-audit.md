@@ -12,7 +12,8 @@ La partie « [Évaluation de la conformité à la norme](/obligations/evaluatio
 
 <div class="fr-callout fr-my-4w">
 		<h2>Ara</h2>
-    <p class="fr-callout__text"><a href="https://ara.numerique.gouv.fr" target="_blank" rel="noreferrer noopener" title="Ara - nouvelle fenêtre">Ara</a> est l’outil développé par la Dinum pour <strong>réaliser des audits</strong> d’accessibilité numérique, <strong>générer un rapport</strong> d’accessibilité et <strong>rédiger la déclaration</strong> d’accessibilité.</p>
+    <p class="fr-callout__text"><a href="https://ara.numerique.gouv.fr" target="_blank" rel="noreferrer noopener" title="Ara - nouvelle fenêtre">Ara</a> est l’outil développé par la Dinum pour <strong>réaliser des audits</strong> de conformité au RGAA. Ara permet également la génération de  <strong>rapport</strong> et de <strong>déclaration</strong> de conformité.</p>
+		<p class="fr-callout__text fr-mt-2w"><strong>Ara n’est pas un outil automatique</strong>. C’est un outil pour les expertes et experts en accessibilité numérique et nécessite une bonne connaissance des 106 critères du RGAA.</p>
 </div>
 
 Voici en complément, des outils et des modèles de documents pour réaliser un audit :

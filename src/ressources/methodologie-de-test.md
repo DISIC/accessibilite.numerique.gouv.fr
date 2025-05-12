@@ -51,7 +51,7 @@ La vérification de l’arborescence du document et de la hiérarchie des titres
 
 L’analyse des fichiers bureautiques peut être réalisée au moyen de différents outils en fonction du format du fichier :
 
-- [PAC (PDF Accessibility Checker) 2021 pour Windows](https://pdfua.foundation/fr/pdf-accessibility-checker-pac) : logiciel qui permet de contrôler certains points d’accessibilité des documents PDF ;
+- [PAC (PDF Accessibility Checker) 2021 pour Windows](https://pac.pdf-accessibility.org/en/download) : logiciel qui permet de contrôler certains points d’accessibilité des documents PDF ;
 - Les versions récentes des outils bureautiques de Microsoft offrent une fonctionnalité intégrée de validation de l’accessibilité (voir l'article [Rendre vos documents Word accessibles aux personnes atteintes d’un handicap](https://support.microsoft.com/fr-fr/office/rendre-vos-documents-word-accessibles-aux-personnes-atteintes-d-un-handicap-d9bf3683-87ac-47ea-b91a-78dcacb3c66d) et les articles associés) ;
 - [AccessODF pour LibreOffice](https://extensions.libreoffice.org/extensions/accessodf) : extension pour vérifier l’accessibilité d’un document LibreOffice Writer ; à noter que cette extension n’est plus compatible avec les dernières versions de LibreOffice (supérieures à la version 4.0) ;
 - [Ace by DAISY App](https://inclusivepublishing.org/toolbox/ace-by-daisy-app/) est un utilitaire pour vérifier l’accessibilité d’un fichier EPUB.

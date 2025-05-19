@@ -8,3 +8,7 @@ Techniques:
   - G19
   - G176
 ---
+
+#### Note
+
+Ce critère est soumis au [principe de non-interférence](../../obligations/evaluation-conformite/#principe-de-non-interférence).

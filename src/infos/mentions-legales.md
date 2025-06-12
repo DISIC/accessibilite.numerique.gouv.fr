@@ -35,8 +35,8 @@ La mise en place de liens vers nos contenus et documents est cependant est à pr
 
 ## Hébergement
 
-Netlify Inc.<br>
-2325 3rd Street, Suite 215<br>
-San Francisco, California 94107<br>
-États-Unis d’Amérique<br>
-+1 844-899-7312
+Ce site est hébergé par Clever Cloud SAS.
+Clever Cloud SAS est une société par actions simplifiée immatriculée au Registre du Commerce et des Sociétés (RCS) de Nantes sous le numéro RCS Nantes B 524 172 699.
+* Son siège social est situé au 4 rue Voltaire, 44000 Nantes, France.
+* Numéro de TVA : FR 87 524 172 699
+* Contact téléphonique : 02 85 52 07 69

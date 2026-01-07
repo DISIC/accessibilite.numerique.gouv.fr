@@ -11,5 +11,3 @@ eleventyNavigation:
 Vous pouvez poser vos questions sur la liste de discussion du RGAA accessible sur inscription.
 
 <a href="https://groupes.renater.fr/sympa/subscribe/rgaa" class="fr-btn">S’inscrire à la liste de discussion RGAA</a>
-
-Vous pouvez aussi écrire à l’équipe en charge du RGAA à l’adresse suivante : **rgaa@design.numerique.gouv.fr**.

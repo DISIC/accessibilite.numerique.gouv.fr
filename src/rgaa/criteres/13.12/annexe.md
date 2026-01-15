@@ -3,6 +3,9 @@ WCAG:
   - successCriterion: 2.5.4
     title: Motion Actuation
     level: A
+Techniques:
+  - F106
+  - G213		
 ---
 
 #### Cas particuliers

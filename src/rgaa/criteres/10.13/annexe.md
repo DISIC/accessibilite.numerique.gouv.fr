@@ -5,6 +5,7 @@ WCAG:
     level: AA
 Techniques:
   - F95
+  - SCR39
 ---
 
 #### Cas particuliers

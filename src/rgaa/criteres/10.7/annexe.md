@@ -15,4 +15,5 @@ Techniques:
   - F78
   - SCR31
   - C15
+  - C40
 ---

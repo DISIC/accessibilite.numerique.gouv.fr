@@ -4,6 +4,7 @@ WCAG:
     title: Pointer Gestures
     level: A
 Techniques:
+  - F105
   - G215
   - G216
 ---

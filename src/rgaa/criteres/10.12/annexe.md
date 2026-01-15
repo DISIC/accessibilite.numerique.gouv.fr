@@ -8,6 +8,7 @@ Techniques:
   - C21
   - C35
   - C36
+  - F104
 ---
 
 #### Cas particuliers

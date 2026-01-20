@@ -91,3 +91,25 @@ Le pourcentage de critères RGAA respectés s’obtient en divisant le nombre de
 - Critère applicable : pour qu’un critère soit applicable, il suffit qu’il le soit sur une seule page de l’échantillon. Ce qui a pour corollaire qu’un critère est non applicable s’il est non applicable sur toutes les pages de l’échantillon sans exception.
 
 Le taux de moyen de conformité du service en ligne s’obtient en faisant la moyenne des taux de conformité de chaque page.
+
+## Principe de non-interférence
+
+Dans un échantillon d’audit, il peut y avoir des contenus qui ne sont pas soumis à l’obligation de mise en accessibilité :
+
+- les [contenus exemptés](#contenus-exemptés) ;
+- les [contenus dérogés pour charge disproportionnée](#dérogation-pour-charge-disproportionnée) ;
+- les contenus non accessibles qui disposent d’une alternative accessible.
+
+Il est indispensable de s’assurer que ces contenus n’empêchent pas les utilisateurs d’accéder au reste de la page.
+
+Ainsi, bien que la conformité de ces contenus ne soit pas requise, il reste obligatoire qu’ils se conforment aux critères et tests suivants :
+
+- Critère 4.10 : Chaque son déclenché automatiquement est-il contrôlable par l’utilisateur ?
+- Critère 12.9 : Dans chaque page web, la navigation ne doit pas contenir de piège au clavier. Cette règle est-elle respectée ?
+- Test 13.1.1 : Pour chaque page web, chaque procédé de rafraîchissement (balise `<object>`, balise `<embed>`, balise `<svg>`, balise `<canvas>`, balise `<meta>`) vérifie-t-il une de ces conditions (hors cas particuliers) ?
+- Critère 13.7 : Dans chaque page web, les changements brusques de luminosité ou les effets de flash sont-ils correctement utilisés ?
+- Critère 13.8 : Dans chaque page web, chaque contenu en mouvement ou clignotant est-il contrôlable par l’utilisateur ?
+
+Le non-respect de l’un de ces critères ou tests pour l’un des types de contenus énumérés rend le ou les critères correspondants non conformes.
+
+Le principe de non-interférence est identifié dans la norme EN 301 549 au critère 9.6 WCAG <span lang="en">conformance requirements</span>.

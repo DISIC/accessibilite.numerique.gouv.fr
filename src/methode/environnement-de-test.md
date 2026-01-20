@@ -16,15 +16,15 @@ Les combinaisons ont été établies à partir de la liste des technologies d’
 
 ## Environnement de test Ordinateur (desktop)
 
-Les systèmes d’exploitation retenus sont Windows et Mac OS X et les navigateurs, Internet Explorer, Firefox et Safari. Il appartient à l’auditeur de définir, en concertation avec les responsables du site audité, les versions de système d’exploitation et de navigateur en adéquation avec le contexte d’usage du site et l’environnement de test utilisé lors du développement du site. Les versions des technologies d’assistance à utiliser seront soit la dernière disponible en langue française sur le système d’exploitation retenu soit la version précédente.
+Les systèmes d’exploitation retenus sont Windows et Mac OS X et les navigateurs Firefox, Chrome, Edge et Safari. Il appartient à l’auditeur de définir, en concertation avec les responsables du site audité, les versions de système d’exploitation et de navigateur en adéquation avec le contexte d’usage du site et l’environnement de test utilisé lors du développement du site. Les versions des technologies d’assistance à utiliser seront soit la dernière disponible en langue française sur le système d’exploitation retenu soit la version précédente.
 
 Lorsque le site ou l’application est destinée à un public dont l’équipement est maîtrisé, les tests devront se faire sur un environnement de test adapté au contexte de l’environnement maîtrisé.
 
-Pour qu’un dispositif HTML / WAI-ARIA ou son alternative soit considéré comme compatible avec l’accessibilité, il faut qu’il soit pleinement fonctionnel, en termes de restitution et de fonctionnalités, sur au moins une des combinaisons suivantes.
+Pour qu’un dispositif HTML / WAI-ARIA ou son alternative soit considéré comme compatible avec l’accessibilité, il faut qu’il soit pleinement fonctionnel, en termes de restitution et de fonctionnalités, sur l’ensemble des configurations suivantes.
 
 <div class="fr-table fr-table--bordered">
     <table>
-        <caption>Environnement de test Ordinateur (desktop) - Combinaison 1</caption>
+        <caption>Environnement de test Ordinateur (desktop)</caption>
         <thead>
         <tr>
             <th scope="col">Technologie d’assistance</th>
@@ -34,11 +34,11 @@ Pour qu’un dispositif HTML / WAI-ARIA ou son alternative soit considéré comm
         <tbody>
         <tr>
             <td>NVDA (dernière version)</td>
-            <td>Firefox</td>
+            <td>Firefox ou Chrome ou Edge</td>
         </tr>
         <tr>
             <td>JAWS (version précédente)</td>
-            <td>Firefox ou Internet Explorer</td>
+            <td>Firefox ou Chrome ou Edge</td>
         </tr>
         <tr>
             <td>VoiceOver (dernière version)</td>
@@ -48,31 +48,6 @@ Pour qu’un dispositif HTML / WAI-ARIA ou son alternative soit considéré comm
     </table>
 </div>
 
-<div class="fr-table fr-table--bordered">
-    <table>
-        <caption>Environnement de test Ordinateur (desktop) - Combinaison 2</caption>
-        <thead>
-        <tr>
-            <th scope="col">Technologie d’assistance</th>
-            <th scope="col">Navigateur</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>JAWS (version précédente)</td>
-            <td>Firefox</td>
-        </tr>
-        <tr>
-            <td>NVDA (dernière version)</td>
-            <td>Firefox ou Internet Explorer</td>
-        </tr>
-        <tr>
-            <td>VoiceOver (dernière version)</td>
-            <td>Safari</td>
-        </tr>
-        </tbody>
-    </table>
-</div>
 
 ## Environnement de test Terminal mobile
 

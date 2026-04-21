@@ -281,6 +281,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("./src/favicon");
 	eleventyConfig.addPassthroughCopy("./src/icons");
 	eleventyConfig.addPassthroughCopy("./src/doc");
+	eleventyConfig.addPassthroughCopy("./src/images");
 
 	return {
 		dir: {

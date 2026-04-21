@@ -1,14 +1,14 @@
 ---
 title: Notes de révision du RGAA 4.1 vers 4.1.2
 layout: layouts/base.njk
-descirption: 
+description: 
 eleventyNavigation:
   title: Ressources
   parent: ressources
   order: 6
 ---
 
-Cette édition comporte les deux premiers erratum apportés à la version 4.1 du Référentiel général d’amélioration de l’accessibilité (RGAA). Ils n’invalident pas les audits déjà réalisés.
+Cette édition comporte les deux premiers errata apportés à la version 4.1 du Référentiel général d’amélioration de l’accessibilité (RGAA). Ils n’invalident pas les audits déjà réalisés.
 
 Les corrections concernent essentiellement les critères, les tests et le glossaire.
 

@@ -9,7 +9,7 @@ layout: layouts/base.njk
 DINUM<br>
 20 avenue de Ségur<br>
 75007 Paris<br>
-Tel. accueil : 01.71.21.01.70<br>
+Tél. accueil : 01.71.21.01.70<br>
 SIRET : 12000101100010 (secrétariat général du gouvernement)<br>
 SIREN : 120 001 011
 
@@ -31,7 +31,7 @@ Tout site public ou privé est autorisé à établir, sans autorisation préalab
 
 Sauf mention de propriété intellectuelle détenue par des tiers, les contenus de ce site sont proposés sous licence ouverte 2.0.
 
-La mise en place de liens vers nos contenus et documents est cependant est à privilégier par rapport à la reproduction sur un site tiers. La mention explicite du site source accessibilite.numerique.gouv.fr est recommandée.
+La mise en place de liens vers nos contenus et documents est cependant à privilégier par rapport à la reproduction sur un site tiers. La mention explicite du site source accessibilite.numerique.gouv.fr est recommandée.
 
 ## Hébergement
 

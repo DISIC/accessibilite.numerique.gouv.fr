@@ -12,7 +12,7 @@ Ce document a été établi dans le cadre des ressources venant accompagner la p
 
 Il est destiné à toute personne soucieuse de vérifier la conformité d’un contenu web au RGAA 4. Il s’agit d’une méthodologie de tests documentant les étapes permettant de vérifier si un critère du RGAA 4 est conforme ou non. Cette méthodologie est donc à utiliser en complément du référentiel technique du RGAA et ne peut être utilisée seule. Elle ne dispense donc pas d’une lecture approfondie du référentiel technique, ni d’une formation au RGAA.
 
-Pour chacun des tests d’un critère correspond une procédure de test ; la mise en oeuvre de cette procédure peut recourir parfois l’usage d’outils spécifiques, autrement un navigateur suffit pour effectuer la majorité des tests.
+Pour chacun des tests d’un critère correspond une procédure de test ; la mise en œuvre de cette procédure peut recourir parfois à l’usage d’outils spécifiques, autrement un navigateur suffit pour effectuer la majorité des tests.
 Une liste d’outils est aussi proposée pour aider à la réalisation des tests ; ils ont été retenus à la fois parce qu’ils sont fréquemment utilisés par les experts du métier et parce qu’ils facilitent la recherche de certains résultats.
 
 <div class="fr-callout"><p class="fr-text--lg">

@@ -90,4 +90,4 @@ Le pourcentage de critères RGAA respectés s’obtient en divisant le nombre de
 - Critère validé : un critère est validé s’il est validé sur toutes les pages de l’échantillon. Si un critère est invalidé sur une seule page de l’échantillon, il ne pourra pas être considéré comme valide pour le calcul du taux.
 - Critère applicable : pour qu’un critère soit applicable, il suffit qu’il le soit sur une seule page de l’échantillon. Ce qui a pour corollaire qu’un critère est non applicable s’il est non applicable sur toutes les pages de l’échantillon sans exception.
 
-Le taux de moyen de conformité du service en ligne s’obtient en faisant la moyenne des taux de conformité de chaque page.
+Le taux moyen de conformité du service en ligne s’obtient en faisant la moyenne des taux de conformité de chaque page.

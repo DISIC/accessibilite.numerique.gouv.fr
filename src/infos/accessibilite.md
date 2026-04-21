@@ -50,7 +50,7 @@ Les vérifications de restitution de contenus ont été réalisées sur la base 
 - [Glossaire](https://accessibilite.numerique.gouv.fr/methode/glossaire/)
 - [Champ d’application](https://accessibilite.numerique.gouv.fr/obligations/champ-application/)
 - [Environnement de test](https://accessibilite.numerique.gouv.fr/methode/environnement-de-test/)
-- [Kits d’audits](https://accessibilite.numerique.gouv.fr/ressources/kit-audit/)
+- [Kits d’audit](https://accessibilite.numerique.gouv.fr/ressources/kit-audit/)
 - [Obligations](https://accessibilite.numerique.gouv.fr/obligations/)
 
 ## Retour d’information et contact

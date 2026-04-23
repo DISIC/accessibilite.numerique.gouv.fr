@@ -1,7 +1,7 @@
 ---
 title: Critères AAA
 layout: layouts/base.njk
-descirption: Critères de succès triple A (AAA) des WCAG 2.1
+description: Critères de succès triple A (AAA) des WCAG 2.1
 eleventyNavigation:
   title: Ressources
   parent: ressources
@@ -16,7 +16,7 @@ Voici la liste des critères de succès triple A (AAA) des WCAG 2.1 :
 * 1.2.9 - <a href="https://www.w3.org/Translations/WCAG21-fr/#audio-only-live" rel="noreferrer noopener" target="_blank" title="Seulement audio (en direct) - nouvelle fenêtre">Seulement audio (en direct)</a> 
 * 1.3.6 - <a href="https://www.w3.org/Translations/WCAG21-fr/#identify-purpose" rel="noreferrer noopener" target="_blank" title="Identifier la fonction - nouvelle fenêtre">Identifier la fonction</a> 
 * 1.4.6 - <a href="https://www.w3.org/Translations/WCAG21-fr/#contrast-enhanced" rel="noreferrer noopener" target="_blank" title="Contraste (amélioré) - nouvelle fenêtre">Contraste (amélioré)</a> 
-* 1.4.7 - <a href="https://www.w3.org/Translations/WCAG21-fr/#low-or-no-background-audio" rel="noreferrer noopener" target="_blank" title="Arrière-plan sonore de faible volume ou absent< - nouvelle fenêtre">Arrière-plan sonore de faible volume ou absent</a> 
+* 1.4.7 - <a href="https://www.w3.org/Translations/WCAG21-fr/#low-or-no-background-audio" rel="noreferrer noopener" target="_blank" title="Arrière-plan sonore de faible volume ou absent - nouvelle fenêtre">Arrière-plan sonore de faible volume ou absent</a> 
 * 1.4.8 - <a href="https://www.w3.org/Translations/WCAG21-fr/#visual-presentation" rel="noreferrer noopener" target="_blank" title="Présentation visuelle - nouvelle fenêtre">Présentation visuelle</a> 
 * 1.4.9 - <a href="https://www.w3.org/Translations/WCAG21-fr/#images-of-text-no-exception" rel="noreferrer noopener" target="_blank" title="Texte sous forme d’image (sans exception) - nouvelle fenêtre">Texte sous forme d’image (sans exception)</a> 
 * 2.1.3 - <a href="https://www.w3.org/Translations/WCAG21-fr/#keyboard-no-exception" rel="noreferrer noopener" target="_blank" title="Clavier (pas d‘exception) - nouvelle fenêtre">Clavier (pas d‘exception)</a> 

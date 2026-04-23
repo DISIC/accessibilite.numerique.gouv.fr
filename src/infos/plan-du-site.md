@@ -6,7 +6,7 @@ layout: layouts/base.njk
 
 - [Méthode technique](/methode/)
     - [Introduction](/methode/introduction/)
-    - [Critères et les tests](/methode/criteres-et-tests/)
+    - [Critères et tests](/methode/criteres-et-tests/)
     - [Glossaire](/methode/glossaire/)
     - [Environnement de test](/methode/environnement-de-test/)
 - [Obligations légales](/obligations/)

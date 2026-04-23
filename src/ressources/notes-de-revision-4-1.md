@@ -1,7 +1,7 @@
 ---
 title: Notes de révision du RGAA 4.0 vers 4.1
 layout: layouts/base.njk
-descirption: 
+description: 
 eleventyNavigation:
   title: Ressources
   parent: ressources

@@ -3,6 +3,10 @@ WCAG:
   - successCriterion: 1.3.4
     title: Orientation
     level: AA
+Techniques:
+  - F97
+  - F100
+  - G214		
 ---
 
 #### Cas particuliers

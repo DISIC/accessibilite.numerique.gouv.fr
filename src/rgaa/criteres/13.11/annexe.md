@@ -3,6 +3,10 @@ WCAG:
   - successCriterion: 2.5.2
     title: Pointer Cancellation
     level: A
+Techniques:
+  - F101
+  - G210
+  - G212		
 ---
 
 #### Cas particuliers

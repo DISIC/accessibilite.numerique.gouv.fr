@@ -4,7 +4,6 @@ WCAG:
     title: Non-text Content
     level: A
 Techniques:
-  - H35
   - H46
 ---
 

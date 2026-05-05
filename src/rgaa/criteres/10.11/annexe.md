@@ -4,8 +4,14 @@ WCAG:
     title: Reflow
     level: AA
 Techniques:
+  - C31
+  - C32
+  - C33
   - C34
   - C37
+  - C38
+  - F102
+  - G206
 ---
 
 #### Cas particuliers

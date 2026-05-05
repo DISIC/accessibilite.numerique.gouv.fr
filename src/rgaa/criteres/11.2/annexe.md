@@ -10,8 +10,11 @@ WCAG:
     title: Labels or Instructions
     level: A
 Techniques:
+  - F96
   - G82
   - G131
+  - G208
+  - G211
   - H44
   - H65
   - ARIA6

@@ -7,6 +7,7 @@ WCAG:
     title: Use of color
     level: A
 Techniques:
+  - F13
   - G14
   - G182
   - G111

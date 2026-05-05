@@ -11,14 +11,20 @@ WCAG:
     level: A
 Techniques:
   - H30
+  - H33
+  - H77
   - H78
   - H79
   - H80
   - H81
   - G53
   - G91
+  - G208
+  - G211	
   - F63
   - F89
+  - F96
+  - C7
   - ARIA7
   - ARIA8
 ---

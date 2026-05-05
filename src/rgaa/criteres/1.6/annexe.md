@@ -7,7 +7,6 @@ Techniques:
   - G92
   - G74
   - G73
-  - H45
   - ARIA6
 ---
 

@@ -4,6 +4,7 @@ WCAG:
     title: Contrast (Minimum)
     level: AA
 Techniques:
+  - F83
   - G18
   - G136
   - G148

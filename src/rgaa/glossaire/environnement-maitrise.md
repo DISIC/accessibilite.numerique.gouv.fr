@@ -5,7 +5,7 @@ title: Environnement maîtrisé
 Tout environnement dans lequel l’accès à l’information, les technologies, les conditions d’utilisation et le profil des utilisateurs peuvent être connus et maîtrisés. Les principaux éléments dont la maîtrise est essentielle sont :
 
 - Le type et la version des navigateurs ;
-- Les technologies supportées, leur version et leur activation (JavaScript, WAI-ARIA, Flash, Silverlight…) ;
+- Les technologies supportées, leur version et leur activation (JavaScript, WAI-ARIA…) ;
 - Les technologies d’assistance et tout dispositif utilisé de manière spécifique par les utilisateurs handicapés ;
 - Les systèmes d’exploitation et les APIs d’accessibilité supportées ;
 - La formation des utilisateurs de technologies d’assistance à l’utilisation de tout dispositif particulier (interface, application en ligne…).

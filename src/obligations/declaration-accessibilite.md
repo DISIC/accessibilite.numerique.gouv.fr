@@ -104,17 +104,17 @@ Cette déclaration a été établie le [JJ mois AAAA]. Elle a été mise à jour
 
 - [Liste des technologies utilisées]
 
-#### Environnement de test
+### Environnement de test
 
 Agents utilisateurs, technologies d’assistance et outils utilisés pour vérifier l’accessibilité
 
 - [Indiquer les combinaisons utilisées pour effectuer les vérifications de conformité]
 
-#### Les outils utilisés lors de l’évaluation
+### Les outils utilisés lors de l’évaluation
 
 - [Indiquer les outils utilisés]
 
-#### Pages du site ayant fait l’objet de la vérification de conformité
+### Pages du site ayant fait l’objet de la vérification de conformité
 
 - [Indiquer la liste des pages qui ont été testées]
 

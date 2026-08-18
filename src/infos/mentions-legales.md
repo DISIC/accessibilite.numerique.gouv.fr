@@ -13,9 +13,9 @@ Tél. accueil : 01 71 21 01 70<br>
 SIRET : 12000101100010 (secrétariat général du gouvernement)<br>
 SIREN : 120 001 011
 
-## Directrice de publication
+## Directeur de publication
 
-Stéphanie Schaer, directrice interministérielle du numérique.
+Walter Arnaud, directeur interministériel du numérique.
 
 ## Conception et gestion du site
 

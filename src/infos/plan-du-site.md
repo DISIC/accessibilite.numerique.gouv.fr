@@ -20,10 +20,11 @@ layout: layouts/base.njk
     - [Documents de référence](/ressources/references/)
     - [Kit d’audit](/ressources/kit-audit/)
     - [Méthodologie de test](/ressources/methodologie-de-test/)
+    - [Critères AAA](/ressources/criteres-aaa/)
     - [Exemple de déclaration d’accessibilité](/ressources/modele-de-declaration/)
+    - [Notes de révision du RGAA 4.1 vers 4.1.2](/ressources/notes-de-revision-4-1-2/)
+    - [Notes de révision du RGAA 4.0 vers 4.1](/ressources/notes-de-revision-4-1/)
     - [Questions](/ressources/questions/)
 - [Accessibilité](/infos/accessibilite/)
 - [Mentions légales](/infos/mentions-legales/)
 - [Contributions](/infos/contributions/)
-
-

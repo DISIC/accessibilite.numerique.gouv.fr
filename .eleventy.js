@@ -222,7 +222,7 @@ module.exports = function (eleventyConfig) {
 				const critNum = criterion.fileSlug; // ex: 2.1
 				const themeNum = critNum.substr(0, critNum.indexOf("."));
 				const testsRaw = collection
-					.getFilteredByGlob("./src/rgaa/criteres/" + critNum + "/tests/*.md")
+					.getFilteredByGlob("./src/rgaa/5/" + critNum + "/tests/*.md")
 					.sort((a, b) => Number(a.fileSlug) - Number(b.fileSlug));
 				const annexeCrit = collection.getFilteredByGlob(
 					"./src/rgaa/criteres/" + critNum + "/annexe.md"
@@ -252,6 +252,51 @@ module.exports = function (eleventyConfig) {
 		//console.dir(all, { depth: 1 });
 		return all;
 	});
+
+//RGAA5
+	// Custom collection: Tout les critères, tests et références du RGAA
+	eleventyConfig.addCollection("rgaa5", function (collection) {
+		const criteria = collection.getFilteredByGlob(
+			"./src/rgaa/5/*/index.md"
+		);
+		const all = criteria
+			.map(function (criterion) {
+				const critNum = criterion.fileSlug; // ex: 2.1
+				const themeNum = critNum.substr(0, critNum.indexOf("."));
+				const testsRaw = collection
+					.getFilteredByGlob("./src/rgaa/5/" + critNum + "/tests/*.md")
+					.sort((a, b) => Number(a.fileSlug) - Number(b.fileSlug));
+				const annexeCrit = collection.getFilteredByGlob(
+					"./src/rgaa/5/" + critNum + "/annexe.md"
+				)[0];
+				const tests = testsRaw.map(function (test) {
+					const slug = test.fileSlug;
+					const testSlug = critNum + "." + slug;
+					return {
+						testSlug,
+						test,
+					};
+				});
+				return {
+					themeNum,
+					critNum,
+					criterion,
+					tests,
+					annexeCrit,
+				};
+			})
+			.sort(function (a, b) {
+				const aComp = getCriteriaNumToCompare(a.critNum);
+				const bComp = getCriteriaNumToCompare(b.critNum);
+				return Number(aComp) - Number(bComp);
+			});
+		//console.log('*****');
+		//console.dir(all, { depth: 1 });
+		return all;
+	});
+//RGAA5
+
+
 
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addLiquidShortcode("crit", function (numCrit) {

@@ -1,3 +1,3 @@
 ---
-title: Dans chaque page web, la navigation ne doit pas contenir de piège au clavier. Cette règle est-elle respectée ?
+title: Les raccourcis clavier n’utilisant qu’une seule touche (lettre minuscule ou majuscule, ponctuation, chiffre ou symbole) sont contrôlables par la personne utilisatrice
 ---

@@ -1,3 +1,3 @@
 ---
-title: Dans chaque page web, les [raccourcis clavier](#raccourci-clavier) n’utilisant qu’une seule touche (lettre minuscule ou majuscule, ponctuation, chiffre ou symbole) sont-ils contrôlables par l’utilisateur ?
+title: Les composants (bouton, lien, étiquette, image) ayant la même fonction dans une même page ou dans un ensemble de pages sont cohérents
 ---

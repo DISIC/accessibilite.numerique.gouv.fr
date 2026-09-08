@@ -1,3 +1,3 @@
 ---
-title: La [page « plan du site »](#page-plan-du-site) est-elle pertinente ?
+title: Chaque mécanisme d'aide est toujours à la même place (hors cas particuliers)
 ---

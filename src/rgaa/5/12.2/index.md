@@ -1,3 +1,3 @@
 ---
-title: Dans chaque [ensemble de pages](#ensemble-de-pages), le [menu et les barres de navigation](#menu-et-barre-de-navigation) sont-ils toujours à la même place (hors cas particuliers) ?
+title: Chaque système de navigation est toujours à la même place (hors cas particuliers)
 ---

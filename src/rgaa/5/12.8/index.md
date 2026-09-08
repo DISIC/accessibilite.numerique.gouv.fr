@@ -1,3 +1,3 @@
 ---
-title: Dans chaque page web, l’[ordre de tabulation](#ordre-de-tabulation) est-il [cohérent](#comprehensible-ordre-de-lecture) ?
+title: La navigation ne contient pas de piège au clavier
 ---

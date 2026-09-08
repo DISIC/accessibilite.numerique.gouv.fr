@@ -1,3 +1,3 @@
 ---
-title: Pour chaque [tableau de données ayant un titre](#tableau-de-donnees-ayant-un-titre), celui-ci est-il pertinent ?
+title: Chaque en-tête de ligne ou de colonne d'un tableau de données est correctement déclaré
 ---

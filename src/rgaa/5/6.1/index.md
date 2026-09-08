@@ -1,3 +1,3 @@
 ---
-title: Chaque [lien](#lien) est-il explicite (hors cas particuliers) ?
+title: Chaque lien a un intitulé
 ---

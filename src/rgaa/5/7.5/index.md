@@ -1,3 +1,3 @@
 ---
-title: Dans chaque page web, les [messages de statut](#message-de-statut) sont-ils correctement restitués par les technologies d’assistance ?
+title: Les messages d'état sont correctement restitués par les technologies d’assistance
 ---

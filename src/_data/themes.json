@@ -37,5 +37,17 @@
 	},
 	"13": {
 		"title": "Consultation"
+	},
+	"14": {
+		"title": "Documentation et fonctionnalités d’accessibilité"
+	},
+	"15": {
+		"title": "Outils d’édition"
+	},
+	"16": {
+		"title": "Captcha"
+	},
+	"17": {
+		"title": "Communication en temps réel"
 	}
 }

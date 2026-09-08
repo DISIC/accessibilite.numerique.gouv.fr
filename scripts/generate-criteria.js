@@ -3,7 +3,7 @@ const fm = require("front-matter");
 
 const themes = require("../src/_data/themes.json");
 
-const CRITERIA_SOURCE = "./src/rgaa/criteres";
+const CRITERIA_SOURCE = "./src/rgaa/4.1";
 const CRITERIA_DESTINATION = "./RGAA/criteres.json";
 
 /**

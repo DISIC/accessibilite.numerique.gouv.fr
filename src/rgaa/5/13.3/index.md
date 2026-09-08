@@ -1,3 +1,3 @@
 ---
-title: Dans chaque page web, chaque document bureautique en téléchargement possède-t-il, si nécessaire, une [version accessible](#version-accessible-pour-un-document-en-telechargement) (hors cas particuliers) ?
+title: Chaque document bureautique mis à disposition possède, si nécessaire, une version conforme au RGAA (hors cas particuliers)
 ---

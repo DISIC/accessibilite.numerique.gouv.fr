@@ -1,3 +1,3 @@
 ---
-title: Chaque [média temporel](#media-temporel-type-son-video-et-synchronise) est-il clairement identifiable (hors cas particuliers) ?
+title: Chaque média temporel synchronisé a, si nécessaire, des sous-titres synchronisés (hors cas particuliers)
 ---

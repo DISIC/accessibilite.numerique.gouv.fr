@@ -1,3 +1,3 @@
 ---
-title: Chaque [média temporel](#media-temporel-type-son-video-et-synchronise) pré-enregistré a-t-il, si nécessaire, une [audiodescription](#audiodescription-synchronisee-media-temporel) synchronisée (hors cas particuliers) ?
+title: Chaque média temporel pré-enregistré (seulement audio, seulement vidéo, ou synchronisé) a, si nécessaire, une transcription textuelle adjacente clairement identifiable (hors cas particuliers)
 ---

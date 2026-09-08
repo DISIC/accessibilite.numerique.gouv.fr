@@ -1,3 +1,3 @@
 ---
-title: Dans chaque page web, pour chaque élément recevant le focus, la [prise de focus](#prise-de-focus) est-elle visible ?
+title: Les déclarations de couleurs de fond d’élément et de police sont correctement utilisées
 ---

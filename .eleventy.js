@@ -215,17 +215,17 @@ module.exports = function (eleventyConfig) {
 	// Custom collection: Tout les critères, tests et références du RGAA
 	eleventyConfig.addCollection("criteriaAndTests", function (collection) {
 		const criteria = collection.getFilteredByGlob(
-			"./src/rgaa/criteres/*/index.md"
+			"./src/rgaa/4.1/*/index.md"
 		);
 		const all = criteria
 			.map(function (criterion) {
 				const critNum = criterion.fileSlug; // ex: 2.1
 				const themeNum = critNum.substr(0, critNum.indexOf("."));
 				const testsRaw = collection
-					.getFilteredByGlob("./src/rgaa/5/" + critNum + "/tests/*.md")
+					.getFilteredByGlob("./src/rgaa/4.1/" + critNum + "/tests/*.md")
 					.sort((a, b) => Number(a.fileSlug) - Number(b.fileSlug));
 				const annexeCrit = collection.getFilteredByGlob(
-					"./src/rgaa/criteres/" + critNum + "/annexe.md"
+					"./src/rgaa/4.1/" + critNum + "/annexe.md"
 				)[0];
 				const tests = testsRaw.map(function (test) {
 					const slug = test.fileSlug;

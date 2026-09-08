@@ -4139,6 +4139,26 @@
           }
         }
       ]
+    },
+    {
+      "topic": "Documentation et fonctionnalités d’accessibilité",
+      "number": 14,
+      "criteria": []
+    },
+    {
+      "topic": "Outils d’édition",
+      "number": 15,
+      "criteria": []
+    },
+    {
+      "topic": "Captcha",
+      "number": 16,
+      "criteria": []
+    },
+    {
+      "topic": "Communication en temps réel",
+      "number": 17,
+      "criteria": []
     }
   ]
 }

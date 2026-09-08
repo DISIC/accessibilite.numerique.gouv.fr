@@ -1,3 +1,3 @@
 ---
-title: Dans chaque [formulaire](#formulaire), l’intitulé de chaque [bouton](#bouton-formulaire) est-il pertinent (hors cas particuliers) ?
+title: Le caractère obligatoire ou facultatif de chaque champ de saisie est identifiable (hors cas particuliers)
 ---

@@ -1,3 +1,3 @@
 ---
-title: Dans chaque [formulaire](#formulaire), chaque regroupement de [champs de même nature](#champs-de-meme-nature) a-t-il une [légende](#legende) ?
+title: La légende de chaque regroupement de champs de même nature est pertinente
 ---

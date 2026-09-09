@@ -1,15 +1,80 @@
-	{% extends './base-rgaaNav.njk' %}
-	{% block contenu %}
-		<!--div class="fr-form-group">
-				<div class="fr-checkbox-group">
-				<input type="checkbox" id="checkboxes-inline-1" name="checkboxes-inline-1" data-filter="all">
-				<label class="fr-label" for="checkboxes-inline-1">Afficher les tests</label>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="{{ description }} " />
+		<meta name="robots" content="nofollow, noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="/css/dsfr.min.css" />
+    <link rel="stylesheet" href="/css/utility/utility.min.css" />
+    <link rel="stylesheet" href="rgaa.scss" />
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" /><!-- 180×180 -->
+    <link rel="icon" href="/favicon/favicon.svg" type="image/svg+xml" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon" /><!-- 32×32 -->
+    <link rel="manifest" href="/favicon/manifest.webmanifest" crossorigin="use-credentials" />
+    <title>{{ title }} - RGAA 5</title>
+	{% include "components/matomo.njk" %}
+</head>
+<body>
+    <div id="top" class="fr-skiplinks">
+        <nav class="fr-container" role="navigation" aria-label="Accès rapide">
+            <ul class="fr-skiplinks__list">
+                <li><a class="fr-link" href="#contenu">Contenu</a></li>
+                <li><a class="fr-link" href="#header-navigation">Menu</a></li>
+                <li><a class="fr-link" href="#footer">Pied de page</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header role="banner" class="fr-header">
+        <div class="fr-header__body">
+            <div class="fr-container">
+                <div class="fr-header__body-row">
+                    <div class="fr-header__brand fr-enlarge-link">
+                        <div class="fr-header__brand-top">
+                            <div class="fr-header__logo">
+                                <p class="fr-logo">République<br/>Française</p>
+                            </div>
+                            <div class="fr-header__navbar">
+                                <button class="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="modal-menu-mobile" aria-haspopup="menu" title="Menu" id="fr-btn-menu-mobile">Menu</button>
+                            </div>
+                        </div>
+                        <div class="fr-header__service">
+                            <a href="/" title="Accueil - Référentiel général d’amélioration de l’accessibilité">
+                                <p class="fr-header__service-title">Référentiel général d’amélioration de l’accessibilité</p>
+                            </a>
+                            <p class="fr-header__service-tagline">RGAA - Version de travail</p>
+                        </div>
+                    </div>
 				</div>
-				<div class="fr-toggle">
-				<input disabled type="checkbox" class="fr-toggle__input" id="allCriterion">
-				<label class="fr-toggle__label" for="allCriterion">Affichage du détail de tous les critères</label>
-				</div>
-		</div-->
+            </div>
+        </div>
+        {% include "components/navigation.njk" %}
+    </header>
+
+<main role="main" id="contenu" tabindex="-1">
+<div class="fr-notice fr-notice--warning">
+  <div class="fr-container">
+    <div class="fr-notice__body">
+      <p>
+        <span class="fr-notice__title">Cette version 5 du RGAA est une version de travail en cours de rédaction</span>.<br>
+        <a href="https://accessibilite.numerique.gouv.fr/" target="_blank" rel="noopener external" class="fr-notice__link" title="Voir la version du RGAA en vigueur - nouvelle fenêtre">Voir la version du RGAA en vigueur</a>.
+      </p>
+    </div>
+  </div>
+</div>
+	<div class="fr-container">
+    	<div class="fr-grid-row">
+    		<div class="fr-col">
+          {% include "components/breadcrumb.njk" %}
+          <h1 class="fr-mb-5w">{{ title }}</h1>
+        </div>
+      </div>
+    	<div class="fr-grid-row">
+        <div class="fr-col-md-4 fr-col-12">
+          {% include "components/rgaaNav.njk" %}
+        </div>
+    	  <div class="fr-col-12 fr-col-xs-10 fr-col-md-8">
+
 
 		<div id="criteria-container">
 			{% set curThemeNum = 0 %}
@@ -45,6 +110,7 @@
 									<a title="Critère {{ critNum }}" class="direct-link" href="#{{ critNum }}" ><span class="fr-icon-links-fill" ></span><span class="fr-sr-only">Critère {{ critNum }}</span></a></span>
 								</h3>
 
+								{% include "components/rgaaTests.njk" %}
 
 							</div>
 						</div>
@@ -52,4 +118,65 @@
 				{% endfor %}
 			</ul>
 		</div>
-	{% endblock %}
+   </div>
+    </div>
+  </div>
+</main>
+<footer class="fr-footer" role="contentinfo" id="footer" tabindex="-1">
+    <div class="fr-container">
+        <div class="fr-footer__body">
+            <div class="fr-footer__brand">
+                <p class="fr-logo">
+                    République
+                    <br>française
+                </p>
+				<img class="fr-ml-2w fr-footer__logo logo_numerique" src="/images/numeriquegouv.svg" alt="Un service proposé par numérique.gouv - L’alliance du numérique de l’État"/>
+            </div>
+            <div class="fr-footer__content">
+                <p class="fr-footer__content-desc">La version 5 du RGAA est en cours d’écriture par la DINUM.</p>
+                <ul class="fr-footer__content-list">
+                    <li class="fr-footer__content-item">
+                        <a class="fr-footer__content-link" title="legifrance.gouv.fr - nouvelle fenêtre" rel="noreferrer noopener" target="_blank" href="https://www.legifrance.gouv.fr/">legifrance.gouv.fr</a>
+                    </li>
+                    <li class="fr-footer__content-item">
+                        <a class="fr-footer__content-link" title="gouvernement.fr - nouvelle fenêtre" rel="noreferrer noopener" target="_blank" href="https://www.gouvernement.fr/">gouvernement.fr</a>
+                    </li>
+                    <li class="fr-footer__content-item">
+                        <a class="fr-footer__content-link" title="service-public.fr - nouvelle fenêtre" rel="noreferrer noopener" target="_blank" href="https://www.service-public.fr/">service-public.fr</a>
+                    </li>
+                    <li class="fr-footer__content-item">
+                        <a class="fr-footer__content-link" title="data.gouv.fr - nouvelle fenêtre" rel="noreferrer noopener" target="_blank" href="https://www.data.gouv.fr/">data.gouv.fr</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fr-footer__bottom">
+            <ul class="fr-footer__bottom-list">
+                <li class="fr-footer__bottom-item">
+                    <a class="fr-footer__bottom-link" href="/infos/plan-du-site/">Plan du site</a>
+                </li>
+                <li class="fr-footer__bottom-item">
+                    <a class="fr-footer__bottom-link" href="/infos/accessibilite/">Accessibilité : totalement conforme</a>
+                </li>
+                <li class="fr-footer__bottom-item">
+                    <a class="fr-footer__bottom-link" href="/infos/mentions-legales/">Mentions légales</a>
+                </li>
+                <li class="fr-footer__bottom-item">
+                    <a class="fr-footer__bottom-link" href="/infos/contributions/">Contributions</a>
+                </li>
+            </ul>
+            <div class="fr-footer__bottom-copy">
+                <p>Sauf mention contraire, tous les textes de ce site sont sous <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" rel="noreferrer noopener" target="_blank" title="licence etalab-2.0 - nouvelle fenêtre">licence etalab-2.0</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="module" src="/js/dsfr.module.min.js"></script>
+<script type="text/javascript" nomodule src="/js/dsfr.nomodule.min.js"></script>
+<script type="module" src="/js/main.module.js"></script>
+<script type="text/javascript" nomodule src="/js/main.nomodule.js"></script>
+</body>
+</html>
+
+

@@ -10,12 +10,15 @@ Techniques:
   - G10
   - G135
   - G136
+  - G208
+  - G211	
   - F15
   - F19
   - F20
   - F42
   - F59
   - F79
+  - F96
   - ARIA4
   - ARIA5
   - ARIA18

@@ -4,6 +4,7 @@ WCAG:
     title: Identify Input Purpose
     level: AA
 Techniques:
+  - F107
   - H98
 ---
 

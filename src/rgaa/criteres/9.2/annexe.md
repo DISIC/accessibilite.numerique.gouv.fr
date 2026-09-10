@@ -6,6 +6,8 @@ WCAG:
 Techniques:
   - G115
   - ARIA11
+  - H97
+  - H101	
 ---
 
 #### Cas particuliers

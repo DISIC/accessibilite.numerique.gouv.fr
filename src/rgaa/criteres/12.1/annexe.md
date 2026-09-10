@@ -7,6 +7,7 @@ Techniques:
   - G63
   - G64
   - G161
+  - G185
 ---
 
 #### Cas particuliers

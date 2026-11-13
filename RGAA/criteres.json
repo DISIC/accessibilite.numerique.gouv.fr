@@ -108,8 +108,10 @@
               ]
             },
             "technicalNote": [
-              "Lorsqu'une image est associée à une [légende](#legende-d-image), la note technique WCAG recommande de prévoir systématiquement une [alternative textuelle](#alternative-textuelle-image) (cf. critère 1.9). Dans ce cas le critère 1.2 est non applicable.",
-              "Dans le cas d'une image vectorielle (balise `<svg>`) de décoration qui serait affichée au travers d'un élément `<use href=\"…\">` enfant de l'élément `<svg>`, le test 1.2.4 s'appliquera également à l'élément `<svg>` associée par le biais de l'élément `<use>`.",
+              "Lorsqu'une image est associée à une [légende](#legende-d-image), la note technique WCAG recommande de prévoir systématiquement une [alternative textuelle](#alternative-textuelle-image) (cf. critère 1.9). Dans ce cas le critère 1.2 est non applicable.\r",
+              "\r",
+              "Dans le cas d'une image vectorielle (balise `<svg>`) de décoration qui serait affichée au travers d'un élément `<use href=\"…\">` enfant de l'élément `<svg>`, le test 1.2.4 s'appliquera également à l'élément `<svg>` associée par le biais de l'élément `<use>`.\r",
+              "\r",
               "Un attribut WAI-ARIA `role=\"presentation\"` peut être utilisé sur les images de décoration et les zones non cliquables de décoration. Le rôle `\"none\"` introduit en ARIA 1.1 et synonyme du rôle `\"presentation\"` peut être aussi utilisé. Il reste préférable cependant d'utiliser le rôle `\"presentation\"` en attendant un support satisfaisant du rôle `\"none\"`."
             ],
             "references": [
@@ -194,7 +196,8 @@
               ]
             },
             "particularCases": [
-              "Il existe une gestion de cas particuliers lorsque l’image est utilisée comme [CAPTCHA](#captcha) ou comme [image-test](#image-test). Dans cette situation, où il n’est pas possible de donner une alternative pertinente sans détruire l’objet du CAPTCHA ou du test, le critère est non applicable.",
+              "Il existe une gestion de cas particuliers lorsque l’image est utilisée comme [CAPTCHA](#captcha) ou comme [image-test](#image-test). Dans cette situation, où il n’est pas possible de donner une alternative pertinente sans détruire l’objet du CAPTCHA ou du test, le critère est non applicable.\r",
+              "\r",
               "Note : le cas des CAPTCHA et des images-test est traité de manière spécifique par le critère 1.4."
             ],
             "references": [
@@ -384,9 +387,12 @@
               ]
             },
             "technicalNote": [
-              "Dans le cas du SVG, le manque de support de l’élément `<title>` et `<desc>` par les technologies d’assistance crée une difficulté dans le cas de l’implémentation de l’[alternative textuelle](#alternative-textuelle-image) de l’image et de sa [description détaillée](#description-detaillee-image). Dans ce cas, il est recommandé d’utiliser l’attribut WAI-ARIA `aria-label` pour implémenter à la fois l’[alternative textuelle](#alternative-textuelle-image) courte et la référence à la [description détaillée](#description-detaillee-image) adjacente ou l’attribut WAI-ARIA `aria-labelledby` pour associer les passages de texte faisant office d’alternative courte et de [description détaillée](#description-detaillee-image).",
-              "L’utilisation de l’attribut WAI-ARIA aria-describedby n’est pas recommandée pour lier une image (`<img>`, `<object>`, `<embed>`, `<canvas>`) à sa [description détaillée](#description-detaillee-image), par manque de support des technologies d’assistance. Néanmoins, lorsqu’il est utilisé, l’attribut devra nécessairement faire référence à l’`id` de la zone contenant la [description détaillée](#description-detaillee-image).",
-              "La [description détaillée](#description-detaillee-image) adjacente peut être implémentée via une balise `<figcaption>`, dans ce cas le critère 1.9 doit être vérifié (utilisation de `<figure>` et des attributs WAI-ARIA `role=\"figure\"` et `aria-label`, notamment).",
+              "Dans le cas du SVG, le manque de support de l’élément `<title>` et `<desc>` par les technologies d’assistance crée une difficulté dans le cas de l’implémentation de l’[alternative textuelle](#alternative-textuelle-image) de l’image et de sa [description détaillée](#description-detaillee-image). Dans ce cas, il est recommandé d’utiliser l’attribut WAI-ARIA `aria-label` pour implémenter à la fois l’[alternative textuelle](#alternative-textuelle-image) courte et la référence à la [description détaillée](#description-detaillee-image) adjacente ou l’attribut WAI-ARIA `aria-labelledby` pour associer les passages de texte faisant office d’alternative courte et de [description détaillée](#description-detaillee-image).\r",
+              "\r",
+              "L’utilisation de l’attribut WAI-ARIA aria-describedby n’est pas recommandée pour lier une image (`<img>`, `<object>`, `<embed>`, `<canvas>`) à sa [description détaillée](#description-detaillee-image), par manque de support des technologies d’assistance. Néanmoins, lorsqu’il est utilisé, l’attribut devra nécessairement faire référence à l’`id` de la zone contenant la [description détaillée](#description-detaillee-image).\r",
+              "\r",
+              "La [description détaillée](#description-detaillee-image) adjacente peut être implémentée via une balise `<figcaption>`, dans ce cas le critère 1.9 doit être vérifié (utilisation de `<figure>` et des attributs WAI-ARIA `role=\"figure\"` et `aria-label`, notamment).\r",
+              "\r",
               "L'attribut `longdesc` qui constitue une des conditions du test 1.6.1 (et dont la pertinence est vérifiée avec le test 1.7.1) est désormais considéré comme obsolète par la spécification HTML en cours. La vérification de cet attribut ne sera donc requise que pour les versions de la spécification HTML antérieure à HTML 5."
             ],
             "references": [
@@ -561,9 +567,12 @@
               ]
             },
             "technicalNote": [
-              "L’implémentation d’un attribut WAI-ARIA `role=\"group\"` ou `role=\"figure\"` sur l’élément parent `<figure>` est destiné à pallier le manque de support actuel des éléments `<figure>` par les technologies d’assistance. L’utilisation d’un élément `<figcaption>` pour associer une [légende](#legende-d-image) à une image impose au minimum l’utilisation d’un attribut WAI-ARIA `aria-label` sur l’élément parent `<figure>` dont le contenu sera identique au contenu de l’élément `<figcaption>`. Pour s’assurer d’un support optimal, il peut également être fait une association explicite entre le contenu de l’[alternative textuelle](#alternative-textuelle-image) de l’image et le contenu de l’élément `<figcaption>`, par exemple :",
-              "`<img src=\"image.png\" alt=\"Photo : soleil couchant\" /><figcaption>Photo : crédit xxx</figcaption>`",
-              "Les attributs WAI-ARIA `aria-labelledby` et `aria-describedby` ne peuvent pas être utilisés actuellement par manque de support par les technologies d’assistance.",
+              "L’implémentation d’un attribut WAI-ARIA `role=\"group\"` ou `role=\"figure\"` sur l’élément parent `<figure>` est destiné à pallier le manque de support actuel des éléments `<figure>` par les technologies d’assistance. L’utilisation d’un élément `<figcaption>` pour associer une [légende](#legende-d-image) à une image impose au minimum l’utilisation d’un attribut WAI-ARIA `aria-label` sur l’élément parent `<figure>` dont le contenu sera identique au contenu de l’élément `<figcaption>`. Pour s’assurer d’un support optimal, il peut également être fait une association explicite entre le contenu de l’[alternative textuelle](#alternative-textuelle-image) de l’image et le contenu de l’élément `<figcaption>`, par exemple :\r",
+              "\r",
+              "`<img src=\"image.png\" alt=\"Photo : soleil couchant\" /><figcaption>Photo : crédit xxx</figcaption>`\r",
+              "\r",
+              "Les attributs WAI-ARIA `aria-labelledby` et `aria-describedby` ne peuvent pas être utilisés actuellement par manque de support par les technologies d’assistance.\r",
+              "\r",
               "Note : les images légendées doivent par ailleurs respecter le critère 1.1 et le critère 1.3 relatifs aux images porteuses d’information."
             ],
             "references": [
@@ -669,7 +678,7 @@
               {
                 "wcag": [
                   "1.3.1 Info and Relationships (A)",
-                  "1.4.1 Use of color (A)"
+                  "1.4.1 Use of Color (A)"
                 ]
               },
               {
@@ -715,12 +724,13 @@
               ]
             },
             "particularCases": [
-              "Dans ces situations, les critères sont non applicables pour ces éléments :",
+              "Dans ces situations, les critères sont non applicables pour ces éléments :\r",
+              "\r",
               {
                 "ul": [
-                  "- Le texte fait partie d’un logo ou d’un nom de marque d’un organisme ou d’une société ;",
-                  "- Le texte ou l’image de texte est purement décoratif ;",
-                  "- Le texte fait partie d’une image véhiculant une information mais le texte lui-même n’apporte aucune information essentielle ;",
+                  "- Le texte fait partie d’un logo ou d’un nom de marque d’un organisme ou d’une société ;\r",
+                  "- Le texte ou l’image de texte est purement décoratif ;\r",
+                  "- Le texte fait partie d’une image véhiculant une information mais le texte lui-même n’apporte aucune information essentielle ;\r",
                   "- Le texte ou l’image de texte fait partie d’un élément d’interface sur lequel aucune action n’est possible (par exemple un bouton avec l’attribut `disabled`)."
                 ]
               }
@@ -769,15 +779,16 @@
               ]
             },
             "particularCases": [
-              "Les cas suivants sont non applicables pour ce critère :",
+              "Les cas suivants sont non applicables pour ce critère :\r",
+              "\r",
               {
                 "ul": [
-                  "- Composant d’interface inactif (par exemple, un bouton avec un attribut `disabled`) sur lequel aucune action n’est possible ;",
-                  "- Composant d’interface pour lequel l’apparence est gérée par les styles natifs du navigateur sans aucune modification par l’auteur (par exemple, le style au focus natif dans Chrome ou Firefox) ;",
-                  "- Composant d’interface pour lequel la couleur n’est pas nécessaire pour identifier le composant ou son état (par exemple, un groupe de liens faisant office de navigation dont la position dans la page, la taille et la couleur du texte permettent de comprendre qu’il s’agit de liens même si la couleur du soulignement des liens avec le fond blanc n’a pas un ratio de 3:1 et que le texte lui a un ratio de 4.5:1) ;",
-                  "- [Élément graphique](#element-graphique) ou parties d’élément graphique non porteur d’information ou ayant une alternative (description longue, informations identiques visibles dans la page) ;",
-                  "- [Élément graphique](#element-graphique) ou parties d’élément graphique faisant partie d’un logo ou du nom de marque d’un organisme ou d’une société ;",
-                  "- [Élément graphique](#element-graphique) ou parties d’élément graphique dont la présentation est essentielle à l’information véhiculée (par exemple, drapeaux, logotypes, photos de personnes ou de scènes, captures d’écran, diagrammes médicaux, carte de chaleurs) ;",
+                  "- Composant d’interface inactif (par exemple, un bouton avec un attribut `disabled`) sur lequel aucune action n’est possible ;\r",
+                  "- Composant d’interface pour lequel l’apparence est gérée par les styles natifs du navigateur sans aucune modification par l’auteur (par exemple, le style au focus natif dans Chrome ou Firefox) ;\r",
+                  "- Composant d’interface pour lequel la couleur n’est pas nécessaire pour identifier le composant ou son état (par exemple, un groupe de liens faisant office de navigation dont la position dans la page, la taille et la couleur du texte permettent de comprendre qu’il s’agit de liens même si la couleur du soulignement des liens avec le fond blanc n’a pas un ratio de 3:1 et que le texte lui a un ratio de 4.5:1) ;\r",
+                  "- [Élément graphique](#element-graphique) ou parties d’élément graphique non porteur d’information ou ayant une alternative (description longue, informations identiques visibles dans la page) ;\r",
+                  "- [Élément graphique](#element-graphique) ou parties d’élément graphique faisant partie d’un logo ou du nom de marque d’un organisme ou d’une société ;\r",
+                  "- [Élément graphique](#element-graphique) ou parties d’élément graphique dont la présentation est essentielle à l’information véhiculée (par exemple, drapeaux, logotypes, photos de personnes ou de scènes, captures d’écran, diagrammes médicaux, carte de chaleurs) ;\r",
                   "- [Élément graphique](#element-graphique) ou parties d’élément graphique dynamiques dont le contraste au survol / focus est suffisant."
                 ]
               }
@@ -836,19 +847,22 @@
               ]
             },
             "particularCases": [
-              "Il existe une gestion de cas particulier lorsque :",
+              "Il existe une gestion de cas particulier lorsque :\r",
+              "\r",
               {
                 "ul": [
-                  "- Le [média temporel](#media-temporel-type-son-video-et-synchronise) est utilisé à des fins décoratives (c’est-à-dire qu’il n’apporte aucune information) ;",
-                  "- Le [média temporel](#media-temporel-type-son-video-et-synchronise) est lui-même une alternative à un contenu de la page (une vidéo en langue des signes ou la vocalisation d’un texte, par exemple) ;",
-                  "- Le [média temporel](#media-temporel-type-son-video-et-synchronise) est utilisé pour accéder à une version agrandie ;",
-                  "- Le [média temporel](#media-temporel-type-son-video-et-synchronise) est utilisé comme un [CAPTCHA](#captcha) ;",
-                  "- Le [média temporel](#media-temporel-type-son-video-et-synchronise) fait partie d’un test qui deviendrait inutile si la [transcription textuelle](#transcription-textuelle-media-temporel), les [sous-titres synchronisés](#sous-titres-synchronises-objet-multimedia) ou l’[audiodescription](#audiodescription-synchronisee-media-temporel) étaient communiqués ;",
-                  "- Pour les services de l’État, les collectivités territoriales et leurs établissements : si le [média temporel](#media-temporel-type-son-video-et-synchronise) a été publié entre le 23 septembre 2019 et le 23 septembre 2020 sur un site internet, intranet ou extranet créé depuis le 23 septembre 2018, il est exempté de l’obligation d’accessibilité ;",
-                  "- Pour les personnes de droit privé mentionnées aux 2° à 4° du I de l’article 47 de la loi du 11 février 2005 : si le [média temporel](#media-temporel-type-son-video-et-synchronise) a été publié avant le 23 septembre 2020, il est exempté de l’obligation d’accessibilité."
+                  "- Le [média temporel](#media-temporel-type-son-video-et-synchronise) est utilisé à des fins décoratives (c’est-à-dire qu’il n’apporte aucune information) ;\r",
+                  "- Le [média temporel](#media-temporel-type-son-video-et-synchronise) est lui-même une alternative à un contenu de la page (une vidéo en langue des signes ou la vocalisation d’un texte, par exemple) ;\r",
+                  "- Le [média temporel](#media-temporel-type-son-video-et-synchronise) est utilisé pour accéder à une version agrandie ;\r",
+                  "- Le [média temporel](#media-temporel-type-son-video-et-synchronise) est utilisé comme un [CAPTCHA](#captcha) ;\r",
+                  "- Le [média temporel](#media-temporel-type-son-video-et-synchronise) fait partie d’un test qui deviendrait inutile si la [transcription textuelle](#transcription-textuelle-media-temporel), les [sous-titres synchronisés](#sous-titres-synchronises-objet-multimedia) ou l’[audiodescription](#audiodescription-synchronisee-media-temporel) étaient communiqués ;\r",
+                  "- Pour les services de l’État, les collectivités territoriales et leurs établissements : si le [média temporel](#media-temporel-type-son-video-et-synchronise) a été publié entre le 23 septembre 2019 et le 23 septembre 2020 sur un site internet, intranet ou extranet créé depuis le 23 septembre 2018, il est exempté de l’obligation d’accessibilité ;\r",
+                  "- Pour les personnes de droit privé mentionnées aux 2° à 4° du I de l’article 47 de la loi du 11 février 2005 : si le [média temporel](#media-temporel-type-son-video-et-synchronise) a été publié avant le 23 septembre 2020, il est exempté de l’obligation d’accessibilité.\r"
                 ]
               },
-              "Dans ces situations, le critère est non applicable.",
+              "\r",
+              "Dans ces situations, le critère est non applicable.\r",
+              "\r",
               "Ce cas particulier s’applique également aux critères 4.2, 4.3, 4.5."
             ],
             "references": [
@@ -1100,14 +1114,16 @@
               ]
             },
             "particularCases": [
-              "Il existe une gestion de cas particulier lorsque :",
+              "Il existe une gestion de cas particulier lorsque :\r",
+              "\r",
               {
                 "ul": [
-                  "- Le [média non temporel](#media-non-temporel) est utilisé à des fins décoratives (c’est-à-dire qu’il n’apporte aucune information) ;",
-                  "- Le [média non temporel](#media-non-temporel) est diffusé dans un [environnement maîtrisé](#environnement-maitrise) ;",
-                  "- Le [média non temporel](#media-non-temporel) est inséré via JavaScript en vérifiant la présence et la version du plug-in, en remplacement d’un [contenu alternatif](#contenu-alternatif) déjà présent."
+                  "- Le [média non temporel](#media-non-temporel) est utilisé à des fins décoratives (c’est-à-dire qu’il n’apporte aucune information) ;\r",
+                  "- Le [média non temporel](#media-non-temporel) est diffusé dans un [environnement maîtrisé](#environnement-maitrise) ;\r",
+                  "- Le [média non temporel](#media-non-temporel) est inséré via JavaScript en vérifiant la présence et la version du plug-in, en remplacement d’un [contenu alternatif](#contenu-alternatif) déjà présent.\r"
                 ]
               },
+              "\r",
               "Dans ces situations, le critère est non applicable."
             ],
             "references": [
@@ -1265,7 +1281,8 @@
               ]
             },
             "particularCases": [
-              "Il existe une gestion de cas particulier lorsque le [média temporel](#media-temporel-type-son-video-et-synchronise) ou [non temporel](#media-non-temporel) est utilisé à des fins décoratives (c’est-à-dire qu’il n’apporte aucune information).",
+              "Il existe une gestion de cas particulier lorsque le [média temporel](#media-temporel-type-son-video-et-synchronise) ou [non temporel](#media-non-temporel) est utilisé à des fins décoratives (c’est-à-dire qu’il n’apporte aucune information).\r",
+              "\r",
               "Dans ces situations, le critère est non applicable."
             ],
             "references": [
@@ -1566,29 +1583,35 @@
               ]
             },
             "particularCases": [
-              "Il existe une gestion de cas particuliers pour les tests 6.1.1, 6.1.2, 6.1.3 et 6.1.4 lorsque le lien est [ambigu pour tout le monde](#ambigu-pour-tout-le-monde). Dans cette situation, où il n’est pas possible de rendre le lien explicite dans son contexte, le critère est non applicable.",
-              "Il existe une gestion de cas particuliers pour le test 6.1.5 lorsque :",
+              "Il existe une gestion de cas particuliers pour les tests 6.1.1, 6.1.2, 6.1.3 et 6.1.4 lorsque le lien est [ambigu pour tout le monde](#ambigu-pour-tout-le-monde). Dans cette situation, où il n’est pas possible de rendre le lien explicite dans son contexte, le critère est non applicable.\r",
+              "\r",
+              "Il existe une gestion de cas particuliers pour le test 6.1.5 lorsque :\r",
+              "\r",
               {
                 "ul": [
-                  "- La ponctuation et les lettres majuscules sont présentes dans le texte de l’[intitulé visible](#intitule-visible) : elles peuvent être ignorées dans le nom accessible sans porter à conséquence ;",
-                  "- Le texte de l’[intitulé visible](#intitule-visible) sert de symbole : le texte ne doit pas être interprété littéralement au niveau du nom accessible. Le nom doit exprimer la fonction véhiculée par le symbole (par exemple, “B” au niveau d’un éditeur de texte aura pour nom accessible “Mettre en gras”, le signe “>” en fonction du contexte signifiera “Suivant” ou “Lancer la vidéo”). Le cas des symboles mathématiques fait cependant exception (voir la note ci-dessous)."
+                  "- La ponctuation et les lettres majuscules sont présentes dans le texte de l’[intitulé visible](#intitule-visible) : elles peuvent être ignorées dans le nom accessible sans porter à conséquence ;\r",
+                  "- Le texte de l’[intitulé visible](#intitule-visible) sert de symbole : le texte ne doit pas être interprété littéralement au niveau du nom accessible. Le nom doit exprimer la fonction véhiculée par le symbole (par exemple, “B” au niveau d’un éditeur de texte aura pour nom accessible “Mettre en gras”, le signe “>” en fonction du contexte signifiera “Suivant” ou “Lancer la vidéo”). Le cas des symboles mathématiques fait cependant exception (voir la note ci-dessous).\r"
                 ]
               },
+              "\r",
               "Note : si l’étiquette visible représente une expression mathématique, les symboles mathématiques peuvent être repris littéralement pour servir d’étiquette au nom accessible (ex. : “A>B”). Il est laissé à l’utilisateur le soin d’opérer la correspondance entre l’expression et ce qu’il doit épeler compte tenu de la connaissance qu’il a du fonctionnement de son logiciel de saisie vocale (“A plus grand que B” ou “A supérieur à B”)."
             ],
             "technicalNote": [
-              "Lorsque l’intitulé visible est complété par une autre expression dans le nom accessible :",
+              "Lorsque l’intitulé visible est complété par une autre expression dans le nom accessible :\r",
+              "\r",
               {
                 "ul": [
-                  "- WCAG insiste sur le placement de l’intitulé visible au début du nom accessible sans toutefois réserver l’exclusivité de cet emplacement ;",
-                  "- WCAG considère comme un cas d’échec une correspondance non exacte de la chaîne de caractères de l’intitulé visible au sein du nom accessible."
+                  "- WCAG insiste sur le placement de l’intitulé visible au début du nom accessible sans toutefois réserver l’exclusivité de cet emplacement ;\r",
+                  "- WCAG considère comme un cas d’échec une correspondance non exacte de la chaîne de caractères de l’intitulé visible au sein du nom accessible.\r"
                 ]
               },
-              "Par exemple, si l’on considère l’intitulé visible « Commander maintenant » complété dans le nom accessible par l’expression « produit X », on peut avoir les différents cas suivants :",
+              "\r",
+              "Par exemple, si l’on considère l’intitulé visible « Commander maintenant » complété dans le nom accessible par l’expression « produit X », on peut avoir les différents cas suivants :\r",
+              "\r",
               {
                 "ul": [
-                  "- « Commander maintenant produit X » est valide (bonne pratique) ;",
-                  "- « Produit X : commander maintenant » est valide ;",
+                  "- « Commander maintenant produit X » est valide (bonne pratique) ;\r",
+                  "- « Produit X : commander maintenant » est valide ;\r",
                   "- « Commander produit X maintenant » est non valide."
                 ]
               }
@@ -1678,17 +1701,20 @@
               ]
             },
             "particularCases": [
-              "Il existe une gestion de cas particuliers pour le test 7.1.3 lorsque :",
+              "Il existe une gestion de cas particuliers pour le test 7.1.3 lorsque :\r",
+              "\r",
               {
                 "ul": [
-                  "- La ponctuation et les lettres majuscules sont présentes dans le texte de l’intitulé visible : elles peuvent être ignorées dans le nom accessible sans porter à conséquence ;",
-                  "- Le texte de l’intitulé visible sert de symbole : le texte ne doit pas être interprété littéralement au niveau du nom accessible. Le nom doit exprimer la fonction véhiculée par le symbole (par exemple, “B” au niveau d’un éditeur de texte aura pour nom accessible “Mettre en gras”, le signe “>” en fonction du contexte signifiera “Suivant” ou “Lancer la vidéo”). Le cas des symboles mathématiques fait cependant exception (voir la note ci-dessous)."
+                  "- La ponctuation et les lettres majuscules sont présentes dans le texte de l’intitulé visible : elles peuvent être ignorées dans le nom accessible sans porter à conséquence ;\r",
+                  "- Le texte de l’intitulé visible sert de symbole : le texte ne doit pas être interprété littéralement au niveau du nom accessible. Le nom doit exprimer la fonction véhiculée par le symbole (par exemple, “B” au niveau d’un éditeur de texte aura pour nom accessible “Mettre en gras”, le signe “>” en fonction du contexte signifiera “Suivant” ou “Lancer la vidéo”). Le cas des symboles mathématiques fait cependant exception (voir la note ci-dessous).\r"
                 ]
               },
+              "\r",
               "Note : si l’étiquette visible représente une expression mathématique, les symboles mathématiques peuvent être repris littéralement pour servir d’étiquette au nom accessible (ex. : “A>B”). Il est laissé à l’utilisateur le soin d’opérer la correspondance entre l’expression et ce qu’il doit épeler compte tenu de la connaissance qu’il a du fonctionnement de son logiciel de saisie vocale (“A plus grand que B” ou “A supérieur à B”)."
             ],
             "technicalNote": [
-              "Le critère 7.1 implémente la notion de « compatible avec les technologies d’assistance » telle que définie par les WCAG, ainsi que le recours à WAI-ARIA pour rendre un composant ou une fonctionnalité accessible. Le bon usage de WAI-ARIA est vérifié via les tests 7.1.1, 7.1.2, 7.1.3.",
+              "Le critère 7.1 implémente la notion de « compatible avec les technologies d’assistance » telle que définie par les WCAG, ainsi que le recours à WAI-ARIA pour rendre un composant ou une fonctionnalité accessible. Le bon usage de WAI-ARIA est vérifié via les tests 7.1.1, 7.1.2, 7.1.3.\r",
+              "\r",
               "Note importante : dans un environnement HTML5, beaucoup de composants peuvent nécessiter JavaScript pour fonctionner ; en conséquence la fourniture d’une alternative à un composant JavaScript qui ne pourrait pas être rendu accessible devra bénéficier d’une méthode spécifique au composant en cause, permettant de le remplacer par une alternative accessible (et de le réactiver). Cela signifie que la désactivation de JavaScript pour l’ensemble de la page ne sera pas acceptée comme une méthode valable, à moins qu’elle ne remette pas en cause l’utilisation des autres composants."
             ],
             "references": [
@@ -1850,14 +1876,16 @@
               ]
             },
             "technicalNote": [
-              "Les rôles WAI-ARIA `log`, `status` et `alert` ont implicitement une valeur d’attribut WAI-ARIA `aria-live` et `aria-atomic`. On pourra donc considérer (conformément à la spécification WAI-ARIA 1.1) que :",
+              "Les rôles WAI-ARIA `log`, `status` et `alert` ont implicitement une valeur d’attribut WAI-ARIA `aria-live` et `aria-atomic`. On pourra donc considérer (conformément à la spécification WAI-ARIA 1.1) que :\r",
+              "\r",
               {
                 "ul": [
-                  "- Un attribut WAI-ARIA `aria-live=\"polite\"` associé à un message de statut peut valoir pour un rôle WAI-ARIA `log` ;",
-                  "- Un attribut WAI-ARIA `aria-live=\"polite\"` et un attribut WAI-ARIA `aria-atomic=\"true\"` associés à un message de statut peuvent valoir pour un rôle WAI-ARIA `status` ;",
-                  "- Un attribut WAI-ARIA `aria-live=\"assertive\"` et un attribut WAI-ARIA `aria-atomic=\"true\"` associés à un message de statut peuvent valoir pour un rôle WAI-ARIA `alert`."
+                  "- Un attribut WAI-ARIA `aria-live=\"polite\"` associé à un message de statut peut valoir pour un rôle WAI-ARIA `log` ;\r",
+                  "- Un attribut WAI-ARIA `aria-live=\"polite\"` et un attribut WAI-ARIA `aria-atomic=\"true\"` associés à un message de statut peuvent valoir pour un rôle WAI-ARIA `status` ;\r",
+                  "- Un attribut WAI-ARIA `aria-live=\"assertive\"` et un attribut WAI-ARIA `aria-atomic=\"true\"` associés à un message de statut peuvent valoir pour un rôle WAI-ARIA `alert`.\r"
                 ]
               },
+              "\r",
               "C’est sous réserve que la nature du message de statut satisfasse bien à la correspondance implicitement établie. Dans le cas d’un message de statut indiquant la progression d’un processus et matérialisé graphiquement par une barre de progression, un rôle WAI-ARIA `progressbar` explicite est nécessaire."
             ],
             "references": [
@@ -2057,17 +2085,20 @@
               ]
             },
             "particularCases": [
-              "Il y a une gestion de cas particuliers sur le changement de langue pour les cas suivants :",
+              "Il y a une gestion de cas particuliers sur le changement de langue pour les cas suivants :\r",
+              "\r",
               {
                 "ul": [
-                  "- Nom propre, le critère est non applicable ;",
-                  "- Nom commun de langue étrangère présent dans le dictionnaire officiel de la langue (voir note 1 ci-dessous) par défaut de la page web, le critère est non applicable ;",
-                  "- Le terme de langue étrangère soumis, via un [champ de formulaire](#champ-de-saisie-de-formulaire) et rappelé dans la page (par exemple comme indication du terme recherché dans le cas d’un moteur de recherche), le critère est non applicable ;",
-                  "- Passage de texte dont la langue ne peut pas être déterminée : le critère est non applicable ;",
-                  "- Terme ou passage de texte issus d’une langue morte ou imaginaire pour laquelle il n’existe pas d’interprétation vocale : le critère est non applicable."
+                  "- Nom propre, le critère est non applicable ;\r",
+                  "- Nom commun de langue étrangère présent dans le dictionnaire officiel de la langue (voir note 1 ci-dessous) par défaut de la page web, le critère est non applicable ;\r",
+                  "- Le terme de langue étrangère soumis, via un [champ de formulaire](#champ-de-saisie-de-formulaire) et rappelé dans la page (par exemple comme indication du terme recherché dans le cas d’un moteur de recherche), le critère est non applicable ;\r",
+                  "- Passage de texte dont la langue ne peut pas être déterminée : le critère est non applicable ;\r",
+                  "- Terme ou passage de texte issus d’une langue morte ou imaginaire pour laquelle il n’existe pas d’interprétation vocale : le critère est non applicable.\r"
                 ]
               },
-              "Note 1 : le dictionnaire officiel est celui recommandé par l’académie en charge de la langue en question. Pour la France, par exemple, le lien vers le dictionnaire officiel se trouve sur le site de l’Académie française à l’adresse suivante : http://www.academie-francaise.fr/le-dictionnaire/la-9e-edition. Pour toute demande auprès du service du dictionnaire de l’Académie française, utiliser le formulaire de contact du service du dictionnaire.",
+              "\r",
+              "Note 1 : le dictionnaire officiel est celui recommandé par l’académie en charge de la langue en question. Pour la France, par exemple, le lien vers le dictionnaire officiel se trouve sur le site de l’Académie française à l’adresse suivante : http://www.academie-francaise.fr/le-dictionnaire/la-9e-edition. Pour toute demande auprès du service du dictionnaire de l’Académie française, utiliser le formulaire de contact du service du dictionnaire.\r",
+              "\r",
               "Note 2 : pour les noms communs de langue étrangère, absents dans le dictionnaire officiel de la langue par défaut de la page web, et qui sont passés dans le langage commun (exemple : newsletter) : le critère est applicable, uniquement lorsque l’absence d’indication de langue peut provoquer une incompréhension pour la restitution."
             ],
             "references": [
@@ -2265,7 +2296,8 @@
               ]
             },
             "technicalNote": [
-              "Les attributs WAI-ARIA `role=\"list\"` et `role=\"listitem\"` peuvent nécessiter l’utilisation des attributs WAI-ARIA `aria-setsize` et `aria-posinset` dans le cas où l’ensemble de la liste n’est pas disponible via le DOM généré au moment de la consultation.",
+              "Les attributs WAI-ARIA `role=\"list\"` et `role=\"listitem\"` peuvent nécessiter l’utilisation des attributs WAI-ARIA `aria-setsize` et `aria-posinset` dans le cas où l’ensemble de la liste n’est pas disponible via le DOM généré au moment de la consultation.\r",
+              "\r",
               "Les attributs WAI-ARIA `role=\"tree\"`, `role=\"tablist\"`, `role=\"menu\"`, `role=\"combobox\"` et `role=\"listbox\"` ne sont pas équivalents à une liste HTML `<ul>` ou `<ol>`."
             ],
             "references": [
@@ -2432,11 +2464,12 @@
               ]
             },
             "particularCases": [
-              "Font exception à ce critère, les contenus pour lesquels l’utilisateur n’a pas de possibilité de personnalisation :",
+              "Font exception à ce critère, les contenus pour lesquels l’utilisateur n’a pas de possibilité de personnalisation :\r",
+              "\r",
               {
                 "ul": [
-                  "- Les sous-titres incrustés dans une vidéo ;",
-                  "- Les textes en image ;",
+                  "- Les sous-titres incrustés dans une vidéo ;\r",
+                  "- Les textes en image ;\r",
                   "- Le texte au sein d’une balise `<canvas>`."
                 ]
               }
@@ -2565,9 +2598,12 @@
               ]
             },
             "technicalNote": [
-              "WAI-ARIA propose un attribut `aria-hidden` (`true` ou `false`) qui permet d’inhiber la restitution d’un contenu en direction des technologies d’assistance, sans action sur sa visibilité en direction des agents utilisateurs : un contenu avec `aria-hidden=\"true\"` ne sera donc plus vocalisable, mais restera visible.",
-              "Sauf si le contenu contrôlé par `aria-hidden` n’a pas vocation à être restitué par les technologies d’assistance, la valeur de l’attribut `aria-hidden` doit être cohérente avec l’état affiché ou masqué du contenu à l’écran.",
-              "La spécification HTML5 propose un attribut `hidden` qui permet de rendre indisponible (quand l’attribut `hidden` est présent) un contenu dans le DOM généré (de manière similaire au `type=\"hidden\"` sur un contrôle de formulaire).",
+              "WAI-ARIA propose un attribut `aria-hidden` (`true` ou `false`) qui permet d’inhiber la restitution d’un contenu en direction des technologies d’assistance, sans action sur sa visibilité en direction des agents utilisateurs : un contenu avec `aria-hidden=\"true\"` ne sera donc plus vocalisable, mais restera visible.\r",
+              "\r",
+              "Sauf si le contenu contrôlé par `aria-hidden` n’a pas vocation à être restitué par les technologies d’assistance, la valeur de l’attribut `aria-hidden` doit être cohérente avec l’état affiché ou masqué du contenu à l’écran.\r",
+              "\r",
+              "La spécification HTML5 propose un attribut `hidden` qui permet de rendre indisponible (quand l’attribut `hidden` est présent) un contenu dans le DOM généré (de manière similaire au `type=\"hidden\"` sur un contrôle de formulaire).\r",
+              "\r",
               "Il est possible d’avoir des situations où un contenu contrôlé par `hidden` ou `aria-hidden` se trouve momentanément dans un état incohérent avec le statut affiché ou masqué du contenu, par exemple si l’on désire rendre disponible un élément, mais que son affichage à l’écran reste dépendant d’une action ultérieure. Dans ce cas, c’est l’état final du contenu qui doit être considéré."
             ],
             "references": [
@@ -2670,17 +2706,20 @@
               ]
             },
             "particularCases": [
-              "L'objectif de ce critère est de garantir un défilement dans une unique direction pour une lecture facilitée selon le sens de l'écriture.",
-              "Font exception à ce critère, les contenus dont l'agencement requiert deux dimensions pour être compris ou utilisés comme :",
+              "L'objectif de ce critère est de garantir un défilement dans une unique direction pour une lecture facilitée selon le sens de l'écriture.\r",
+              "\r",
+              "Font exception à ce critère, les contenus dont l'agencement requiert deux dimensions pour être compris ou utilisés comme :\r",
+              "\r",
               {
                 "ul": [
-                  "- Les images, les graphiques ou les vidéos ;",
-                  "- Les jeux (jeux de plateforme, par exemple) ;",
-                  "- Les présentations (type diaporama, par exemple) ;",
-                  "- Les tableaux de données ;",
-                  "- Les interfaces où il est nécessaire d'avoir un ascenseur horizontal lors de la manipulation de l'interface."
+                  "- Les images, les graphiques ou les vidéos ;\r",
+                  "- Les jeux (jeux de plateforme, par exemple) ;\r",
+                  "- Les présentations (type diaporama, par exemple) ;\r",
+                  "- Les tableaux de données ;\r",
+                  "- Les interfaces où il est nécessaire d'avoir un ascenseur horizontal lors de la manipulation de l'interface.\r"
                 ]
               },
+              "\r",
               "Note : la majorité des navigateurs sur les systèmes d'exploitation sur mobile (Android, iOS) ne gère pas correctement la redistribution en cas de zoom. Dans ce contexte, le critère sera considéré comme non applicable sur ces environnements."
             ],
             "technicalNote": [
@@ -2715,11 +2754,12 @@
               ]
             },
             "particularCases": [
-              "Font exception à ce critère, les contenus pour lesquels l’utilisateur n’a pas de possibilité de personnalisation :",
+              "Font exception à ce critère, les contenus pour lesquels l’utilisateur n’a pas de possibilité de personnalisation :\r",
+              "\r",
               {
                 "ul": [
-                  "- Les sous-titres directement intégrés à une vidéo ;",
-                  "- Les images texte ;",
+                  "- Les sous-titres directement intégrés à une vidéo ;\r",
+                  "- Les images texte ;\r",
                   "- Le texte au sein d’une balise `<canvas>`."
                 ]
               }
@@ -2760,7 +2800,8 @@
               ]
             },
             "particularCases": [
-              "Lorsque le contenu additionnel est contrôlé par l’agent utilisateur (par exemple, attribut `title` ou validation native de formulaire) ou correspond à une fenêtre modale conforme au [motif de conception](#motif-de-conception) WAI-ARIA `dialog`, le critère 10.13 est non applicable.",
+              "Lorsque le contenu additionnel est contrôlé par l’agent utilisateur (par exemple, attribut `title` ou validation native de formulaire) ou correspond à une fenêtre modale conforme au [motif de conception](#motif-de-conception) WAI-ARIA `dialog`, le critère 10.13 est non applicable.\r",
+              "\r",
               "Lorsque le contenu additionnel ne masque ou ne remplace aucun contenu porteur d’information, le test 10.13.1 est non applicable."
             ],
             "references": [
@@ -2896,14 +2937,17 @@
               ]
             },
             "particularCases": [
-              "Il existe une gestion de cas particuliers pour le test 11.2.5 lorsque :",
+              "Il existe une gestion de cas particuliers pour le test 11.2.5 lorsque :\r",
+              "\r",
               {
                 "ul": [
-                  "- La ponctuation et les lettres majuscules sont présentes dans le texte de l’[intitulé visible](#intitule-visible) : elles peuvent être ignorées dans le nom accessible sans porter à conséquence ;",
-                  "- Le texte de l’[intitulé visible](#intitule-visible) sert de symbole : le texte ne doit pas être interprété littéralement au niveau du nom accessible. Le nom doit exprimer la fonction véhiculée par le symbole (par exemple, “B” au niveau d’un éditeur de texte aura pour nom accessible “Mettre en gras”, le signe “>” en fonction du contexte signifiera “Suivant” ou “Lancer la vidéo”). Le cas des symboles mathématiques fait cependant exception (voir la note ci-dessous)."
+                  "- La ponctuation et les lettres majuscules sont présentes dans le texte de l’[intitulé visible](#intitule-visible) : elles peuvent être ignorées dans le nom accessible sans porter à conséquence ;\r",
+                  "- Le texte de l’[intitulé visible](#intitule-visible) sert de symbole : le texte ne doit pas être interprété littéralement au niveau du nom accessible. Le nom doit exprimer la fonction véhiculée par le symbole (par exemple, “B” au niveau d’un éditeur de texte aura pour nom accessible “Mettre en gras”, le signe “>” en fonction du contexte signifiera “Suivant” ou “Lancer la vidéo”). Le cas des symboles mathématiques fait cependant exception (voir la note ci-dessous).\r"
                 ]
               },
-              "Note : si l’étiquette visible représente une expression mathématique, les symboles mathématiques peuvent être repris littéralement pour servir d’étiquette au nom accessible (ex. : “A>B”). Il est laissé à l’utilisateur le soin d’opérer la correspondance entre l’expression et ce qu’il doit épeler compte tenu de la connaissance qu’il a du fonctionnement de son logiciel de saisie vocale (“A plus grand que B” ou “A supérieur à B”).",
+              "\r",
+              "Note : si l’étiquette visible représente une expression mathématique, les symboles mathématiques peuvent être repris littéralement pour servir d’étiquette au nom accessible (ex. : “A>B”). Il est laissé à l’utilisateur le soin d’opérer la correspondance entre l’expression et ce qu’il doit épeler compte tenu de la connaissance qu’il a du fonctionnement de son logiciel de saisie vocale (“A plus grand que B” ou “A supérieur à B”).\r",
+              "\r",
               "Ce cas particulier s’applique également au test 11.9.2."
             ],
             "references": [
@@ -2975,12 +3019,13 @@
               ]
             },
             "particularCases": [
-              "Les tests 11.4.2 et 11.4.3 seront considérés comme non applicables :",
+              "Les tests 11.4.2 et 11.4.3 seront considérés comme non applicables :\r",
+              "\r",
               {
                 "ul": [
-                  "- Dans le cas où l’[étiquette](#etiquette-de-champ-de-formulaire) mélange une portion de texte qui se lit de droite à gauche avec une portion de texte qui se lit de gauche à droite ;",
-                  "- Dans le cas où un formulaire contient des labels de plusieurs langues qui se liraient de droite à gauche et inversement. Par exemple, un formulaire de commande en arabe qui propose une liste de cases à cocher de produit en langue française ou mixant des produits en langue arabe ou en langue française ;",
-                  "- Dans le cas où les champs de type `radio` ou `checkbox` et les balises ayant un attribut WAI-ARIA `role=\"checkbox\"`, `role=\"radio\"` ou `role=\"switch\"` ne sont pas visuellement présentés sous forme de bouton radio ou de case à cocher ;",
+                  "- Dans le cas où l’[étiquette](#etiquette-de-champ-de-formulaire) mélange une portion de texte qui se lit de droite à gauche avec une portion de texte qui se lit de gauche à droite ;\r",
+                  "- Dans le cas où un formulaire contient des labels de plusieurs langues qui se liraient de droite à gauche et inversement. Par exemple, un formulaire de commande en arabe qui propose une liste de cases à cocher de produit en langue française ou mixant des produits en langue arabe ou en langue française ;\r",
+                  "- Dans le cas où les champs de type `radio` ou `checkbox` et les balises ayant un attribut WAI-ARIA `role=\"checkbox\"`, `role=\"radio\"` ou `role=\"switch\"` ne sont pas visuellement présentés sous forme de bouton radio ou de case à cocher ;\r",
                   "- Dans le cas où les champs seraient utilisés dans un contexte où il pourrait être légitime, du point de vue de l’expérience utilisateur, de placer les étiquettes de manière différente à celle requise dans les tests 11.4.2 et 11.4.3."
                 ]
               }
@@ -3198,21 +3243,24 @@
               ]
             },
             "particularCases": [
-              "Le test 11.10.1 et le test 11.10.2 seront considérés comme non applicables lorsque le formulaire comporte un seul [champ de formulaire](#champ-de-saisie-de-formulaire) ou qu’il indique les champs optionnels de manière :",
+              "Le test 11.10.1 et le test 11.10.2 seront considérés comme non applicables lorsque le formulaire comporte un seul [champ de formulaire](#champ-de-saisie-de-formulaire) ou qu’il indique les champs optionnels de manière :\r",
+              "\r",
               {
                 "ul": [
-                  "- Visible ;",
-                  "- Dans la balise `<label>` ou dans la [légende](#legende) associée au champ."
+                  "- Visible ;\r",
+                  "- Dans la balise `<label>` ou dans la [légende](#legende) associée au champ.\r"
                 ]
               },
+              "\r",
               "Dans le cas où l’ensemble des champs d’un formulaire sont obligatoires, les tests 11.10.1 et 11.10.2 restent applicables."
             ],
             "technicalNote": [
-              "Dans un long formulaire dont la majorité des champs sont obligatoires, on pourrait constater que ce sont les quelques champs restés facultatifs qui sont explicitement signalés comme tels. Dans ce cas, il faudrait s’assurer que :",
+              "Dans un long formulaire dont la majorité des champs sont obligatoires, on pourrait constater que ce sont les quelques champs restés facultatifs qui sont explicitement signalés comme tels. Dans ce cas, il faudrait s’assurer que :\r",
+              "\r",
               {
                 "ul": [
-                  "- Un message précise visuellement en haut de formulaire que “tous les champs sont obligatoires sauf ceux indiqués comme étant facultatifs” ;",
-                  "- Une mention “facultatif” est présente visuellement dans le libellé des champs facultatifs ou dans la légende d’un groupe de champs facultatifs ;",
+                  "- Un message précise visuellement en haut de formulaire que “tous les champs sont obligatoires sauf ceux indiqués comme étant facultatifs” ;\r",
+                  "- Une mention “facultatif” est présente visuellement dans le libellé des champs facultatifs ou dans la légende d’un groupe de champs facultatifs ;\r",
                   "- Un attribut `required` ou `aria-required=\"true\"` reste associé à chaque champ qui n’est pas concerné par ce caractère facultatif."
                 ]
               }
@@ -3330,7 +3378,8 @@
               ]
             },
             "technicalNote": [
-              "La [liste des valeurs possibles pour l’attribut `autocomplete`](#liste-des-valeurs-possibles-pour-l-attribut-autocomplete) repose sur la liste des valeurs présentes dans la spécification WCAG2.1 qui reprend elle-même la liste des valeurs de type “field name” de la spécification HTML5.2. Le critère WCAG demande à ce que l’une de ces valeurs soit présente pour qualifier un champ de saisie concernant l’utilisateur.",
+              "La [liste des valeurs possibles pour l’attribut `autocomplete`](#liste-des-valeurs-possibles-pour-l-attribut-autocomplete) repose sur la liste des valeurs présentes dans la spécification WCAG2.1 qui reprend elle-même la liste des valeurs de type “field name” de la spécification HTML5.2. Le critère WCAG demande à ce que l’une de ces valeurs soit présente pour qualifier un champ de saisie concernant l’utilisateur.\r",
+              "\r",
               "Ce que le critère WCAG laisse implicite, ce sont les différentes règles de construction possibles pour obtenir une valeur (simple ou composée) pour l’attribut `autocomplete`. C’est cependant l’affaire du développeur de fournir à l’attribut `autocomplete` une valeur ou un ensemble de valeurs valides au regard des exigences de l’algorithme fourni par la spécification HTML5.2. Ainsi, un attribut `autocomplete` ne peut contenir qu’une seule valeur de type `“field name”`, comme `\"name\"` ou `\"street-address\"`. On peut avoir également un ensemble composé de différentes valeurs comme, par exemple, `autocomplete=\"shipping name\"` ou `autocomplete=\"section-software shipping street-address\"` : `\"section-software\"` renvoie à une valeur de type <span lang=\"en\">“scope”</span> et `\"shipping\"` à une valeur de type <span lang=\"en\">“hint set”</span>, mais toujours une seule valeur de type <span lang=\"en\">“field name”</span>."
             ],
             "references": [
@@ -3366,8 +3415,10 @@
               ]
             },
             "particularCases": [
-              "Il existe une gestion de cas particulier lorsque le site web est constitué d’une seule page ou d’un nombre très limité de pages (cf. note). Dans ce cas-là, le critère est non applicable.",
-              "Le critère est également non applicable pour les pages d’un ensemble de pages qui sont le résultat ou une partie d’un processus (un processus de paiement ou de prise de commande, par exemple).",
+              "Il existe une gestion de cas particulier lorsque le site web est constitué d’une seule page ou d’un nombre très limité de pages (cf. note). Dans ce cas-là, le critère est non applicable.\r",
+              "\r",
+              "Le critère est également non applicable pour les pages d’un ensemble de pages qui sont le résultat ou une partie d’un processus (un processus de paiement ou de prise de commande, par exemple).\r",
+              "\r",
               "Note : l’appréciation d’un nombre très limité de pages devrait être réservé à un site dont l’ensemble des pages sont atteignables depuis la page d’accueil."
             ],
             "references": [
@@ -3398,14 +3449,16 @@
               ]
             },
             "particularCases": [
-              "Il existe une gestion de cas particuliers lorsque :",
+              "Il existe une gestion de cas particuliers lorsque :\r",
+              "\r",
               {
                 "ul": [
-                  "- La page est la page d’accueil ;",
-                  "- Le site web est constitué d’une seule page ;",
-                  "- Le changement fait suite à une modification initiée par l’utilisateur."
+                  "- La page est la page d’accueil ;\r",
+                  "- Le site web est constitué d’une seule page ;\r",
+                  "- Le changement fait suite à une modification initiée par l’utilisateur.\r"
                 ]
               },
+              "\r",
               "Dans ces situations, le critère est non applicable."
             ],
             "references": [
@@ -3563,7 +3616,8 @@
               ]
             },
             "particularCases": [
-              "Il existe une gestion de cas particuliers lorsque le site web est constitué d’une seule page.",
+              "Il existe une gestion de cas particuliers lorsque le site web est constitué d’une seule page.\r",
+              "\r",
               "Dans ce cas de figure, l’obligation de la présence d’un lien d’accès rapide est liée au contexte de la page : présence ou absence de navigation ou de contenus additionnels, par exemple. Le critère peut être considéré comme non applicable lorsqu’il est avéré qu’un lien d’accès rapide est inutile."
             ],
             "references": [
@@ -3733,7 +3787,8 @@
               ]
             },
             "particularCases": [
-              "Il existe une gestion de cas particuliers lorsque la limite de temps est essentielle, notamment lorsqu’elle ne pourrait pas être supprimée sans changer fondamentalement le contenu ou les fonctionnalités liées au contenu.",
+              "Il existe une gestion de cas particuliers lorsque la limite de temps est essentielle, notamment lorsqu’elle ne pourrait pas être supprimée sans changer fondamentalement le contenu ou les fonctionnalités liées au contenu.\r",
+              "\r",
               "Dans ces situations, le critère est non applicable. Par exemple, le rafraîchissement d’un flux RSS dans une page n’est pas une limite de temps essentielle ; le critère est applicable. En revanche, une redirection automatique qui amène vers la nouvelle version d’une page à partir d’une URL obsolète est essentielle ; le critère est non applicable."
             ],
             "references": [
@@ -3778,7 +3833,7 @@
             "references": [
               {
                 "wcag": [
-                  "3.2.1 On focus (A)"
+                  "3.2.1 On Focus (A)"
                 ]
               },
               {
@@ -3803,12 +3858,14 @@
               ]
             },
             "particularCases": [
-              "Il existe une gestion de cas particuliers :",
+              "Il existe une gestion de cas particuliers :\r",
+              "\r",
               {
                 "ul": [
-                  "- Pour les personnes de droit privé mentionnées aux 2° à 4° du I de l’article 47 de la loi du 11 février 2005 : si les fichiers bureautiques (ex : PDF, documents Microsoft ou LibreOffice, etc.) ont été publiés avant le 23 septembre 2018 (sauf si ce sont des documents nécessaires pour accomplir une démarche administrative relevant des tâches effectuées par l’organisme concerné), ils sont exemptés de l’obligation d’accessibilité."
+                  "- Pour les personnes de droit privé mentionnées aux 2° à 4° du I de l’article 47 de la loi du 11 février 2005 : si les fichiers bureautiques (ex : PDF, documents Microsoft ou LibreOffice, etc.) ont été publiés avant le 23 septembre 2018 (sauf si ce sont des documents nécessaires pour accomplir une démarche administrative relevant des tâches effectuées par l’organisme concerné), ils sont exemptés de l’obligation d’accessibilité.\r"
                 ]
               },
+              "\r",
               "Dans cette situation, le critère est non applicable."
             ],
             "references": [
@@ -4020,8 +4077,10 @@
               ]
             },
             "particularCases": [
-              "Il existe des interfaces pour lesquelles l’orientation du périphérique est essentielle à leur utilisation.",
-              "Dans ces situations, le critère est non applicable. Il peut s’agir d’interfaces de jeu, de piano, de dépôt de chèques bancaires, etc.",
+              "Il existe des interfaces pour lesquelles l’orientation du périphérique est essentielle à leur utilisation.\r",
+              "\r",
+              "Dans ces situations, le critère est non applicable. Il peut s’agir d’interfaces de jeu, de piano, de dépôt de chèques bancaires, etc.\r",
+              "\r",
               "Si l’interface est le seul moyen d’accéder au service proposé, une alternative devrait être mise en place pour pallier cette carence."
             ],
             "references": [
@@ -4047,10 +4106,11 @@
               ]
             },
             "particularCases": [
-              "Il existe une gestion de cas particuliers dans deux types de situation :",
+              "Il existe une gestion de cas particuliers dans deux types de situation :\r",
+              "\r",
               {
                 "ul": [
-                  "- Le critère ne s’applique qu’à des fonctionnalités mises en place par l’auteur du site. Il ne concerne donc pas les gestes requis par l’agent utilisateur ou le système d’exploitation ;",
+                  "- Le critère ne s’applique qu’à des fonctionnalités mises en place par l’auteur du site. Il ne concerne donc pas les gestes requis par l’agent utilisateur ou le système d’exploitation ;\r",
                   "- Le critère ne s’applique pas aux fonctionnalités dont la réalisation d’un geste complexe est essentielle (exécuter le tracé d’une signature, par exemple)."
                 ]
               }
@@ -4086,10 +4146,11 @@
               "Il existe une gestion de cas particulier lorsque la fonctionnalité nécessite que le comportement attendu soit réalisé lors d’un événement descendant, par exemple, un émulateur de clavier dont les touches doivent s’activer à la pression comme sur un clavier physique. Dans ces situations, le critère est non applicable."
             ],
             "technicalNote": [
-              "Deux exemples de mécanisme mis en place pour annuler ou abandonner une action déclenchée au moyen d’un dispositif de pointage sur un point unique de l’écran :",
+              "Deux exemples de mécanisme mis en place pour annuler ou abandonner une action déclenchée au moyen d’un dispositif de pointage sur un point unique de l’écran :\r",
+              "\r",
               {
                 "ul": [
-                  "- Une fenêtre modale permettant d’annuler l’action après son achèvement ;",
+                  "- Une fenêtre modale permettant d’annuler l’action après son achèvement ;\r",
                   "- Pour une fonction de glisser/déposer, le fait d’abandonner l’action si l’utilisateur relâche l’élément en dehors de la zone cible."
                 ]
               }
@@ -4120,10 +4181,11 @@
               ]
             },
             "particularCases": [
-              "Il existe une gestion de cas particulier lorsque :",
+              "Il existe une gestion de cas particulier lorsque :\r",
+              "\r",
               {
                 "ul": [
-                  "- Le mouvement est essentiel à l’accomplissement de la fonctionnalité (ex. podomètre) ;",
+                  "- Le mouvement est essentiel à l’accomplissement de la fonctionnalité (ex. podomètre) ;\r",
                   "- La détection du mouvement est utilisée pour contrôler une fonctionnalité au travers d’une interface compatible avec l’accessibilité."
                 ]
               }

@@ -4,7 +4,7 @@ WCAG:
     title: Info and Relationships
     level: A
   - successCriterion: 1.4.1
-    title: Use of color
+    title: Use of Color
     level: A
 Techniques:
   - G14

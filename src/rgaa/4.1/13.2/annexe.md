@@ -1,7 +1,7 @@
 ---
 WCAG:
   - successCriterion: 3.2.1
-    title: On focus
+    title: On Focus
     level: A
 Techniques:
   - F55
